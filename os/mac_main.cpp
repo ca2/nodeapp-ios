@@ -26,19 +26,18 @@ uint32_t __run_system(void * p);
 // Standard WinMain implementation
 //  Can be replaced as long as '::ca2::WinInit' is called first
 
-int32_t CLASS_DECL_mac __mac_main(int32_t argc, char * argv[])
+int32_t CLASS_DECL_mac __ios_main(int32_t argc, char * argv[])
 {
 
-setlocale(LC_ALL,"");
+    setlocale(LC_ALL,"");
    
-   ns_shared_application();
+    ui_application_main(argc, argv);
    
+    CreateThread(NULL, 0, __run_system, NULL, 0, 0);
    
-   CreateThread(NULL, 0, __run_system, NULL, 0, 0);
+    ui_app_run(argc, argv);
    
-   ns_app_run();
-   
-   return 0;
+    return 0;
    
    
 }

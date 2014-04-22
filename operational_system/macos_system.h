@@ -5,7 +5,7 @@
 #ifdef __MM
 
 
-#import <Cocoa/Cocoa.h>
+#import <UIKit/UIKit.h>
 
 
 #endif
