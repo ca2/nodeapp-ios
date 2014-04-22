@@ -26,19 +26,24 @@ NSWindow * new_round_window(round_window * pwindow, CGRect rect)
 }
 
 
-void ns_shared_application()
+void ui_application_main(int argc, char * argv[])
 {
-
-   [NSApplication sharedApplication];
-   
+    
+    @autoreleasepool
+    {
+        
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([ca2AppDelegate class]));
+        
+    }
+    
 }
 
 
-void ns_app_run()
-{
 
-   [NSApp run];
-   
+void ui_app_run(int argc, char * argv[])
+{
+    
+    
 }
 
 

@@ -12,7 +12,7 @@
 #define DEBUG 0
 #endif
 
-#include <Carbon/Carbon.h>
+#import <UIKit/UIKit.h>
 
 #if DEBUG
 #undef DEBUG

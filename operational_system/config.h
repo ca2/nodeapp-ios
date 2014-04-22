@@ -13,8 +13,11 @@
 #define DEBUG 1
 #endif
 
-#ifndef MACOS
-#define MACOS
+#ifndef APPLE_IOS
+#define APPLE_IOS
+#endif
+#ifndef APPLE_OS
+#define APPLE_OS
 #endif
 #define BSD_STYLE_SOCKETS
 #define HAVE_OPENSSL

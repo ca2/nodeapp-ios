@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Camilo Sasuke Tsumanuma. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#include "app/appseed/base/base/base/base.h"
 
 
 int __ios_main(int argc, char * argv[]);
