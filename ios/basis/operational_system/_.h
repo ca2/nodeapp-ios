@@ -1,7 +1,8 @@
 #pragma once
 
 
-#define MACOS
+#define APPLE_IOS
+#define APPLE_OS
 
 
 #define __ASSERT_MACROS_DEFINE_VERSIONS_WITHOUT_UNDERSCORES 0
@@ -9,7 +10,8 @@
 
 #define _POSIX_SOURCE 200809L
 #define _POSIX_C_SOURCE 200809L
-#define _DARWIN_C_SOURCE
+#define _DARWIN_C_SOURCE 200809L
+#define _XOPEN_SOURCE 700
 
 #define CLASS_DECL_IMPORT
 #define CLASS_DECL_EXPORT

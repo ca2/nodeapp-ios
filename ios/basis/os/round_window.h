@@ -44,6 +44,6 @@ bool m_bDirty;
 };
 
 
-void ns_shared_application();
 NSWindow * new_round_window(round_window * pwindow, CGRect rect);
-void ns_app_run();
+void ui_application_main(int argc, char * argv[]);
+void ui_app_run(int argc, char * argv[]);

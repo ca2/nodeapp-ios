@@ -11,7 +11,6 @@
 		07884E911898254E00DC6CEB /* libca2os.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07884E8E1898254E00DC6CEB /* libca2os.dylib */; };
 		07884E921898254E00DC6CEB /* libcore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07884E8F1898254E00DC6CEB /* libcore.dylib */; };
 		9A5752B716AAE1D2000CC4EF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5752B616AAE1D2000CC4EF /* Cocoa.framework */; };
-		9A5752DD16AAE321000CC4EF /* app.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9A5752DC16AAE321000CC4EF /* app.mm */; };
 		9AE24EC21904E95E001AEFFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24EC11904E95E001AEFFB /* Foundation.framework */; };
 		9AE24EC41904E95E001AEFFB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24EC31904E95E001AEFFB /* CoreGraphics.framework */; };
 		9AE24EC61904E95E001AEFFB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24EC51904E95E001AEFFB /* UIKit.framework */; };
@@ -33,6 +32,27 @@
 			remoteGlobalIDString = 9AE24EBF1904E95E001AEFFB;
 			remoteInfo = app_ios;
 		};
+		9AE24FBE19059BA8001AEFFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AE24FB819059BA7001AEFFB /* os.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A1CFD778154F5EAA007447E2;
+			remoteInfo = ca2os;
+		};
+		9AE24FC019059BA8001AEFFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AE24FB819059BA7001AEFFB /* os.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24F9219059AA4001AEFFB;
+			remoteInfo = ca2os_ios;
+		};
+		9AE24FC219059BA8001AEFFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AE24FB819059BA7001AEFFB /* os.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24FA119059AA4001AEFFB;
+			remoteInfo = ca2os_iosTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +68,6 @@
 		9A5752B916AAE1D2000CC4EF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		9A5752BA16AAE1D2000CC4EF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		9A5752BB16AAE1D2000CC4EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		9A5752DC16AAE321000CC4EF /* app.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = app.mm; sourceTree = SOURCE_ROOT; };
 		9AB3522516AC11540084BFE8 /* app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = app.entitlements; sourceTree = SOURCE_ROOT; };
 		9AE24EC01904E95E001AEFFB /* app_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE24EC11904E95E001AEFFB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,6 +83,7 @@
 		9AE24EE21904E95F001AEFFB /* app_iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "app_iosTests-Info.plist"; sourceTree = "<group>"; };
 		9AE24EE41904E95F001AEFFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9AE24EE61904E95F001AEFFB /* app_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = app_iosTests.m; sourceTree = "<group>"; };
+		9AE24FB819059BA7001AEFFB /* os.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = os.xcodeproj; path = /ios/nodeapp/seed/metaseed/../../os/os.xcodeproj; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +142,7 @@
 		9A5752A716AAE1D2000CC4EF = {
 			isa = PBXGroup;
 			children = (
+				9AE24FB819059BA7001AEFFB /* os.xcodeproj */,
 				9A5752BC16AAE1D2000CC4EF /* app */,
 				07B5903718866047002C6FEC /* core */,
 				9AE24EC71904E95E001AEFFB /* app_ios */,
@@ -172,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				9AB3522516AC11540084BFE8 /* app.entitlements */,
-				9A5752DC16AAE321000CC4EF /* app.mm */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -213,6 +233,16 @@
 				9AE24EE31904E95F001AEFFB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AE24FB919059BA7001AEFFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AE24FBF19059BA8001AEFFB /* libca2os.dylib */,
+				9AE24FC119059BA8001AEFFB /* libca2os_ios.dylib */,
+				9AE24FC319059BA8001AEFFB /* ca2os_iosTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +325,12 @@
 			mainGroup = 9A5752A716AAE1D2000CC4EF;
 			productRefGroup = 9A5752B316AAE1D2000CC4EF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9AE24FB919059BA7001AEFFB /* Products */;
+					ProjectRef = 9AE24FB819059BA7001AEFFB /* os.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9A5752B116AAE1D2000CC4EF /* app */,
@@ -303,6 +339,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9AE24FBF19059BA8001AEFFB /* libca2os.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libca2os.dylib;
+			remoteRef = 9AE24FBE19059BA8001AEFFB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9AE24FC119059BA8001AEFFB /* libca2os_ios.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libca2os_ios.dylib;
+			remoteRef = 9AE24FC019059BA8001AEFFB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9AE24FC319059BA8001AEFFB /* ca2os_iosTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ca2os_iosTests.xctest;
+			remoteRef = 9AE24FC219059BA8001AEFFB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9A5752B016AAE1D2000CC4EF /* Resources */ = {
@@ -336,7 +396,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A5752DD16AAE321000CC4EF /* app.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,6 +732,7 @@
 				9AE24EE91904E95F001AEFFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AE24EED1904E95F001AEFFB /* Build configuration list for PBXNativeTarget "app_iosTests" */ = {
 			isa = XCConfigurationList;
@@ -681,6 +741,7 @@
 				9AE24EEB1904E95F001AEFFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
