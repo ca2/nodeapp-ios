@@ -12,7 +12,11 @@
 #define DEBUG 0
 #endif
 
+#if defined(_MM) || defined(_M)
+
 #import <UIKit/UIKit.h>
+
+#endif
 
 #if DEBUG
 #undef DEBUG

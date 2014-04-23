@@ -8,6 +8,13 @@
 #pragma once
 
 
+#ifndef _POSIX_C_SOURCE
+xxx2
+#elif _POSIX_C_SOURCE < 200809L
+zzz2
+#endif
+
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdarg.h>
@@ -30,10 +37,57 @@
 #include <unistd.h>
 
 
-#ifdef __cplusplus
+
+#define DWORD     uint32_t
+#define BYTE      uint8_t
+
+//#define NULL 0
+#define _strcmpi strcasecmp
 
 
-#include <new>
+
+#ifdef _LP64
+
+typedef int64_t int_ptr;
+typedef uint64_t uint_ptr;
+#define int3264   int64_t
+
+#else
+
+typedef int32_t int_ptr;
+typedef uint32_t uint_ptr;
+#define int3264   int32_t
+
+#endif
 
 
+typedef void * PVOID;
+
+#define _strcmpi strcasecmp
+
+
+
+#ifndef _POSIX_C_SOURCE
+xxx
+#elif _POSIX_C_SOURCE < 200809L
+zzz
+#endif
+
+
+
+
+#ifndef _POSIX_C_SOURCE
+xxx
+#elif _POSIX_C_SOURCE < 200809L
+zzz
+#endif
+
+
+
+
+
+#ifndef _POSIX_C_SOURCE
+xxx3
+#elif _POSIX_C_SOURCE < 200809L
+zzz3
 #endif

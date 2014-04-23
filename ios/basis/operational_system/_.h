@@ -2,7 +2,7 @@
 
 
 #define APPLE_IOS
-#define APPLE_OS
+#define APPLEOS
 
 
 #define __ASSERT_MACROS_DEFINE_VERSIONS_WITHOUT_UNDERSCORES 0
@@ -42,44 +42,14 @@
 
 
 
-#include <inttypes.h>
 
-#define DWORD     uint32_t
-#define BYTE      uint8_t
-
-//#define NULL 0
-#define _strcmpi strcasecmp
-
-#include <stdlib.h>
-
-
-#ifdef _LP64
-
-typedef int64_t int_ptr;
-typedef uint64_t uint_ptr;
-#define int3264   int64_t
-
-#else
-
-typedef int32_t int_ptr;
-typedef uint32_t uint_ptr;
-#define int3264   int32_t
-
-#endif
-
-
-typedef void * PVOID;
-
-#define _strcmpi strcasecmp
 
 
 #ifdef _LP64
 #define OS64BIT
+#define OSBIT 64
+#else
+#define OSBIT 32
 #endif
-
-
-
-
-
 
 

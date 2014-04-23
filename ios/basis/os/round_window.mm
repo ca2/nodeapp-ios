@@ -5,11 +5,11 @@
 //  Created by Camilo Sasuke Tsumanuma on 6/8/13.
 //  Copyright (c) 2013 ca2 Desenvolvimento de Sofware Ltda. All rights reserved.
 //
-#import "mac_mm.h"
+#import "ios_mm.h"
 
 
 
-NSWindow * new_round_window(round_window * pwindow, CGRect rect)
+UIWindow * new_round_window(round_window * pwindow, CGRect rect)
 {
    
    rect.origin.x     = 0;
