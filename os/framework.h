@@ -3,8 +3,11 @@
 #endif
 
 #ifdef __OBJC__
-#import "mac_mm.h"
+#ifdef __cplusplus
+#import "ios_mm.h"
 #else
+#error "unexcpected!! was a .m or object-c file include?! only c++ files in os library leve!!"
+#endif
 #include "mac.h"
 #include "mac_internal.h"
 #endif
