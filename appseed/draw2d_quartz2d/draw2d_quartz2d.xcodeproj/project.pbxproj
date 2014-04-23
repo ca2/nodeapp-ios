@@ -36,7 +36,65 @@
 		9A6B40FB17BBE291008391AD /* draw2d_quartz2d.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A6B40E317BBE291008391AD /* draw2d_quartz2d.h */; };
 		9A8997BD177D0E7F00C7761E /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8997BC177D0E7D00C7761E /* Carbon.framework */; };
 		9AA1B44A176361950019E812 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA1B449176361950019E812 /* Cocoa.framework */; };
+		9AA6A23C19070F82000A1F4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A23B19070F82000A1F4A /* Foundation.framework */; };
+		9AA6A24119070F82000A1F4A /* draw2d_quartz2d_ios.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AA6A24019070F82000A1F4A /* draw2d_quartz2d_ios.h */; };
+		9AA6A24319070F82000A1F4A /* draw2d_quartz2d_ios.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6A24219070F82000A1F4A /* draw2d_quartz2d_ios.m */; };
+		9AA6A24A19070F82000A1F4A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A24919070F82000A1F4A /* XCTest.framework */; };
+		9AA6A24B19070F82000A1F4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A23B19070F82000A1F4A /* Foundation.framework */; };
+		9AA6A24D19070F82000A1F4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A24C19070F82000A1F4A /* UIKit.framework */; };
+		9AA6A25019070F82000A1F4A /* libdraw2d_quartz2d_ios.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A23919070F82000A1F4A /* libdraw2d_quartz2d_ios.dylib */; };
+		9AA6A25619070F82000A1F4A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AA6A25419070F82000A1F4A /* InfoPlist.strings */; };
+		9AA6A25819070F82000A1F4A /* draw2d_quartz2d_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6A25719070F82000A1F4A /* draw2d_quartz2d_iosTests.m */; };
+		9AA6A35E190735C9000A1F4A /* libbase_ios.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A359190735C9000A1F4A /* libbase_ios.dylib */; };
+		9AA6A35F190735C9000A1F4A /* libbasefreeimage_ios.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A35A190735C9000A1F4A /* libbasefreeimage_ios.dylib */; };
+		9AA6A360190735C9000A1F4A /* libbasefreetype_ios.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A35B190735C9000A1F4A /* libbasefreetype_ios.dylib */; };
+		9AA6A361190735C9000A1F4A /* libbasemysql_ios.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A35C190735C9000A1F4A /* libbasemysql_ios.dylib */; };
+		9AA6A362190735C9000A1F4A /* libcore_ios.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A35D190735C9000A1F4A /* libcore_ios.dylib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AA6A24E19070F82000A1F4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1CFD76F154F5EA7007447E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AA6A23819070F82000A1F4A;
+			remoteInfo = draw2d_quartz2d_ios;
+		};
+		9AA6A36919073663000A1F4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA6A36319073662000A1F4A /* core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9A8916841751D72100E531ED;
+			remoteInfo = core;
+		};
+		9AA6A36B19073663000A1F4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA6A36319073662000A1F4A /* core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24DDC1904CF6E001AEFFB;
+			remoteInfo = core_ios;
+		};
+		9AA6A36D19073663000A1F4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA6A36319073662000A1F4A /* core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24DEB1904CF6E001AEFFB;
+			remoteInfo = core_iosTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9AA6A23719070F82000A1F4A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				9AA6A24119070F82000A1F4A /* draw2d_quartz2d_ios.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		07884E811898203C00DC6CEB /* libbase.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbase.dylib; path = "../../../../Users/carlos/Library/Developer/Xcode/DerivedData/all-dlckdugtwkhfjkdbgurajmehstei/Build/Products/Debug/libbase.dylib"; sourceTree = "<group>"; };
@@ -68,11 +126,52 @@
 		9A6B40E317BBE291008391AD /* draw2d_quartz2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = draw2d_quartz2d.h; sourceTree = "<group>"; };
 		9A8997BC177D0E7D00C7761E /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		9AA1B449176361950019E812 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9AA6A23919070F82000A1F4A /* libdraw2d_quartz2d_ios.dylib */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdraw2d_quartz2d_ios.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AA6A23B19070F82000A1F4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9AA6A23F19070F82000A1F4A /* draw2d_quartz2d_ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "draw2d_quartz2d_ios-Prefix.pch"; sourceTree = "<group>"; };
+		9AA6A24019070F82000A1F4A /* draw2d_quartz2d_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = draw2d_quartz2d_ios.h; sourceTree = "<group>"; };
+		9AA6A24219070F82000A1F4A /* draw2d_quartz2d_ios.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = draw2d_quartz2d_ios.m; sourceTree = "<group>"; };
+		9AA6A24819070F82000A1F4A /* draw2d_quartz2d_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = draw2d_quartz2d_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AA6A24919070F82000A1F4A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9AA6A24C19070F82000A1F4A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		9AA6A25319070F82000A1F4A /* draw2d_quartz2d_iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "draw2d_quartz2d_iosTests-Info.plist"; sourceTree = "<group>"; };
+		9AA6A25519070F82000A1F4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9AA6A25719070F82000A1F4A /* draw2d_quartz2d_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = draw2d_quartz2d_iosTests.m; sourceTree = "<group>"; };
+		9AA6A359190735C9000A1F4A /* libbase_ios.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbase_ios.dylib; path = "../../../app/appseed/base/build/Debug-iphoneos/libbase_ios.dylib"; sourceTree = "<group>"; };
+		9AA6A35A190735C9000A1F4A /* libbasefreeimage_ios.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbasefreeimage_ios.dylib; path = "../../../app/thirdparty/appseed/freeimage/build/Debug-iphoneos/libbasefreeimage_ios.dylib"; sourceTree = "<group>"; };
+		9AA6A35B190735C9000A1F4A /* libbasefreetype_ios.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbasefreetype_ios.dylib; path = "../../../app/thirdparty/appseed/freetype/build/Debug-iphoneos/libbasefreetype_ios.dylib"; sourceTree = "<group>"; };
+		9AA6A35C190735C9000A1F4A /* libbasemysql_ios.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbasemysql_ios.dylib; path = "../../../app/thirdparty/appseed/mysql/build/Debug-iphoneos/libbasemysql_ios.dylib"; sourceTree = "<group>"; };
+		9AA6A35D190735C9000A1F4A /* libcore_ios.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcore_ios.dylib; path = "../../../app/appseed/core/build/Debug-iphoneos/libcore_ios.dylib"; sourceTree = "<group>"; };
+		9AA6A36319073662000A1F4A /* core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = core.xcodeproj; path = /ios/nodeapp/seed/metaseed/../../../app/appseed/core/core.xcodeproj; sourceTree = "<absolute>"; };
 		9AAE861F17E98CC400F0512E /* libbase.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbase.dylib; path = "../../../../Users/camilo/Library/Developer/Xcode/DerivedData/all-dlckdugtwkhfjkdbgurajmehstei/Build/Products/Debug/libbase.dylib"; sourceTree = "<group>"; };
 		A1CFD778154F5EAA007447E2 /* libdraw2d_quartz2d.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libdraw2d_quartz2d.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9AA6A23619070F82000A1F4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA6A23C19070F82000A1F4A /* Foundation.framework in Frameworks */,
+				9AA6A362190735C9000A1F4A /* libcore_ios.dylib in Frameworks */,
+				9AA6A361190735C9000A1F4A /* libbasemysql_ios.dylib in Frameworks */,
+				9AA6A360190735C9000A1F4A /* libbasefreetype_ios.dylib in Frameworks */,
+				9AA6A35F190735C9000A1F4A /* libbasefreeimage_ios.dylib in Frameworks */,
+				9AA6A35E190735C9000A1F4A /* libbase_ios.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA6A24519070F82000A1F4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA6A24A19070F82000A1F4A /* XCTest.framework in Frameworks */,
+				9AA6A24D19070F82000A1F4A /* UIKit.framework in Frameworks */,
+				9AA6A24B19070F82000A1F4A /* Foundation.framework in Frameworks */,
+				9AA6A25019070F82000A1F4A /* libdraw2d_quartz2d_ios.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1CFD775154F5EAA007447E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,14 +185,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9AA6A23A19070F82000A1F4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AA6A359190735C9000A1F4A /* libbase_ios.dylib */,
+				9AA6A35A190735C9000A1F4A /* libbasefreeimage_ios.dylib */,
+				9AA6A35B190735C9000A1F4A /* libbasefreetype_ios.dylib */,
+				9AA6A35C190735C9000A1F4A /* libbasemysql_ios.dylib */,
+				9AA6A35D190735C9000A1F4A /* libcore_ios.dylib */,
+				9AA6A23B19070F82000A1F4A /* Foundation.framework */,
+				9AA6A24919070F82000A1F4A /* XCTest.framework */,
+				9AA6A24C19070F82000A1F4A /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AA6A23D19070F82000A1F4A /* draw2d_quartz2d_ios */ = {
+			isa = PBXGroup;
+			children = (
+				9AA6A24019070F82000A1F4A /* draw2d_quartz2d_ios.h */,
+				9AA6A24219070F82000A1F4A /* draw2d_quartz2d_ios.m */,
+				9AA6A23E19070F82000A1F4A /* Supporting Files */,
+			);
+			path = draw2d_quartz2d_ios;
+			sourceTree = "<group>";
+		};
+		9AA6A23E19070F82000A1F4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AA6A23F19070F82000A1F4A /* draw2d_quartz2d_ios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AA6A25119070F82000A1F4A /* draw2d_quartz2d_iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AA6A25719070F82000A1F4A /* draw2d_quartz2d_iosTests.m */,
+				9AA6A25219070F82000A1F4A /* Supporting Files */,
+			);
+			path = draw2d_quartz2d_iosTests;
+			sourceTree = "<group>";
+		};
+		9AA6A25219070F82000A1F4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AA6A25319070F82000A1F4A /* draw2d_quartz2d_iosTests-Info.plist */,
+				9AA6A25419070F82000A1F4A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AA6A36419073662000A1F4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AA6A36A19073663000A1F4A /* libcore.dylib */,
+				9AA6A36C19073663000A1F4A /* libcore_ios.dylib */,
+				9AA6A36E19073663000A1F4A /* core_iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		A1CFD76D154F5EA7007447E2 = {
 			isa = PBXGroup;
 			children = (
+				9AA6A36319073662000A1F4A /* core.xcodeproj */,
 				07884E811898203C00DC6CEB /* libbase.dylib */,
 				9A8997BC177D0E7D00C7761E /* Carbon.framework */,
 				9AA1B449176361950019E812 /* Cocoa.framework */,
 				9AAE861F17E98CC400F0512E /* libbase.dylib */,
 				A1CFD896154FB715007447E2 /* draw2d_quartz2d */,
+				9AA6A23D19070F82000A1F4A /* draw2d_quartz2d_ios */,
+				9AA6A25119070F82000A1F4A /* draw2d_quartz2d_iosTests */,
+				9AA6A23A19070F82000A1F4A /* Frameworks */,
 				A1CFD779154F5EAA007447E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +266,8 @@
 			isa = PBXGroup;
 			children = (
 				A1CFD778154F5EAA007447E2 /* libdraw2d_quartz2d.dylib */,
+				9AA6A23919070F82000A1F4A /* libdraw2d_quartz2d_ios.dylib */,
+				9AA6A24819070F82000A1F4A /* draw2d_quartz2d_iosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,6 +331,41 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		9AA6A23819070F82000A1F4A /* draw2d_quartz2d_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AA6A25D19070F82000A1F4A /* Build configuration list for PBXNativeTarget "draw2d_quartz2d_ios" */;
+			buildPhases = (
+				9AA6A23519070F82000A1F4A /* Sources */,
+				9AA6A23619070F82000A1F4A /* Frameworks */,
+				9AA6A23719070F82000A1F4A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = draw2d_quartz2d_ios;
+			productName = draw2d_quartz2d_ios;
+			productReference = 9AA6A23919070F82000A1F4A /* libdraw2d_quartz2d_ios.dylib */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9AA6A24719070F82000A1F4A /* draw2d_quartz2d_iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AA6A25E19070F82000A1F4A /* Build configuration list for PBXNativeTarget "draw2d_quartz2d_iosTests" */;
+			buildPhases = (
+				9AA6A24419070F82000A1F4A /* Sources */,
+				9AA6A24519070F82000A1F4A /* Frameworks */,
+				9AA6A24619070F82000A1F4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AA6A24F19070F82000A1F4A /* PBXTargetDependency */,
+			);
+			name = draw2d_quartz2d_iosTests;
+			productName = draw2d_quartz2d_iosTests;
+			productReference = 9AA6A24819070F82000A1F4A /* draw2d_quartz2d_iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A1CFD777154F5EAA007447E2 /* draw2d_quartz2d */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1CFD77C154F5EAA007447E2 /* Build configuration list for PBXNativeTarget "draw2d_quartz2d" */;
@@ -190,6 +391,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "ca2 Desenvolvimento de Sofware Ltda.";
+				TargetAttributes = {
+					9AA6A24719070F82000A1F4A = {
+						TestTargetID = A1CFD777154F5EAA007447E2;
+					};
+				};
 			};
 			buildConfigurationList = A1CFD772154F5EA7007447E2 /* Build configuration list for PBXProject "draw2d_quartz2d" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -201,14 +407,73 @@
 			mainGroup = A1CFD76D154F5EA7007447E2;
 			productRefGroup = A1CFD779154F5EAA007447E2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9AA6A36419073662000A1F4A /* Products */;
+					ProjectRef = 9AA6A36319073662000A1F4A /* core.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A1CFD777154F5EAA007447E2 /* draw2d_quartz2d */,
+				9AA6A23819070F82000A1F4A /* draw2d_quartz2d_ios */,
+				9AA6A24719070F82000A1F4A /* draw2d_quartz2d_iosTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		9AA6A36A19073663000A1F4A /* libcore.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libcore.dylib;
+			remoteRef = 9AA6A36919073663000A1F4A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9AA6A36C19073663000A1F4A /* libcore_ios.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcore_ios.dylib;
+			remoteRef = 9AA6A36B19073663000A1F4A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9AA6A36E19073663000A1F4A /* core_iosTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = core_iosTests.xctest;
+			remoteRef = 9AA6A36D19073663000A1F4A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AA6A24619070F82000A1F4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA6A25619070F82000A1F4A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		9AA6A23519070F82000A1F4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA6A24319070F82000A1F4A /* draw2d_quartz2d_ios.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA6A24419070F82000A1F4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA6A25819070F82000A1F4A /* draw2d_quartz2d_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1CFD774154F5EAA007447E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -231,7 +496,150 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9AA6A24F19070F82000A1F4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AA6A23819070F82000A1F4A /* draw2d_quartz2d_ios */;
+			targetProxy = 9AA6A24E19070F82000A1F4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9AA6A25419070F82000A1F4A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AA6A25519070F82000A1F4A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		9AA6A25919070F82000A1F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DSTROOT = /tmp/draw2d_quartz2d_ios.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "draw2d_quartz2d_ios/draw2d_quartz2d_ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/ios/app/appseed/base/build/Debug-iphoneos",
+					"/ios/app/thirdparty/appseed/freeimage/build/Debug-iphoneos",
+					"/ios/app/thirdparty/appseed/freetype/build/Debug-iphoneos",
+					"/ios/app/thirdparty/appseed/mysql/build/Debug-iphoneos",
+					"/ios/app/appseed/core/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9AA6A25A19070F82000A1F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DSTROOT = /tmp/draw2d_quartz2d_ios.dst;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "draw2d_quartz2d_ios/draw2d_quartz2d_ios-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/ios/app/appseed/base/build/Debug-iphoneos",
+					"/ios/app/thirdparty/appseed/freeimage/build/Debug-iphoneos",
+					"/ios/app/thirdparty/appseed/freetype/build/Debug-iphoneos",
+					"/ios/app/thirdparty/appseed/mysql/build/Debug-iphoneos",
+					"/ios/app/appseed/core/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AA6A25B19070F82000A1F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/libdraw2d_quartz2d.dylib";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "draw2d_quartz2d_ios/draw2d_quartz2d_ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "draw2d_quartz2d_iosTests/draw2d_quartz2d_iosTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9AA6A25C19070F82000A1F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/libdraw2d_quartz2d.dylib";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "draw2d_quartz2d_ios/draw2d_quartz2d_ios-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "draw2d_quartz2d_iosTests/draw2d_quartz2d_iosTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		A1CFD77A154F5EAA007447E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -276,6 +684,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/../../../include $(WorkspaceDir)/../../../app/include . .. $(WorkspaceDir)/../../../include $(WorkspaceDir)/../../../app/include $(WorkspaceDir)/../../.. $(WorkspaceDir)/../../../app $(WorkspaceDir)/../../../app/appseed $(WorkspaceDir)/../../../app/appseed/base $(WorkspaceDir)/../.. $(WorkspaceDir)/../../thirdparty/include $(WorkspaceDir)/../../../app/thirdparty/include $(WorkspaceDir)/../../appseed $(WorkspaceDir)/../../../app/thirdparty/appseed";
 				WorkspaceDir = "$(SRCROOT)/../../seed/metaseed";
@@ -319,6 +728,7 @@
 					"\"$(TARGET_BUILD_DIR)\"",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/../../../include $(WorkspaceDir)/../../../app/include . .. $(WorkspaceDir)/../../../include $(WorkspaceDir)/../../../app/include $(WorkspaceDir)/../../.. $(WorkspaceDir)/../../../app $(WorkspaceDir)/../../../app/appseed $(WorkspaceDir)/../../../app/appseed/base $(WorkspaceDir)/../.. $(WorkspaceDir)/../../thirdparty/include $(WorkspaceDir)/../../../app/thirdparty/include $(WorkspaceDir)/../../appseed $(WorkspaceDir)/../../../app/thirdparty/appseed";
 				WorkspaceDir = "$(SRCROOT)/../../seed/metaseed";
@@ -356,6 +766,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9AA6A25D19070F82000A1F4A /* Build configuration list for PBXNativeTarget "draw2d_quartz2d_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AA6A25919070F82000A1F4A /* Debug */,
+				9AA6A25A19070F82000A1F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9AA6A25E19070F82000A1F4A /* Build configuration list for PBXNativeTarget "draw2d_quartz2d_iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AA6A25B19070F82000A1F4A /* Debug */,
+				9AA6A25C19070F82000A1F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A1CFD772154F5EA7007447E2 /* Build configuration list for PBXProject "draw2d_quartz2d" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

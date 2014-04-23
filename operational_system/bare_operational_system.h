@@ -368,3 +368,11 @@ typedef LPWINDOW oswindow;
 */
 
 #include "cross/win/win.h"
+
+
+
+#ifndef _POSIX_C_SOURCE
+xxx5
+#elif _POSIX_C_SOURCE < 200809L
+zzz5
+#endif
