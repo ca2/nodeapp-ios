@@ -130,7 +130,7 @@ namespace draw2d_quartz2d
       
       size                 = (scan * cy);
       
-      colorSpace           = CGColorSpaceCreateWithName(kCGColorSpaceGenericRGB);
+      colorSpace           = CGColorSpaceCreateDeviceRGB();
       
       data                 = malloc(size);
       

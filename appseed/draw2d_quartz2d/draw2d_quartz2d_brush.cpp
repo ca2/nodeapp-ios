@@ -86,7 +86,7 @@ namespace draw2d_quartz2d
          CGFloat locations[2];
          CGFloat components[8];
          
-         m_colorspace= CGColorSpaceCreateWithName(kCGColorSpaceGenericRGB);
+         m_colorspace= CGColorSpaceCreateDeviceRGB();
          
          components[0] = argb_get_r_value(m_cr1) / 255.f;
          components[1] = argb_get_g_value(m_cr1) / 255.f;
@@ -108,7 +108,7 @@ namespace draw2d_quartz2d
 
          CGFloat components[4];
          
-         m_colorspace= CGColorSpaceCreateWithName(kCGColorSpaceGenericRGB);
+         m_colorspace = CGColorSpaceCreateDeviceRGB();
          
          components[0] = argb_get_r_value(m_cr) / 255.f;
          components[1] = argb_get_g_value(m_cr) / 255.f;
