@@ -23,8 +23,12 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <QuartzCore/QuartzCore.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import <CoreText/CoreText.h>
 #else
 #include <QuartzCore/QuartzCore.h>
+#include <CoreGraphics/CoreGraphics.h>
+#include <CoreText/CoreText.h>
 #endif
 
 

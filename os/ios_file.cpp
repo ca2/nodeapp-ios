@@ -7,7 +7,7 @@
 #include <dlfcn.h>
 #include <link.h>
 #include <ctype.h>
-#elif defined(MACOS)
+#elif defined(APPLEOS)
 #include <dlfcn.h>
 #include <sys/stat.h>
 #endif
