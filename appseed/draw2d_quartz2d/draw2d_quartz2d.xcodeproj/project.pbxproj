@@ -60,27 +60,6 @@
 			remoteGlobalIDString = 9AA6A23819070F82000A1F4A;
 			remoteInfo = draw2d_quartz2d_ios;
 		};
-		9AA6A36919073663000A1F4A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AA6A36319073662000A1F4A /* core.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9A8916841751D72100E531ED;
-			remoteInfo = core;
-		};
-		9AA6A36B19073663000A1F4A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AA6A36319073662000A1F4A /* core.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9AE24DDC1904CF6E001AEFFB;
-			remoteInfo = core_ios;
-		};
-		9AA6A36D19073663000A1F4A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AA6A36319073662000A1F4A /* core.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9AE24DEB1904CF6E001AEFFB;
-			remoteInfo = core_iosTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -142,7 +121,7 @@
 		9AA6A35B190735C9000A1F4A /* libbasefreetype_ios.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbasefreetype_ios.dylib; path = "../../../app/thirdparty/appseed/freetype/build/Debug-iphoneos/libbasefreetype_ios.dylib"; sourceTree = "<group>"; };
 		9AA6A35C190735C9000A1F4A /* libbasemysql_ios.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbasemysql_ios.dylib; path = "../../../app/thirdparty/appseed/mysql/build/Debug-iphoneos/libbasemysql_ios.dylib"; sourceTree = "<group>"; };
 		9AA6A35D190735C9000A1F4A /* libcore_ios.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcore_ios.dylib; path = "../../../app/appseed/core/build/Debug-iphoneos/libcore_ios.dylib"; sourceTree = "<group>"; };
-		9AA6A36319073662000A1F4A /* core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = core.xcodeproj; path = /ios/nodeapp/seed/metaseed/../../../app/appseed/core/core.xcodeproj; sourceTree = "<absolute>"; };
+		9AA6A36319073662000A1F4A /* core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = core.xcodeproj; path = ../../../app/appseed/core/core.xcodeproj; sourceTree = SOURCE_ROOT; };
 		9AAE861F17E98CC400F0512E /* libbase.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbase.dylib; path = "../../../../Users/camilo/Library/Developer/Xcode/DerivedData/all-dlckdugtwkhfjkdbgurajmehstei/Build/Products/Debug/libbase.dylib"; sourceTree = "<group>"; };
 		A1CFD778154F5EAA007447E2 /* libdraw2d_quartz2d.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libdraw2d_quartz2d.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -234,16 +213,6 @@
 				9AA6A25419070F82000A1F4A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9AA6A36419073662000A1F4A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9AA6A36A19073663000A1F4A /* libcore.dylib */,
-				9AA6A36C19073663000A1F4A /* libcore_ios.dylib */,
-				9AA6A36E19073663000A1F4A /* core_iosTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		A1CFD76D154F5EA7007447E2 = {
@@ -407,12 +376,6 @@
 			mainGroup = A1CFD76D154F5EA7007447E2;
 			productRefGroup = A1CFD779154F5EAA007447E2 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 9AA6A36419073662000A1F4A /* Products */;
-					ProjectRef = 9AA6A36319073662000A1F4A /* core.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				A1CFD777154F5EAA007447E2 /* draw2d_quartz2d */,
@@ -421,30 +384,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		9AA6A36A19073663000A1F4A /* libcore.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libcore.dylib;
-			remoteRef = 9AA6A36919073663000A1F4A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9AA6A36C19073663000A1F4A /* libcore_ios.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libcore_ios.dylib;
-			remoteRef = 9AA6A36B19073663000A1F4A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9AA6A36E19073663000A1F4A /* core_iosTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = core_iosTests.xctest;
-			remoteRef = 9AA6A36D19073663000A1F4A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9AA6A24619070F82000A1F4A /* Resources */ = {
@@ -773,6 +712,7 @@
 				9AA6A25A19070F82000A1F4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AA6A25E19070F82000A1F4A /* Build configuration list for PBXNativeTarget "draw2d_quartz2d_iosTests" */ = {
 			isa = XCConfigurationList;
@@ -781,6 +721,7 @@
 				9AA6A25C19070F82000A1F4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1CFD772154F5EA7007447E2 /* Build configuration list for PBXProject "draw2d_quartz2d" */ = {
 			isa = XCConfigurationList;
