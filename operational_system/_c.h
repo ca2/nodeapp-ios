@@ -91,3 +91,28 @@ xxx3
 #elif _POSIX_C_SOURCE < 200809L
 zzz3
 #endif
+
+
+
+
+
+
+
+
+
+#define MIN(x, y) min(x, y)
+#define MAX(x, y) max(x, y)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
