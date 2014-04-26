@@ -114,6 +114,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		07A6C98C190C5F4300859288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A4A90F190C4431005B6DE5 /* basefreeimage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AA5E6D616F7C61B005C45CE;
+			remoteInfo = basefreeimage;
+		};
 		9AE24FA719059AA5001AEFFB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A1CFD76F154F5EA7007447E2 /* Project object */;
@@ -301,6 +308,14 @@
 			children = (
 			);
 			path = "Untitled Folder";
+			sourceTree = "<group>";
+		};
+		07A6C985190C5F4300859288 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07A6C98D190C5F4300859288 /* libbasefreeimage.dylib */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		07BB57851809BBEE00124367 /* thirdparty */ = {
@@ -651,6 +666,12 @@
 			mainGroup = A1CFD76D154F5EA7007447E2;
 			productRefGroup = A1CFD779154F5EAA007447E2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 07A6C985190C5F4300859288 /* Products */;
+					ProjectRef = 07A4A90F190C4431005B6DE5 /* basefreeimage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A1CFD777154F5EAA007447E2 /* ca2os */,
@@ -659,6 +680,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		07A6C98D190C5F4300859288 /* libbasefreeimage.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libbasefreeimage.dylib;
+			remoteRef = 07A6C98C190C5F4300859288 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9AE24F9F19059AA4001AEFFB /* Resources */ = {

@@ -26,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		07A6C98F190C5F4300859288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA6A46F1907B615000A1F4A /* basefreeimage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AA5E6D616F7C61B005C45CE;
+			remoteInfo = basefreeimage;
+		};
 		9AE24EDE1904E95F001AEFFB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9A5752A916AAE1D2000CC4EF /* Project object */;
@@ -102,6 +109,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07A6C987190C5F4300859288 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07A6C990190C5F4300859288 /* libbasefreeimage.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9A5752A716AAE1D2000CC4EF = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +269,12 @@
 			mainGroup = 9A5752A716AAE1D2000CC4EF;
 			productRefGroup = 9A5752B316AAE1D2000CC4EF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 07A6C987190C5F4300859288 /* Products */;
+					ProjectRef = 9AA6A46F1907B615000A1F4A /* basefreeimage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9AE24EBF1904E95E001AEFFB /* app_ios */,
@@ -261,6 +282,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		07A6C990190C5F4300859288 /* libbasefreeimage.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libbasefreeimage.dylib;
+			remoteRef = 07A6C98F190C5F4300859288 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9AE24EBE1904E95E001AEFFB /* Resources */ = {
