@@ -1,25 +1,25 @@
 #pragma once
 
 
-namespace mac
+namespace ios
 {
    
    
    class thread;
    
-   class MAC
+   class IOS
    {
       int32_t function();
    };
    
    
    
-} // namespace mac
+} // namespace ios
 
 
 
 // Placed on frame for EXCEPTION linkage, or ::exception::base cleanup
-struct CLASS_DECL_mac __exception_link
+struct CLASS_DECL_ios __exception_link
 {
    __exception_link* m_pLinkPrev;    // previous top, next in handler chain
    ::exception::base * m_pException;   // current exception (NULL in try block)
@@ -32,7 +32,7 @@ struct CLASS_DECL_mac __exception_link
 };
 
 // Exception global state - never access directly
-struct CLASS_DECL_mac __EXCEPTION_CONTEXT
+struct CLASS_DECL_ios __EXCEPTION_CONTEXT
 {
    __exception_link* m_pLinkTop;
    
@@ -44,23 +44,23 @@ typedef int32_t (__cdecl * _PNH)( size_t );
 #define _PNH_DEFINED
 #endif
 
-_PNH CLASS_DECL_mac __get_new_handler();
-_PNH CLASS_DECL_mac __set_new_handler(_PNH pfnNewHandler);
-CLASS_DECL_mac int32_t c_cdecl __new_handler(size_t nSize);
+_PNH CLASS_DECL_ios __get_new_handler();
+_PNH CLASS_DECL_ios __set_new_handler(_PNH pfnNewHandler);
+CLASS_DECL_ios int32_t c_cdecl __new_handler(size_t nSize);
 
-void CLASS_DECL_mac __abort();
+void CLASS_DECL_ios __abort();
 
 //typedef void * HICON;
 
 
 // helpers for registering your own WNDCLASSes
-CLASS_DECL_mac const char * __register_window_class(UINT nClassStyle, HCURSOR hCursor = 0, HBRUSH hbrBackground = 0, HICON hIcon = 0);
+CLASS_DECL_ios const char * __register_window_class(UINT nClassStyle, HCURSOR hCursor = 0, HBRUSH hbrBackground = 0, HICON hIcon = 0);
 
-// xxx CLASS_DECL_mac bool __register_class(WNDCLASS* lpWndClass);
+// xxx CLASS_DECL_ios bool __register_class(WNDCLASS* lpWndClass);
 
 
-CLASS_DECL_mac LRESULT CALLBACK __window_procedure(oswindow hWnd, UINT nMsg, WPARAM wParam, LPARAM lParam);
-// xxx CLASS_DECL_mac WNDPROC __get_window_procedure();
+CLASS_DECL_ios LRESULT CALLBACK __window_procedure(oswindow hWnd, UINT nMsg, WPARAM wParam, LPARAM lParam);
+// xxx CLASS_DECL_ios WNDPROC __get_window_procedure();
 // xxx #define __window_procedure (*__get_window_procedure())
 
 typedef void (__MSG_CALL ::window::*__PMSGW)();
@@ -72,23 +72,23 @@ typedef void (__MSG_CALL ::thread::*__PMSGT)();
 
 
 
-// xxx CLASS_DECL_mac LONG delete_registry_tree_helper(HKEY hParentKey, const string & strKeyName);
+// xxx CLASS_DECL_ios LONG delete_registry_tree_helper(HKEY hParentKey, const string & strKeyName);
 
 
 // Advanced initialization: for overriding default diagnostics
-//CLASS_DECL_mac bool __diagnostic_init();
+//CLASS_DECL_ios bool __diagnostic_init();
 
-namespace mac
+namespace ios
 {
-   CLASS_DECL_mac ::thread * __get_thread();
-   CLASS_DECL_mac void __set_thread(::thread * pthread);
+   CLASS_DECL_ios ::thread * __get_thread();
+   CLASS_DECL_ios void __set_thread(::thread * pthread);
 }
-CLASS_DECL_mac MESSAGE * __get_current_message();
+CLASS_DECL_ios MESSAGE * __get_current_message();
 
-CLASS_DECL_mac void __end_thread(base_application * papp, UINT nExitCode, bool bDelete = TRUE);
+CLASS_DECL_ios void __end_thread(base_application * papp, UINT nExitCode, bool bDelete = TRUE);
 
-CLASS_DECL_mac void __init_thread();
-CLASS_DECL_mac void __term_thread(base_application * papp, HINSTANCE hInstTerm = NULL);
+CLASS_DECL_ios void __init_thread();
+CLASS_DECL_ios void __term_thread(base_application * papp, HINSTANCE hInstTerm = NULL);
 
 /////////////////////////////////////////////////////////////////////////////
 // Global functions for access to the one and only application
@@ -103,20 +103,20 @@ CLASS_DECL_mac void __term_thread(base_application * papp, HINSTANCE hInstTerm =
 
 
 // Advanced initialization: for overriding default WinMain
-//CLASS_DECL_mac bool ::ca2::WinInit(__in HINSTANCE hInstance, __in HINSTANCE hPrevInstance,
+//CLASS_DECL_ios bool ::ca2::WinInit(__in HINSTANCE hInstance, __in HINSTANCE hPrevInstance,
 // __in_z LPTSTR lpCmdLine, __in int32_t nCmdShow);
-CLASS_DECL_mac void __mac_term();
+CLASS_DECL_ios void __ios_term();
 
-CLASS_DECL_mac base_application * __get_app();
-CLASS_DECL_mac sp(::user::interaction) __get_main_window();
-//CLASS_DECL_mac HINSTANCE CLASS_DECL_mac System.m_hInstance;
-CLASS_DECL_mac HINSTANCE __get_resource_handle();
-CLASS_DECL_mac void __set_resource_handle(HINSTANCE hInstResource);
-CLASS_DECL_mac const char * __get_app_name();
+CLASS_DECL_ios base_application * __get_app();
+CLASS_DECL_ios sp(::user::interaction) __get_main_window();
+//CLASS_DECL_ios HINSTANCE CLASS_DECL_ios System.m_hInstance;
+CLASS_DECL_ios HINSTANCE __get_resource_handle();
+CLASS_DECL_ios void __set_resource_handle(HINSTANCE hInstResource);
+CLASS_DECL_ios const char * __get_app_name();
 
-CLASS_DECL_mac HINSTANCE __get_resource_handle();
-CLASS_DECL_mac HINSTANCE __find_string_resource_handle(UINT nID);
+CLASS_DECL_ios HINSTANCE __get_resource_handle();
+CLASS_DECL_ios HINSTANCE __find_string_resource_handle(UINT nID);
 
-CLASS_DECL_mac void __delete_object(HGDIOBJ* pObject);
+CLASS_DECL_ios void __delete_object(HGDIOBJ* pObject);
 
-void CLASS_DECL_mac __global_free(HGLOBAL hGlobal);
+void CLASS_DECL_ios __global_free(HGLOBAL hGlobal);

@@ -2,14 +2,14 @@
 
 #include <fcntl.h>
 
-namespace mac
+namespace ios
 {
    
    
    
    stdio_file::stdio_file(base_application * papp) :
    element(papp),
-   ::mac::file(papp)
+   ::ios::file(papp)
    {
       m_pStream = NULL;
    }
@@ -94,7 +94,7 @@ namespace mac
             //         pException->m_cause = ::file::exception::OsErrorToException(errno);
          }
          
-         ::mac::file::Abort(); // close m_hFile
+         ::ios::file::Abort(); // close m_hFile
          return FALSE;
       }
       
@@ -337,7 +337,7 @@ namespace mac
 #ifdef _DEBUG
    void stdio_file::dump(dump_context & dumpcontext) const
    {
-      ::mac::file::dump(dumpcontext);
+      ::ios::file::dump(dumpcontext);
       
       dumpcontext << "m_pStream = " << (void *)m_pStream;
       dumpcontext << "\n";
@@ -377,4 +377,4 @@ namespace mac
    }
    
    
-} // namespace mac
+} // namespace ios

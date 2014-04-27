@@ -3,16 +3,16 @@
 #define slot___MODULE_THREAD_STATE 1
 #define slot___THREAD_STATE 2
 
-namespace mac
+namespace ios
 {
    class thread;
-} // namespace mac
+} // namespace ios
 
 //#include "types.h"
 //#include "template.h"
 
 #ifndef __AFXTLS_H__
-#include "mac_thread_slots.h"
+#include "ios_thread_slots.h"
 #endif
 
 /////////////////////////////////////////////////////////////////////////////
@@ -32,17 +32,17 @@ EXTERN_PROCESS_LOCAL(___DEBUG_STATE, afxDebugState)
 #endif //DEBUG
 
 /////////////////////////////////////////////////////////////////////////////
-// ___MAC_STATE
+// ___IOS_STATE
 
 
-class ___MAC_STATE : public no_track_object
+class ___IOS_STATE : public no_track_object
 {
 public:
    // printing abort
    bool m_bUserAbort;
 };
 
-EXTERN_PROCESS_LOCAL(___MAC_STATE, gen_WinState)
+EXTERN_PROCESS_LOCAL(___IOS_STATE, gen_WinState)
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -80,7 +80,7 @@ public:
 };
 
 // __MODULE_THREAD_STATE (local to thread *and* module)
-class CLASS_DECL_mac __MODULE_THREAD_STATE :
+class CLASS_DECL_ios __MODULE_THREAD_STATE :
 public no_track_object
 {
 public:
@@ -88,7 +88,7 @@ public:
    virtual ~__MODULE_THREAD_STATE();
    
    // current thread pointer
-   class ::mac::thread* m_pCurrentWinThread;
+   class ::ios::thread* m_pCurrentWinThread;
    
    
    
@@ -120,7 +120,7 @@ class CComCtlWrapper;
 class CCommDlgWrapper;
 
 // __MODULE_STATE (global data for a module)
-class CLASS_DECL_mac __MODULE_STATE : public no_track_object
+class CLASS_DECL_ios __MODULE_STATE : public no_track_object
 {
 public:
    // xxx  __MODULE_STATE(bool bDLL, WNDPROC pfn_window_procedure, DWORD dwVersion,
@@ -177,21 +177,21 @@ public:
    void CreateActivationContext();
 };
 
-CLASS_DECL_mac __MODULE_STATE* __set_module_state(__MODULE_STATE* pNewState);
-CLASS_DECL_mac __MODULE_STATE* __get_module_state();
-CLASS_DECL_mac bool __is_module_dll();
-CLASS_DECL_mac bool __init_current_state_app();
-CLASS_DECL_mac __MODULE_STATE* __get_static_module_state();
-CLASS_DECL_mac HINSTANCE __get_instance_handle_helper();
+CLASS_DECL_ios __MODULE_STATE* __set_module_state(__MODULE_STATE* pNewState);
+CLASS_DECL_ios __MODULE_STATE* __get_module_state();
+CLASS_DECL_ios bool __is_module_dll();
+CLASS_DECL_ios bool __init_current_state_app();
+CLASS_DECL_ios __MODULE_STATE* __get_static_module_state();
+CLASS_DECL_ios HINSTANCE __get_instance_handle_helper();
 
-CLASS_DECL_mac __MODULE_THREAD_STATE* __get_module_thread_state();
+CLASS_DECL_ios __MODULE_THREAD_STATE* __get_module_thread_state();
 
 #define ___CMDTARGET_GETSTATE() (m_pModuleState)
 
 /////////////////////////////////////////////////////////////////////////////
-// macros & classes to manage pushing/popping the module state
+// iosros & classes to manage pushing/popping the module state
 
-struct CLASS_DECL_mac __MAINTAIN_STATE
+struct CLASS_DECL_ios __MAINTAIN_STATE
 {
    explicit __MAINTAIN_STATE(__MODULE_STATE* pModuleState) throw();
    ~__MAINTAIN_STATE();
@@ -201,7 +201,7 @@ protected:
 };
 
 class ___THREAD_STATE;
-struct CLASS_DECL_mac __MAINTAIN_STATE2
+struct CLASS_DECL_ios __MAINTAIN_STATE2
 {
    explicit __MAINTAIN_STATE2(__MODULE_STATE* pModuleState);
    ~__MAINTAIN_STATE2();
@@ -226,7 +226,7 @@ class push_routing_frame;
 class CPushRoutingView;
 
 #define ___TEMP_CLASS_NAME_SIZE 96
-class CLASS_DECL_mac ___THREAD_STATE :
+class CLASS_DECL_ios ___THREAD_STATE :
 public no_track_object,
 public ::thread_state
 {
@@ -239,7 +239,7 @@ public:
    __MODULE_STATE* m_pPrevModuleState;
    
    
-   ::mac::thread * m_pCurrentWinThread;
+   ::ios::thread * m_pCurrentWinThread;
    
    
    // primitive::memory safety pool for temp maps
@@ -288,12 +288,12 @@ public:
 
 EXTERN_THREAD_LOCAL(___THREAD_STATE, gen_ThreadState, slot___THREAD_STATE)
 
-CLASS_DECL_mac ___THREAD_STATE * __get_thread_state();
+CLASS_DECL_ios ___THREAD_STATE * __get_thread_state();
 
 
-namespace mac
+namespace ios
 {
    
-   CLASS_DECL_mac ::thread_state * __get_thread_state();
+   CLASS_DECL_ios ::thread_state * __get_thread_state();
    
-} // namespace mac
+} // namespace ios

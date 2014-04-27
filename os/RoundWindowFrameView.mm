@@ -11,7 +11,7 @@
 //  this copyright and permission notice. Attribution in compiled projects is
 //  appreciated but not required.
 //
-#import "mac_mm.h"
+#import "ios_mm.h"
 
 
 @implementation RoundWindowFrameView

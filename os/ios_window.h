@@ -4,17 +4,17 @@
 #include "round_window.h"
 
 
-namespace mac
+namespace ios
 {
    
    
-   CLASS_DECL_mac LRESULT CALLBACK __send_message_hook(int32_t, WPARAM, LPARAM);
+   CLASS_DECL_ios LRESULT CALLBACK __send_message_hook(int32_t, WPARAM, LPARAM);
    //CLASS_DECL_lnx void _gen::StandardSubclass(oswindow);
-   CLASS_DECL_mac LRESULT CALLBACK __cbt_filter_hook(int32_t, WPARAM, LPARAM);
-   CLASS_DECL_mac LRESULT __call_window_procedure(sp(::user::interaction)  pWnd, oswindow hWnd, UINT nMsg, WPARAM wParam, LPARAM lParam);
+   CLASS_DECL_ios LRESULT CALLBACK __cbt_filter_hook(int32_t, WPARAM, LPARAM);
+   CLASS_DECL_ios LRESULT __call_window_procedure(sp(::user::interaction)  pWnd, oswindow hWnd, UINT nMsg, WPARAM wParam, LPARAM lParam);
    
    
-   class CLASS_DECL_mac window :
+   class CLASS_DECL_ios window :
       virtual public ::window,
       virtual public ::round_window
    {
@@ -687,10 +687,10 @@ namespace mac
       
       
       // implementation of message dispatch/hooking
-      CLASS_DECL_mac friend LRESULT CALLBACK __send_message_hook(int32_t, WPARAM, LPARAM);
-      //CLASS_DECL_mac friend void _gen::StandardSubclass(oswindow);
-      CLASS_DECL_mac friend LRESULT CALLBACK __cbt_filter_hook(int32_t, WPARAM, LPARAM);
-      CLASS_DECL_mac friend LRESULT __call_window_procedure(sp(::user::interaction)  pWnd, oswindow hWnd, UINT nMsg, WPARAM wParam, LPARAM lParam);
+      CLASS_DECL_ios friend LRESULT CALLBACK __send_message_hook(int32_t, WPARAM, LPARAM);
+      //CLASS_DECL_ios friend void _gen::StandardSubclass(oswindow);
+      CLASS_DECL_ios friend LRESULT CALLBACK __cbt_filter_hook(int32_t, WPARAM, LPARAM);
+      CLASS_DECL_ios friend LRESULT __call_window_procedure(sp(::user::interaction)  pWnd, oswindow hWnd, UINT nMsg, WPARAM wParam, LPARAM lParam);
       
       // standard message implementation
       LRESULT OnNTCtlColor(WPARAM wParam, LPARAM lParam);
@@ -724,7 +724,7 @@ namespace mac
    };
    
    
-} // namespace mac
+} // namespace ios
 
 
 

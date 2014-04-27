@@ -234,7 +234,7 @@
  return 1;
  }*/
 
-namespace mac{
+namespace ios{
    
    
    shell shell::theLinuxShell;
@@ -748,4 +748,4 @@ namespace mac{
     }
     */
    
-} // namespace mac
+} // namespace ios

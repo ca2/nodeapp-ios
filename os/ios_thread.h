@@ -4,7 +4,7 @@
 WINBOOL AfxInternalPreTranslateMessage(MESSAGE* pMsg);
 
 
-namespace mac
+namespace ios
 {
 
    
@@ -24,7 +24,7 @@ namespace mac
    };
    
    
-   class CLASS_DECL_mac thread :
+   class CLASS_DECL_ios thread :
       virtual public ::thread,
       virtual public ::message_queue
    {
@@ -113,7 +113,7 @@ namespace mac
       
       virtual sp(::user::interaction)  SetMainWnd(sp(::user::interaction)  pui);
       
-      virtual int32_t thread_entry(::mac::thread_startup * pstartup);
+      virtual int32_t thread_entry(::ios::thread_startup * pstartup);
       virtual int32_t main();
       virtual int32_t thread_term(int32_t nResult);
       
@@ -198,10 +198,10 @@ namespace mac
    };
    
    
-   CLASS_DECL_mac ::thread * get_thread();
+   CLASS_DECL_ios ::thread * get_thread();
    
    
-} // namespace mac
+} // namespace ios
 
 
 

@@ -1,7 +1,7 @@
 #include "framework.h"
 
 
-namespace mac
+namespace ios
 {
 
    
@@ -25,7 +25,7 @@ namespace mac
       System.factory().creatable < port_forward               >   (System.type_info < ::net::port_forward     > (), 1);
       System.factory().creatable < crypto                      >   (System.type_info < ::crypto::crypto           > (), 1);
       System.factory().creatable < copydesk                   >   (System.type_info < ::core::copydesk        > (), 1);
-      System.factory().creatable < ::mac2::printer                   >   (System.type_info < ::user::printer        > (), 1);
+      System.factory().creatable < ::ios2::printer                   >   (System.type_info < ::user::printer        > (), 1);
       
    }
 
@@ -36,10 +36,10 @@ namespace mac
    }
 
     
-} // namespace mac
+} // namespace ios
 
 
 extern "C" void ca2_factory_exchange(sp(base_application) papp)
 {
-   mac::factory_exchange factoryexchange(papp);
+   ios::factory_exchange factoryexchange(papp);
 }

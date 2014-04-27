@@ -1,7 +1,7 @@
 #include "framework.h"
 
 
-namespace mac2
+namespace ios2
 {
 
 
@@ -64,7 +64,7 @@ namespace mac2
 
 
    //bool printer::document_properties::initialize(::win2::printer * pprinter, DEVMODE * pdevmode)
-   bool printer::document_properties::initialize(::mac2::printer * pprinter)
+   bool printer::document_properties::initialize(::ios2::printer * pprinter)
    {
 //      UNREFERENCED_PARAMETER(pdevmode);
   //    if(m_pdevmode != NULL)

@@ -1,11 +1,11 @@
 #pragma once
 
 
-namespace mac
+namespace ios
 {
 
 
-   class CLASS_DECL_mac crypto :
+   class CLASS_DECL_ios crypto :
       virtual public ::crypto::crypto
    {
    public:
@@ -26,7 +26,7 @@ namespace mac
    };
 
    
-} // namespace mac
+} // namespace ios
 
 
 

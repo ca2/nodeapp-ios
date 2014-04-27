@@ -5,10 +5,10 @@ namespace gen
    class command_line;
 }
 
-namespace mac
+namespace ios
 {
 
-   class CLASS_DECL_mac main_init_data :
+   class CLASS_DECL_ios main_init_data :
       public ::core::main_init_data
    {
    public:
@@ -18,7 +18,7 @@ namespace mac
       int         m_nCmdShow;
    };
 
-   class CLASS_DECL_mac application :
+   class CLASS_DECL_ios application :
       virtual public ::application
    {
    public:
@@ -207,7 +207,7 @@ namespace mac
    };
 
    
-} // namespace mac
+} // namespace ios
 
 
 

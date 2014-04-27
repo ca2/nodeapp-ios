@@ -1,13 +1,13 @@
 #include "framework.h"
 
 #include <crt_externs.h>
-CLASS_DECL_mac int32_t ca2_main();
+CLASS_DECL_ios int32_t ca2_main();
 
 //CLASS_DECL_BOOT extern fixed_alloc_array * g_pfixedallocaWstring;
 
 //CLASS_DECL_BOOT fixed_alloc_array * new_wstring_manager();
 
-void CLASS_DECL_mac __cdecl _ca2_purecall()
+void CLASS_DECL_ios __cdecl _ca2_purecall()
 {
    throw simple_exception(::get_thread_app());
 }
@@ -26,7 +26,7 @@ uint32_t __run_system(void * p);
 // Standard WinMain implementation
 //  Can be replaced as long as '::ca2::WinInit' is called first
 
-int32_t CLASS_DECL_mac __ios_main(int32_t argc, char * argv[])
+int32_t CLASS_DECL_ios __ios_main(int32_t argc, char * argv[])
 {
 
     setlocale(LC_ALL,"");
@@ -43,7 +43,7 @@ int32_t CLASS_DECL_mac __ios_main(int32_t argc, char * argv[])
 }
 
 
-int32_t CLASS_DECL_mac ca2_main(HINSTANCE hInstance, HINSTANCE hPrevInstance, const char * lpCmdLine, int32_t nCmdShow)
+int32_t CLASS_DECL_ios ca2_main(HINSTANCE hInstance, HINSTANCE hPrevInstance, const char * lpCmdLine, int32_t nCmdShow)
 {
    try
    {
@@ -60,7 +60,7 @@ int32_t CLASS_DECL_mac ca2_main(HINSTANCE hInstance, HINSTANCE hPrevInstance, co
       
       int32_t nReturnCode = 0;
       
-      ::mac::main_init_data * pinitmaindata  = new ::mac::main_init_data;
+      ::ios::main_init_data * pinitmaindata  = new ::ios::main_init_data;
       
       pinitmaindata->m_hInstance             = hInstance;
       pinitmaindata->m_hPrevInstance         = hPrevInstance;
@@ -74,7 +74,7 @@ int32_t CLASS_DECL_mac ca2_main(HINSTANCE hInstance, HINSTANCE hPrevInstance, co
       nReturnCode = psystem->main();
       
       
-      __mac_term();
+      __ios_term();
       
       
       try
@@ -180,7 +180,7 @@ uint32_t __run_system(void * p)
    
    //   ASSERT(hPrevInstance == NULL);
    
-   ::mac::main_init_data * pinitmaindata  = new ::mac::main_init_data;
+   ::ios::main_init_data * pinitmaindata  = new ::ios::main_init_data;
    
    
    pinitmaindata->m_hInstance             = NULL;
@@ -249,7 +249,7 @@ uint32_t __run_system(void * p)
    
    try
    {
-      __mac_term();
+      __ios_term();
    }
    catch(...)
    {

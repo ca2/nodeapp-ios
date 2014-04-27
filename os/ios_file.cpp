@@ -20,7 +20,7 @@ __STATIC inline bool IsDirSep(WCHAR ch)
 }
 
 
-namespace mac
+namespace ios
 {
    
    
@@ -189,7 +189,7 @@ namespace mac
              {*/
             
             
-            vfxThrowFileException(get_app(), ::mac::file_exception::OsErrorToException(dwLastError), dwLastError, m_strFileName);
+            vfxThrowFileException(get_app(), ::ios::file_exception::OsErrorToException(dwLastError), dwLastError, m_strFileName);
             
             //}
             
@@ -227,7 +227,7 @@ namespace mac
             
             
             DWORD dwLastError = ::GetLastError();
-            vfxThrowFileException(get_app(), ::mac::file_exception::OsErrorToException(dwLastError), dwLastError, m_strFileName);
+            vfxThrowFileException(get_app(), ::ios::file_exception::OsErrorToException(dwLastError), dwLastError, m_strFileName);
             
             
             //}
@@ -268,7 +268,7 @@ namespace mac
             {
                
             }
-            ::mac::file_exception::ThrowOsError(get_app(), errno);
+            ::ios::file_exception::ThrowOsError(get_app(), errno);
          }
          else if(iRead == 0)
          {
@@ -299,7 +299,7 @@ namespace mac
       {
          size_t iWrite = ::write(m_iFile, &((const byte *)lpBuf)[pos], (size_t) min(0x7fffffff, nCount));
          if(iWrite == ::numeric_info::get_allset_value < size_t >())
-            ::mac::file_exception::ThrowOsError(get_app(), (LONG)::GetLastError(), m_strFileName);
+            ::ios::file_exception::ThrowOsError(get_app(), (LONG)::GetLastError(), m_strFileName);
          nCount -= iWrite;
          pos += iWrite;
       }
@@ -314,7 +314,7 @@ namespace mac
    {
       
       if(m_iFile == (UINT)hFileNull)
-         ::mac::file_exception::ThrowOsError(get_app(), (LONG)0);
+         ::ios::file_exception::ThrowOsError(get_app(), (LONG)0);
       
       ASSERT_VALID(this);
       ASSERT(m_iFile != (UINT)hFileNull);
@@ -327,7 +327,7 @@ namespace mac
       file_position posNew = ::lseek(m_iFile, lLoOffset, (DWORD)nFrom);
       //      posNew |= ((file_position) lHiOffset) << 32;
       if(posNew  == (file_position)-1)
-         ::mac::file_exception::ThrowOsError(get_app(), (LONG)::GetLastError());
+         ::ios::file_exception::ThrowOsError(get_app(), (LONG)::GetLastError());
       
       return posNew;
    }
@@ -343,7 +343,7 @@ namespace mac
       file_position pos = ::lseek(m_iFile, lLoOffset, SEEK_CUR);
       //    pos |= ((file_position)lHiOffset) << 32;
       if(pos  == (file_position)-1)
-         ::mac::file_exception::ThrowOsError(get_app(), (LONG)::GetLastError());
+         ::ios::file_exception::ThrowOsError(get_app(), (LONG)::GetLastError());
       
       return pos;
    }
@@ -365,7 +365,7 @@ namespace mac
        return;
        
        if (!::FlushFileBuffers((HANDLE)m_iFile))
-       ::mac::file_exception::ThrowOsError(get_app(), (LONG)::GetLastError());*/
+       ::ios::file_exception::ThrowOsError(get_app(), (LONG)::GetLastError());*/
    }
    
    void file::close()
@@ -382,7 +382,7 @@ namespace mac
       m_strFileName.Empty();
       
       if (bError)
-         ::mac::file_exception::ThrowOsError(get_app(), (LONG)::GetLastError());
+         ::ios::file_exception::ThrowOsError(get_app(), (LONG)::GetLastError());
    }
    
    void file::Abort()
@@ -403,7 +403,7 @@ namespace mac
       ASSERT(m_iFile != (UINT)hFileNull);
       
       /*if (!::LockFile((HANDLE)m_iFile, LODWORD(dwPos), HIDWORD(dwPos), LODWORD(dwCount), HIDWORD(dwCount)))
-       ::mac::file_exception::ThrowOsError(get_app(), (LONG)::GetLastError());*/
+       ::ios::file_exception::ThrowOsError(get_app(), (LONG)::GetLastError());*/
    }
    
    void file::UnlockRange(file_position dwPos, file_size dwCount)
@@ -412,7 +412,7 @@ namespace mac
       ASSERT(m_iFile != (UINT)hFileNull);
       
       /*      if (!::UnlockFile((HANDLE)m_iFile,  LODWORD(dwPos), HIDWORD(dwPos), LODWORD(dwCount), HIDWORD(dwCount)))
-       ::mac::file_exception::ThrowOsError(get_app(), (LONG)::GetLastError());*/
+       ::ios::file_exception::ThrowOsError(get_app(), (LONG)::GetLastError());*/
    }
    
    void file::set_length(file_size dwNewLen)
@@ -423,7 +423,7 @@ namespace mac
       seek((LONG)dwNewLen, (::file::e_seek)::file::seek_begin);
       
       if (!::ftruncate(m_iFile, dwNewLen))
-         ::mac::file_exception::ThrowOsError(get_app(), (LONG)::GetLastError());
+         ::ios::file_exception::ThrowOsError(get_app(), (LONG)::GetLastError());
    }
    
    file_size file::get_length() const
@@ -517,7 +517,7 @@ namespace mac
 #endif
    
    
-   /*void CLASS_DECL_mac vfxThrowFileException(int32_t cause, LONG lOsError,
+   /*void CLASS_DECL_ios vfxThrowFileException(int32_t cause, LONG lOsError,
     //   const char * lpszFileName  == NULL */
    /*{
     #ifdef DEBUG
@@ -578,13 +578,13 @@ namespace mac
    void ThrowOsError(base_application * papp, LONG lOsError, const char * lpszFileName /* = NULL */)
    {
       if (lOsError != 0)
-         vfxThrowFileException(papp, ::mac::file_exception::OsErrorToException(lOsError), lOsError, lpszFileName);
+         vfxThrowFileException(papp, ::ios::file_exception::OsErrorToException(lOsError), lOsError, lpszFileName);
    }
    
    void ThrowErrno(base_application * papp, int32_t nErrno, const char * lpszFileName /* = NULL */)
    {
       if (nErrno != 0)
-         vfxThrowFileException(papp, ::mac::file_exception::ErrnoToException(nErrno), errno, lpszFileName);
+         vfxThrowFileException(papp, ::ios::file_exception::ErrnoToException(nErrno), errno, lpszFileName);
    }
    
    
@@ -888,7 +888,7 @@ namespace mac
 
    
    /*
-    UINT CLASS_DECL_mac vfxGetFileTitle(const wchar_t * lpszPathName, wchar_t * lpszTitle, UINT nMax)
+    UINT CLASS_DECL_ios vfxGetFileTitle(const wchar_t * lpszPathName, wchar_t * lpszTitle, UINT nMax)
     {
     ASSERT(lpszTitle == NULL ||
     __is_valid_address(lpszTitle, _MAX_FNAME));
@@ -1073,7 +1073,7 @@ namespace mac
 
 
 // turn a file, relative path or other into an absolute path
-bool CLASS_DECL_mac vfxFullPath(wstring & wstrFullPath, const wstring & wstrPath)
+bool CLASS_DECL_ios vfxFullPath(wstring & wstrFullPath, const wstring & wstrPath)
 // lpszPathOut = buffer of _MAX_PATH
 // lpszFileIn = file, relative path or absolute path
 // (both in ANSI character set)
@@ -1164,7 +1164,7 @@ bool CLASS_DECL_mac vfxFullPath(wstring & wstrFullPath, const wstring & wstrPath
     return TRUE;*/
 }
 
-/*void CLASS_DECL_mac __get_root_path(const char * lpszPath, string & strRoot)
+/*void CLASS_DECL_ios __get_root_path(const char * lpszPath, string & strRoot)
  {
  ASSERT(lpszPath != NULL);
  // determine the root name of the volume
@@ -1207,7 +1207,7 @@ bool CLASS_DECL_mac vfxFullPath(wstring & wstrFullPath, const wstring & wstrPath
  strRoot.ReleaseBuffer();
  }*/
 
-/*bool CLASS_DECL_mac ::ca2::ComparePath(const char * lpszPath1, const char * lpszPath2)
+/*bool CLASS_DECL_ios ::ca2::ComparePath(const char * lpszPath1, const char * lpszPath2)
  {
  // use case insensitive compare as a starter
  if (lstrcmpi(lpszPath1, lpszPath2) != 0)
@@ -1260,7 +1260,7 @@ bool CLASS_DECL_mac vfxFullPath(wstring & wstrFullPath, const wstring & wstrPath
  return TRUE; // otherwise file name is truly the same
  }*/
 
-/*UINT CLASS_DECL_mac __get_file_title(const char * lpszPathName, LPTSTR lpszTitle, UINT nMax)
+/*UINT CLASS_DECL_ios __get_file_title(const char * lpszPathName, LPTSTR lpszTitle, UINT nMax)
  {
  ASSERT(lpszTitle == NULL ||
  __is_valid_address(lpszTitle, _MAX_FNAME));
@@ -1282,7 +1282,7 @@ bool CLASS_DECL_mac vfxFullPath(wstring & wstrFullPath, const wstring & wstrPath
  return lpszTitle == NULL ? lstrlen(lpszTemp)+1 : 0;
  }*/
 
-CLASS_DECL_mac void vfxGetModuleShortFileName(HINSTANCE hInst, string& strShortName)
+CLASS_DECL_ios void vfxGetModuleShortFileName(HINSTANCE hInst, string& strShortName)
 {
    throw todo(::get_thread_app());
    //link_map * plm;
@@ -1310,7 +1310,7 @@ CLASS_DECL_mac void vfxGetModuleShortFileName(HINSTANCE hInst, string& strShortN
 
 
 
-CLASS_DECL_mac string vfxStringFromCLSID(REFCLSID rclsid)
+CLASS_DECL_ios string vfxStringFromCLSID(REFCLSID rclsid)
 {
    CHAR szCLSID[256];
    sprintf(szCLSID, "{%08X-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X}",
@@ -1321,7 +1321,7 @@ CLASS_DECL_mac string vfxStringFromCLSID(REFCLSID rclsid)
 }
 
 /*
- bool CLASS_DECL_mac vfxGetInProcServer(const char * lpszCLSID, string & str)
+ bool CLASS_DECL_ios vfxGetInProcServer(const char * lpszCLSID, string & str)
  {
  HKEY hKey = NULL;
  bool b = FALSE;
@@ -1352,7 +1352,7 @@ CLASS_DECL_mac string vfxStringFromCLSID(REFCLSID rclsid)
  //#endif  //!___NO_OLE_SUPPORT
  */
 
-CLASS_DECL_mac bool vfxResolveShortcut(string & strTarget, const char * pszSource, ::user::interaction * puiMessageParentOptional)
+CLASS_DECL_ios bool vfxResolveShortcut(string & strTarget, const char * pszSource, ::user::interaction * puiMessageParentOptional)
 {
    
    
@@ -1452,7 +1452,7 @@ CLASS_DECL_mac bool vfxResolveShortcut(string & strTarget, const char * pszSourc
 }
 
 // turn a file, relative path or other into an absolute path
-//bool CLASS_DECL_mac vfxFullPath(wchar_t * lpszPathOut, const wchar_t * lpszFileIn)
+//bool CLASS_DECL_ios vfxFullPath(wchar_t * lpszPathOut, const wchar_t * lpszFileIn)
 // lpszPathOut = buffer of _MAX_PATH
 // lpszFileIn = file, relative path or absolute path
 // (both in ANSI character set)
@@ -1505,7 +1505,7 @@ CLASS_DECL_mac bool vfxResolveShortcut(string & strTarget, const char * pszSourc
 
 
 /*
- void CLASS_DECL_mac vfxGetRoot(wstring & wstrRoot, const wstring & wstrPath)
+ void CLASS_DECL_ios vfxGetRoot(wstring & wstrRoot, const wstring & wstrPath)
  {
  //   ASSERT(lpszPath != NULL);
  // determine the root name of the volume
@@ -1548,7 +1548,7 @@ CLASS_DECL_mac bool vfxResolveShortcut(string & strTarget, const char * pszSourc
  }*/
 
 /*
- void CLASS_DECL_mac vfxGetRoot(const wchar_t * lpszPath, string& strRoot)
+ void CLASS_DECL_ios vfxGetRoot(const wchar_t * lpszPath, string& strRoot)
  {
  ASSERT(lpszPath != NULL);
  wstring wstrRoot;
@@ -1594,7 +1594,7 @@ CLASS_DECL_mac bool vfxResolveShortcut(string & strTarget, const char * pszSourc
  */
 
 
-/*bool CLASS_DECL_mac vfxFullPath(char * lpszPathOut, const char * lpszFileIn)
+/*bool CLASS_DECL_ios vfxFullPath(char * lpszPathOut, const char * lpszFileIn)
  // lpszPathOut = buffer of _MAX_PATH
  // lpszFileIn = file, relative path or absolute path
  // (both in ANSI character set)
@@ -1648,7 +1648,7 @@ CLASS_DECL_mac bool vfxResolveShortcut(string & strTarget, const char * pszSourc
 
 
 
-/*CLASS_DECL_mac UINT vfxGetFileName(const char * lpszPathName, char * lpszTitle, UINT nMax)
+/*CLASS_DECL_ios UINT vfxGetFileName(const char * lpszPathName, char * lpszTitle, UINT nMax)
  {
  ASSERT(lpszTitle == NULL ||
  __is_valid_address(lpszTitle, _MAX_FNAME));
@@ -1680,20 +1680,20 @@ CLASS_DECL_mac bool vfxResolveShortcut(string & strTarget, const char * pszSourc
 /////////////////////////////////////////////////////////////////////////////
 // WinFileException helpers
 
-void CLASS_DECL_mac vfxThrowFileException(base_application * papp, int32_t cause, LONG lOsError, const char * lpszFileName /* == NULL */)
+void CLASS_DECL_ios vfxThrowFileException(base_application * papp, int32_t cause, LONG lOsError, const char * lpszFileName /* == NULL */)
 {
 #ifdef DEBUG
    const char * lpsz;
-   if (cause >= 0 && cause < _countof(::mac::rgszFileExceptionCause))
-      lpsz = ::mac::rgszFileExceptionCause[cause];
+   if (cause >= 0 && cause < _countof(::ios::rgszFileExceptionCause))
+      lpsz = ::ios::rgszFileExceptionCause[cause];
    else
-      lpsz = ::mac::szUnknown;
+      lpsz = ::ios::szUnknown;
    //   TRACE3("file exception: %hs, file %s, App error information = %ld.\n", lpsz, (lpszFileName == NULL) ? "Unknown" : lpszFileName, lOsError);
 #endif
    throw ::file::exception(papp, cause, lOsError, lpszFileName);
 }
 
-namespace mac
+namespace ios
 {
 
 namespace file_exception {
@@ -1728,4 +1728,4 @@ int32_t PASCAL ErrnoToException(int32_t nErrno)
 
 } // namespace file_exception
 
-} // namespace mac
+} // namespace ios
