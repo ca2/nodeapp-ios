@@ -5,12 +5,12 @@
 // STDIO file implementation
 
 
-namespace mac
+namespace ios
 {
    
    
    class stdio_file :
-      virtual public ::mac::file,
+      virtual public ::ios::file,
       virtual public ::file::text_buffer
    {
    public:
@@ -50,6 +50,6 @@ namespace mac
    
    
    
-} // namespace mac
+} // namespace ios
 
 

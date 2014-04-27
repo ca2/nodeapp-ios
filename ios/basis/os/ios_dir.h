@@ -1,10 +1,10 @@
 #pragma once
 
 
-namespace mac
+namespace ios
 {
    
-   class CLASS_DECL_mac path :
+   class CLASS_DECL_ios path :
    virtual public ::file::path
    {
    public:
@@ -12,7 +12,7 @@ namespace mac
       virtual bool  is_equal(const char * lpszFilPathA, const char * lpszFilPathB);
    };
    
-   class CLASS_DECL_mac dir :
+   class CLASS_DECL_ios dir :
    virtual public ::file::dir::system
    {
    public:
@@ -96,6 +96,6 @@ namespace mac
       string         m_strNetSeedFolder;
    };
    
-} // namespace mac
+} // namespace ios
 
 

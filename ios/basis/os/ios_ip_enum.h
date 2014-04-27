@@ -10,11 +10,11 @@ Copyright (c) 1998 by PJ Naughter.
 */
 
 
-namespace mac
+namespace ios
 {
 
 
-   class CLASS_DECL_mac ip_enum :
+   class CLASS_DECL_ios ip_enum :
       virtual public ::net::ip_enum
    {
    public:
@@ -30,7 +30,7 @@ namespace mac
    };
 
 
-} // namespace mac
+} // namespace ios
 
 
 

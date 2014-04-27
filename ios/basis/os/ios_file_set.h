@@ -1,11 +1,11 @@
 #pragma once
 
 
-namespace mac
+namespace ios
 {
    
    
-   class CLASS_DECL_mac file_set :
+   class CLASS_DECL_ios file_set :
       public ::file::set
    {
    public:
@@ -35,6 +35,6 @@ namespace mac
    };
    
    
-} // namespace mac
+} // namespace ios
 
 

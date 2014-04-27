@@ -1,10 +1,10 @@
 #include "framework.h"
-#include <mach-o/dyld.h>
+#include <iosh-o/dyld.h>
 
 extern thread_local_storage * __thread_data;
 
 
-namespace mac
+namespace ios
 {
 
 
@@ -14,7 +14,7 @@ namespace mac
       ::thread::m_p.create(allocer());
       ::thread::m_p->m_p = this;
 
-      MAC_THREAD(::thread::m_p.m_p)->m_pAppThread = this;
+      IOS_THREAD(::thread::m_p.m_p)->m_pAppThread = this;
 
       m_psystem = papp->m_pplaneapp->m_psystem;
 
@@ -211,12 +211,12 @@ namespace mac
 
    void application::LockTempMaps()
    {
-      MAC_THREAD(::thread::m_p.m_p)->LockTempMaps();
+      IOS_THREAD(::thread::m_p.m_p)->LockTempMaps();
    }
 
    bool application::UnlockTempMaps(bool bDeleteTemp)
    {
-      return MAC_THREAD(::thread::m_p.m_p)->UnlockTempMaps(bDeleteTemp);
+      return IOS_THREAD(::thread::m_p.m_p)->UnlockTempMaps(bDeleteTemp);
    }
 
 
@@ -461,7 +461,7 @@ namespace mac
    bool application::initialize1()
    {
 
-      MAC_THREAD(::thread::m_p.m_p)->set_run();
+      IOS_THREAD(::thread::m_p.m_p)->set_run();
 
       return true;
 
@@ -486,8 +486,8 @@ namespace mac
       // during the thread destructor
       ::thread::m_p->set_os_data(NULL);
 
-      MAC_THREAD(::thread::m_p.m_p)->m_bRun = false;
-//      MAC_THREAD(::application_base::m_p.m_p->::thread::m_p.m_p)->m_bRun = false;
+      IOS_THREAD(::thread::m_p.m_p)->m_bRun = false;
+//      IOS_THREAD(::application_base::m_p.m_p->::thread::m_p.m_p)->m_bRun = false;
 
       int32_t iRet = ::application::exit_instance();
 
@@ -553,12 +553,12 @@ namespace mac
 
    sp(::window) application::window_from_os_data(void * pdata)
    {
-      return ::mac::window::from_handle((oswindow) pdata);
+      return ::ios::window::from_handle((oswindow) pdata);
    }
 
    sp(::window) application::window_from_os_data_permanent(void * pdata)
    {
-      ::window * pwnd = ::mac::window::FromHandlePermanent((oswindow) pdata);
+      ::window * pwnd = ::ios::window::FromHandlePermanent((oswindow) pdata);
       if(pwnd != NULL)
          return pwnd;
       user::interaction_ptr_array wndptra = System.frames();
@@ -636,7 +636,7 @@ namespace mac
          __MODULE_THREAD_STATE* pThreadState = pModuleState->m_thread;
          ENSURE(pThreadState);
          //         ASSERT(System.GetThread() == NULL);
-         pThreadState->m_pCurrentWinThread = dynamic_cast < class ::mac::thread * > (::thread::m_p.m_p);
+         pThreadState->m_pCurrentWinThread = dynamic_cast < class ::ios::thread * > (::thread::m_p.m_p);
          //       ASSERT(System.GetThread() == this);
 
          // initialize application state
@@ -646,9 +646,9 @@ namespace mac
       }
 
 
-      //      dynamic_cast < ::mac::thread * > ((smart_pointer < ::application >::m_p->::ca2::thread_sp::m_p))->m_hThread = __get_thread()->m_hThread;
-      //    dynamic_cast < ::mac::thread * > ((smart_pointer < ::application >::m_p->::ca2::thread_sp::m_p))->m_nThreadID = __get_thread()->m_nThreadID;
-      dynamic_cast < class ::mac::thread * > (::thread::m_p.m_p)->m_hThread      =  ::GetCurrentThread();
+      //      dynamic_cast < ::ios::thread * > ((smart_pointer < ::application >::m_p->::ca2::thread_sp::m_p))->m_hThread = __get_thread()->m_hThread;
+      //    dynamic_cast < ::ios::thread * > ((smart_pointer < ::application >::m_p->::ca2::thread_sp::m_p))->m_nThreadID = __get_thread()->m_nThreadID;
+      dynamic_cast < class ::ios::thread * > (::thread::m_p.m_p)->m_hThread      =  ::GetCurrentThread();
 
 
    }
@@ -712,7 +712,7 @@ namespace mac
    bool application::set_main_init_data(::core::main_init_data * pdata)
    {
 
-      m_pmaininitdata = (::mac::main_init_data *) pdata;
+      m_pmaininitdata = (::ios::main_init_data *) pdata;
 
       if(m_pmaininitdata != NULL && m_pimpl->is_system())
       {
@@ -842,7 +842,7 @@ namespace mac
    sp(::user::printer) application::get_printer(const char * pszDeviceName)
    {
 
-      sp(::mac2::printer) pprinter = Application.alloc (System.type_info < ::user::printer > ());
+      sp(::ios2::printer) pprinter = Application.alloc (System.type_info < ::user::printer > ());
 
       if(!pprinter->open(pszDeviceName))
       {
@@ -892,7 +892,7 @@ namespace mac
    }
    
    
-} // namespace mac
+} // namespace ios
 
 
 

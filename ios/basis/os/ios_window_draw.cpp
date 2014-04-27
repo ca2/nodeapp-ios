@@ -23,7 +23,7 @@ public:
 };
 
 
-namespace mac
+namespace ios
 {
 
    
@@ -1338,7 +1338,7 @@ imple_frame_window * pframe = dynamic_cast < simple_frame_window * > (pwnd);
    
    
    
-} // namespace mac
+} // namespace ios
 
 
 

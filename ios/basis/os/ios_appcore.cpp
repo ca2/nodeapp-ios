@@ -1,7 +1,7 @@
 #include "framework.h"
 
 
-PROCESS_LOCAL(___MAC_STATE, gen_MacState)
+PROCESS_LOCAL(___IOS_STATE, gen_MacState)
 
 
 
