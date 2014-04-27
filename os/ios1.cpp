@@ -1,8 +1,8 @@
 #include "framework.h"
-#include "mac1.h"
+#include "ios1.h"
 
 
-namespace mac
+namespace ios
 {
    
    int32_t function()
@@ -17,6 +17,6 @@ namespace mac
    }
    
    
-} // namespace mac
+} // namespace ios
 
 

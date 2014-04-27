@@ -1,11 +1,11 @@
 #pragma once
 
 
-namespace mac
+namespace ios
 {
    
    
-   class CLASS_DECL_mac os :
+   class CLASS_DECL_ios os :
    public ::core::os
    {
    public:
@@ -64,7 +64,7 @@ namespace mac
    
    
    
-} // namespace mac
+} // namespace ios
 
 
 

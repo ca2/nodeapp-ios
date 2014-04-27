@@ -4,7 +4,7 @@
 #undef USERNAME_LENGTH // mysql one
 
 
-namespace mac
+namespace ios
 {
    
    
@@ -289,7 +289,7 @@ namespace mac
       return false;
       
       /*
-       registry::Key keyKar(HKEY_LOCAL_MACHINE, "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+       registry::Key keyKar(HKEY_LOCAL_IOSHINE, "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
        
        
        keyKar.SetValue(pszKey, pszCommand);
@@ -306,7 +306,7 @@ namespace mac
       
  //     throw not_implemented(get_app());
       return false;
-      /*    registry::Key keyKar(HKEY_LOCAL_MACHINE, "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce", true);
+      /*    registry::Key keyKar(HKEY_LOCAL_IOSHINE, "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce", true);
        
        
        keyKar.SetValue(pszKey, pszCommand);
@@ -359,7 +359,7 @@ namespace mac
       /*
        registry::Key keyPlugins;
        
-       if(keyPlugins.OpenKey(HKEY_LOCAL_MACHINE, "SOFTWARE\\MozillaPlugins", true))
+       if(keyPlugins.OpenKey(HKEY_LOCAL_IOSHINE, "SOFTWARE\\MozillaPlugins", true))
        {
        
        registry::Key keyPlugin;
@@ -905,7 +905,7 @@ namespace mac
    }
    
    
-} // namespace mac
+} // namespace ios
 
 
 

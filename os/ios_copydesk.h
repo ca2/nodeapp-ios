@@ -1,11 +1,11 @@
 #pragma once
 
 
-namespace mac
+namespace ios
 {
 
 
-   class CLASS_DECL_mac copydesk :
+   class CLASS_DECL_ios copydesk :
       virtual public ::core::copydesk,
       virtual public ::window_sp
    {
@@ -35,7 +35,7 @@ namespace mac
    };
 
 
-} // namespace mac
+} // namespace ios
 
 
 

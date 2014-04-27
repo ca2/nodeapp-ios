@@ -1,11 +1,11 @@
 #pragma once
 
 
-namespace mac
+namespace ios
 {
    
    
-   class CLASS_DECL_mac window_draw :
+   class CLASS_DECL_ios window_draw :
    virtual public ::user::window_draw,
    virtual public ::message_queue
    {
@@ -137,4 +137,4 @@ namespace mac
       
    };
    
-} // namespace mac
+} // namespace ios

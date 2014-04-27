@@ -1,7 +1,7 @@
 #include "framework.h"
 
 
-namespace mac
+namespace ios
 {
 
 
@@ -64,6 +64,6 @@ namespace mac
    }
 
 
-} // namespace mac
+} // namespace ios
 
 

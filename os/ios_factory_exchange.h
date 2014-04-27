@@ -1,11 +1,11 @@
 #pragma once
 
 
-namespace mac
+namespace ios
 {
 
    
-   class CLASS_DECL_mac factory_exchange :
+   class CLASS_DECL_ios factory_exchange :
       virtual public ::object
    {
    public:
@@ -18,7 +18,7 @@ namespace mac
    };
    
 
-} // namespace mac
+} // namespace ios
 
 
 

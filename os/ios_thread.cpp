@@ -18,11 +18,11 @@
 //{
 
 
-struct ___THREAD_STARTUP : ::mac::thread_startup
+struct ___THREAD_STARTUP : ::ios::thread_startup
 {
    // following are "in" parameters to thread startup
    ___THREAD_STATE* pThreadState;    // thread state of parent thread
-   ::mac::thread* pThread;    // thread for new thread
+   ::ios::thread* pThread;    // thread for new thread
    DWORD dwCreateFlags;    // thread creation flags
    _PNH pfnNewHandler;     // new handler for new thread
    
@@ -55,19 +55,19 @@ struct ___THREAD_STARTUP : ::mac::thread_startup
  return TRUE;
  }
  */
-namespace mac
+namespace ios
 {
    class thread;
-} // namespace mac
+} // namespace ios
 
-WINBOOL CLASS_DECL_mac AfxInternalPumpMessage();
-LRESULT CLASS_DECL_mac AfxInternalProcessWndProcException(::exception::base*, const MESSAGE* pMsg);
+WINBOOL CLASS_DECL_ios AfxInternalPumpMessage();
+LRESULT CLASS_DECL_ios AfxInternalProcessWndProcException(::exception::base*, const MESSAGE* pMsg);
 WINBOOL AfxInternalPreTranslateMessage(MESSAGE* pMsg);
 WINBOOL AfxInternalIsIdleMessage(MESSAGE* pMsg);
-__STATIC void CLASS_DECL_mac __pre_init_dialog(::user::interaction * pWnd, LPRECT lpRectOld, DWORD* pdwStyleOld);
-__STATIC void CLASS_DECL_mac __post_init_dialog(::user::interaction * pWnd, const RECT& rectOld, DWORD dwStyleOld);
+__STATIC void CLASS_DECL_ios __pre_init_dialog(::user::interaction * pWnd, LPRECT lpRectOld, DWORD* pdwStyleOld);
+__STATIC void CLASS_DECL_ios __post_init_dialog(::user::interaction * pWnd, const RECT& rectOld, DWORD dwStyleOld);
 
-namespace mac
+namespace ios
 {
    
    thread_startup::thread_startup() :
@@ -89,11 +89,11 @@ namespace mac
 /////////////////////////////////////////////////////////////////////////////
 // thread entry point
 
-struct _AFX_THREAD_STARTUP : ::mac::thread_startup
+struct _AFX_THREAD_STARTUP : ::ios::thread_startup
 {
    // following are "in" parameters to thread startup
    ___THREAD_STATE* pThreadState;    // thread state of parent thread
-   ::mac::thread* pThread;    // thread for new thread
+   ::ios::thread* pThread;    // thread for new thread
    DWORD dwCreateFlags;    // thread creation flags
    _PNH pfnNewHandler;     // new handler for new thread
    
@@ -113,7 +113,7 @@ UINT APIENTRY __thread_entry(void * pParam)
    //ASSERT(pStartup->hEvent != NULL);
    ASSERT(!pStartup->bError);
    
-   ::mac::thread* pThread = pStartup->pThread;
+   ::ios::thread* pThread = pStartup->pThread;
    
    //   pThread->::se_translator::attach();
    
@@ -177,11 +177,11 @@ UINT APIENTRY __thread_entry(void * pParam)
 }
 
 
-namespace mac
+namespace ios
 {
 
    
-   CLASS_DECL_mac ::thread * __get_thread()
+   CLASS_DECL_ios ::thread * __get_thread()
    {
       
       // check for current thread in module thread state
@@ -195,25 +195,25 @@ namespace mac
    }
    
    
-   CLASS_DECL_mac void __set_thread(::thread * pthread)
+   CLASS_DECL_ios void __set_thread(::thread * pthread)
    {
       
       // check for current thread in module thread state
       
       ___THREAD_STATE* pState = ::__get_thread_state();
       
-      pState->m_pCurrentWinThread = dynamic_cast < ::mac::thread * > (pthread->m_p.m_p);
+      pState->m_pCurrentWinThread = dynamic_cast < ::ios::thread * > (pthread->m_p.m_p);
       
    }
    
    
-} // namespace mac
+} // namespace ios
 
 
 
 
 
-CLASS_DECL_mac MESSAGE * AfxGetCurrentMessage()
+CLASS_DECL_ios MESSAGE * AfxGetCurrentMessage()
 {
    ___THREAD_STATE* pState = __get_thread_state();
    ASSERT(pState);
@@ -222,7 +222,7 @@ CLASS_DECL_mac MESSAGE * AfxGetCurrentMessage()
 
 
 
-CLASS_DECL_mac void AfxInternalProcessWndProcException(::exception::base*, signal_details * pobj)
+CLASS_DECL_ios void AfxInternalProcessWndProcException(::exception::base*, signal_details * pobj)
 {
    SCAST_PTR(::message::base, pbase, pobj);
    if (pbase->m_uiMessage == WM_CREATE)
@@ -240,7 +240,7 @@ CLASS_DECL_mac void AfxInternalProcessWndProcException(::exception::base*, signa
    return;   // sensible default for rest of commands
 }
 
-CLASS_DECL_mac void AfxProcessWndProcException(::exception::base* e, signal_details * pobj)
+CLASS_DECL_ios void AfxProcessWndProcException(::exception::base* e, signal_details * pobj)
 {
    ::thread *pThread = App(pobj->get_app()).GetThread();
    if( pThread )
@@ -257,7 +257,7 @@ void AfxInternalPreTranslateMessage(signal_details * pobj)
       
       //   ASSERT_VALID(this);
       
-      ::thread *pThread = dynamic_cast < ::thread * > (::mac::get_thread());
+      ::thread *pThread = dynamic_cast < ::thread * > (::ios::get_thread());
       if( pThread )
       {
          // if this is a thread-message, short-circuit this function
@@ -283,7 +283,7 @@ void AfxInternalPreTranslateMessage(signal_details * pobj)
       ::window * pWnd = pbase->m_pwnd->get_wnd();
       if (pMainWnd != NULL)
       {
-         if (pWnd != NULL && MAC_WINDOW(pWnd)->GetTopLevelParent() != pMainWnd)
+         if (pWnd != NULL && IOS_WINDOW(pWnd)->GetTopLevelParent() != pMainWnd)
          {
             pMainWnd->pre_translate_message(pobj);
             if(pobj->m_bRet)
@@ -412,14 +412,14 @@ WINBOOL __cdecl __is_idle_message(MESSAGE* pMsg)
 {
    ::thread * pThread = ::get_thread();
    if(pThread)
-      return MAC_THREAD(pThread->m_p.m_p)->is_idle_message( pMsg );
+      return IOS_THREAD(pThread->m_p.m_p)->is_idle_message( pMsg );
    else
       return AfxInternalIsIdleMessage( pMsg );
 }
 
 
 
-/*thread* CLASS_DECL_mac AfxBeginThread(base_application * papp, __THREADPROC pfnThreadProc, LPVOID pParam,
+/*thread* CLASS_DECL_ios AfxBeginThread(base_application * papp, __THREADPROC pfnThreadProc, LPVOID pParam,
  int32_t nPriority, UINT nStackSize, DWORD dwCreateFlags,
  LPSECURITY_ATTRIBUTES lpSecurityAttrs)
  {
@@ -440,13 +440,13 @@ WINBOOL __cdecl __is_idle_message(MESSAGE* pMsg)
  
  return pThread;
  }*/
-void CLASS_DECL_mac __end_thread(base_application * papp, UINT nExitCode, bool bDelete)
+void CLASS_DECL_ios __end_thread(base_application * papp, UINT nExitCode, bool bDelete)
 {
    // remove current thread object from primitive::memory
 //   __MODULE_THREAD_STATE* pState = __get_module_thread_state();
 
    ___THREAD_STATE* pState = __get_thread_state();
-::mac::thread* pThread = pState->m_pCurrentWinThread;
+::ios::thread* pThread = pState->m_pCurrentWinThread;
    
    if (pThread != NULL)
    {
@@ -466,7 +466,7 @@ void CLASS_DECL_mac __end_thread(base_application * papp, UINT nExitCode, bool b
 }
 
 extern thread_local_storage * __thread_data;
-void CLASS_DECL_mac __term_thread(base_application * papp, HINSTANCE hInstTerm)
+void CLASS_DECL_ios __term_thread(base_application * papp, HINSTANCE hInstTerm)
 {
    
    try
@@ -501,7 +501,7 @@ void CLASS_DECL_mac __term_thread(base_application * papp, HINSTANCE hInstTerm)
 
 LRESULT CALLBACK _AfxMsgFilterHook(int32_t code, WPARAM wParam, LPARAM lParam);
 
-void CLASS_DECL_mac AfxInitThread()
+void CLASS_DECL_ios AfxInitThread()
 {
    if (!afxContextIsDLL)
    {
@@ -522,11 +522,11 @@ void CLASS_DECL_mac AfxInitThread()
 __attribute__((constructor))
 static void initialize_navigationBarImages()
 {
-   ::g_pfn_get_thread = &::mac::__get_thread;
-   ::g_pfn_get_thread_state = &::mac::__get_thread_state;
+   ::g_pfn_get_thread = &::ios::__get_thread;
+   ::g_pfn_get_thread_state = &::ios::__get_thread_state;
 }
 
-namespace mac
+namespace ios
 {
    
    void thread::set_p(::thread * p)
@@ -543,7 +543,7 @@ namespace mac
       m_evFinish.SetEvent();
       if(System.GetThread() != NULL)
       {
-         m_pAppThread = MAC_THREAD(::get_thread()->m_p.m_p)->m_pAppThread;
+         m_pAppThread = IOS_THREAD(::get_thread()->m_p.m_p)->m_pAppThread;
       }
       else
       {
@@ -623,9 +623,9 @@ namespace mac
             {
                try
                {
-                  if(MAC_THREAD(pui->m_pthread->m_pthread) == this
-                     || MAC_THREAD(pui->m_pthread->m_pthread->m_p.m_p) == MAC_THREAD(m_p.m_p)
-                     || MAC_THREAD(pui->m_pthread->m_pthread) == MAC_THREAD(m_p.m_p))
+                  if(IOS_THREAD(pui->m_pthread->m_pthread) == this
+                     || IOS_THREAD(pui->m_pthread->m_pthread->m_p.m_p) == IOS_THREAD(m_p.m_p)
+                     || IOS_THREAD(pui->m_pthread->m_pthread) == IOS_THREAD(m_p.m_p))
                   {
                      pui->m_pthread = NULL;
                   }
@@ -747,7 +747,7 @@ namespace mac
       
       try
       {
-         if(MAC_THREAD(pui->m_pthread.m_p) == this)
+         if(IOS_THREAD(pui->m_pthread.m_p) == this)
          {
             pui->m_pthread = NULL;
          }
@@ -759,7 +759,7 @@ namespace mac
       {
          if(pui->m_pimpl != NULL && pui->m_pimpl != pui)
          {
-            if(MAC_THREAD(pui->m_pimpl->m_pthread.m_p) == this)
+            if(IOS_THREAD(pui->m_pimpl->m_pthread.m_p) == this)
             {
                pui->m_pimpl->m_pthread = NULL;
             }
@@ -772,7 +772,7 @@ namespace mac
       {
          if(pui->m_pui != NULL && pui->m_pui != pui)
          {
-            if(MAC_THREAD(pui->m_pui->m_pthread.m_p) == this)
+            if(IOS_THREAD(pui->m_pui->m_pthread.m_p) == this)
             {
                pui->m_pui->m_pthread = NULL;
             }
@@ -1185,9 +1185,9 @@ namespace mac
                ::user::interaction * pui = puiptra->element_at(i);
                if(pui->m_pthread != NULL)
                {
-                  if(MAC_THREAD(pui->m_pthread.m_p) == this
-                     || MAC_THREAD(pui->m_pthread->m_p.m_p) == MAC_THREAD(m_p.m_p)
-                     || MAC_THREAD(pui->m_pthread.m_p) == MAC_THREAD(m_p.m_p))
+                  if(IOS_THREAD(pui->m_pthread.m_p) == this
+                     || IOS_THREAD(pui->m_pthread->m_p.m_p) == IOS_THREAD(m_p.m_p)
+                     || IOS_THREAD(pui->m_pthread.m_p) == IOS_THREAD(m_p.m_p))
                   {
                      pui->m_pthread = NULL;
                   }
@@ -1639,9 +1639,9 @@ namespace mac
       // all other messages route through message ::collection::map
       ::window * pwindow = pbase->m_pwnd->get_wnd();
       
-      /*      ASSERT(pwindow == NULL || MAC_WINDOW(pwindow)->get_handle() == pbase->m_hwnd);
+      /*      ASSERT(pwindow == NULL || IOS_WINDOW(pwindow)->get_handle() == pbase->m_hwnd);
        
-       if(pwindow == NULL || MAC_WINDOW(pwindow)->get_handle() != pbase->m_hwnd)
+       if(pwindow == NULL || IOS_WINDOW(pwindow)->get_handle() != pbase->m_hwnd)
        {
        pbase->set_lresult(::DefWindowProc(pbase->m_hwnd, pbase->m_uiMessage, pbase->m_wparam, pbase->m_lparam));
        return;
@@ -1760,12 +1760,12 @@ namespace mac
    }
    
    
-   CLASS_DECL_mac ::thread * get_thread()
+   CLASS_DECL_ios ::thread * get_thread()
    {
       ::thread * pthread = ::get_thread();
       if(pthread == NULL)
          return NULL;
-      return MAC_THREAD(pthread->m_p.m_p);
+      return IOS_THREAD(pthread->m_p.m_p);
    }
    
    
@@ -1838,7 +1838,7 @@ namespace mac
       return m_nTempMapLock != 0;
    }
    
-   int32_t thread::thread_entry(::mac::thread_startup * pstartup)
+   int32_t thread::thread_entry(::ios::thread_startup * pstartup)
    {
       
       ASSERT(pstartup != NULL);
@@ -1846,7 +1846,7 @@ namespace mac
       ASSERT(pstartup->m_pthread != NULL);
       //ASSERT(!pstartup->bError);
 
-      ::mac::thread* pThread = dynamic_cast < ::mac::thread * > (pstartup->m_pthread);
+      ::ios::thread* pThread = dynamic_cast < ::ios::thread * > (pstartup->m_pthread);
       
 //      ::application* papp = dynamic_cast < ::application * > (get_app());
       m_evFinish.ResetEvent();
@@ -2442,19 +2442,19 @@ namespace mac
    ///////
    
    
-} // namespace mac
+} // namespace ios
 
 
 
 
-WINBOOL CLASS_DECL_mac AfxInternalPumpMessage();
-LRESULT CLASS_DECL_mac AfxInternalProcessWndProcException(::exception::base*, const MESSAGE* pMsg);
+WINBOOL CLASS_DECL_ios AfxInternalPumpMessage();
+LRESULT CLASS_DECL_ios AfxInternalProcessWndProcException(::exception::base*, const MESSAGE* pMsg);
 void AfxInternalPreTranslateMessage(signal_details * pobj);
 WINBOOL AfxInternalIsIdleMessage(signal_details * pobj);
 WINBOOL AfxInternalIsIdleMessage(LPMESSAGE lpmsg);
 
 
-/*thread* CLASS_DECL_mac System.GetThread()
+/*thread* CLASS_DECL_ios System.GetThread()
  {
  // check for current thread in module thread state
  __MODULE_THREAD_STATE* pState = __get_module_thread_state();
@@ -2462,14 +2462,14 @@ WINBOOL AfxInternalIsIdleMessage(LPMESSAGE lpmsg);
  return pThread;
  }
  
- MESSAGE* CLASS_DECL_mac AfxGetCurrentMessage()
+ MESSAGE* CLASS_DECL_ios AfxGetCurrentMessage()
  {
  ___THREAD_STATE* pState = __get_thread_state();
  ASSERT(pState);
  return &(pState->m_msgCur);
  }
  
- WINBOOL CLASS_DECL_mac AfxInternalPumpMessage()
+ WINBOOL CLASS_DECL_ios AfxInternalPumpMessage()
  {
  ___THREAD_STATE *pState = __get_thread_state();
  
@@ -2506,7 +2506,7 @@ WINBOOL AfxInternalIsIdleMessage(LPMESSAGE lpmsg);
  return TRUE;
  }
  
- WINBOOL CLASS_DECL_mac AfxPumpMessage()
+ WINBOOL CLASS_DECL_ios AfxPumpMessage()
  {
  thread *pThread = System.GetThread();
  if( pThread )
@@ -2515,7 +2515,7 @@ WINBOOL AfxInternalIsIdleMessage(LPMESSAGE lpmsg);
  return AfxInternalPumpMessage();
  }
  
- LRESULT CLASS_DECL_mac AfxInternalProcessWndProcException(::exception::base*, const MESSAGE* pMsg)
+ LRESULT CLASS_DECL_ios AfxInternalProcessWndProcException(::exception::base*, const MESSAGE* pMsg)
  {
  if (pMsg->message == WM_CREATE)
  {
@@ -2530,7 +2530,7 @@ WINBOOL AfxInternalIsIdleMessage(LPMESSAGE lpmsg);
  return 0;   // sensible default for rest of commands
  }
  
- LRESULT CLASS_DECL_mac AfxProcessWndProcException(::exception::base* e, const MESSAGE* pMsg)
+ LRESULT CLASS_DECL_ios AfxProcessWndProcException(::exception::base* e, const MESSAGE* pMsg)
  {
  thread *pThread = System.GetThread();
  if( pThread )
@@ -2559,8 +2559,8 @@ WINBOOL AfxInternalIsIdleMessage(LPMESSAGE lpmsg);
 //   ::ca2::window's accelerator table
 /*   if (pMainWnd != NULL)
  {
- ::window * pWnd = ::mac::window::from_handle(pMsg->hwnd);
- if (pWnd != NULL && MAC_WINDOW(pWnd)->GetTopLevelParent() != pMainWnd)
+ ::window * pWnd = ::ios::window::from_handle(pMsg->hwnd);
+ if (pWnd != NULL && IOS_WINDOW(pWnd)->GetTopLevelParent() != pMainWnd)
  return pMainWnd->pre_translate_message(pMsg);
  }
  
@@ -2609,7 +2609,7 @@ WINBOOL AfxInternalIsIdleMessage(LPMESSAGE lpmsg);
  return AfxInternalIsIdleMessage( pMsg );
  }
  
- thread* CLASS_DECL_mac AfxBeginThread(::ca2::type_info pThreadClass,
+ thread* CLASS_DECL_ios AfxBeginThread(::ca2::type_info pThreadClass,
  int32_t nPriority, UINT nStackSize, DWORD dwCreateFlags,
  LPSECURITY_ATTRIBUTES lpSecurityAttrs)
  {
@@ -2643,7 +2643,7 @@ WINBOOL AfxInternalIsIdleMessage(LPMESSAGE lpmsg);
  }*/
 
 /*
- void CLASS_DECL_mac __end_thread(UINT nExitCode, bool bDelete)
+ void CLASS_DECL_ios __end_thread(UINT nExitCode, bool bDelete)
  {
  #ifndef _MT
  nExitCode;
@@ -2677,7 +2677,7 @@ WINBOOL AfxInternalIsIdleMessage(LPMESSAGE lpmsg);
 
 //LRESULT CALLBACK _AfxMsgFilterHook(int32_t code, WPARAM wParam, LPARAM lParam);
 
-void CLASS_DECL_mac __init_thread()
+void CLASS_DECL_ios __init_thread()
 {
    
    /*if (!afxContextIsDLL)
@@ -2691,7 +2691,7 @@ void CLASS_DECL_mac __init_thread()
    
 }
 
-namespace mac
+namespace ios
 {
    
    /*
@@ -2949,7 +2949,7 @@ namespace mac
     {
     if(pmsg->message == WM_APP + 1984 && pmsg->wParam == 77)
     {
-    ::ca2::scoped_ptr < mac::message > spmessage(pmsg->lParam);
+    ::ca2::scoped_ptr < ios::message > spmessage(pmsg->lParam);
     spmessage->send();
     return TRUE;
     }
@@ -3032,7 +3032,7 @@ namespace mac
    
    
    
-} // namespace mac
+} // namespace ios
 
 
 
@@ -3042,7 +3042,7 @@ namespace mac
 /*LRESULT CALLBACK _AfxMsgFilterHook(int32_t code, WPARAM wParam, LPARAM lParam)
  {
  ::thread* pthread;
- if (afxContextIsDLL || (code < 0 && code != MESSAGEF_DDEMGR) || (pthread = dynamic_cast < ::thread * > (::mac::get_thread())) == NULL)
+ if (afxContextIsDLL || (code < 0 && code != MESSAGEF_DDEMGR) || (pthread = dynamic_cast < ::thread * > (::ios::get_thread())) == NULL)
  {
  return ::CallNextHookEx(_afxThreadState->m_hHookOldMsgFilter, code, wParam, lParam);
  }
@@ -3054,7 +3054,7 @@ namespace mac
  return lresult;
  }
  
- __STATIC WINBOOL CLASS_DECL_mac IsHelpKey(LPMESSAGE lpMsg)
+ __STATIC WINBOOL CLASS_DECL_ios IsHelpKey(LPMESSAGE lpMsg)
  // return TRUE only for non-repeat F1 keydowns.
  {
  return lpMsg->message == WM_KEYDOWN &&
