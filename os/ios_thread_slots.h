@@ -1,6 +1,9 @@
 #pragma once
 
 
+namespace ios
+{
+
 // Classes declared in this file
 
 //class simple_list;
@@ -187,9 +190,9 @@ public:
 };
 
 #define THREAD_LOCAL(class_name, ident_name, slot) \
-thread_slot < class_name, slot > ident_name;
+    ::ios::thread_slot < class_name, slot > ident_name;
 #define EXTERN_THREAD_LOCAL(class_name, ident_name, slot) \
-extern CLASS_DECL_ios thread_slot<class_name, slot> ident_name;
+    extern CLASS_DECL_ios ::ios::thread_slot<class_name, slot> ident_name;
 
 template<class TYPE>
 class process_local : public process_local_object
@@ -216,9 +219,9 @@ public:
 };
 
 #define PROCESS_LOCAL(class_name, ident_name) \
-process_local < class_name > ident_name;
+    ::ios::process_local < class_name > ident_name;
 #define EXTERN_PROCESS_LOCAL(class_name, ident_name) \
-extern process_local < class_name > ident_name;
+    extern ::ios::process_local < class_name > ident_name;
 
 /////////////////////////////////////////////////////////////////////////////
 
@@ -226,4 +229,10 @@ void CLASS_DECL_ios __init_local_data(HINSTANCE hInstInit);
 void CLASS_DECL_ios __term_local_data(HINSTANCE hInstTerm, bool bAll = FALSE);
 void CLASS_DECL_ios __tls_add_ref();
 void CLASS_DECL_ios __tls_release();
+
+
+
+} // namespace ios
+
+
 
