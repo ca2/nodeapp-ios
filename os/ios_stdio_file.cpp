@@ -250,7 +250,7 @@ namespace ios
             vfxThrowFileException(get_app(), ::file::exception::badSeek, -1, m_strFileName);
       }
       
-      if (fseek(m_pStream, lOff, nFrom) != 0)
+      if (fseek(m_pStream, (long) lOff, nFrom) != 0)
          vfxThrowFileException(get_app(), ::file::exception::badSeek, errno,
                                m_strFileName);
       
@@ -318,7 +318,7 @@ namespace ios
       return NULL;
    }
    
-   void stdio_file::LockRange(uint_ptr /* dwPos */, uint_ptr /* dwCount */)
+   void stdio_file::LockRange(file_position /* dwPos */, file_size /* dwCount */)
    {
       ASSERT_VALID(this);
       ASSERT(m_pStream != NULL);
@@ -326,7 +326,7 @@ namespace ios
       throw not_supported_exception(get_app());
    }
    
-   void stdio_file::UnlockRange(uint_ptr /* dwPos */, uint_ptr /* dwCount */)
+   void stdio_file::UnlockRange(file_position /* dwPos */, file_size /* dwCount */)
    {
       ASSERT_VALID(this);
       ASSERT(m_pStream != NULL);
@@ -346,7 +346,7 @@ namespace ios
    
    
    
-   uint_ptr stdio_file::get_length() const
+   file_size stdio_file::get_length() const
    {
       ASSERT_VALID(this);
       

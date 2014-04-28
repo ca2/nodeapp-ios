@@ -1,7 +1,7 @@
 #include "framework.h"
-#include <iosh-o/dyld.h>
+#include <mach-o/dyld.h>
 
-extern thread_local_storage * __thread_data;
+extern ios::thread_local_storage * __thread_data;
 
 
 namespace ios
@@ -18,7 +18,6 @@ namespace ios
 
       m_psystem = papp->m_pplaneapp->m_psystem;
 
-      m_pfilemanager = NULL;
       // in non-running state until WinMain
       // xxx      m_hInstance = NULL;
       //      m_hLangResourceDLL = NULL;

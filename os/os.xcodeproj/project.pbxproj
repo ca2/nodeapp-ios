@@ -43,7 +43,6 @@
 		07012029190D74CA00C08335 /* ios_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07E7E6F8190B46A40082F182 /* ios_util.cpp */; };
 		0701202A190D74CA00C08335 /* ios_window_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07E7E6F9190B46A40082F182 /* ios_window_draw.cpp */; };
 		0701202B190D74CA00C08335 /* ios_window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07E7E6FB190B46A40082F182 /* ios_window.cpp */; };
-		0701202C190D74CA00C08335 /* ios.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07E7E6FD190B46A40082F182 /* ios.cpp */; };
 		0701202D190D74CA00C08335 /* ios1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07E7E6FF190B46A40082F182 /* ios1.cpp */; };
 		0701202E190D74CA00C08335 /* ios2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07E7E701190B46A40082F182 /* ios2.cpp */; };
 		0701202F190D74CA00C08335 /* framework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B496616A4A10100875A94 /* framework.cpp */; };
@@ -70,6 +69,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 9AE24D871904CF46001AEFFB;
 			remoteInfo = basefreeimage_ios;
+		};
+		077C2A08190F10FD00A1F6B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A4A91B190C443F005B6DE5 /* basemysql.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AA5E6D616F7C61B005C45CE;
+			remoteInfo = basemysql;
+		};
+		077C2A0A190F10FD00A1F6B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A4A91B190C443F005B6DE5 /* basemysql.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24DB21904CF5B001AEFFB;
+			remoteInfo = basemysql_ios;
+		};
+		077C2A0C190F10FD00A1F6B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A4A91B190C443F005B6DE5 /* basemysql.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24DC11904CF5B001AEFFB;
+			remoteInfo = basemysql_iosTests;
+		};
+		077C2A2B190F204A00A1F6B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A4A91B190C443F005B6DE5 /* basemysql.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AE24DB11904CF5B001AEFFB;
+			remoteInfo = basemysql_ios;
 		};
 		07A6C98C190C5F4300859288 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -201,7 +228,6 @@
 		07E7E6FA190B46A40082F182 /* ios_window_draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ios_window_draw.h; sourceTree = "<group>"; };
 		07E7E6FB190B46A40082F182 /* ios_window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ios_window.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		07E7E6FC190B46A40082F182 /* ios_window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ios_window.h; sourceTree = "<group>"; };
-		07E7E6FD190B46A40082F182 /* ios.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ios.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		07E7E6FE190B46A40082F182 /* ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ios.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		07E7E6FF190B46A40082F182 /* ios1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ios1.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		07E7E700190B46A40082F182 /* ios1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ios1.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -297,6 +323,16 @@
 			children = (
 			);
 			path = "Untitled Folder";
+			sourceTree = "<group>";
+		};
+		077C29FF190F10FD00A1F6B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				077C2A09190F10FD00A1F6B0 /* libbasemysql.dylib */,
+				077C2A0B190F10FD00A1F6B0 /* libbasemysql.dylib */,
+				077C2A0D190F10FD00A1F6B0 /* basemysql_iosTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		07A6C985190C5F4300859288 /* Products */ = {
@@ -507,7 +543,6 @@
 				07E7E6FA190B46A40082F182 /* ios_window_draw.h */,
 				07E7E6FB190B46A40082F182 /* ios_window.cpp */,
 				07E7E6FC190B46A40082F182 /* ios_window.h */,
-				07E7E6FD190B46A40082F182 /* ios.cpp */,
 				07E7E6FE190B46A40082F182 /* ios.h */,
 				07E7E6FF190B46A40082F182 /* ios1.cpp */,
 				07E7E700190B46A40082F182 /* ios1.h */,
@@ -538,6 +573,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				077C2A2C190F204A00A1F6B0 /* PBXTargetDependency */,
 				07012002190D716C00C08335 /* PBXTargetDependency */,
 				07012004190D716C00C08335 /* PBXTargetDependency */,
 			);
@@ -597,6 +633,10 @@
 					ProductGroup = 07A6C9EA190C90C600859288 /* Products */;
 					ProjectRef = 07A4A903190C4424005B6DE5 /* basefreetype.xcodeproj */;
 				},
+				{
+					ProductGroup = 077C29FF190F10FD00A1F6B0 /* Products */;
+					ProjectRef = 07A4A91B190C443F005B6DE5 /* basemysql.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -607,6 +647,27 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		077C2A09190F10FD00A1F6B0 /* libbasemysql.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libbasemysql.dylib;
+			remoteRef = 077C2A08190F10FD00A1F6B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		077C2A0B190F10FD00A1F6B0 /* libbasemysql.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbasemysql.dylib;
+			remoteRef = 077C2A0A190F10FD00A1F6B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		077C2A0D190F10FD00A1F6B0 /* basemysql_iosTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = basemysql_iosTests.xctest;
+			remoteRef = 077C2A0C190F10FD00A1F6B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		07A6C98D190C5F4300859288 /* libbasefreeimage.dylib */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.dylib";
@@ -698,7 +759,6 @@
 				07012029190D74CA00C08335 /* ios_util.cpp in Sources */,
 				0701202A190D74CA00C08335 /* ios_window_draw.cpp in Sources */,
 				0701202B190D74CA00C08335 /* ios_window.cpp in Sources */,
-				0701202C190D74CA00C08335 /* ios.cpp in Sources */,
 				0701202D190D74CA00C08335 /* ios1.cpp in Sources */,
 				0701202E190D74CA00C08335 /* ios2.cpp in Sources */,
 				0701202F190D74CA00C08335 /* framework.cpp in Sources */,
@@ -725,6 +785,11 @@
 			isa = PBXTargetDependency;
 			name = basefreeimage_ios;
 			targetProxy = 07012003190D716C00C08335 /* PBXContainerItemProxy */;
+		};
+		077C2A2C190F204A00A1F6B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = basemysql_ios;
+			targetProxy = 077C2A2B190F204A00A1F6B0 /* PBXContainerItemProxy */;
 		};
 		9AE24FA819059AA5001AEFFB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

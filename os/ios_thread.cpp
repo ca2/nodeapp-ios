@@ -465,7 +465,7 @@ void CLASS_DECL_ios __end_thread(base_application * papp, UINT nExitCode, bool b
    //   _endthreadex(nExitCode);
 }
 
-extern thread_local_storage * __thread_data;
+extern ios::thread_local_storage * __thread_data;
 void CLASS_DECL_ios __term_thread(base_application * papp, HINSTANCE hInstTerm)
 {
    
@@ -789,7 +789,7 @@ namespace ios
       return m_puiptra->get_count();
    }
    
-   sp(::user::interaction) thread::get_ui(int32_t iIndex)
+   ::user::interaction * thread::get_ui(int32_t iIndex)
    {
       single_lock sl(&m_mutexUiPtra, TRUE);
       return m_puiptra->element_at(iIndex);

@@ -1,6 +1,6 @@
 #include "framework.h"
 
-
+namespace  ios {
 
 /////////////////////////////////////////////////////////////////////////////
 // no_track_object
@@ -215,3 +215,6 @@ BYTE _gen_ThreadData[sizeof(thread_local_storage)];
 thread_local_storage * __thread_data;
 
 
+
+
+} // namespace ios

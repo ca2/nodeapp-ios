@@ -263,7 +263,7 @@ namespace ios
             
          }
          
-         bool bIsDir;
+         bool bIsDir = false;
          
          if(pbaIsDir != NULL || piaSize != NULL)
          {
@@ -384,7 +384,7 @@ namespace ios
             
          }
          
-         bool bIsDir;
+         bool bIsDir = false;
          
          if(pbaIsDir != NULL || piaSize != NULL)
          {
@@ -640,7 +640,7 @@ namespace ios
          }
          
          
-         bool bIsDir;
+         bool bIsDir = false;
          
          if(pbaIsDir != NULL || piaSize != NULL)
          {
