@@ -121,7 +121,7 @@ namespace ios
       virtual void add(sp(::user::interaction)  pui);
       virtual void remove(::user::interaction *  pui);
       virtual ::count get_ui_count();
-      virtual sp(::user::interaction)  get_ui(int32_t iIndex);
+      virtual ::user::interaction * get_ui(int32_t iIndex);
       virtual void set_timer(sp(::user::interaction)  pui, uint_ptr nIDEvent, UINT nEllapse);
       virtual void unset_timer(sp(::user::interaction)  pui, uint_ptr nIDEvent);
       virtual void set_auto_delete(bool bAutoDelete = true);

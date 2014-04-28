@@ -1047,14 +1047,14 @@ namespace ios
    uint64_t file::ReadHuge(void * lpBuffer, uint64_t dwCount)
    {
       
-      return  read(lpBuffer, dwCount);
+       return  read(lpBuffer, (::primitive::memory_size) dwCount);
       
    }
    
    void file::WriteHuge(const void * lpBuffer, uint64_t dwCount)
    {
       
-      write(lpBuffer, dwCount);
+      write(lpBuffer, (::primitive::memory_size) dwCount);
       
    }
    
