@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		079DBF481886ABF100EFFEFB /* libbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 079DBF461886ABF100EFFEFB /* libbase.dylib */; };
 		079DBF491886ABF100EFFEFB /* libcore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 079DBF471886ABF100EFFEFB /* libcore.dylib */; };
+		07B6573D190F3C8B002DAADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6573C190F3C8B002DAADE /* Foundation.framework */; };
+		07B6574B190F3C8B002DAADE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6574A190F3C8B002DAADE /* XCTest.framework */; };
+		07B6574C190F3C8B002DAADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6573C190F3C8B002DAADE /* Foundation.framework */; };
+		07B6574E190F3C8B002DAADE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6574D190F3C8B002DAADE /* UIKit.framework */; };
+		07B65751190F3C8B002DAADE /* libaudio_mixer_core_audio_ios.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6573A190F3C8B002DAADE /* libaudio_mixer_core_audio_ios.dylib */; };
+		07B65757190F3C8B002DAADE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07B65755190F3C8B002DAADE /* InfoPlist.strings */; };
+		07B65759190F3C8B002DAADE /* audio_mixer_core_audio_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B65758190F3C8B002DAADE /* audio_mixer_core_audio_iosTests.m */; };
 		9A1B496416A494A600875A94 /* framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A1B496316A494A600875A94 /* framework.h */; };
 		9A1B496716A4A10100875A94 /* framework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B496616A4A10100875A94 /* framework.cpp */; };
 		9A8997BD177D0E7F00C7761E /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8997BC177D0E7D00C7761E /* Carbon.framework */; };
@@ -38,9 +45,39 @@
 		9AA1B44A176361950019E812 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA1B449176361950019E812 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		07B6574F190F3C8B002DAADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1CFD76F154F5EA7007447E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07B65739190F3C8B002DAADE;
+			remoteInfo = audio_mixer_core_audio_ios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		07B65738190F3C8B002DAADE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		079DBF461886ABF100EFFEFB /* libbase.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbase.dylib; path = ../../../app/appseed/base/build/Release/libbase.dylib; sourceTree = "<group>"; };
 		079DBF471886ABF100EFFEFB /* libcore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcore.dylib; path = ../../../app/appseed/core/build/Release/libcore.dylib; sourceTree = "<group>"; };
+		07B6573A190F3C8B002DAADE /* libaudio_mixer_core_audio_ios.dylib */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libaudio_mixer_core_audio_ios.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B6573C190F3C8B002DAADE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		07B65749190F3C8B002DAADE /* audio_mixer_core_audio_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = audio_mixer_core_audio_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B6574A190F3C8B002DAADE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		07B6574D190F3C8B002DAADE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		07B65754190F3C8B002DAADE /* audio_mixer_core_audio_iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "audio_mixer_core_audio_iosTests-Info.plist"; sourceTree = "<group>"; };
+		07B65756190F3C8B002DAADE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07B65758190F3C8B002DAADE /* audio_mixer_core_audio_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = audio_mixer_core_audio_iosTests.m; sourceTree = "<group>"; };
 		9A1B496316A494A600875A94 /* framework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = framework.h; sourceTree = "<group>"; };
 		9A1B496616A4A10100875A94 /* framework.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = framework.cpp; sourceTree = "<group>"; };
 		9A8997BC177D0E7D00C7761E /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
@@ -72,6 +109,25 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		07B65737190F3C8B002DAADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B6573D190F3C8B002DAADE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B65746190F3C8B002DAADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B6574B190F3C8B002DAADE /* XCTest.framework in Frameworks */,
+				07B65751190F3C8B002DAADE /* libaudio_mixer_core_audio_ios.dylib in Frameworks */,
+				07B6574E190F3C8B002DAADE /* UIKit.framework in Frameworks */,
+				07B6574C190F3C8B002DAADE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1CFD775154F5EAA007447E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,15 +142,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07B6573B190F3C8B002DAADE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07B6573C190F3C8B002DAADE /* Foundation.framework */,
+				07B6574A190F3C8B002DAADE /* XCTest.framework */,
+				07B6574D190F3C8B002DAADE /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07B65752190F3C8B002DAADE /* audio_mixer_core_audio_iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				07B65758190F3C8B002DAADE /* audio_mixer_core_audio_iosTests.m */,
+				07B65753190F3C8B002DAADE /* Supporting Files */,
+			);
+			path = audio_mixer_core_audio_iosTests;
+			sourceTree = "<group>";
+		};
+		07B65753190F3C8B002DAADE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07B65754190F3C8B002DAADE /* audio_mixer_core_audio_iosTests-Info.plist */,
+				07B65755190F3C8B002DAADE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A1CFD76D154F5EA7007447E2 = {
 			isa = PBXGroup;
 			children = (
-				079DBF461886ABF100EFFEFB /* libbase.dylib */,
-				079DBF471886ABF100EFFEFB /* libcore.dylib */,
 				9A8997BC177D0E7D00C7761E /* Carbon.framework */,
 				9AA1B449176361950019E812 /* Cocoa.framework */,
 				A1CFD896154FB715007447E2 /* audio_mixer_core_audio */,
+				07B65752190F3C8B002DAADE /* audio_mixer_core_audio_iosTests */,
+				07B6573B190F3C8B002DAADE /* Frameworks */,
 				A1CFD779154F5EAA007447E2 /* Products */,
+				079DBF461886ABF100EFFEFB /* libbase.dylib */,
+				079DBF471886ABF100EFFEFB /* libcore.dylib */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				A1CFD778154F5EAA007447E2 /* libaudio_mixer_core_audio.dylib */,
+				07B6573A190F3C8B002DAADE /* libaudio_mixer_core_audio_ios.dylib */,
+				07B65749190F3C8B002DAADE /* audio_mixer_core_audio_iosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,6 +252,41 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		07B65739190F3C8B002DAADE /* audio_mixer_core_audio_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07B6575A190F3C8B002DAADE /* Build configuration list for PBXNativeTarget "audio_mixer_core_audio_ios" */;
+			buildPhases = (
+				07B65736190F3C8B002DAADE /* Sources */,
+				07B65737190F3C8B002DAADE /* Frameworks */,
+				07B65738190F3C8B002DAADE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = audio_mixer_core_audio_ios;
+			productName = audio_mixer_core_audio_ios;
+			productReference = 07B6573A190F3C8B002DAADE /* libaudio_mixer_core_audio_ios.dylib */;
+			productType = "com.apple.product-type.library.static";
+		};
+		07B65748190F3C8B002DAADE /* audio_mixer_core_audio_iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07B6575D190F3C8B002DAADE /* Build configuration list for PBXNativeTarget "audio_mixer_core_audio_iosTests" */;
+			buildPhases = (
+				07B65745190F3C8B002DAADE /* Sources */,
+				07B65746190F3C8B002DAADE /* Frameworks */,
+				07B65747190F3C8B002DAADE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07B65750190F3C8B002DAADE /* PBXTargetDependency */,
+			);
+			name = audio_mixer_core_audio_iosTests;
+			productName = audio_mixer_core_audio_iosTests;
+			productReference = 07B65749190F3C8B002DAADE /* audio_mixer_core_audio_iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A1CFD777154F5EAA007447E2 /* audio_mixer_core_audio */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1CFD77C154F5EAA007447E2 /* Build configuration list for PBXNativeTarget "audio_mixer_core_audio" */;
@@ -189,6 +312,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "ca2 Desenvolvimento de Sofware Ltda.";
+				TargetAttributes = {
+					07B65748190F3C8B002DAADE = {
+						TestTargetID = A1CFD777154F5EAA007447E2;
+					};
+				};
 			};
 			buildConfigurationList = A1CFD772154F5EA7007447E2 /* Build configuration list for PBXProject "audio_mixer_core_audio" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -203,11 +331,39 @@
 			projectRoot = "";
 			targets = (
 				A1CFD777154F5EAA007447E2 /* audio_mixer_core_audio */,
+				07B65739190F3C8B002DAADE /* audio_mixer_core_audio_ios */,
+				07B65748190F3C8B002DAADE /* audio_mixer_core_audio_iosTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		07B65747190F3C8B002DAADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B65757190F3C8B002DAADE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		07B65736190F3C8B002DAADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B65745190F3C8B002DAADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B65759190F3C8B002DAADE /* audio_mixer_core_audio_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1CFD774154F5EAA007447E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,7 +385,134 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		07B65750190F3C8B002DAADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07B65739190F3C8B002DAADE /* audio_mixer_core_audio_ios */;
+			targetProxy = 07B6574F190F3C8B002DAADE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07B65755190F3C8B002DAADE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07B65756190F3C8B002DAADE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		07B6575B190F3C8B002DAADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DSTROOT = /tmp/audio_mixer_core_audio_ios.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "audio_mixer_core_audio_ios/audio_mixer_core_audio_ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		07B6575C190F3C8B002DAADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DSTROOT = /tmp/audio_mixer_core_audio_ios.dst;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "audio_mixer_core_audio_ios/audio_mixer_core_audio_ios-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07B6575E190F3C8B002DAADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/libaudio_mixer_core_audio.dylib";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "audio_mixer_core_audio_ios/audio_mixer_core_audio_ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "audio_mixer_core_audio_iosTests/audio_mixer_core_audio_iosTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		07B6575F190F3C8B002DAADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/libaudio_mixer_core_audio.dylib";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "audio_mixer_core_audio_ios/audio_mixer_core_audio_ios-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "audio_mixer_core_audio_iosTests/audio_mixer_core_audio_iosTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		A1CFD77A154F5EAA007447E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -346,6 +629,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		07B6575A190F3C8B002DAADE /* Build configuration list for PBXNativeTarget "audio_mixer_core_audio_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B6575B190F3C8B002DAADE /* Debug */,
+				07B6575C190F3C8B002DAADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07B6575D190F3C8B002DAADE /* Build configuration list for PBXNativeTarget "audio_mixer_core_audio_iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B6575E190F3C8B002DAADE /* Debug */,
+				07B6575F190F3C8B002DAADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A1CFD772154F5EA7007447E2 /* Build configuration list for PBXProject "audio_mixer_core_audio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

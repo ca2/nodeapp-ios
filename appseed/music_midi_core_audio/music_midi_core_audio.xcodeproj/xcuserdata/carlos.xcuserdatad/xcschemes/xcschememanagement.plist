@@ -7,11 +7,26 @@
 		<key>music_midi_core_audio.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>29</integer>
+			<integer>23</integer>
+		</dict>
+		<key>music_midi_core_audio_ios.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>55</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>07B657B7190F3CBF002DAADE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>07B657C6190F3CBF002DAADE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A1CFD777154F5EAA007447E2</key>
 		<dict>
 			<key>primary</key>
