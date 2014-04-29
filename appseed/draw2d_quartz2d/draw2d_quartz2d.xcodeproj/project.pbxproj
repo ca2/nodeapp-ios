@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07884E821898203C00DC6CEB /* libbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07884E811898203C00DC6CEB /* libbase.dylib */; };
+		07B65517190F2EB2002DAADE /* libcore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A6C9AC190C90C500859288 /* libcore.dylib */; };
 		9A1B496416A494A600875A94 /* framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A1B496316A494A600875A94 /* framework.h */; };
 		9A1B496716A4A10100875A94 /* framework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B496616A4A10100875A94 /* framework.cpp */; };
 		9A6B40E417BBE291008391AD /* draw2d_quartz2d_bitmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A6B40CC17BBE291008391AD /* draw2d_quartz2d_bitmap.cpp */; };
@@ -45,11 +46,6 @@
 		9AA6A25019070F82000A1F4A /* libdraw2d_quartz2d_ios.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A23919070F82000A1F4A /* libdraw2d_quartz2d_ios.dylib */; };
 		9AA6A25619070F82000A1F4A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AA6A25419070F82000A1F4A /* InfoPlist.strings */; };
 		9AA6A25819070F82000A1F4A /* draw2d_quartz2d_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6A25719070F82000A1F4A /* draw2d_quartz2d_iosTests.m */; };
-		9AA6A35E190735C9000A1F4A /* libbase_ios.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A359190735C9000A1F4A /* libbase_ios.dylib */; };
-		9AA6A35F190735C9000A1F4A /* libbasefreeimage_ios.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A35A190735C9000A1F4A /* libbasefreeimage_ios.dylib */; };
-		9AA6A360190735C9000A1F4A /* libbasefreetype_ios.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A35B190735C9000A1F4A /* libbasefreetype_ios.dylib */; };
-		9AA6A361190735C9000A1F4A /* libbasemysql_ios.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A35C190735C9000A1F4A /* libbasemysql_ios.dylib */; };
-		9AA6A362190735C9000A1F4A /* libcore_ios.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A35D190735C9000A1F4A /* libcore_ios.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +69,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 9AE24DEB1904CF6E001AEFFB;
 			remoteInfo = core_iosTests;
+		};
+		07B654E7190F2E25002DAADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA6A36319073662000A1F4A /* core.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AE24DDB1904CF6E001AEFFB;
+			remoteInfo = core_ios;
 		};
 		9AA6A24E19070F82000A1F4A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -98,6 +101,10 @@
 
 /* Begin PBXFileReference section */
 		07884E811898203C00DC6CEB /* libbase.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbase.dylib; path = "../../../../Users/carlos/Library/Developer/Xcode/DerivedData/all-dlckdugtwkhfjkdbgurajmehstei/Build/Products/Debug/libbase.dylib"; sourceTree = "<group>"; };
+		07B654D6190F2E0B002DAADE /* base.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = base.xcodeproj; path = ../../../app/appseed/base/base.xcodeproj; sourceTree = SOURCE_ROOT; };
+		07B654E9190F2E37002DAADE /* basefreetype.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = basefreetype.xcodeproj; path = ../../../app/thirdparty/appseed/freetype/basefreetype.xcodeproj; sourceTree = SOURCE_ROOT; };
+		07B654F7190F2E54002DAADE /* basefreeimage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = basefreeimage.xcodeproj; path = ../../../app/thirdparty/appseed/freeimage/basefreeimage.xcodeproj; sourceTree = SOURCE_ROOT; };
+		07B65503190F2E90002DAADE /* basemysql.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = basemysql.xcodeproj; path = ../../../app/thirdparty/appseed/mysql/basemysql.xcodeproj; sourceTree = SOURCE_ROOT; };
 		9A1B496316A494A600875A94 /* framework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = framework.h; sourceTree = "<group>"; };
 		9A1B496616A4A10100875A94 /* framework.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = framework.cpp; sourceTree = "<group>"; };
 		9A6B40CC17BBE291008391AD /* draw2d_quartz2d_bitmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = draw2d_quartz2d_bitmap.cpp; sourceTree = "<group>"; };
@@ -153,11 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AA6A23C19070F82000A1F4A /* Foundation.framework in Frameworks */,
-				9AA6A362190735C9000A1F4A /* libcore_ios.dylib in Frameworks */,
-				9AA6A361190735C9000A1F4A /* libbasemysql_ios.dylib in Frameworks */,
-				9AA6A360190735C9000A1F4A /* libbasefreetype_ios.dylib in Frameworks */,
-				9AA6A35F190735C9000A1F4A /* libbasefreeimage_ios.dylib in Frameworks */,
-				9AA6A35E190735C9000A1F4A /* libbase_ios.dylib in Frameworks */,
+				07B65517190F2EB2002DAADE /* libcore.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +252,10 @@
 		A1CFD76D154F5EA7007447E2 = {
 			isa = PBXGroup;
 			children = (
+				07B654D6190F2E0B002DAADE /* base.xcodeproj */,
+				07B654E9190F2E37002DAADE /* basefreetype.xcodeproj */,
+				07B654F7190F2E54002DAADE /* basefreeimage.xcodeproj */,
+				07B65503190F2E90002DAADE /* basemysql.xcodeproj */,
 				9AA6A36319073662000A1F4A /* core.xcodeproj */,
 				07884E811898203C00DC6CEB /* libbase.dylib */,
 				9A8997BC177D0E7D00C7761E /* Carbon.framework */,
@@ -342,6 +349,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				07B654E8190F2E25002DAADE /* PBXTargetDependency */,
 			);
 			name = draw2d_quartz2d_ios;
 			productName = draw2d_quartz2d_ios;
@@ -497,6 +505,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		07B654E8190F2E25002DAADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = core_ios;
+			targetProxy = 07B654E7190F2E25002DAADE /* PBXContainerItemProxy */;
+		};
 		9AA6A24F19070F82000A1F4A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9AA6A23819070F82000A1F4A /* draw2d_quartz2d_ios */;
