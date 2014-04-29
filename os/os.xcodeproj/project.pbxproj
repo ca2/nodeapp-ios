@@ -649,11 +649,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				07B65400190F232D002DAADE /* PBXTargetDependency */,
 				07B65402190F232D002DAADE /* PBXTargetDependency */,
 				077C2A2C190F204A00A1F6B0 /* PBXTargetDependency */,
-				07012002190D716C00C08335 /* PBXTargetDependency */,
 				07012004190D716C00C08335 /* PBXTargetDependency */,
+				07012002190D716C00C08335 /* PBXTargetDependency */,
+				07B65400190F232D002DAADE /* PBXTargetDependency */,
 			);
 			name = ca2os_ios;
 			productName = ca2os_ios;

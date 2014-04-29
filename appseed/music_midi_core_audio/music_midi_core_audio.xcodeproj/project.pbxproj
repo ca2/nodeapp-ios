@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		07884EB9189866D300DC6CEB /* music_midi_core_audio_midi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07884EB7189866D300DC6CEB /* music_midi_core_audio_midi.cpp */; };
 		07884EBA189866D300DC6CEB /* music_midi_core_audio_midi.h in Headers */ = {isa = PBXBuildFile; fileRef = 07884EB8189866D300DC6CEB /* music_midi_core_audio_midi.h */; };
+		07B657BB190F3CBF002DAADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B657BA190F3CBF002DAADE /* Foundation.framework */; };
+		07B657C9190F3CBF002DAADE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B657C8190F3CBF002DAADE /* XCTest.framework */; };
+		07B657CA190F3CBF002DAADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B657BA190F3CBF002DAADE /* Foundation.framework */; };
+		07B657CC190F3CBF002DAADE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B657CB190F3CBF002DAADE /* UIKit.framework */; };
+		07B657CF190F3CBF002DAADE /* libmusic_midi_core_audio_ios.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B657B8190F3CBF002DAADE /* libmusic_midi_core_audio_ios.dylib */; };
+		07B657D5190F3CBF002DAADE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07B657D3190F3CBF002DAADE /* InfoPlist.strings */; };
+		07B657D7190F3CBF002DAADE /* music_midi_core_audio_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B657D6190F3CBF002DAADE /* music_midi_core_audio_iosTests.m */; };
 		07D6C9B218986C6E00CB8AA8 /* music_midi_core_audio_player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D6C9AA18986C6E00CB8AA8 /* music_midi_core_audio_player.cpp */; };
 		07D6C9B318986C6E00CB8AA8 /* music_midi_core_audio_player.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D6C9AB18986C6E00CB8AA8 /* music_midi_core_audio_player.h */; };
 		07D6C9B418986C6E00CB8AA8 /* music_midi_core_audio_player_callback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D6C9AC18986C6E00CB8AA8 /* music_midi_core_audio_player_callback.cpp */; };
@@ -42,9 +49,39 @@
 		9AA1B44A176361950019E812 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA1B449176361950019E812 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		07B657CD190F3CBF002DAADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1CFD76F154F5EA7007447E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07B657B7190F3CBF002DAADE;
+			remoteInfo = music_midi_core_audio_ios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		07B657B6190F3CBF002DAADE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		07884EB7189866D300DC6CEB /* music_midi_core_audio_midi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = music_midi_core_audio_midi.cpp; sourceTree = "<group>"; };
 		07884EB8189866D300DC6CEB /* music_midi_core_audio_midi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = music_midi_core_audio_midi.h; sourceTree = "<group>"; };
+		07B657B8190F3CBF002DAADE /* libmusic_midi_core_audio_ios.dylib */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmusic_midi_core_audio_ios.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B657BA190F3CBF002DAADE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		07B657C7190F3CBF002DAADE /* music_midi_core_audio_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = music_midi_core_audio_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B657C8190F3CBF002DAADE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		07B657CB190F3CBF002DAADE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		07B657D2190F3CBF002DAADE /* music_midi_core_audio_iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "music_midi_core_audio_iosTests-Info.plist"; sourceTree = "<group>"; };
+		07B657D4190F3CBF002DAADE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07B657D6190F3CBF002DAADE /* music_midi_core_audio_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = music_midi_core_audio_iosTests.m; sourceTree = "<group>"; };
 		07D6C9AA18986C6E00CB8AA8 /* music_midi_core_audio_player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = music_midi_core_audio_player.cpp; sourceTree = "<group>"; };
 		07D6C9AB18986C6E00CB8AA8 /* music_midi_core_audio_player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = music_midi_core_audio_player.h; sourceTree = "<group>"; };
 		07D6C9AC18986C6E00CB8AA8 /* music_midi_core_audio_player_callback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = music_midi_core_audio_player_callback.cpp; sourceTree = "<group>"; };
@@ -80,6 +117,25 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		07B657B5190F3CBF002DAADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B657BB190F3CBF002DAADE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B657C4190F3CBF002DAADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B657C9190F3CBF002DAADE /* XCTest.framework in Frameworks */,
+				07B657CF190F3CBF002DAADE /* libmusic_midi_core_audio_ios.dylib in Frameworks */,
+				07B657CC190F3CBF002DAADE /* UIKit.framework in Frameworks */,
+				07B657CA190F3CBF002DAADE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1CFD775154F5EAA007447E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,6 +155,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07B657B9190F3CBF002DAADE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07B657BA190F3CBF002DAADE /* Foundation.framework */,
+				07B657C8190F3CBF002DAADE /* XCTest.framework */,
+				07B657CB190F3CBF002DAADE /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07B657D0190F3CBF002DAADE /* music_midi_core_audio_iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				07B657D6190F3CBF002DAADE /* music_midi_core_audio_iosTests.m */,
+				07B657D1190F3CBF002DAADE /* Supporting Files */,
+			);
+			path = music_midi_core_audio_iosTests;
+			sourceTree = "<group>";
+		};
+		07B657D1190F3CBF002DAADE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07B657D2190F3CBF002DAADE /* music_midi_core_audio_iosTests-Info.plist */,
+				07B657D3190F3CBF002DAADE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		07D6C9A918986C6E00CB8AA8 /* player */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,17 +199,19 @@
 		A1CFD76D154F5EA7007447E2 = {
 			isa = PBXGroup;
 			children = (
-				07D6C9BC18987A7200CB8AA8 /* libmultimedia.dylib */,
-				07D6C9BA18987A5E00CB8AA8 /* libveriwell_multimedia.dylib */,
 				9A8997BC177D0E7D00C7761E /* Carbon.framework */,
 				9AA1B449176361950019E812 /* Cocoa.framework */,
+				A1CFD896154FB715007447E2 /* music_midi_core_audio */,
+				07B657D0190F3CBF002DAADE /* music_midi_core_audio_iosTests */,
+				07B657B9190F3CBF002DAADE /* Frameworks */,
+				A1CFD779154F5EAA007447E2 /* Products */,
+				07D6C9BC18987A7200CB8AA8 /* libmultimedia.dylib */,
+				07D6C9BA18987A5E00CB8AA8 /* libveriwell_multimedia.dylib */,
 				9A8CCAF917EA063800F87A02 /* libbase.dylib */,
 				9A8CCAFA17EA063800F87A02 /* libbasefreeimage.dylib */,
 				9A8CCAFB17EA063800F87A02 /* libbasefreetype.dylib */,
 				9A8CCAFC17EA063800F87A02 /* libbasemysql.dylib */,
 				9A8CCB0017EA063800F87A02 /* libcore.dylib */,
-				A1CFD896154FB715007447E2 /* music_midi_core_audio */,
-				A1CFD779154F5EAA007447E2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +219,8 @@
 			isa = PBXGroup;
 			children = (
 				A1CFD778154F5EAA007447E2 /* libmusic_midi_core_audio.dylib */,
+				07B657B8190F3CBF002DAADE /* libmusic_midi_core_audio_ios.dylib */,
+				07B657C7190F3CBF002DAADE /* music_midi_core_audio_iosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,6 +276,41 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		07B657B7190F3CBF002DAADE /* music_midi_core_audio_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07B657DC190F3CBF002DAADE /* Build configuration list for PBXNativeTarget "music_midi_core_audio_ios" */;
+			buildPhases = (
+				07B657B4190F3CBF002DAADE /* Sources */,
+				07B657B5190F3CBF002DAADE /* Frameworks */,
+				07B657B6190F3CBF002DAADE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = music_midi_core_audio_ios;
+			productName = music_midi_core_audio_ios;
+			productReference = 07B657B8190F3CBF002DAADE /* libmusic_midi_core_audio_ios.dylib */;
+			productType = "com.apple.product-type.library.static";
+		};
+		07B657C6190F3CBF002DAADE /* music_midi_core_audio_iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07B657DD190F3CBF002DAADE /* Build configuration list for PBXNativeTarget "music_midi_core_audio_iosTests" */;
+			buildPhases = (
+				07B657C3190F3CBF002DAADE /* Sources */,
+				07B657C4190F3CBF002DAADE /* Frameworks */,
+				07B657C5190F3CBF002DAADE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07B657CE190F3CBF002DAADE /* PBXTargetDependency */,
+			);
+			name = music_midi_core_audio_iosTests;
+			productName = music_midi_core_audio_iosTests;
+			productReference = 07B657C7190F3CBF002DAADE /* music_midi_core_audio_iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A1CFD777154F5EAA007447E2 /* music_midi_core_audio */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1CFD77C154F5EAA007447E2 /* Build configuration list for PBXNativeTarget "music_midi_core_audio" */;
@@ -213,6 +336,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "ca2 Desenvolvimento de Sofware Ltda.";
+				TargetAttributes = {
+					07B657C6190F3CBF002DAADE = {
+						TestTargetID = A1CFD777154F5EAA007447E2;
+					};
+				};
 			};
 			buildConfigurationList = A1CFD772154F5EA7007447E2 /* Build configuration list for PBXProject "music_midi_core_audio" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -227,11 +355,39 @@
 			projectRoot = "";
 			targets = (
 				A1CFD777154F5EAA007447E2 /* music_midi_core_audio */,
+				07B657B7190F3CBF002DAADE /* music_midi_core_audio_ios */,
+				07B657C6190F3CBF002DAADE /* music_midi_core_audio_iosTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		07B657C5190F3CBF002DAADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B657D5190F3CBF002DAADE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		07B657B4190F3CBF002DAADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B657C3190F3CBF002DAADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B657D7190F3CBF002DAADE /* music_midi_core_audio_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1CFD774154F5EAA007447E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,7 +409,134 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		07B657CE190F3CBF002DAADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07B657B7190F3CBF002DAADE /* music_midi_core_audio_ios */;
+			targetProxy = 07B657CD190F3CBF002DAADE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07B657D3190F3CBF002DAADE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07B657D4190F3CBF002DAADE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		07B657D8190F3CBF002DAADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DSTROOT = /tmp/music_midi_core_audio_ios.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "music_midi_core_audio_ios/music_midi_core_audio_ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		07B657D9190F3CBF002DAADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DSTROOT = /tmp/music_midi_core_audio_ios.dst;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "music_midi_core_audio_ios/music_midi_core_audio_ios-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07B657DA190F3CBF002DAADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/libmusic_midi_core_audio.dylib";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "music_midi_core_audio_ios/music_midi_core_audio_ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "music_midi_core_audio_iosTests/music_midi_core_audio_iosTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		07B657DB190F3CBF002DAADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/libmusic_midi_core_audio.dylib";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "music_midi_core_audio_ios/music_midi_core_audio_ios-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "music_midi_core_audio_iosTests/music_midi_core_audio_iosTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		A1CFD77A154F5EAA007447E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -378,6 +661,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		07B657DC190F3CBF002DAADE /* Build configuration list for PBXNativeTarget "music_midi_core_audio_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B657D8190F3CBF002DAADE /* Debug */,
+				07B657D9190F3CBF002DAADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07B657DD190F3CBF002DAADE /* Build configuration list for PBXNativeTarget "music_midi_core_audio_iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B657DA190F3CBF002DAADE /* Debug */,
+				07B657DB190F3CBF002DAADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A1CFD772154F5EA7007447E2 /* Build configuration list for PBXProject "music_midi_core_audio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -174,13 +174,6 @@
 			remoteGlobalIDString = 9AE24D6D1904CF30001AEFFB;
 			remoteInfo = basefreetype_iosTests;
 		};
-		07A6CA2F190C90C600859288 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AA6A2CE19072359000A1F4A /* os.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A1CFD778154F5EAA007447E2;
-			remoteInfo = ca2os;
-		};
 		07A6CA31190C90C600859288 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9AA6A2CE19072359000A1F4A /* os.xcodeproj */;
@@ -247,8 +240,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AE24EC41904E95E001AEFFB /* CoreGraphics.framework in Frameworks */,
 				9AE24EC61904E95E001AEFFB /* UIKit.framework in Frameworks */,
+				9AE24EC41904E95E001AEFFB /* CoreGraphics.framework in Frameworks */,
 				9AE24EC21904E95E001AEFFB /* Foundation.framework in Frameworks */,
 				07011FF4190D5F6600C08335 /* libca2os.dylib in Frameworks */,
 				9AA6A4561907B5BD000A1F4A /* libcore.dylib in Frameworks */,
@@ -325,7 +318,6 @@
 		07A6C9F0190C90C600859288 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07A6CA30190C90C600859288 /* libca2os.dylib */,
 				07A6CA32190C90C600859288 /* libca2os.dylib */,
 				07A6CA34190C90C600859288 /* ca2os_iosTests.xctest */,
 			);
@@ -435,12 +427,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				07011FE9190D5F3D00C08335 /* PBXTargetDependency */,
-				07011FEB190D5F3D00C08335 /* PBXTargetDependency */,
-				07011FED190D5F3D00C08335 /* PBXTargetDependency */,
-				07011FEF190D5F3D00C08335 /* PBXTargetDependency */,
-				07011FF1190D5F3D00C08335 /* PBXTargetDependency */,
 				07011FF3190D5F3D00C08335 /* PBXTargetDependency */,
+				07011FF1190D5F3D00C08335 /* PBXTargetDependency */,
+				07011FEF190D5F3D00C08335 /* PBXTargetDependency */,
+				07011FED190D5F3D00C08335 /* PBXTargetDependency */,
+				07011FEB190D5F3D00C08335 /* PBXTargetDependency */,
+				07011FE9190D5F3D00C08335 /* PBXTargetDependency */,
 			);
 			name = app_ios;
 			productName = app_ios;
@@ -628,13 +620,6 @@
 			fileType = wrapper.cfbundle;
 			path = basefreetype_iosTests.xctest;
 			remoteRef = 07A6CA2A190C90C600859288 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		07A6CA30190C90C600859288 /* libca2os.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libca2os.dylib;
-			remoteRef = 07A6CA2F190C90C600859288 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		07A6CA32190C90C600859288 /* libca2os.dylib */ = {
@@ -857,6 +842,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				INFOPLIST_FILE = "app_ios/app_ios-Info.plist";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
@@ -869,6 +858,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				INFOPLIST_FILE = "app_ios/app_ios-Info.plist";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
