@@ -140,6 +140,62 @@
 			remoteGlobalIDString = 9AE24D6D1904CF30001AEFFB;
 			remoteInfo = basefreetype_iosTests;
 		};
+		07B653CC190F22F3002DAADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A4A8F5190C4416005B6DE5 /* base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9A98A6151771D67E000AE16E;
+			remoteInfo = base;
+		};
+		07B653CE190F22F3002DAADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A4A8F5190C4416005B6DE5 /* base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24D341904CEFE001AEFFB;
+			remoteInfo = base_ios;
+		};
+		07B653D0190F22F3002DAADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A4A8F5190C4416005B6DE5 /* base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24D431904CEFE001AEFFB;
+			remoteInfo = base_iosTests;
+		};
+		07B653DD190F22F3002DAADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA6A2BE190722F7000A1F4A /* core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9A8916841751D72100E531ED;
+			remoteInfo = core;
+		};
+		07B653DF190F22F3002DAADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA6A2BE190722F7000A1F4A /* core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24DDC1904CF6E001AEFFB;
+			remoteInfo = core_ios;
+		};
+		07B653E1190F22F3002DAADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA6A2BE190722F7000A1F4A /* core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24DEB1904CF6E001AEFFB;
+			remoteInfo = core_iosTests;
+		};
+		07B653FF190F232D002DAADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A4A8F5190C4416005B6DE5 /* base.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AE24D331904CEFE001AEFFB;
+			remoteInfo = base_ios;
+		};
+		07B65401190F232D002DAADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA6A2BE190722F7000A1F4A /* core.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AE24DDB1904CF6E001AEFFB;
+			remoteInfo = core_ios;
+		};
 		9AE24FA719059AA5001AEFFB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A1CFD76F154F5EA7007447E2 /* Project object */;
@@ -351,6 +407,26 @@
 				07A6CA1E190C90C600859288 /* libbasefreetype.dylib */,
 				07A6CA20190C90C600859288 /* libbasefreetype.dylib */,
 				07A6CA22190C90C600859288 /* basefreetype_iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07B653BF190F22F2002DAADE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07B653CD190F22F3002DAADE /* libbase.dylib */,
+				07B653CF190F22F3002DAADE /* libbase.dylib */,
+				07B653D1190F22F3002DAADE /* base_iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07B653D8190F22F3002DAADE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07B653DE190F22F3002DAADE /* libcore.dylib */,
+				07B653E0190F22F3002DAADE /* libcore.dylib */,
+				07B653E2190F22F3002DAADE /* core_iosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -573,6 +649,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				07B65400190F232D002DAADE /* PBXTargetDependency */,
+				07B65402190F232D002DAADE /* PBXTargetDependency */,
 				077C2A2C190F204A00A1F6B0 /* PBXTargetDependency */,
 				07012002190D716C00C08335 /* PBXTargetDependency */,
 				07012004190D716C00C08335 /* PBXTargetDependency */,
@@ -626,6 +704,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 07B653BF190F22F2002DAADE /* Products */;
+					ProjectRef = 07A4A8F5190C4416005B6DE5 /* base.xcodeproj */;
+				},
+				{
 					ProductGroup = 07A6C985190C5F4300859288 /* Products */;
 					ProjectRef = 07A4A90F190C4431005B6DE5 /* basefreeimage.xcodeproj */;
 				},
@@ -636,6 +718,10 @@
 				{
 					ProductGroup = 077C29FF190F10FD00A1F6B0 /* Products */;
 					ProjectRef = 07A4A91B190C443F005B6DE5 /* basemysql.xcodeproj */;
+				},
+				{
+					ProductGroup = 07B653D8190F22F3002DAADE /* Products */;
+					ProjectRef = 9AA6A2BE190722F7000A1F4A /* core.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -708,6 +794,48 @@
 			fileType = wrapper.cfbundle;
 			path = basefreetype_iosTests.xctest;
 			remoteRef = 07A6CA21190C90C600859288 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07B653CD190F22F3002DAADE /* libbase.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libbase.dylib;
+			remoteRef = 07B653CC190F22F3002DAADE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07B653CF190F22F3002DAADE /* libbase.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbase.dylib;
+			remoteRef = 07B653CE190F22F3002DAADE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07B653D1190F22F3002DAADE /* base_iosTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = base_iosTests.xctest;
+			remoteRef = 07B653D0190F22F3002DAADE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07B653DE190F22F3002DAADE /* libcore.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libcore.dylib;
+			remoteRef = 07B653DD190F22F3002DAADE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07B653E0190F22F3002DAADE /* libcore.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcore.dylib;
+			remoteRef = 07B653DF190F22F3002DAADE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07B653E2190F22F3002DAADE /* core_iosTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = core_iosTests.xctest;
+			remoteRef = 07B653E1190F22F3002DAADE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -790,6 +918,16 @@
 			isa = PBXTargetDependency;
 			name = basemysql_ios;
 			targetProxy = 077C2A2B190F204A00A1F6B0 /* PBXContainerItemProxy */;
+		};
+		07B65400190F232D002DAADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = base_ios;
+			targetProxy = 07B653FF190F232D002DAADE /* PBXContainerItemProxy */;
+		};
+		07B65402190F232D002DAADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = core_ios;
+			targetProxy = 07B65401190F232D002DAADE /* PBXContainerItemProxy */;
 		};
 		9AE24FA819059AA5001AEFFB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

@@ -524,14 +524,14 @@ namespace draw2d_quartz2d
       
       
       // platform-specific or platform-internals
-      bool set(const ::draw2d::brush * pbrush);
-      bool set(const ::draw2d::pen * ppen);
-      bool set(const ::draw2d::font * pfont);
-      bool set(const ::draw2d::path * ppath);
-      bool set(const ::draw2d::path::element & e);
-      bool set(const ::draw2d::path::arc & arc);
-      bool set(const ::draw2d::path::move & move);
-      bool set(const ::draw2d::path::line & line);
+      bool set(::draw2d::brush * pbrush);
+      bool set(::draw2d::pen * ppen);
+      bool set(::draw2d::font * pfont);
+      bool set(::draw2d::path * ppath);
+      bool set(::draw2d::path::element & e);
+      bool set(::draw2d::path::arc & arc);
+      bool set(::draw2d::path::move & move);
+      bool set(::draw2d::path::line & line);
       bool fill_and_draw(::draw2d::brush * pbrush, ::draw2d::pen * ppen);
       bool fill(::draw2d::brush * pbrush);
       bool draw(::draw2d::pen * ppen);
