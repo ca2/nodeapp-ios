@@ -7,7 +7,12 @@
 		<key>app.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>20</integer>
+			<integer>16</integer>
+		</dict>
+		<key>app_ios.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>39</integer>
 		</dict>
 		<key>core.xcscheme</key>
 		<dict>
