@@ -5487,7 +5487,7 @@ namespace draw2d_quartz2d
    }
    
    
-   bool graphics::set(const ::draw2d::brush * pbrush)
+   bool graphics::set(::draw2d::brush * pbrush)
    {
       
 //      cairo_set_source_rgba(m_pdc, argb_get_r_value(pbrush->m_cr) / 255.0, argb_get_g_value(pbrush->m_cr) / 255.0, argb_get_b_value(pbrush->m_cr) / 255.0, argb_get_a_value(pbrush->m_cr) / 255.0);
@@ -5502,7 +5502,7 @@ namespace draw2d_quartz2d
    }
    
    
-   bool graphics::set(const ::draw2d::pen * ppen)
+   bool graphics::set(::draw2d::pen * ppen)
    {
       
 //      cairo_set_source_rgba(m_pdc, argb_get_r_value(ppen->m_cr) / 255.0, argb_get_g_value(ppen->m_cr) / 255.0, argb_get_b_value(ppen->m_cr) / 255.0, argb_get_a_value(ppen->m_cr) / 255.0);
@@ -5532,29 +5532,11 @@ namespace draw2d_quartz2d
       
    }
    
-   bool graphics::set(const ::draw2d::font * pfont)
+   
+   bool graphics::set(::draw2d::font * pfont)
    {
-      
-      if(pfont == NULL)
-      {
-         
-         CGContextSelectFont(m_pdc, "Helvetica", 16.0 * m_dFontFactor, kCGEncodingFontSpecific);
-         
-      }
-      else if(pfont->m_strFontFamilyName == "Lucida Sans Unicode")
-      {
-      
-         CGContextSelectFont(m_pdc, "Helvetica", pfont->m_dFontSize * m_dFontFactor, kCGEncodingFontSpecific);
-         
-      }
-      else
-      {
-         
-         CGContextSelectFont(m_pdc, "Helvetica", pfont->m_dFontSize * m_dFontFactor, kCGEncodingFontSpecific);
-         
-      }
-      
-      return true;
+       
+      return SelectFont(pfont);
       
    }
    
@@ -5646,7 +5628,7 @@ namespace draw2d_quartz2d
    }
    
    
-   bool graphics::set(const ::draw2d::path * ppathParam)
+   bool graphics::set(::draw2d::path * ppathParam)
    {
       
       CGContextBeginPath(m_pdc);
@@ -5658,7 +5640,7 @@ namespace draw2d_quartz2d
    }
    
    
-   bool graphics::set(const ::draw2d_quartz2d::path::element & e)
+   bool graphics::set(::draw2d_quartz2d::path::element & e)
    {
       
       switch(e.m_etype)
@@ -5680,7 +5662,7 @@ namespace draw2d_quartz2d
       
    }
    
-   bool graphics::set(const ::draw2d_quartz2d::path::arc & a)
+   bool graphics::set(::draw2d_quartz2d::path::arc & a)
    {
       
 //      cairo_translate(m_pdc, a.m_xCenter, a.m_yCenter);
@@ -5697,7 +5679,7 @@ namespace draw2d_quartz2d
       
    }
    
-   bool graphics::set(const ::draw2d_quartz2d::path::line & l)
+   bool graphics::set(::draw2d_quartz2d::path::line & l)
    {
       
 //      if(!cairo_has_current_point(m_pdc))
@@ -5718,7 +5700,7 @@ namespace draw2d_quartz2d
    }
    
    
-   bool graphics::set(const ::draw2d_quartz2d::path::move & p)
+   bool graphics::set(::draw2d_quartz2d::path::move & p)
    {
       
 //      cairo_move_to(m_pdc, p.m_x, p.m_y);
