@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A1CFD777154F5EAA007447E2"
-               BuildableName = "libca2os.dylib"
-               BlueprintName = "ca2os"
-               ReferencedContainer = "container:os.xcodeproj">
+               BlueprintIdentifier = "078AEE3D191539C20091C065"
+               BuildableName = "libaudio_core_audio_ios.dylib"
+               BlueprintName = "audio_core_audio_ios"
+               ReferencedContainer = "container:audio_core_audio.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,6 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "078AEE4C191539C30091C065"
+               BuildableName = "audio_core_audio_iosTests.xctest"
+               BlueprintName = "audio_core_audio_iosTests"
+               ReferencedContainer = "container:audio_core_audio.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
