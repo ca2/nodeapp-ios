@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>app.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>16</integer>
-		</dict>
 		<key>app_ios.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
