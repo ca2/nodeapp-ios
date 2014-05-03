@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>draw2d_quartz2d.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
-		</dict>
 		<key>draw2d_quartz2d_ios.xcscheme</key>
 		<dict>
 			<key>orderHint</key>

@@ -107,6 +107,69 @@
 			remoteGlobalIDString = 9AE24D5D1904CF2F001AEFFB;
 			remoteInfo = basefreetype_ios;
 		};
+		07FAB743191536C600A158ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B654D6190F2E0B002DAADE /* base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9A98A6151771D67E000AE16E;
+			remoteInfo = base;
+		};
+		07FAB745191536C600A158ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B654D6190F2E0B002DAADE /* base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24D341904CEFE001AEFFB;
+			remoteInfo = base_ios;
+		};
+		07FAB747191536C600A158ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B654D6190F2E0B002DAADE /* base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24D431904CEFE001AEFFB;
+			remoteInfo = base_iosTests;
+		};
+		07FAB74C191536C600A158ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B654F7190F2E54002DAADE /* basefreeimage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AA5E6D616F7C61B005C45CE;
+			remoteInfo = basefreeimage;
+		};
+		07FAB74E191536C600A158ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B654F7190F2E54002DAADE /* basefreeimage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24D881904CF46001AEFFB;
+			remoteInfo = basefreeimage_ios;
+		};
+		07FAB750191536C600A158ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B654F7190F2E54002DAADE /* basefreeimage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24D971904CF46001AEFFB;
+			remoteInfo = basefreeimage_iosTests;
+		};
+		07FAB757191536C600A158ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B65503190F2E90002DAADE /* basemysql.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AA5E6D616F7C61B005C45CE;
+			remoteInfo = basemysql;
+		};
+		07FAB759191536C600A158ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B65503190F2E90002DAADE /* basemysql.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24DB21904CF5B001AEFFB;
+			remoteInfo = basemysql_ios;
+		};
+		07FAB75B191536C600A158ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B65503190F2E90002DAADE /* basemysql.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24DC11904CF5B001AEFFB;
+			remoteInfo = basemysql_iosTests;
+		};
 		9AA6A24E19070F82000A1F4A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A1CFD76F154F5EA7007447E2 /* Project object */;
@@ -237,6 +300,36 @@
 				07B65557190F30F2002DAADE /* libbasefreetype.dylib */,
 				07B65559190F30F2002DAADE /* libbasefreetype.dylib */,
 				07B6555B190F30F2002DAADE /* basefreetype_iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07FAB73A191536C600A158ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07FAB744191536C600A158ED /* libbase.dylib */,
+				07FAB746191536C600A158ED /* libbase.dylib */,
+				07FAB748191536C600A158ED /* base_iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07FAB73C191536C600A158ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07FAB74D191536C600A158ED /* libbasefreeimage.dylib */,
+				07FAB74F191536C600A158ED /* libbasefreeimage.dylib */,
+				07FAB751191536C600A158ED /* basefreeimage_iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07FAB73E191536C600A158ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07FAB758191536C600A158ED /* libbasemysql.dylib */,
+				07FAB75A191536C600A158ED /* libbasemysql.dylib */,
+				07FAB75C191536C600A158ED /* basemysql_iosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -445,8 +538,20 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 07FAB73A191536C600A158ED /* Products */;
+					ProjectRef = 07B654D6190F2E0B002DAADE /* base.xcodeproj */;
+				},
+				{
+					ProductGroup = 07FAB73C191536C600A158ED /* Products */;
+					ProjectRef = 07B654F7190F2E54002DAADE /* basefreeimage.xcodeproj */;
+				},
+				{
 					ProductGroup = 07B65551190F30F2002DAADE /* Products */;
 					ProjectRef = 07B654E9190F2E37002DAADE /* basefreetype.xcodeproj */;
+				},
+				{
+					ProductGroup = 07FAB73E191536C600A158ED /* Products */;
+					ProjectRef = 07B65503190F2E90002DAADE /* basemysql.xcodeproj */;
 				},
 				{
 					ProductGroup = 07A6C99F190C90C400859288 /* Products */;
@@ -503,6 +608,69 @@
 			fileType = wrapper.cfbundle;
 			path = basefreetype_iosTests.xctest;
 			remoteRef = 07B6555A190F30F2002DAADE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07FAB744191536C600A158ED /* libbase.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libbase.dylib;
+			remoteRef = 07FAB743191536C600A158ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07FAB746191536C600A158ED /* libbase.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbase.dylib;
+			remoteRef = 07FAB745191536C600A158ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07FAB748191536C600A158ED /* base_iosTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = base_iosTests.xctest;
+			remoteRef = 07FAB747191536C600A158ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07FAB74D191536C600A158ED /* libbasefreeimage.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libbasefreeimage.dylib;
+			remoteRef = 07FAB74C191536C600A158ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07FAB74F191536C600A158ED /* libbasefreeimage.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbasefreeimage.dylib;
+			remoteRef = 07FAB74E191536C600A158ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07FAB751191536C600A158ED /* basefreeimage_iosTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = basefreeimage_iosTests.xctest;
+			remoteRef = 07FAB750191536C600A158ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07FAB758191536C600A158ED /* libbasemysql.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libbasemysql.dylib;
+			remoteRef = 07FAB757191536C600A158ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07FAB75A191536C600A158ED /* libbasemysql.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbasemysql.dylib;
+			remoteRef = 07FAB759191536C600A158ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07FAB75C191536C600A158ED /* basemysql_iosTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = basemysql_iosTests.xctest;
+			remoteRef = 07FAB75B191536C600A158ED /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
