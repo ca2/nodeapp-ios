@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9AE24F9119059AA4001AEFFB"
-               BuildableName = "libca2os.dylib"
-               BlueprintName = "ca2os_ios"
-               ReferencedContainer = "container:os.xcodeproj">
+               BlueprintIdentifier = "078AEE3D191539C20091C065"
+               BuildableName = "libaudio_core_audio.dylib"
+               BlueprintName = "audio_core_audio_ios"
+               ReferencedContainer = "container:audio_core_audio.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9AE24FA019059AA4001AEFFB"
-               BuildableName = "ca2os_iosTests.xctest"
-               BlueprintName = "ca2os_iosTests"
-               ReferencedContainer = "container:os.xcodeproj">
+               BlueprintIdentifier = "078AEE4C191539C30091C065"
+               BuildableName = "audio_core_audio_iosTests.xctest"
+               BlueprintName = "audio_core_audio_iosTests"
+               ReferencedContainer = "container:audio_core_audio.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
