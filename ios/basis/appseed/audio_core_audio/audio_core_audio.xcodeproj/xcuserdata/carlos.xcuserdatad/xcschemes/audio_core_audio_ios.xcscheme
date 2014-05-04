@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "078AEE3D191539C20091C065"
-               BuildableName = "libaudio_core_audio_ios.dylib"
+               BuildableName = "libaudio_core_audio.dylib"
                BlueprintName = "audio_core_audio_ios"
                ReferencedContainer = "container:audio_core_audio.xcodeproj">
             </BuildableReference>
