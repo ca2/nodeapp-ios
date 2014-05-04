@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		071FCCF119168A590089BC57 /* libbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FAB746191536C600A158ED /* libbase.dylib */; };
 		07884E821898203C00DC6CEB /* libbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07884E811898203C00DC6CEB /* libbase.dylib */; };
+		079DFE851916B59F0042AD26 /* libbasefreeimage.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FAB74F191536C600A158ED /* libbasefreeimage.dylib */; };
+		079DFE861916B5A80042AD26 /* libbasemysql.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FAB75A191536C600A158ED /* libbasemysql.dylib */; };
 		07B65517190F2EB2002DAADE /* libcore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A6C9AC190C90C500859288 /* libcore.dylib */; };
 		07B655E8190F38CE002DAADE /* libbasefreetype.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B65559190F30F2002DAADE /* libbasefreetype.dylib */; };
 		9A1B496416A494A600875A94 /* framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A1B496316A494A600875A94 /* framework.h */; };
@@ -55,6 +57,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 9AE24D331904CEFE001AEFFB;
 			remoteInfo = base_ios;
+		};
+		079DFE751916B5600042AD26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B654F7190F2E54002DAADE /* basefreeimage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AE24D871904CF46001AEFFB;
+			remoteInfo = basefreeimage_ios;
+		};
+		079DFE771916B5600042AD26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B65503190F2E90002DAADE /* basemysql.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AE24DB11904CF5B001AEFFB;
+			remoteInfo = basemysql_ios;
 		};
 		07A6C9A9190C90C500859288 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -258,6 +274,8 @@
 			files = (
 				9AA6A23C19070F82000A1F4A /* Foundation.framework in Frameworks */,
 				07B65517190F2EB2002DAADE /* libcore.dylib in Frameworks */,
+				079DFE861916B5A80042AD26 /* libbasemysql.dylib in Frameworks */,
+				079DFE851916B59F0042AD26 /* libbasefreeimage.dylib in Frameworks */,
 				07B655E8190F38CE002DAADE /* libbasefreetype.dylib in Frameworks */,
 				071FCCF119168A590089BC57 /* libbase.dylib in Frameworks */,
 			);
@@ -473,6 +491,8 @@
 			);
 			dependencies = (
 				07B654E8190F2E25002DAADE /* PBXTargetDependency */,
+				079DFE781916B5600042AD26 /* PBXTargetDependency */,
+				079DFE761916B5600042AD26 /* PBXTargetDependency */,
 				07B655E7190F38BE002DAADE /* PBXTargetDependency */,
 				071FCCE319168A120089BC57 /* PBXTargetDependency */,
 			);
@@ -733,6 +753,16 @@
 			isa = PBXTargetDependency;
 			name = base_ios;
 			targetProxy = 071FCCE219168A120089BC57 /* PBXContainerItemProxy */;
+		};
+		079DFE761916B5600042AD26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = basefreeimage_ios;
+			targetProxy = 079DFE751916B5600042AD26 /* PBXContainerItemProxy */;
+		};
+		079DFE781916B5600042AD26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = basemysql_ios;
+			targetProxy = 079DFE771916B5600042AD26 /* PBXContainerItemProxy */;
 		};
 		07B654E8190F2E25002DAADE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
