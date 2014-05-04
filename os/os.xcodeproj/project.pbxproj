@@ -953,12 +953,6 @@
 			buildSettings = {
 				DSTROOT = /tmp/ca2os_ios.dst;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/ios/app/appseed/base/build/Debug-iphoneos",
-					"/ios/app/thirdparty/appseed/mysql/build/Debug-iphoneos",
-					"/ios/app/appseed/core/build/Debug-iphoneos",
-				);
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -969,12 +963,6 @@
 			buildSettings = {
 				DSTROOT = /tmp/ca2os_ios.dst;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/ios/app/appseed/base/build/Debug-iphoneos",
-					"/ios/app/thirdparty/appseed/mysql/build/Debug-iphoneos",
-					"/ios/app/appseed/core/build/Debug-iphoneos",
-				);
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -1043,7 +1031,7 @@
 		A1CFD77A154F5EAA007447E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_DEADCODE_DEADSTORES = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1099,7 +1087,7 @@
 		A1CFD77B154F5EAA007447E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_DEADCODE_DEADSTORES = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";

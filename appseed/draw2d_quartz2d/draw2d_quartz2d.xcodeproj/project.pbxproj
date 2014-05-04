@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071FCCF119168A590089BC57 /* libbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FAB746191536C600A158ED /* libbase.dylib */; };
 		07884E821898203C00DC6CEB /* libbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07884E811898203C00DC6CEB /* libbase.dylib */; };
 		07B65517190F2EB2002DAADE /* libcore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A6C9AC190C90C500859288 /* libcore.dylib */; };
 		07B655E8190F38CE002DAADE /* libbasefreetype.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B65559190F30F2002DAADE /* libbasefreetype.dylib */; };
-		07B655EC190F38CE002DAADE /* libbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B655E9190F38CE002DAADE /* libbase.dylib */; };
-		07B655ED190F38CE002DAADE /* libbasefreeimage.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B655EA190F38CE002DAADE /* libbasefreeimage.dylib */; };
-		07B655EE190F38CE002DAADE /* libbasemysql.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B655EB190F38CE002DAADE /* libbasemysql.dylib */; };
 		9A1B496416A494A600875A94 /* framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A1B496316A494A600875A94 /* framework.h */; };
 		9A1B496716A4A10100875A94 /* framework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B496616A4A10100875A94 /* framework.cpp */; };
 		9A6B40E417BBE291008391AD /* draw2d_quartz2d_bitmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A6B40CC17BBE291008391AD /* draw2d_quartz2d_bitmap.cpp */; };
@@ -51,6 +49,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		071FCCE219168A120089BC57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B654D6190F2E0B002DAADE /* base.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AE24D331904CEFE001AEFFB;
+			remoteInfo = base_ios;
+		};
 		07A6C9A9190C90C500859288 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9AA6A36319073662000A1F4A /* core.xcodeproj */;
@@ -253,10 +258,8 @@
 			files = (
 				9AA6A23C19070F82000A1F4A /* Foundation.framework in Frameworks */,
 				07B65517190F2EB2002DAADE /* libcore.dylib in Frameworks */,
-				07B655EE190F38CE002DAADE /* libbasemysql.dylib in Frameworks */,
-				07B655ED190F38CE002DAADE /* libbasefreeimage.dylib in Frameworks */,
 				07B655E8190F38CE002DAADE /* libbasefreetype.dylib in Frameworks */,
-				07B655EC190F38CE002DAADE /* libbase.dylib in Frameworks */,
+				071FCCF119168A590089BC57 /* libbase.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,8 +472,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				07B655E7190F38BE002DAADE /* PBXTargetDependency */,
 				07B654E8190F2E25002DAADE /* PBXTargetDependency */,
+				07B655E7190F38BE002DAADE /* PBXTargetDependency */,
+				071FCCE319168A120089BC57 /* PBXTargetDependency */,
 			);
 			name = draw2d_quartz2d_ios;
 			productName = draw2d_quartz2d_ios;
@@ -725,6 +729,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		071FCCE319168A120089BC57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = base_ios;
+			targetProxy = 071FCCE219168A120089BC57 /* PBXContainerItemProxy */;
+		};
 		07B654E8190F2E25002DAADE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = core_ios;
