@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		07011FF4190D5F6600C08335 /* libca2os.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A6CA32190C90C600859288 /* libca2os.dylib */; };
-		9AA6A4521907B5BD000A1F4A /* libbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A44D1907B5BD000A1F4A /* libbase.dylib */; };
-		9AA6A4531907B5BD000A1F4A /* libbasefreeimage.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A44E1907B5BD000A1F4A /* libbasefreeimage.dylib */; };
-		9AA6A4541907B5BD000A1F4A /* libbasefreetype.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A44F1907B5BD000A1F4A /* libbasefreetype.dylib */; };
-		9AA6A4551907B5BD000A1F4A /* libbasemysql.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A4501907B5BD000A1F4A /* libbasemysql.dylib */; };
-		9AA6A4561907B5BD000A1F4A /* libcore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6A4511907B5BD000A1F4A /* libcore.dylib */; };
+		9A9705AD1915E31600032B50 /* libbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07011FAF190CA31000C08335 /* libbase.dylib */; };
+		9A9705AE1915E31600032B50 /* libbasefreeimage.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A6C9B3190C90C500859288 /* libbasefreeimage.dylib */; };
+		9A9705AF1915E31600032B50 /* libbasefreetype.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A6CA29190C90C600859288 /* libbasefreetype.dylib */; };
+		9A9705B01915E31600032B50 /* libbasemysql.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 078001D2190C9F17000DA332 /* libbasemysql.dylib */; };
+		9A9705B11915E31600032B50 /* libcore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A6C9BC190C90C500859288 /* libcore.dylib */; };
 		9AE24EC21904E95E001AEFFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24EC11904E95E001AEFFB /* Foundation.framework */; };
 		9AE24EC41904E95E001AEFFB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24EC31904E95E001AEFFB /* CoreGraphics.framework */; };
 		9AE24EC61904E95E001AEFFB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24EC51904E95E001AEFFB /* UIKit.framework */; };
@@ -244,11 +244,11 @@
 				9AE24EC41904E95E001AEFFB /* CoreGraphics.framework in Frameworks */,
 				9AE24EC21904E95E001AEFFB /* Foundation.framework in Frameworks */,
 				07011FF4190D5F6600C08335 /* libca2os.dylib in Frameworks */,
-				9AA6A4561907B5BD000A1F4A /* libcore.dylib in Frameworks */,
-				9AA6A4551907B5BD000A1F4A /* libbasemysql.dylib in Frameworks */,
-				9AA6A4531907B5BD000A1F4A /* libbasefreeimage.dylib in Frameworks */,
-				9AA6A4541907B5BD000A1F4A /* libbasefreetype.dylib in Frameworks */,
-				9AA6A4521907B5BD000A1F4A /* libbase.dylib in Frameworks */,
+				9A9705B11915E31600032B50 /* libcore.dylib in Frameworks */,
+				9A9705B01915E31600032B50 /* libbasemysql.dylib in Frameworks */,
+				9A9705AE1915E31600032B50 /* libbasefreeimage.dylib in Frameworks */,
+				9A9705AF1915E31600032B50 /* libbasefreetype.dylib in Frameworks */,
+				9A9705AD1915E31600032B50 /* libbase.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
