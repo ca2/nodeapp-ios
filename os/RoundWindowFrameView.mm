@@ -21,33 +21,47 @@
 //
 // Returns the bounds of the resize box.
 //
-- (NSRect)resizeRect
+- (CGRect)resizeRect
 {
    
-	const CGFloat resizeBoxSize = 16.0;
+//	const CGFloat resizeBoxSize = 16.0;
    
-	const CGFloat contentViewPadding = 5.5;
+//	const CGFloat contentViewPadding = 5.5;
 	
-	NSRect contentViewRect = [[self window] contentRectForFrameRect:[[self window] frame]];
+//	CGRect contentViewRect = [[self window] contentRectForFrameRect:[[self window] frame]];
+    
+//    CGRect contentViewRect;
    
-	NSRect resizeRect = NSMakeRect(
+	/*CGRect resizeRect = NSMakeRect(
 		NSMaxX(contentViewRect) + contentViewPadding,
 		NSMinY(contentViewRect) - resizeBoxSize - contentViewPadding,
 		resizeBoxSize,
 		resizeBoxSize);
-	
+	*/
+    
+    CGRect resizeRect;
+    
+    resizeRect.origin.x = 0;
+    resizeRect.origin.y = 0;
+    resizeRect.size.width = 0;
+    resizeRect.size.height = 0;
+    
 	return resizeRect;
    
 }
 
-- (void)mouseUp:(NSEvent *)event
+- (void)mouseUp:(UIEvent *)event
 {
    
    round_window * p = m_roundwindow->m_pwindow;
    
-   NSPoint point = [[self window] convertBaseToScreen:[event locationInWindow]];
-   
-   NSRect e = [[NSScreen mainScreen] frame];
+//   CGPoint point = [[self window] convertBaseToScreen:[event locationInWindow]];
+    CGPoint point;
+    
+    point.x = 0;
+    point.y = 0;
+    
+   CGRect e = [[UIScreen mainScreen] bounds];
    
    int H = (int) e.size.height;
    
@@ -62,14 +76,19 @@
 }
 
 
-- (void)mouseMoved:(NSEvent *)event
+- (void)mouseMoved:(UIEvent *)event
 {
    
    round_window * p = m_roundwindow->m_pwindow;
    
-   NSPoint point = [[self window] convertBaseToScreen:[event locationInWindow]];
+//   CGPoint point = [[self window] convertBaseToScreen:[event locationInWindow]];
+    
+    CGPoint point;
+    
+    point.x = 0;
+    point.y = 0;
    
-   NSRect e = [[NSScreen mainScreen] frame];
+   CGRect e = [[UIScreen mainScreen] bounds];
    
    int H = (int) e.size.height;
    
@@ -84,14 +103,20 @@
 }
 
 
-- (void)mouseDragged:(NSEvent *)event
+- (void)mouseDragged:(UIEvent *)event
 {
    
    round_window * p = m_roundwindow->m_pwindow;
    
-   NSPoint point = [[self window] convertBaseToScreen:[event locationInWindow]];
+//   CGPoint point = [[self window] convertBaseToScreen:[event locationInWindow]];
+    
+    CGPoint point;
+    
+    point.x = 0;
+    
+    point.y = 0;
    
-   NSRect e = [[NSScreen mainScreen] frame];
+   CGRect e = [[UIScreen mainScreen] bounds];
    
    int H = (int) e.size.height;
    
@@ -114,14 +139,18 @@
 //	- click in the resize box should resize the window
 //	- click anywhere else will drag the window.
 //
-- (void)mouseDown:(NSEvent *)event
+- (void)mouseDown:(UIEvent *)event
 {
    
    round_window * p = m_roundwindow->m_pwindow;
    
-   NSPoint point = [[self window] convertBaseToScreen:[event locationInWindow]];
+//   CGPoint point = [[self window] convertBaseToScreen:[event locationInWindow]];
+    CGPoint point;
+    
+    point.x = 0;
+    point.y = 0;
    
-   NSRect e = [[NSScreen mainScreen] frame];
+   CGRect e = [[UIScreen mainScreen] bounds];
    
    int H = (int) e.size.height;
    
@@ -133,17 +162,25 @@
    
    return;
    
-	NSPoint pointInView = [self convertPoint:[event locationInWindow] fromView:nil];
-	
+//	CGPoint pointInView = [self convertPoint:[event locationInWindow] fromView:nil];
+    
+	CGPoint pointInView;
+    
+    pointInView.x = 0;
+    pointInView.y = 0;
+    
 	BOOL resize = NO;
-	if (NSPointInRect(pointInView, [self resizeRect]))
-	{
-		resize = YES;
-	}
+//	if (CGPointInRect(pointInView, [self resizeRect]))
+//	{
+//		resize = YES;
+//	}
 	
-	NSWindow *window = [self window];
-	NSPoint originalMouseLocation = [window convertBaseToScreen:[event locationInWindow]];
-	NSRect originalFrame = [window frame];
+	UIWindow *window = [self window];
+//	CGPoint originalMouseLocation = [window convertBaseToScreen:[event locationInWindow]];
+//    CGPoint point;
+    point.x = 0;
+    point.y = 0;
+	CGRect originalFrame = [window frame];
 	
     while (YES)
 	{
@@ -151,23 +188,28 @@
 		// Lock focus and take all the dragged and mouse up events until we
 		// receive a mouse up.
 		//
-        NSEvent *newEvent = [window
-			nextEventMatchingMask:(NSLeftMouseDraggedMask | NSLeftMouseUpMask)];
+//        UIEvent *newEvent = [window
+//			nextEventMatchingMask:(NSLeftMouseDraggedMask | NSLeftMouseUpMask)];
+        
+//        UIEvent * newEvent = NULL;
 		
-        if ([newEvent type] == NSLeftMouseUp)
-		{
-			break;
-		}
+//        if ([newEvent type] == NSLeftMouseUp)
+//		{
+//			break;
+//		}
 		
 		//
 		// Work out how much the mouse has moved
 		//
-		NSPoint newMouseLocation = [window convertBaseToScreen:[newEvent locationInWindow]];
-		NSPoint delta = NSMakePoint(
-			newMouseLocation.x - originalMouseLocation.x,
-			newMouseLocation.y - originalMouseLocation.y);
+//		CGPoint newMouseLocation = [window convertBaseToScreen:[newEvent locationInWindow]];
+//		CGPoint delta = NSMakePoint(
+//			newMouseLocation.x - originalMouseLocation.x,
+//			newMouseLocation.y - originalMouseLocation.y);
+        
+//        CGPoint newMouseLocation;
+        CGPoint delta;
 		
-		NSRect newFrame = originalFrame;
+		CGRect newFrame = originalFrame;
 		
 		if (!resize)
 		{
@@ -189,7 +231,8 @@
 			//
 			// Constrain to the window's min and max size
 			//
-			NSRect newContentRect = [window contentRectForFrameRect:newFrame];
+            /*
+			CGRect newContentRect = [window contentRectForFrameRect:newFrame];
 			NSSize maxSize = [window maxSize];
 			NSSize minSize = [window minSize];
 			if (newContentRect.size.width > maxSize.width)
@@ -210,9 +253,10 @@
 				newFrame.size.height += minSize.height - newContentRect.size.height;
 				newFrame.origin.y -= minSize.height - newContentRect.size.height;
 			}
+             */
 		}
 		
-		[window setFrame:newFrame display:YES animate:NO];
+//		[window setFrame:newFrame display:YES animate:NO];
 	}
 }
 
@@ -226,11 +270,11 @@
 //
 // Draws the frame of the window.
 //
-- (void)drawRect:(NSRect)rect
+- (void)drawRect:(CGRect)rect
 {
    
    //	[[NSColor clearColor] set];
-	//NSRectFill(rect);
+	//CGRectFill(rect);
 
 /*
 	NSBezierPath * rectPath = [NSBezierPath bezierPathWithRect : [self bounds]];
@@ -242,7 +286,7 @@
 	[[NSColor whiteColor] set];
 	[rectPath stroke];
 	
-   NSRect resizeRect = [self resizeRect];
+   CGRect resizeRect = [self resizeRect];
 	NSBezierPath *resizePath = [NSBezierPath bezierPathWithRect:resizeRect];
 
 	[[NSColor lightGrayColor] set];
@@ -254,7 +298,7 @@
 
    [[NSColor blackColor] set];
 	NSString *windowTitle = [[self window] title];
-	NSRect titleRect = [self bounds];
+	CGRect titleRect = [self bounds];
 	titleRect.origin.y = titleRect.size.height - (WINDOW_FRAME_PADDING - 7);
 	titleRect.size.height = (WINDOW_FRAME_PADDING - 7);
 	NSMutableParagraphStyle *paragraphStyle =
@@ -277,7 +321,9 @@
    
 //   [m_roundwindow disableFlushWindow];
    
-   CGContextRef cgc = (CGContextRef) [[NSGraphicsContext currentContext] graphicsPort];
+//   CGContextRef cgc = (CGContextRef) [[NSGraphicsContext currentContext] graphicsPort];
+    
+    CGContextRef cgc = NULL;
    
    p->round_window_draw(cgc);
    
@@ -293,15 +339,15 @@
    return TRUE;
 }
 
-- (BOOL) acceptsFirstMouse:(NSEvent *)theEvent
-{
-   [self mouseDown: theEvent];
-   return YES;
-}
+//- (BOOL) acceptsFirstMouse:(NSEvent *)theEvent
+//{
+  // [self mouseDown: theEvent];
+   //return YES;
+//}
 
 
 
-- (void)keyDown:(NSEvent *)event {
+- (void)keyDown:(UIEvent *)event {
    
 
    ::user::e_key ekey = event_key(event);
@@ -311,11 +357,11 @@
    if(p->round_window_key_down(ekey))
       return;
    
-   [super keyDown:event];
+//   [super keyDown:event];
    
 }
 
-- (void)keyUp:(NSEvent *)event {
+- (void)keyUp:(UIEvent *)event {
    
    
    ::user::e_key ekey = event_key(event);
@@ -325,16 +371,16 @@
    if(p->round_window_key_up(ekey))
       return;
    
-   [super keyUp:event];
+//   [super keyUp:event];
    
 }
 
-- (void)flagsChanged:(NSEvent *)event
+- (void)flagsChanged:(UIEvent *)event
 {
 
    round_window * p = m_roundwindow->m_pwindow;
    
-   if([event modifierFlags] & NSShiftKeyMask)
+//   if([event modifierFlags] & NSShiftKeyMask)
    {
       if(!m_bShift)
       {
@@ -343,7 +389,7 @@
             return;
       }
    }
-   else
+//   else
    {
       if(m_bShift)
       {
@@ -353,7 +399,7 @@
       }
    }
 
-   if([event modifierFlags] & NSControlKeyMask)
+//   if([event modifierFlags] & NSControlKeyMask)
    {
       if(!m_bControl)
       {
@@ -362,7 +408,7 @@
             return;
       }
    }
-   else
+//   else
    {
       if(m_bControl)
       {
@@ -372,7 +418,7 @@
       }
    }
  
-   if([event modifierFlags] & NSAlternateKeyMask)
+//   if([event modifierFlags] & NSAlternateKeyMask)
    {
       if(!m_bAlt)
       {
@@ -381,7 +427,7 @@
             return;
       }
    }
-   else
+//   else
    {
       if(m_bAlt)
       {
@@ -391,22 +437,24 @@
       }
    }
 
-   [super flagsChanged:event];
+//   [super flagsChanged:event];
+    
 }
 
 @end
 
 
-::user::e_key event_key(NSEvent * event)
+::user::e_key event_key(UIEvent * event)
 {
    
-   if([event modifierFlags] & NSNumericPadKeyMask) // arrow keys have this mask
-   {
+//   if([event modifierFlags] & NSNumericPadKeyMask) // arrow keys have this mask
+//   {
       
-      NSString * arrow = [event charactersIgnoringModifiers];
+//      NSString * arrow = [event charactersIgnoringModifiers];
       
-      unichar key = 0;
-      
+//      unichar key = 0;
+  
+       /*
       if([arrow length] == 0)
          return ::user::key_none;            // reject dead keys
       
@@ -628,7 +676,7 @@
          return ::user::key_delete;
       }
       
-   }
+   }*/
    
    return ::user::key_none;;
    

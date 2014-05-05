@@ -41,11 +41,16 @@
 		0701202D190D74CA00C08335 /* ios1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07E7E6FF190B46A40082F182 /* ios1.cpp */; };
 		0701202E190D74CA00C08335 /* ios2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07E7E701190B46A40082F182 /* ios2.cpp */; };
 		0701202F190D74CA00C08335 /* framework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B496616A4A10100875A94 /* framework.cpp */; };
+		07857A651917D3EB00FFFE51 /* round_window.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9AA1B445176355610019E812 /* round_window.mm */; };
+		07857A661917D3EB00FFFE51 /* RoundWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9AA1B3EB17634E520019E812 /* RoundWindow.mm */; };
+		07857A671917D3EB00FFFE51 /* RoundWindowFrameView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9AA1B3ED17634E520019E812 /* RoundWindowFrameView.mm */; };
 		078AEF6E19158BFA0091C065 /* libbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B653CF190F22F3002DAADE /* libbase.dylib */; };
 		078AEF6F19158BFA0091C065 /* libbasefreeimage.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A6CA17190C90C600859288 /* libbasefreeimage.dylib */; };
 		078AEF7019158BFA0091C065 /* libbasefreetype.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A6CA20190C90C600859288 /* libbasefreetype.dylib */; };
 		078AEF7119158BFA0091C065 /* libbasemysql.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 077C2A0B190F10FD00A1F6B0 /* libbasemysql.dylib */; };
 		078AEF7219158BFA0091C065 /* libcore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B653E0190F22F3002DAADE /* libcore.dylib */; };
+		07A22FEA1917D94900C93134 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07A22FE91917D94900C93134 /* AppDelegate.mm */; };
+		07A22FF61917E36F00C93134 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A22FF51917E36F00C93134 /* UIKit.framework */; };
 		9AE24F9519059AA4001AEFFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24F9419059AA4001AEFFB /* Foundation.framework */; };
 		9AE24FA319059AA4001AEFFB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24FA219059AA4001AEFFB /* XCTest.framework */; };
 		9AE24FA419059AA5001AEFFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24F9419059AA4001AEFFB /* Foundation.framework */; };
@@ -224,6 +229,9 @@
 		0715B913189ED3ED00B3EBD9 /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslconf.h; sourceTree = "<group>"; };
 		07401ECC164632BB00F5D0F3 /* oswindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oswindow.h; sourceTree = "<group>"; };
 		07926B551809949300968303 /* win_common_controls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = win_common_controls.h; sourceTree = "<group>"; };
+		07A22FE81917D94900C93134 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		07A22FE91917D94900C93134 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		07A22FF51917E36F00C93134 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		07A4A8F5190C4416005B6DE5 /* base.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = base.xcodeproj; path = ../../app/appseed/base/base.xcodeproj; sourceTree = SOURCE_ROOT; };
 		07A4A903190C4424005B6DE5 /* basefreetype.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = basefreetype.xcodeproj; path = ../../app/thirdparty/appseed/freetype/basefreetype.xcodeproj; sourceTree = SOURCE_ROOT; };
 		07A4A90F190C4431005B6DE5 /* basefreeimage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = basefreeimage.xcodeproj; path = ../../app/thirdparty/appseed/freeimage/basefreeimage.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -341,6 +349,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A22FF61917E36F00C93134 /* UIKit.framework in Frameworks */,
 				9AE24F9519059AA4001AEFFB /* Foundation.framework in Frameworks */,
 				078AEF7219158BFA0091C065 /* libcore.dylib in Frameworks */,
 				078AEF7119158BFA0091C065 /* libbasemysql.dylib in Frameworks */,
@@ -452,6 +461,7 @@
 		9AE24F9319059AA4001AEFFB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07A22FF51917E36F00C93134 /* UIKit.framework */,
 				07012007190D718A00C08335 /* libbase.dylib */,
 				07012008190D718A00C08335 /* libbasemysql.dylib */,
 				07012009190D718A00C08335 /* libcore.dylib */,
@@ -564,6 +574,8 @@
 		A1CFD896154FB715007447E2 /* os */ = {
 			isa = PBXGroup;
 			children = (
+				07A22FE81917D94900C93134 /* AppDelegate.h */,
+				07A22FE91917D94900C93134 /* AppDelegate.mm */,
 				07E7E6C6190B46A40082F182 /* ios_afxabort.cpp */,
 				07E7E6C7190B46A40082F182 /* ios_afxImpl.h */,
 				07E7E6C8190B46A40082F182 /* ios_afxmem.cpp */,
@@ -856,6 +868,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07857A651917D3EB00FFFE51 /* round_window.mm in Sources */,
+				07857A661917D3EB00FFFE51 /* RoundWindow.mm in Sources */,
+				07857A671917D3EB00FFFE51 /* RoundWindowFrameView.mm in Sources */,
 				0701200D190D74C900C08335 /* ios_afxabort.cpp in Sources */,
 				0701200E190D74C900C08335 /* ios_afxmem.cpp in Sources */,
 				0701200F190D74C900C08335 /* ios_afxstate.cpp in Sources */,
@@ -887,6 +902,7 @@
 				07012029190D74CA00C08335 /* ios_util.cpp in Sources */,
 				0701202A190D74CA00C08335 /* ios_window_draw.cpp in Sources */,
 				0701202B190D74CA00C08335 /* ios_window.cpp in Sources */,
+				07A22FEA1917D94900C93134 /* AppDelegate.mm in Sources */,
 				0701202D190D74CA00C08335 /* ios1.cpp in Sources */,
 				0701202E190D74CA00C08335 /* ios2.cpp in Sources */,
 				0701202F190D74CA00C08335 /* framework.cpp in Sources */,
