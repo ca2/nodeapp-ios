@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		07011FF4190D5F6600C08335 /* libca2os.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A6CA32190C90C600859288 /* libca2os.dylib */; };
+		07A230071917E5C100C93134 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07A230061917E5C100C93134 /* main.mm */; };
+		07A2300B1917E7D500C93134 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07A230091917E7D500C93134 /* InfoPlist.strings */; };
+		07A2300F1917E83500C93134 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A2300E1917E83500C93134 /* Images.xcassets */; };
 		9A9705AD1915E31600032B50 /* libbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07011FAF190CA31000C08335 /* libbase.dylib */; };
 		9A9705AE1915E31600032B50 /* libbasefreeimage.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A6C9B3190C90C500859288 /* libbasefreeimage.dylib */; };
 		9A9705AF1915E31600032B50 /* libbasefreetype.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A6CA29190C90C600859288 /* libbasefreetype.dylib */; };
@@ -16,9 +19,6 @@
 		9AE24EC21904E95E001AEFFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24EC11904E95E001AEFFB /* Foundation.framework */; };
 		9AE24EC41904E95E001AEFFB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24EC31904E95E001AEFFB /* CoreGraphics.framework */; };
 		9AE24EC61904E95E001AEFFB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24EC51904E95E001AEFFB /* UIKit.framework */; };
-		9AE24ECC1904E95E001AEFFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AE24ECA1904E95E001AEFFB /* InfoPlist.strings */; };
-		9AE24ECE1904E95E001AEFFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE24ECD1904E95E001AEFFB /* main.m */; };
-		9AE24ED41904E95E001AEFFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE24ED31904E95E001AEFFB /* Images.xcassets */; };
 		9AE24EDB1904E95F001AEFFB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24EDA1904E95E001AEFFB /* XCTest.framework */; };
 		9AE24EDC1904E95F001AEFFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24EC11904E95E001AEFFB /* Foundation.framework */; };
 		9AE24EDD1904E95F001AEFFB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24EC51904E95E001AEFFB /* UIKit.framework */; };
@@ -198,6 +198,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07A230061917E5C100C93134 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = SOURCE_ROOT; };
+		07A2300A1917E7D500C93134 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		07A2300E1917E83500C93134 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = SOURCE_ROOT; };
+		07A230131917F53C00C93134 /* app-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "app-Info.plist"; sourceTree = "<group>"; };
 		07B5903518866047002C6FEC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		9A5752B616AAE1D2000CC4EF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9A5752B916AAE1D2000CC4EF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -224,10 +228,6 @@
 		9AE24EC11904E95E001AEFFB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9AE24EC31904E95E001AEFFB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9AE24EC51904E95E001AEFFB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		9AE24EC91904E95E001AEFFB /* app_ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "app_ios-Info.plist"; path = "app_ios/app_ios-Info.plist"; sourceTree = SOURCE_ROOT; };
-		9AE24ECB1904E95E001AEFFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9AE24ECD1904E95E001AEFFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = app_ios/main.m; sourceTree = SOURCE_ROOT; };
-		9AE24ED31904E95E001AEFFB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = app_ios/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		9AE24ED91904E95E001AEFFB /* app_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = app_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE24EDA1904E95E001AEFFB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9AE24EE21904E95F001AEFFB /* app_iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "app_iosTests-Info.plist"; sourceTree = "<group>"; };
@@ -283,6 +283,15 @@
 				078001D4190C9F17000DA332 /* basemysql_iosTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		07A230081917E7B800C93134 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07A230131917F53C00C93134 /* app-Info.plist */,
+				07A230091917E7D500C93134 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		07A6C987190C5F4300859288 /* Products */ = {
@@ -386,11 +395,10 @@
 		9A5752BC16AAE1D2000CC4EF /* app */ = {
 			isa = PBXGroup;
 			children = (
-				9AE24ED31904E95E001AEFFB /* Images.xcassets */,
+				07A2300E1917E83500C93134 /* Images.xcassets */,
+				07A230081917E7B800C93134 /* Supporting Files */,
+				07A230061917E5C100C93134 /* main.mm */,
 				9AB3522516AC11540084BFE8 /* app.entitlements */,
-				9AE24EC91904E95E001AEFFB /* app_ios-Info.plist */,
-				9AE24ECA1904E95E001AEFFB /* InfoPlist.strings */,
-				9AE24ECD1904E95E001AEFFB /* main.m */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -643,8 +651,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AE24ECC1904E95E001AEFFB /* InfoPlist.strings in Resources */,
-				9AE24ED41904E95E001AEFFB /* Images.xcassets in Resources */,
+				07A2300F1917E83500C93134 /* Images.xcassets in Resources */,
+				07A2300B1917E7D500C93134 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,7 +671,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AE24ECE1904E95E001AEFFB /* main.m in Sources */,
+				07A230071917E5C100C93134 /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,14 +724,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9AE24ECA1904E95E001AEFFB /* InfoPlist.strings */ = {
+		07A230091917E7D500C93134 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9AE24ECB1904E95E001AEFFB /* en */,
+				07A2300A1917E7D500C93134 /* en */,
 			);
 			name = InfoPlist.strings;
-			path = app_ios;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 		9AE24EE31904E95F001AEFFB /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -846,7 +853,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				INFOPLIST_FILE = "app_ios/app_ios-Info.plist";
+				INFOPLIST_FILE = "app-Info.plist";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
@@ -862,7 +869,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				INFOPLIST_FILE = "app_ios/app_ios-Info.plist";
+				INFOPLIST_FILE = "app-Info.plist";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};

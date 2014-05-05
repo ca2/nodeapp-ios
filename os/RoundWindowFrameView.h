@@ -16,7 +16,7 @@
 #define NS_ROUND_WINDOW_FRAME_PADDING 0
 
 
-@interface RoundWindowFrameView : NSView
+@interface RoundWindowFrameView : UIView
 {
    @public
    RoundWindow * m_roundwindow;

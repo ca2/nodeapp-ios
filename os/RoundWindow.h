@@ -14,23 +14,22 @@
 #include "app/appseed/base/user/user/user_key_enum.h"
 
 
-::user::e_key event_key(NSEvent * event);
+::user::e_key event_key(UIEvent * event);
 
 
 class round_window;
 
 
-@interface RoundWindow : NSWindow
+@interface RoundWindow : UIWindow
 {
 @public
    
    
-   round_window         * m_pwindow;
+    round_window         * m_pwindow;
    
-   
-	NSView               * childContentView;
-	NSButton             * closeButton;
-   NSWindowController   * m_controller;
+    UIView               * childContentView;
+    UIButton             * closeButton;
+//    UIWindowController   * m_controller;
    
    
 }

@@ -327,6 +327,9 @@ void AfxInternalPreTranslateMessage(signal_details * pobj)
    catch(...)
    {
    }
+    
+    extern ios::thread_local_storage * __thread_data;
+
    
    // no special processing
 }
@@ -465,7 +468,6 @@ void CLASS_DECL_ios __end_thread(base_application * papp, UINT nExitCode, bool b
    //   _endthreadex(nExitCode);
 }
 
-extern ios::thread_local_storage * __thread_data;
 void CLASS_DECL_ios __term_thread(base_application * papp, HINSTANCE hInstTerm)
 {
    
@@ -485,8 +487,8 @@ void CLASS_DECL_ios __term_thread(base_application * papp, HINSTANCE hInstTerm)
    try
    {
       // cleanup the rest of the thread local data
-      if (__thread_data != NULL)
-         __thread_data->delete_data();
+      if (ios::__thread_data != NULL)
+         ios::__thread_data->delete_data();
       //__thread_data->DeleteValues(hInstTerm, FALSE);
    }
    catch( ::exception::base* e )

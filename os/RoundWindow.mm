@@ -22,25 +22,25 @@
 //
 // Init method for the object.
 //
-- (id)initWithContentRect:(NSRect)contentRect styleMask:(NSUInteger)windowStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)deferCreation
+- (id)initWithFrame:(CGRect)contentRect
 {
    
-	self = [super initWithContentRect:contentRect styleMask:NSBorderlessWindowMask backing:bufferingType defer:deferCreation];
+	self = [super initWithFrame:contentRect ];
 
 	if(self == NULL)
       return NULL;
    
 	[self setOpaque:NO];
 
-   [self setBackgroundColor:[NSColor clearColor]];
+//   [self setBackgroundColor:[CGColor clearColor]];
 		
 //	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(mainWindowChanged:) name:NSWindowDidBecomeMainNotification object:self];
 		
 //	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(mainWindowChanged:) name:NSWindowDidResignMainNotification object:self];
    
-   [self setAcceptsMouseMovedEvents : YES];
+  // [self setAcceptsMouseMovedEvents : YES];
       
-   m_controller = [[NSWindowController alloc] initWithWindow:self];
+  // m_controller = [[NSWindowController alloc] initWithWindow:self];
  
 
    [self create_view];
@@ -70,10 +70,10 @@
 //
 // Convert from childContentView to frameView for size.
 //
-- (void)setContentSize:(NSSize)newSize
+- (void)setContentSize:(CGSize)newSize
 {
 	
-	[super setContentSize:newSize];
+//	[super setContentSize:newSize];
    
 }
 
@@ -98,9 +98,11 @@
 - (void)create_view
 {
 
-	NSRect bounds = [self frame];
+	CGRect bounds = [self frame];
 	
-   bounds.origin = NSZeroPoint;
+//   bounds.origin = NSZeroPoint;
+    bounds.origin.x = 0;
+    bounds.origin.y = 0;
 
 	RoundWindowFrameView * frameView = [[RoundWindowFrameView alloc] initWithFrame : bounds] ;
    
@@ -111,7 +113,7 @@
    frameView->m_bAlt = false;
    
 		
-	[super setContentView : frameView];
+//	[super setContentView : frameView];
 
 	[frameView setFrame : bounds];
    
@@ -124,9 +126,10 @@
 //
 // Returns the child of our frame view instead of our frame view.
 //
-- (NSView *)contentView
+- (UIView *)contentView
 {
-	return [super contentView];
+//	return [super contentView];
+    return NULL;
 }
 
 //
@@ -154,11 +157,18 @@
 //
 // Returns the rect for the content rect, taking the frame.
 //
-- (NSRect)contentRectForFrameRect:(NSRect)windowFrame
+- (CGRect)contentRectForFrameRect:(CGRect)windowFrame
 {
   // bounds = windowFrame;
-	windowFrame.origin = NSZeroPoint;
-	return NSInsetRect(windowFrame, NS_ROUND_WINDOW_FRAME_PADDING, NS_ROUND_WINDOW_FRAME_PADDING);
+//
+	//windowFrame.origin = NSZeroPoint;
+    windowFrame.origin.x = 0;
+    windowFrame.origin.y = 0;
+    windowFrame.origin.x += NS_ROUND_WINDOW_FRAME_PADDING;
+    windowFrame.origin.y += NS_ROUND_WINDOW_FRAME_PADDING;
+    windowFrame.size.width -= 2 * NS_ROUND_WINDOW_FRAME_PADDING;
+    windowFrame.size.height -= 2 * NS_ROUND_WINDOW_FRAME_PADDING;
+	return windowFrame;
 }
 
 //
@@ -166,9 +176,15 @@
 //
 // Ensure that the window is make the appropriate amount bigger than the content.
 //
-+ (NSRect)frameRectForContentRect:(NSRect)windowContentRect styleMask:(NSUInteger)windowStyle
++ (CGRect)frameRectForContentRect:(CGRect)windowContentRect styleMask:(NSUInteger)windowStyle
 {
-	return NSInsetRect(windowContentRect, -NS_ROUND_WINDOW_FRAME_PADDING, -NS_ROUND_WINDOW_FRAME_PADDING);
+    windowContentRect.origin.x = 0;
+    windowContentRect.origin.y = 0;
+    windowContentRect.origin.x -= NS_ROUND_WINDOW_FRAME_PADDING;
+    windowContentRect.origin.y -= NS_ROUND_WINDOW_FRAME_PADDING;
+    windowContentRect.size.width += 2 * NS_ROUND_WINDOW_FRAME_PADDING;
+    windowContentRect.size.height += 2 * NS_ROUND_WINDOW_FRAME_PADDING;
+	return windowContentRect;
 }
 
 
