@@ -535,10 +535,10 @@ namespace ios
         rect.size.width = width(pinitialize->m_rect);
         rect.size.height = height(pinitialize->m_rect);
         
-        m_window = oswindow_get(new_round_window(this, ));
+        m_oswindow = oswindow_get(new_round_window(this, rect));
         
-        m_pwindow->m_pwindow  = pinitialize->pwindow;
-        
+        m_oswindow->set_user_interaction(m_pui);
+       
         m_pthread = dynamic_cast < ::thread * > (::get_thread());
         
         
@@ -3875,7 +3875,7 @@ namespace ios
       UNREFERENCED_PARAMETER(pTarget);
       UNREFERENCED_PARAMETER(bDisableIfNoHndler);
       cmd_ui state(get_app());
-      window wndTemp;       // very temporary window just for CmdUI update
+//      window wndTemp;       // very temporary window just for CmdUI update
       
       // walk all the kids - assume the IDs are for buttons
       /* xxx   for (oswindow hWndChild = ::GetTopWindow(get_handle()); hWndChild != NULL;
@@ -7225,8 +7225,92 @@ namespace ios
       
    }
    
+
+
+} // ::ios::namespace
+
+
+round_window * ios_start_window(plane_system * psystem, CGRect rect)
+{
+   
+   ::user::interaction * pui = psystem->m_psystem->m_posdata->m_pui;
+   
+   ::user::native_window_initialize initialize;
+   
+   initialize.m_rect.left = rect.origin.x;
+   initialize.m_rect.top = rect.origin.y;
+   initialize.m_rect.right = rect.origin.x + rect.size.width;
+   initialize.m_rect.bottom = rect.origin.x + rect.size.height;
+   
+   pui->initialize(&initialize);
+   
+   return pui->m_pimpl.cast < ::ios::window > ();
    
 }
+
+int ios_initialize_window(round_window * proundwindow, UIWindow * window)
+{
+   
+   ::ios::window * pwindow = dynamic_cast < ::ios::window * > (proundwindow);
+                                                               
+   pwindow->m_oswindow = oswindow_get(window);
+   
+   pwindow->m_oswindow->set_user_interaction(pwindow->m_pui);
+   CREATESTRUCT cs;
+   cs.dwExStyle = 0;
+   cs.lpszClass = 0;
+   cs.lpszName = NULL;
+   cs.style = 0;
+   cs.x = 0;
+   cs.y = 0;
+   cs.cx = 0;
+   cs.cy = 0;
+   //      cs.hwndParent = hWndParent;
+   //   cs.hMenu = hWndParent == NULL ? NULL : nIDorHMenu;
+   cs.hMenu = NULL;
+   //      cs.hInstance = System.m_hInstance;
+   cs.lpCreateParams = NULL;
+   
+   if(pwindow->m_pui != NULL && pwindow->m_pui != pwindow)
+   {
+      
+      if(!pwindow->m_pui->pre_create_window(cs))
+      {
+         
+         pwindow->PostNcDestroy();
+         
+         return FALSE;
+         
+      }
+      
+   }
+   else
+   {
+      
+      if (!pwindow->pre_create_window(cs))
+      {
+         
+         pwindow->PostNcDestroy();
+         
+         return FALSE;
+         
+      }
+      
+   }
+   
+   if(cs.hwndParent == NULL)
+   {
+      
+      cs.style &= ~WS_CHILD;
+      
+   }
+   
+   pwindow->send_message(WM_CREATE, 0, (LPARAM) &cs);
+   
+   return TRUE;
+
+}
+
 
 
 

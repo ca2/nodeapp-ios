@@ -76,4 +76,7 @@
    <FileRef
       location = "container:../../../app-veriwell/appseed/multimedia/veriwell_multimedia.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:../../../app-core/appseed/hellomultiverse/wiosapp_core_hellomultiverse.xcodeproj">
+   </FileRef>
 </Workspace>
