@@ -8,17 +8,19 @@
 
 #import "AppDelegate.h"
 
+UIWindow * new_round_window(CGRect rect);
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    CGRect rect;
-    rect.origin.x     = 0;
-    rect.origin.x     = 0;
-    rect.size.width   = 0;
-    rect.size.height  = 0;
+    CGRect rect =[[UIScreen mainScreen] bounds];
+//    rect.origin.x     = 0;
+//    rect.origin.x     = 0;
+//    rect.size.width   = 0;
+//    rect.size.height  = 0;
     // Override point for customization after application launch.
-    self.window = new_round_window(NULL, rect);
+    self.window = new_round_window(rect);
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

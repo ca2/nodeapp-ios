@@ -522,6 +522,29 @@ namespace ios
                       rect.right - rect.left, rect.bottom - rect.top,
                       pParentWnd->get_handle(), id, (LPVOID)pContext);
    }
+    
+    
+    bool window::initialize(::user::native_window_initialize * pinitialize)
+    {
+        
+        CGRect rect;
+        
+        
+        rect.origin.x = pinitialize->m_rect.left;
+        rect.origin.y = pinitialize->m_rect.top;
+        rect.size.width = width(pinitialize->m_rect);
+        rect.size.height = height(pinitialize->m_rect);
+        
+        m_window = oswindow_get(new_round_window(this, ));
+        
+        m_pwindow->m_pwindow  = pinitialize->pwindow;
+        
+        m_pthread = dynamic_cast < ::thread * > (::get_thread());
+        
+        
+        return true;
+        
+    }
    
    bool window::create_message_queue(const char * pszName, ::message_queue_listener * pcallback)
    {
@@ -3739,6 +3762,7 @@ namespace ios
    }
    
    /////////////////////////////////////////////////////////////////////////////
+    
    // Dialog initialization support
    
    bool window::ExecuteDlgInit(const char * lpszResourceName)

@@ -24,6 +24,24 @@ UIWindow * new_round_window(round_window * pwindow, CGRect rect)
 }
 
 
+
+UIWindow * new_round_window(CGRect rect)
+{
+    ::ios::window * pui = new ::user::interaction();
+    
+    pui->initialize_native_window(NULL);
+                       
+                       self.window = new_round_window(pwindow, rect);
+                       
+                     pwindow->m_oswindow = oswindow_get(self.window);
+                       
+                       pwindow->m_oswindow->set_user_interaction(m_pui);
+                       
+                       send_message(WM_CREATE, 0, (LPARAM) &cs);
+
+}
+
+
 void ui_application_main(int argc, char * argv[])
 {
     
