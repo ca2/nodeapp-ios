@@ -9,6 +9,10 @@
 #import "AppDelegate.h"
 
 
+round_window * ios_start_window(struct plane_system * psystem, CGRect rect);
+void ios_initialize_window(round_window * pwindow, UIWindow * window);
+
+
 UIWindow * new_round_window(round_window * pwindow, CGRect rect)
 {
    
@@ -25,20 +29,17 @@ UIWindow * new_round_window(round_window * pwindow, CGRect rect)
 
 
 
-UIWindow * new_round_window(CGRect rect)
+UIWindow * new_round_window(struct plane_system * psystem, CGRect rect)
 {
-    ::ios::window * pui = new ::user::interaction();
-    
-    pui->initialize_native_window(NULL);
+   
+   round_window * pwindow = ios_start_window(psystem, rect);
+   
+   UIWindow * window = new_round_window(pwindow, rect);
+   
+   ios_initialize_window(pwindow, window);
                        
-                       self.window = new_round_window(pwindow, rect);
-                       
-                     pwindow->m_oswindow = oswindow_get(self.window);
-                       
-                       pwindow->m_oswindow->set_user_interaction(m_pui);
-                       
-                       send_message(WM_CREATE, 0, (LPARAM) &cs);
-
+   return window;
+   
 }
 
 

@@ -9,6 +9,18 @@
 
 #define CLASS_DECL_ios
 
+struct plane_system
+{
+   
+   ::plane::system *    m_psystem;
+   
+   plane_system(const char * pszId);
+   
+   UIWindow * init_part_2ex(CGRect rect);
+   
+};
+
+
 
 string get_error_message(DWORD dwError);
 

@@ -8,23 +8,31 @@
 
 #import "AppDelegate.h"
 
-UIWindow * new_round_window(CGRect rect);
+plane_system * new_system(const char * pszId);
+
+UIWindow * init_part_2ex(plane_system * psystem, CGRect rect);
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    CGRect rect =[[UIScreen mainScreen] bounds];
-//    rect.origin.x     = 0;
-//    rect.origin.x     = 0;
-//    rect.size.width   = 0;
-//    rect.size.height  = 0;
-    // Override point for customization after application launch.
-    self.window = new_round_window(rect);
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    return YES;
+  
+   NSString *ca2_command_line = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"ca2_command_line"];
+   
+   m_psystem = new_system([ca2_command_line UTF8String]);
+   
+   CGRect rect =[[UIScreen mainScreen] bounds];
+   
+   self.window = init_part_2ex(m_psystem, rect);
+
+   self.window.backgroundColor = [UIColor whiteColor];
+   
+   [self.window makeKeyAndVisible];
+   
+   return YES;
+   
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

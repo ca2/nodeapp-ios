@@ -9,7 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+{
+   
+@public
+   
+   struct plane_system * m_psystem;
+   
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

@@ -182,8 +182,8 @@ namespace ios
       
       //::draw2d::graphics * graphics_from_os_data(void * pdata);
       
-      sp(::window) window_from_os_data(void * pdata);
-      sp(::window) window_from_os_data_permanent(void * pdata);
+      sp(::user::interaction) window_from_os_data(void * pdata);
+      sp(::user::interaction) window_from_os_data_permanent(void * pdata);
       
       virtual ::thread * GetThread();
       virtual void set_thread(::thread * pthread);

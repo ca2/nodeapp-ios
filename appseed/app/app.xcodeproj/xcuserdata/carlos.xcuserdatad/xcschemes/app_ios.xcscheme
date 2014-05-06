@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9AE24EBF1904E95E001AEFFB"
                BuildableName = "app.app"
-               BlueprintName = "app_ios"
+               BlueprintName = "app"
                ReferencedContainer = "container:app.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,7 +44,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9AE24EBF1904E95E001AEFFB"
             BuildableName = "app.app"
-            BlueprintName = "app_ios"
+            BlueprintName = "app"
             ReferencedContainer = "container:app.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,7 +63,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9AE24EBF1904E95E001AEFFB"
             BuildableName = "app.app"
-            BlueprintName = "app_ios"
+            BlueprintName = "app"
             ReferencedContainer = "container:app.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -81,7 +81,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9AE24EBF1904E95E001AEFFB"
             BuildableName = "app.app"
-            BlueprintName = "app_ios"
+            BlueprintName = "app"
             ReferencedContainer = "container:app.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
