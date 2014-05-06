@@ -102,6 +102,8 @@ namespace ios
       bool ExecuteDlgInit(const char * lpszResourceName);
       bool ExecuteDlgInit(LPVOID lpResource);
       
+      virtual bool initialize(::user::native_window_initialize * pinitialize);
+      
       using ::user::interaction::create;
       // for child windows, views, panes etc
       virtual bool create(const char * lpszClassName,
@@ -573,6 +575,8 @@ namespace ios
       void OnRButtonUp(UINT nFlags, point point);
       DECL_GEN_SIGNAL(_001OnSetCursor);
       void OnTimer(uint_ptr nIDEvent);
+      
+      
       
       // Initialization message handler member functions
       void OnInitMenu(::user::menu* pMenu);
