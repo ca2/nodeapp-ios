@@ -19,17 +19,19 @@
 
 class round_window;
 
+@class RoundWindowFrameView;
+
 
 @interface RoundWindow : UIWindow
 {
 @public
    
    
-    round_window         * m_pwindow;
+    round_window           * m_pwindow;
    
-    UIView               * childContentView;
-    UIButton             * closeButton;
-//    UIWindowController   * m_controller;
+    RoundWindowFrameView   * childContentView;
+    UIButton               * closeButton;
+    UIViewController       * m_controller;
    
    
 }

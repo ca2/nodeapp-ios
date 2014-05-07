@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>draw2d_quartz2d.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>26</integer>
+		</dict>
 		<key>draw2d_quartz2d_ios.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>075296F2191914EC00C1811D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9AA6A23819070F82000A1F4A</key>
 		<dict>
 			<key>primary</key>
