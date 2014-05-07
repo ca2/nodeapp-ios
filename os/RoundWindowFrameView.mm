@@ -273,63 +273,24 @@
 - (void)drawRect:(CGRect)rect
 {
    
-   //	[[NSColor clearColor] set];
-	//CGRectFill(rect);
-
-/*
-	NSBezierPath * rectPath = [NSBezierPath bezierPathWithRect : [self bounds]];
-	
-	NSGradient * gradient = [[NSGradient alloc] initWithColorsAndLocations : [NSColor whiteColor], (CGFloat) 0.0, [NSColor lightGrayColor], (CGFloat)1.0, nil];
-
-   [gradient drawInBezierPath : rectPath angle:90];
-
-	[[NSColor whiteColor] set];
-	[rectPath stroke];
-	
-   CGRect resizeRect = [self resizeRect];
-	NSBezierPath *resizePath = [NSBezierPath bezierPathWithRect:resizeRect];
-
-	[[NSColor lightGrayColor] set];
-	[resizePath fill];
-
-	[[NSColor darkGrayColor] set];
-	[resizePath stroke];
-	
-
-   [[NSColor blackColor] set];
-	NSString *windowTitle = [[self window] title];
-	CGRect titleRect = [self bounds];
-	titleRect.origin.y = titleRect.size.height - (WINDOW_FRAME_PADDING - 7);
-	titleRect.size.height = (WINDOW_FRAME_PADDING - 7);
-	NSMutableParagraphStyle *paragraphStyle =
-		[[NSMutableParagraphStyle alloc] init];
-	[paragraphStyle setAlignment:NSCenterTextAlignment];
-	[windowTitle
-		drawWithRect:titleRect
-		options:0
-		attributes:[NSDictionary
-			dictionaryWithObjectsAndKeys:
-				paragraphStyle, NSParagraphStyleAttributeName,
-				[NSFont systemFontOfSize:14], NSFontAttributeName,
-			nil]];
- */
-   
-  
    round_window * p = m_roundwindow->m_pwindow;
    
-   //   [m_roundwindow disableScreenUpdatesUntilFlush];
+   if(p == NULL)
+      return;
    
-//   [m_roundwindow disableFlushWindow];
+// m_roundwindow disableScreenUpdatesUntilFlush];
    
-//   CGContextRef cgc = (CGContextRef) [[NSGraphicsContext currentContext] graphicsPort];
+// m_roundwindow disableFlushWindow];
+   
+// CGContextRef cgc = (CGContextRef) [[NSGraphicsContext currentContext] graphicsPort];
     
-    CGContextRef cgc = NULL;
+   CGContextRef cgc = UIGraphicsGetCurrentContext();
    
    p->round_window_draw(cgc);
    
-  // [m_roundwindow enableFlushWindow];
+// [m_roundwindow enableFlushWindow];
    
-//   [m_roundwindow flushWindow];
+// [m_roundwindow flushWindow];
    
 }
 

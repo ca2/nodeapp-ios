@@ -12,6 +12,8 @@ plane_system * new_system(const char * pszId);
 
 UIWindow * init_part_2ex(plane_system * psystem, CGRect rect);
 
+void system_begin_main(plane_system * psystem);
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -28,6 +30,8 @@ UIWindow * init_part_2ex(plane_system * psystem, CGRect rect);
    self.window.backgroundColor = [UIColor whiteColor];
    
    [self.window makeKeyAndVisible];
+   
+   system_begin_main(m_psystem);
    
    return YES;
    

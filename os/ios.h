@@ -18,6 +18,8 @@ struct plane_system
    
    UIWindow * init_part_2ex(CGRect rect);
    
+   void begin();
+   
 };
 
 

@@ -7305,6 +7305,8 @@ int ios_initialize_window(round_window * proundwindow, UIWindow * window)
       
    }
    
+   pwindow->m_pui->m_pthread = ::get_thread();
+   
    pwindow->send_message(WM_CREATE, 0, (LPARAM) &cs);
    
    return TRUE;

@@ -30,21 +30,23 @@
 	if(self == NULL)
       return NULL;
    
+   [self setWindowLevel:UIWindowLevelNormal];
+
 	[self setOpaque:NO];
 
-//   [self setBackgroundColor:[CGColor clearColor]];
+   [self setBackgroundColor:[UIColor greenColor]];
 		
 //	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(mainWindowChanged:) name:NSWindowDidBecomeMainNotification object:self];
 		
 //	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(mainWindowChanged:) name:NSWindowDidResignMainNotification object:self];
    
-  // [self setAcceptsMouseMovedEvents : YES];
+// [self setAcceptsMouseMovedEvents : YES];
       
-  // m_controller = [[NSWindowController alloc] initWithWindow:self];
- 
+   m_controller = [[UIViewController alloc] init];
 
    [self create_view];
    
+   [self setRootViewController:m_controller];
    
 	return self;
    
@@ -118,6 +120,8 @@
 	[frameView setFrame : bounds];
    
 	[frameView setAutoresizingMask: 0];
+   
+   [m_controller.view addSubview: frameView];
    
 }
 

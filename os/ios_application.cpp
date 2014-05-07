@@ -947,6 +947,8 @@ UINT system_main(LPVOID lp)
       m_psystem->set_thread(m_psystem);
       m_psystem->m_iReturnCode = 0;
       m_psystem->m_bReady = true;
+      m_psystem->m_bRun = true;
+      m_psystem->thread::m_p->m_bRun= true;
       m_psystem->m_iReturnCode = m_psystem->on_run();
       if(m_psystem->m_iReturnCode != 0)
       {
@@ -1029,7 +1031,21 @@ for(int i = 0; i < m_psystem->command()->m_varTopicQuery["app"].get_count(); i++
 m_psystem->m_mapAppLibrary["app/ca2/cube"] = "ca2";
 m_psystem->m_mapAppLibrary["app/ca2/bergedge"] = "ca2";
 
-__begin_thread(m_psystem, &system_main, m_psystem);
-
    return pwindow;
 }
+
+
+void system_begin_main(plane_system * psystem)
+{
+   
+   psystem->begin();
+   
+}
+
+void plane_system::begin()
+{
+
+   __begin_thread(m_psystem, &system_main, m_psystem);
+   
+}
+
