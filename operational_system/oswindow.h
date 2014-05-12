@@ -47,7 +47,7 @@ typedef int_to_int simple_long_map;
 
    
    
-inline int32_t IsWindow(oswindow oswindow);
+int32_t IsWindow(oswindow oswindow);
 inline int32_t IsChild(oswindow oswindowParent, oswindow oswindowCandidateChildOrDescendant);
 inline oswindow GetParent(oswindow oswindow);
 inline oswindow SetParent(oswindow window, oswindow windowNewParent);
