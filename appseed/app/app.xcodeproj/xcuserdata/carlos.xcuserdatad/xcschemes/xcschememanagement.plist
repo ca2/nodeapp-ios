@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>appTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>29</integer>
+		</dict>
 		<key>app_ios.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -14,9 +19,34 @@
 			<key>orderHint</key>
 			<integer>44</integer>
 		</dict>
+		<key>wiosapp_core_hellomultiverse.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>27</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0776D217192174FE00F890ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0776D22D192174FE00F890ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>078C3583192175C900354453</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>078C3590192175CA00354453</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>07B5903318866047002C6FEC</key>
 		<dict>
 			<key>primary</key>
