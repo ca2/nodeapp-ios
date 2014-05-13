@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>audio_mixer_core_audio.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>44</integer>
+		</dict>
 		<key>audio_mixer_core_audio_ios.xcscheme</key>
 		<dict>
 			<key>orderHint</key>

@@ -7,7 +7,7 @@
 		<key>appTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>29</integer>
+			<integer>27</integer>
 		</dict>
 		<key>app_ios.xcscheme</key>
 		<dict>
@@ -22,7 +22,7 @@
 		<key>wiosapp_core_hellomultiverse.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>27</integer>
+			<integer>26</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
