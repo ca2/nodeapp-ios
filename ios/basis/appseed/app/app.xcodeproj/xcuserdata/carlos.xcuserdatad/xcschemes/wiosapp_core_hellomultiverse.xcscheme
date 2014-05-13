@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "078C3583192175C900354453"
-               BuildableName = "libapp.dylib"
-               BlueprintName = "app"
+               BlueprintIdentifier = "0776D217192174FE00F890ED"
+               BuildableName = "wiosapp_core_hellomultiverse.app"
+               BlueprintName = "wiosapp_core_hellomultiverse"
                ReferencedContainer = "container:app.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,33 +28,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9AE24ED81904E95E001AEFFB"
-               BuildableName = "app_iosTests.xctest"
-               BlueprintName = "app_iosTests"
-               ReferencedContainer = "container:app.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0776D22D192174FE00F890ED"
-               BuildableName = "wiosapp_core_hellomultiverseTests.xctest"
-               BlueprintName = "wiosapp_core_hellomultiverseTests"
-               ReferencedContainer = "container:app.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "078C3583192175C900354453"
-            BuildableName = "libapp.dylib"
-            BlueprintName = "app"
+            BlueprintIdentifier = "0776D217192174FE00F890ED"
+            BuildableName = "wiosapp_core_hellomultiverse.app"
+            BlueprintName = "wiosapp_core_hellomultiverse"
             ReferencedContainer = "container:app.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -71,9 +51,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "078C3583192175C900354453"
-            BuildableName = "libapp.dylib"
-            BlueprintName = "app"
+            BlueprintIdentifier = "0776D217192174FE00F890ED"
+            BuildableName = "wiosapp_core_hellomultiverse.app"
+            BlueprintName = "wiosapp_core_hellomultiverse"
             ReferencedContainer = "container:app.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -89,9 +69,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "078C3583192175C900354453"
-            BuildableName = "libapp.dylib"
-            BlueprintName = "app"
+            BlueprintIdentifier = "0776D217192174FE00F890ED"
+            BuildableName = "wiosapp_core_hellomultiverse.app"
+            BlueprintName = "wiosapp_core_hellomultiverse"
             ReferencedContainer = "container:app.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

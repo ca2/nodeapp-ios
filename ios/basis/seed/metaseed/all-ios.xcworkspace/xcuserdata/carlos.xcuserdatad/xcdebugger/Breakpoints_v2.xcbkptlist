@@ -585,7 +585,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "4731"
             endingLineNumber = "4731"
-            landmarkName = "base_application::draw2d_factory_exchange()"
+            landmarkName = "application::draw2d_factory_exchange()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
