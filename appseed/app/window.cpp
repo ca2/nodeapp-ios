@@ -88,6 +88,12 @@ int ios_initialize_window(round_window * proundwindow, UIWindow * window)
    
    pwindow->send_message(WM_CREATE, 0, (LPARAM) &cs);
    
+   ::rect rectMainScreen;
+   
+   GetMainScreenRect(rectMainScreen);
+   
+   pwindow->SetPlacement(rectMainScreen);
+   
    return TRUE;
    
 }
