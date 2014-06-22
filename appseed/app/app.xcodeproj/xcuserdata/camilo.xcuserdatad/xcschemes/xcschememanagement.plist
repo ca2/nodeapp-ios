@@ -7,16 +7,31 @@
 		<key>app.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>3</integer>
+		</dict>
+		<key>appTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>32</integer>
 		</dict>
 		<key>app_ios.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>7</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>078C3583192175C900354453</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>078C3590192175CA00354453</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9A5752B116AAE1D2000CC4EF</key>
 		<dict>
 			<key>primary</key>

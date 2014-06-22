@@ -5,22 +5,6 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
-      <BuildActionEntries>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9AA6A23819070F82000A1F4A"
-               BuildableName = "libdraw2d_quartz2d.dylib"
-               BlueprintName = "draw2d_quartz2d_ios"
-               ReferencedContainer = "container:draw2d_quartz2d.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-      </BuildActionEntries>
    </BuildAction>
    <TestAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -32,10 +16,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9AA6A24719070F82000A1F4A"
-               BuildableName = "draw2d_quartz2d_iosTests.xctest"
-               BlueprintName = "draw2d_quartz2d_iosTests"
-               ReferencedContainer = "container:draw2d_quartz2d.xcodeproj">
+               BlueprintIdentifier = "078C3590192175CA00354453"
+               BuildableName = "appTests.xctest"
+               BlueprintName = "appTests"
+               ReferencedContainer = "container:app.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
