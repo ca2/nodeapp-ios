@@ -2,6 +2,21 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../../../ca2/app-core/appseed/hellomultiverse/ios_app_core_hellomultiverse.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../ca2/app/atom/iconv/atomiconv.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../ca2/app/appseed/aura/aura.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../ca2/app/aura/charguess/auracharguess.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../ca2/app/aura/sqlite/aurasqlite.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:../../appseed/app/app.xcodeproj">
    </FileRef>
    <FileRef
@@ -20,9 +35,6 @@
       location = "container:../../../app-core/appseed/projection/app_core_projection.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../app-core/appseed/uinteraction/app_core_uinteraction.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "container:../../../app-veriwell/appseed/mplite/app_veriwell_mplite.xcodeproj">
    </FileRef>
    <FileRef
@@ -35,19 +47,37 @@
       location = "container:../../appseed/audio_mixer_core_audio/audio_mixer_core_audio.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:../../../../ca2/app/appseed/axis/axis.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../ca2/app/axis/bzip2/axisbzip2.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../ca2/app/axis/crypto/axiscrypto.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../ca2/app/axis/freeimage/axisfreeimage.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../ca2/app/axis/freetype/axisfreetype.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../ca2/app/axis/idn/axisidn.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../ca2/app/axis/openssl/axisopenssl.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../ca2/app/axis/png/axispng.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../ca2/app/axis/zlib/axiszlib.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:../../../app/appseed/base/base.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../app/thirdparty/appseed/freetype/basefreetype.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../app/thirdparty/appseed/freeimage/basefreeimage.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "container:../../../app-veriwell/appseed/libmpg123/basempg123.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../app/thirdparty/appseed/mysql/basemysql.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app/appseed/core/core.xcodeproj">
@@ -74,6 +104,6 @@
       location = "container:../../../app-veriwell/appseed/multimedia/veriwell_multimedia.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app-core/appseed/hellomultiverse/wiosapp_core_hellomultiverse.xcodeproj">
+      location = "group:../../../../ca2/app-core/appseed/wndfrm_core/wndfrm_core.xcodeproj">
    </FileRef>
 </Workspace>

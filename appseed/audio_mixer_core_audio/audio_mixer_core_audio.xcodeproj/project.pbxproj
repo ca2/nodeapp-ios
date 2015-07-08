@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		077A01761B4D562C001C85FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077A01751B4D562C001C85FF /* UIKit.framework */; };
 		079DBF481886ABF100EFFEFB /* libbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 079DBF461886ABF100EFFEFB /* libbase.dylib */; };
 		079DBF491886ABF100EFFEFB /* libcore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 079DBF471886ABF100EFFEFB /* libcore.dylib */; };
-		07B6573D190F3C8B002DAADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6573C190F3C8B002DAADE /* Foundation.framework */; };
 		07B6574B190F3C8B002DAADE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6574A190F3C8B002DAADE /* XCTest.framework */; };
 		07B6574C190F3C8B002DAADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6573C190F3C8B002DAADE /* Foundation.framework */; };
 		07B6574E190F3C8B002DAADE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6574D190F3C8B002DAADE /* UIKit.framework */; };
@@ -68,6 +68,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		077A01751B4D562C001C85FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		079DBF461886ABF100EFFEFB /* libbase.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbase.dylib; path = ../../../app/appseed/base/build/Release/libbase.dylib; sourceTree = "<group>"; };
 		079DBF471886ABF100EFFEFB /* libcore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcore.dylib; path = ../../../app/appseed/core/build/Release/libcore.dylib; sourceTree = "<group>"; };
 		07B6573A190F3C8B002DAADE /* libaudio_mixer_core_audio_ios.dylib */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libaudio_mixer_core_audio_ios.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07B6573D190F3C8B002DAADE /* Foundation.framework in Frameworks */,
+				077A01761B4D562C001C85FF /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +146,7 @@
 		07B6573B190F3C8B002DAADE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				077A01751B4D562C001C85FF /* UIKit.framework */,
 				07B6573C190F3C8B002DAADE /* Foundation.framework */,
 				07B6574A190F3C8B002DAADE /* XCTest.framework */,
 				07B6574D190F3C8B002DAADE /* UIKit.framework */,

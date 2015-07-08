@@ -47,8 +47,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "6550"
             endingLineNumber = "6550"
-            landmarkName = "window::round_window_draw(CGContextRef cgc)"
-            landmarkType = "5">
+            landmarkName = "hook_window_create(::user::interaction * pWnd)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -62,9 +62,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "3127"
-            endingLineNumber = "3127"
-            landmarkName = "window::_001OnTimer(signal_details * pobj)"
-            landmarkType = "5">
+            endingLineNumber = "3127">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -78,9 +76,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "7330"
-            endingLineNumber = "7330"
-            landmarkName = "window::_001UpdateWindow()"
-            landmarkType = "5">
+            endingLineNumber = "7330">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -271,7 +267,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "3966"
             endingLineNumber = "3966"
-            landmarkName = "window::run_modal_loop(::user::interaction * pui, uint32_t dwFlags, ::core::live_object * pliveobject)"
+            landmarkName = "window::RunModalLoop(DWORD dwFlags, ::core::live_object * pliveobject)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -287,7 +283,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "3941"
             endingLineNumber = "3941"
-            landmarkName = "window::run_modal_loop(::user::interaction * pui, uint32_t dwFlags, ::core::live_object * pliveobject)"
+            landmarkName = "window::RunModalLoop(DWORD dwFlags, ::core::live_object * pliveobject)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -542,9 +538,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "6713"
-            endingLineNumber = "6713"
-            landmarkName = "window::round_window_mouse_down(double x, double y)"
-            landmarkType = "5">
+            endingLineNumber = "6713">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -559,8 +553,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "5401"
             endingLineNumber = "5401"
-            landmarkName = "set_capture(sp(::user::interaction) pinterface)"
-            landmarkType = "7">
+            landmarkName = "window::CheckDlgButton(int32_t nIDButton, UINT nCheck)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

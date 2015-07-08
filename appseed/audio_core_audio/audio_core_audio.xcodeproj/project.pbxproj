@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		078AEE41191539C30091C065 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078AEE40191539C30091C065 /* Foundation.framework */; };
-		078AEE4F191539C30091C065 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078AEE4E191539C30091C065 /* XCTest.framework */; };
+		077A017A1B4D5654001C85FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077A01791B4D5654001C85FF /* UIKit.framework */; };
 		078AEE50191539C30091C065 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078AEE40191539C30091C065 /* Foundation.framework */; };
-		078AEE52191539C30091C065 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078AEE51191539C30091C065 /* UIKit.framework */; };
 		078AEE55191539C30091C065 /* libaudio_core_audio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 078AEE3E191539C20091C065 /* libaudio_core_audio.dylib */; };
 		078AEE5B191539C30091C065 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 078AEE59191539C30091C065 /* InfoPlist.strings */; };
 		078AEE5D191539C30091C065 /* audio_core_audio_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 078AEE5C191539C30091C065 /* audio_core_audio_iosTests.m */; };
@@ -63,11 +61,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		077A01791B4D5654001C85FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		078AEE3E191539C20091C065 /* libaudio_core_audio.dylib */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libaudio_core_audio.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		078AEE40191539C30091C065 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		078AEE4D191539C30091C065 /* audio_core_audio_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = audio_core_audio_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		078AEE4E191539C30091C065 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		078AEE51191539C30091C065 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		078AEE58191539C30091C065 /* audio_core_audio_iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "audio_core_audio_iosTests-Info.plist"; sourceTree = "<group>"; };
 		078AEE5A191539C30091C065 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		078AEE5C191539C30091C065 /* audio_core_audio_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = audio_core_audio_iosTests.m; sourceTree = "<group>"; };
@@ -103,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				078AEE41191539C30091C065 /* Foundation.framework in Frameworks */,
+				077A017A1B4D5654001C85FF /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,8 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				078AEE4F191539C30091C065 /* XCTest.framework in Frameworks */,
-				078AEE52191539C30091C065 /* UIKit.framework in Frameworks */,
 				078AEE50191539C30091C065 /* Foundation.framework in Frameworks */,
 				078AEE55191539C30091C065 /* libaudio_core_audio.dylib in Frameworks */,
 			);
@@ -137,9 +132,8 @@
 		078AEE3F191539C20091C065 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				077A01791B4D5654001C85FF /* UIKit.framework */,
 				078AEE40191539C30091C065 /* Foundation.framework */,
-				078AEE4E191539C30091C065 /* XCTest.framework */,
-				078AEE51191539C30091C065 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
