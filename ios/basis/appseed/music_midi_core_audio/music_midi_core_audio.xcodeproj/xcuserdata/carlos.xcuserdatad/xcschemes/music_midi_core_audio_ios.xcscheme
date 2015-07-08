@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0640"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -17,6 +17,20 @@
                BlueprintIdentifier = "07B657B7190F3CBF002DAADE"
                BuildableName = "libmusic_midi_core_audio_ios.dylib"
                BlueprintName = "music_midi_core_audio_ios"
+               ReferencedContainer = "container:music_midi_core_audio.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "07B657C6190F3CBF002DAADE"
+               BuildableName = "music_midi_core_audio_iosTests.xctest"
+               BlueprintName = "music_midi_core_audio_iosTests"
                ReferencedContainer = "container:music_midi_core_audio.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -39,6 +53,15 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "07B657B7190F3CBF002DAADE"
+            BuildableName = "libmusic_midi_core_audio_ios.dylib"
+            BlueprintName = "music_midi_core_audio_ios"
+            ReferencedContainer = "container:music_midi_core_audio.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -49,6 +72,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "07B657B7190F3CBF002DAADE"
+            BuildableName = "libmusic_midi_core_audio_ios.dylib"
+            BlueprintName = "music_midi_core_audio_ios"
+            ReferencedContainer = "container:music_midi_core_audio.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -58,6 +90,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "07B657B7190F3CBF002DAADE"
+            BuildableName = "libmusic_midi_core_audio_ios.dylib"
+            BlueprintName = "music_midi_core_audio_ios"
+            ReferencedContainer = "container:music_midi_core_audio.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
