@@ -103,6 +103,27 @@
 			remoteGlobalIDString = 07108CDC1B4C97E300A28F80;
 			remoteInfo = axisfreetype_ios;
 		};
+		07CAA9151B4DB78000180410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA6A36319073662000A1F4A /* core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9A19A1A519C6F50B0018DF7D;
+			remoteInfo = core;
+		};
+		07CAA9171B4DB78000180410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA6A36319073662000A1F4A /* core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24DDC1904CF6E001AEFFB;
+			remoteInfo = core_ios;
+		};
+		07CAA9191B4DB78000180410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA6A36319073662000A1F4A /* core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24DEB1904CF6E001AEFFB;
+			remoteInfo = core_iosTests;
+		};
 		9AA6A24E19070F82000A1F4A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A1CFD76F154F5EA7007447E2 /* Project object */;
@@ -252,6 +273,16 @@
 			children = (
 				07557C0B1B4D8AC30065594B /* libaxisfreetype.dylib */,
 				07557C0D1B4D8AC30065594B /* libaxisfreetype.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07CAA8FA1B4DB78000180410 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07CAA9161B4DB78000180410 /* libcore.dylib */,
+				07CAA9181B4DB78000180410 /* libcore.dylib */,
+				07CAA91A1B4DB78000180410 /* core_iosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -466,6 +497,10 @@
 					ProductGroup = 07557C061B4D8AC30065594B /* Products */;
 					ProjectRef = 07557C051B4D8AC30065594B /* axisfreetype.xcodeproj */;
 				},
+				{
+					ProductGroup = 07CAA8FA1B4DB78000180410 /* Products */;
+					ProjectRef = 9AA6A36319073662000A1F4A /* core.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -545,6 +580,27 @@
 			fileType = "compiled.mach-o.dylib";
 			path = libaxisfreetype.dylib;
 			remoteRef = 07557C0C1B4D8AC30065594B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07CAA9161B4DB78000180410 /* libcore.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libcore.dylib;
+			remoteRef = 07CAA9151B4DB78000180410 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07CAA9181B4DB78000180410 /* libcore.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcore.dylib;
+			remoteRef = 07CAA9171B4DB78000180410 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07CAA91A1B4DB78000180410 /* core_iosTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = core_iosTests.xctest;
+			remoteRef = 07CAA9191B4DB78000180410 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
