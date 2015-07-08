@@ -83,9 +83,6 @@
 	#include "v_cpu.h"
 #endif
 
-#ifdef _X86_
-	#define _AFX_MINREBUILD
-#endif
 
 #ifdef _CUSTOM
 // Put any custom configuration items in afxv_cfg.h

@@ -10,7 +10,7 @@
 #define app_app_h
 
 
-#include "app/appseed/core/core.h"
+#include "core/core/core/core.h"
 
 
 
