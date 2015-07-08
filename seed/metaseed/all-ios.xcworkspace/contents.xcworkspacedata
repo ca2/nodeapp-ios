@@ -2,19 +2,19 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../../../ca2/app-core/appseed/hellomultiverse/ios_app_core_hellomultiverse.xcodeproj">
+      location = "container:../../../app-core/appseed/hellomultiverse/ios_app_core_hellomultiverse.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../../ca2/app/atom/iconv/atomiconv.xcodeproj">
+      location = "container:../../../app/atom/iconv/atomiconv.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../../ca2/app/appseed/aura/aura.xcodeproj">
+      location = "container:../../../app/appseed/aura/aura.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../../ca2/app/aura/charguess/auracharguess.xcodeproj">
+      location = "container:../../../app/aura/charguess/auracharguess.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../../ca2/app/aura/sqlite/aurasqlite.xcodeproj">
+      location = "container:../../../app/aura/sqlite/aurasqlite.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../appseed/app/app.xcodeproj">
@@ -47,31 +47,31 @@
       location = "container:../../appseed/audio_mixer_core_audio/audio_mixer_core_audio.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../../ca2/app/appseed/axis/axis.xcodeproj">
+      location = "container:../../../app/appseed/axis/axis.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../../ca2/app/axis/bzip2/axisbzip2.xcodeproj">
+      location = "container:../../../app/axis/bzip2/axisbzip2.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../../ca2/app/axis/crypto/axiscrypto.xcodeproj">
+      location = "container:../../../app/axis/crypto/axiscrypto.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../../ca2/app/axis/freeimage/axisfreeimage.xcodeproj">
+      location = "container:../../../app/axis/freeimage/axisfreeimage.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../../ca2/app/axis/freetype/axisfreetype.xcodeproj">
+      location = "container:../../../app/axis/freetype/axisfreetype.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../../ca2/app/axis/idn/axisidn.xcodeproj">
+      location = "container:../../../app/axis/idn/axisidn.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../../ca2/app/axis/openssl/axisopenssl.xcodeproj">
+      location = "container:../../../app/axis/openssl/axisopenssl.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../../ca2/app/axis/png/axispng.xcodeproj">
+      location = "container:../../../app/axis/png/axispng.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../../ca2/app/axis/zlib/axiszlib.xcodeproj">
+      location = "container:../../../app/axis/zlib/axiszlib.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app/appseed/base/base.xcodeproj">
@@ -104,6 +104,6 @@
       location = "container:../../../app-veriwell/appseed/multimedia/veriwell_multimedia.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../../ca2/app-core/appseed/wndfrm_core/wndfrm_core.xcodeproj">
+      location = "container:../../../app-core/appseed/wndfrm_core/wndfrm_core.xcodeproj">
    </FileRef>
 </Workspace>

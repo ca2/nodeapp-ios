@@ -2,60 +2,37 @@
 
 
 #include <typeinfo>
+#include <initializer_list>
 
 
 typedef ::std::type_info std_type_info;
 
 
-#define max(x,y) (((x) > (y)) ? (x) : (y))
-#define min(x,y) (((x) < (y)) ? (x) : (y))
-
-
-//#define __max(x,y) (((x) > (y)) ? (x) : (y))
-//#define __min(x,y) (((x) < (y)) ? (x) : (y))
-
-
-// _AFXEXT implies _ApplicationFrameworkDLL
-#if defined(_AFXEXT) && !defined(_ApplicationFrameworkDLL)
-	#define _ApplicationFrameworkDLL
-#endif
-
-#if defined(_ApplicationFrameworkDLL) && !defined(_DLL) && defined(WIN32)
-//	#error Please use the /MD switch for _ApplicationFrameworkDLL builds
-#endif
-
-#if defined(_ApplicationFrameworkDLL) && !defined(_MT) && defined(WIN32)
-	#error Please use the /MD switch (multithreaded DLL C-runtime)
-#endif
-
-/////////////////////////////////////////////////////////////////////////////
-// special include files
-
 #ifndef AFX_INLINE
-	#define AFX_INLINE inline /*inline*/
+#define AFX_INLINE inline /*inline*/
 #endif
-
-#include "version_macos.h"
 
 // Include any non-Intel platform specific items
 #ifndef _X86_
-	#include "version_cpu.h"
+#include "version_cpu.h"
 #endif
 
 
 #ifdef _ApplicationFrameworkDLL
-	#include "version_dylib.h"
+#include "version_dylib.h"
 #endif
+
+
 
 //#undef  __debug_break
 //#define __debug_break() ({asm("int 3")})
 /*#else
-#define __debug_break() DebugBreak()
-#endif
-#else
-#define __debug_break() _CrtDbgBreak()
-#endif
-#endif*/
+ #define __debug_break() DebugBreak()
+ #endif
+ #else
+ #define __debug_break() _CrtDbgBreak()
+ #endif
+ #endif*/
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -64,26 +41,26 @@ typedef ::std::type_info std_type_info;
 
 // SIZE_T_MAX is used by the collection classes
 #ifndef SIZE_T_MAX
-	#define SIZE_T_MAX  UINT_MAX
+#define SIZE_T_MAX  UINT_MAX
 #endif
 
 // PASCAL is used for static member functions
 #ifndef PASCAL
-	#define PASCAL
+#define PASCAL
 #endif
 
 // FASTCALL is used for static member functions with little or no params
 #ifndef FASTCALL
-	#define FASTCALL
+#define FASTCALL
 #endif
 
 // CDECL and EXPORT are defined in case WINDOWS.H doesn't
 #ifndef CDECL
-	#define CDECL
+#define CDECL
 #endif
 
 #ifndef EXPORT
-	#define EXPORT
+#define EXPORT
 #endif
 
 // UNALIGNED is used for unaligned data access (in CArchive mostly)
@@ -98,9 +75,9 @@ typedef ::std::type_info std_type_info;
 // AFX_DEPRECATED is used for functions that should no longer be used
 #ifndef AFX_DEPRECATED
 #ifdef _AFX_DISABLE_DEPRECATED
-	#define AFX_DEPRECATED(_Message)
+#define AFX_DEPRECATED(_Message)
 #else
-	#define AFX_DEPRECATED(_Message) __declspec(deprecated(_Message))
+#define AFX_DEPRECATED(_Message) __declspec(deprecated(_Message))
 #endif
 #endif
 
@@ -115,46 +92,46 @@ typedef ::std::type_info std_type_info;
 
 // AFXAPI is used on global public functions
 #ifndef AFXAPI
-	#define AFXAPI
+#define AFXAPI
 #endif
 
 // c_cdecl is used for rare functions taking variable arguments
 #ifndef c_cdecl
-	#define c_cdecl
+#define c_cdecl
 #endif
 
 // AFX_EXPORT is used for functions which need to be exported
 #ifndef AFX_EXPORT
-	#define AFX_EXPORT
+#define AFX_EXPORT
 #endif
 
 #ifndef __STATIC
-	#define __STATIC extern
-	#define __STATIC_DATA extern __declspec(selectany)
+#define __STATIC extern
+#define __STATIC_DATA extern __declspec(selectany)
 #endif
 
 // for data
 #ifndef __DATA_EXPORT
-	#define __DATA_EXPORT
+#define __DATA_EXPORT
 #endif
 #ifndef __DATA_IMPORT
-	#define __DATA_IMPORT
+#define __DATA_IMPORT
 #endif
 
 // for classes
 #ifndef AFX_CLASS_EXPORT
-	#define AFX_CLASS_EXPORT
+#define AFX_CLASS_EXPORT
 #endif
 #ifndef AFX_CLASS_IMPORT
-	#define AFX_CLASS_IMPORT
+#define AFX_CLASS_IMPORT
 #endif
 
 // for global APIs
 #ifndef AFX_API_EXPORT
-	#define AFX_API_EXPORT
+#define AFX_API_EXPORT
 #endif
 #ifndef AFX_API_IMPORT
-	#define AFX_API_IMPORT
+#define AFX_API_IMPORT
 #endif
 
 // This macro is used to reduce size requirements of some classes
@@ -180,29 +157,29 @@ typedef ::std::type_info std_type_info;
 
 // used when building the "core" MFC80.DLL
 #ifndef __CORE_DATA
-	#define __CORE_DATA CLASS_DECL_BOOT
-	#define __CORE_DATADEF
+#define __CORE_DATA CLASS_DECL_BOOT
+#define __CORE_DATADEF
 #endif
 
 // used when building extension DLLs
 #ifndef AFX_EXT_DATA
-	#define AFX_EXT_DATA
-	#define AFX_EXT_DATADEF
-	#define AFX_EXT_CLASS
-	#define AFX_EXT_API
+#define AFX_EXT_DATA
+#define AFX_EXT_DATADEF
+#define AFX_EXT_CLASS
+#define AFX_EXT_API
 #endif
 
 // BASED_XXXX macros are provided for backward compatibility
 #ifndef BASED_CODE
-	#define BASED_CODE
+#define BASED_CODE
 #endif
 
 #ifndef BASED_DEBUG
-	#define BASED_DEBUG
+#define BASED_DEBUG
 #endif
 
 #ifndef BASED_STACK
-	#define BASED_STACK
+#define BASED_STACK
 #endif
 
 
@@ -217,9 +194,9 @@ typedef ::std::type_info std_type_info;
 
 
 #ifdef _AFX_DEVBUILD
-	#define AFX_IMPL_DATA __DATA_EXPORT
+#define AFX_IMPL_DATA __DATA_EXPORT
 #else
-	#define AFX_IMPL_DATA CLASS_DECL_BOOT
+#define AFX_IMPL_DATA CLASS_DECL_BOOT
 #endif
 
 
