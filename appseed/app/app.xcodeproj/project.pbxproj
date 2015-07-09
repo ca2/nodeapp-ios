@@ -265,6 +265,27 @@
 			remoteGlobalIDString = 078C3583192175C900354453;
 			remoteInfo = app;
 		};
+		07EDC3C21B4ED5DA00AF8928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA6A4871907B628000A1F4A /* core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9A19A1A519C6F50B0018DF7D;
+			remoteInfo = core;
+		};
+		07EDC3C41B4ED5DA00AF8928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA6A4871907B628000A1F4A /* core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24DDC1904CF6E001AEFFB;
+			remoteInfo = core_ios;
+		};
+		07EDC3C61B4ED5DA00AF8928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA6A4871907B628000A1F4A /* core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AE24DEB1904CF6E001AEFFB;
+			remoteInfo = core_iosTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -463,6 +484,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		07EDC39A1B4ED5DA00AF8928 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07EDC3C31B4ED5DA00AF8928 /* libcore.dylib */,
+				07EDC3C51B4ED5DA00AF8928 /* libcore.dylib */,
+				07EDC3C71B4ED5DA00AF8928 /* core_iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9A5752A716AAE1D2000CC4EF = {
 			isa = PBXGroup;
 			children = (
@@ -634,6 +665,10 @@
 					ProductGroup = 07557B8E1B4D88BC0065594B /* Products */;
 					ProjectRef = 07557B8D1B4D88BC0065594B /* base.xcodeproj */;
 				},
+				{
+					ProductGroup = 07EDC39A1B4ED5DA00AF8928 /* Products */;
+					ProjectRef = 9AA6A4871907B628000A1F4A /* core.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -789,6 +824,27 @@
 			fileType = wrapper.cfbundle;
 			path = base_iosTests.xctest;
 			remoteRef = 07557B971B4D88BC0065594B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07EDC3C31B4ED5DA00AF8928 /* libcore.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libcore.dylib;
+			remoteRef = 07EDC3C21B4ED5DA00AF8928 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07EDC3C51B4ED5DA00AF8928 /* libcore.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcore.dylib;
+			remoteRef = 07EDC3C41B4ED5DA00AF8928 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07EDC3C71B4ED5DA00AF8928 /* core_iosTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = core_iosTests.xctest;
+			remoteRef = 07EDC3C61B4ED5DA00AF8928 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
