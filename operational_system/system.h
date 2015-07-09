@@ -78,7 +78,8 @@ typedef struct gdi_object * HGDIOBJ;
 
 #endif
 
-
+#include <CoreGraphics/CoreGraphics.h>
+#include <CoreFoundation/CoreFoundation.h>
 
 #if DEBUG
 #undef DEBUG
