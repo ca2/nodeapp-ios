@@ -5,12 +5,6 @@
       location = "container:../../../app-core/appseed/hellomultiverse/ios_app_core_hellomultiverse.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../app/aura/charguess/auracharguess.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../app/aura/sqlite/aurasqlite.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "container:../../appseed/app/app.xcodeproj">
    </FileRef>
    <FileRef
@@ -45,6 +39,12 @@
    </FileRef>
    <FileRef
       location = "container:../../../app/appseed/aura/aura.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:../../../app/aura/charguess/auracharguess.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:../../../app/aura/sqlite/aurasqlite.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app/appseed/axis/axis.xcodeproj">
