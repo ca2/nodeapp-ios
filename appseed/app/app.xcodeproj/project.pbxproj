@@ -16,9 +16,9 @@
 		078C35CE1921772000354453 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078C35CD1921772000354453 /* UIKit.framework */; };
 		078C36D1192195E700354453 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 078C36CC192195E700354453 /* main.cpp */; };
 		078C36D2192195E700354453 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 078C36CC192195E700354453 /* main.cpp */; };
-		07EDC5B71B4FE6C800AF8928 /* libaura.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07557B2A1B4D879D0065594B /* libaura.dylib */; };
-		07EDC5B81B4FE6CE00AF8928 /* libbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07557B961B4D88BC0065594B /* libbase.dylib */; };
-		07EDC5C61B4FEB3C00AF8928 /* libcore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EDC3C51B4ED5DA00AF8928 /* libcore.dylib */; };
+		07D742CC1B50368400821238 /* libaura.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07557B2A1B4D879D0065594B /* libaura.dylib */; };
+		07D742CD1B50368C00821238 /* libbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07557B961B4D88BC0065594B /* libbase.dylib */; };
+		07D742CE1B50369D00821238 /* libcore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EDC3C51B4ED5DA00AF8928 /* libcore.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -347,10 +347,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07EDC5C61B4FEB3C00AF8928 /* libcore.dylib in Frameworks */,
-				07EDC5B81B4FE6CE00AF8928 /* libbase.dylib in Frameworks */,
-				07EDC5B71B4FE6C800AF8928 /* libaura.dylib in Frameworks */,
 				078C35CE1921772000354453 /* UIKit.framework in Frameworks */,
+				07D742CE1B50369D00821238 /* libcore.dylib in Frameworks */,
+				07D742CD1B50368C00821238 /* libbase.dylib in Frameworks */,
+				07D742CC1B50368400821238 /* libaura.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,7 +567,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				07EDC5C81B4FEB8200AF8928 /* PBXTargetDependency */,
 				07557C0F1B4D8E4B0065594B /* PBXTargetDependency */,
 				07557C131B4D8E4B0065594B /* PBXTargetDependency */,
 				07557C111B4D8E4B0065594B /* PBXTargetDependency */,
@@ -576,8 +575,9 @@
 				07557C231B4D8E540065594B /* PBXTargetDependency */,
 				07557C211B4D8E540065594B /* PBXTargetDependency */,
 				07557C1D1B4D8E4B0065594B /* PBXTargetDependency */,
-				07557C151B4D8E4B0065594B /* PBXTargetDependency */,
 				07557C251B4D8E5B0065594B /* PBXTargetDependency */,
+				07557C151B4D8E4B0065594B /* PBXTargetDependency */,
+				07EDC5C81B4FEB8200AF8928 /* PBXTargetDependency */,
 				07557C191B4D8E4B0065594B /* PBXTargetDependency */,
 				07557C1B1B4D8E4B0065594B /* PBXTargetDependency */,
 			);
