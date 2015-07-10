@@ -14,16 +14,11 @@
 		078C359D192175CA00354453 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 078C359B192175CA00354453 /* InfoPlist.strings */; };
 		078C359F192175CA00354453 /* appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 078C359E192175CA00354453 /* appTests.m */; };
 		078C35CE1921772000354453 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078C35CD1921772000354453 /* UIKit.framework */; };
-		078C36CF192195E700354453 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 078C36CB192195E700354453 /* AppDelegate.mm */; };
-		078C36D0192195E700354453 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 078C36CB192195E700354453 /* AppDelegate.mm */; };
 		078C36D1192195E700354453 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 078C36CC192195E700354453 /* main.cpp */; };
 		078C36D2192195E700354453 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 078C36CC192195E700354453 /* main.cpp */; };
-		078C36D3192195E700354453 /* system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 078C36CD192195E700354453 /* system.cpp */; };
-		078C36D4192195E700354453 /* system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 078C36CD192195E700354453 /* system.cpp */; };
-		078C36D5192195E700354453 /* window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 078C36CE192195E700354453 /* window.cpp */; };
-		078C36D6192195E700354453 /* window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 078C36CE192195E700354453 /* window.cpp */; };
-		078C36D8192199B100354453 /* main_mm.mm in Sources */ = {isa = PBXBuildFile; fileRef = 078C36D7192199B100354453 /* main_mm.mm */; };
-		078C36D9192199B100354453 /* main_mm.mm in Sources */ = {isa = PBXBuildFile; fileRef = 078C36D7192199B100354453 /* main_mm.mm */; };
+		07EDC5B71B4FE6C800AF8928 /* libaura.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07557B2A1B4D879D0065594B /* libaura.dylib */; };
+		07EDC5B81B4FE6CE00AF8928 /* libbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07557B961B4D88BC0065594B /* libbase.dylib */; };
+		07EDC5C61B4FEB3C00AF8928 /* libcore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EDC3C51B4ED5DA00AF8928 /* libcore.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -286,6 +281,13 @@
 			remoteGlobalIDString = 9AE24DEB1904CF6E001AEFFB;
 			remoteInfo = core_iosTests;
 		};
+		07EDC5C71B4FEB8200AF8928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA6A4871907B628000A1F4A /* core.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AE24DDB1904CF6E001AEFFB;
+			remoteInfo = core_ios;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -317,12 +319,7 @@
 		078C359E192175CA00354453 /* appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appTests.m; sourceTree = "<group>"; };
 		078C35CD1921772000354453 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		078C36C6192195A100354453 /* app.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app.h; sourceTree = SOURCE_ROOT; };
-		078C36CA192195E700354453 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = SOURCE_ROOT; };
-		078C36CB192195E700354453 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = SOURCE_ROOT; };
 		078C36CC192195E700354453 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
-		078C36CD192195E700354453 /* system.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = system.cpp; sourceTree = SOURCE_ROOT; };
-		078C36CE192195E700354453 /* window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = window.cpp; sourceTree = SOURCE_ROOT; };
-		078C36D7192199B100354453 /* main_mm.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main_mm.mm; sourceTree = SOURCE_ROOT; };
 		07B5903518866047002C6FEC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		9A5752B616AAE1D2000CC4EF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9A5752B916AAE1D2000CC4EF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -350,6 +347,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07EDC5C61B4FEB3C00AF8928 /* libcore.dylib in Frameworks */,
+				07EDC5B81B4FE6CE00AF8928 /* libbase.dylib in Frameworks */,
+				07EDC5B71B4FE6C800AF8928 /* libaura.dylib in Frameworks */,
 				078C35CE1921772000354453 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,13 +455,8 @@
 		078C3586192175C900354453 /* app */ = {
 			isa = PBXGroup;
 			children = (
-				078C36CA192195E700354453 /* AppDelegate.h */,
-				078C36CB192195E700354453 /* AppDelegate.mm */,
 				078C36CC192195E700354453 /* main.cpp */,
-				078C36CD192195E700354453 /* system.cpp */,
-				078C36CE192195E700354453 /* window.cpp */,
 				078C36C6192195A100354453 /* app.h */,
-				078C36D7192199B100354453 /* main_mm.mm */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -572,6 +567,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				07EDC5C81B4FEB8200AF8928 /* PBXTargetDependency */,
 				07557C0F1B4D8E4B0065594B /* PBXTargetDependency */,
 				07557C131B4D8E4B0065594B /* PBXTargetDependency */,
 				07557C111B4D8E4B0065594B /* PBXTargetDependency */,
@@ -865,10 +861,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				078C36D3192195E700354453 /* system.cpp in Sources */,
-				078C36D8192199B100354453 /* main_mm.mm in Sources */,
-				078C36CF192195E700354453 /* AppDelegate.mm in Sources */,
-				078C36D5192195E700354453 /* window.cpp in Sources */,
 				078C36D1192195E700354453 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -877,11 +869,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				078C36D9192199B100354453 /* main_mm.mm in Sources */,
 				078C359F192175CA00354453 /* appTests.m in Sources */,
-				078C36D4192195E700354453 /* system.cpp in Sources */,
-				078C36D0192195E700354453 /* AppDelegate.mm in Sources */,
-				078C36D6192195E700354453 /* window.cpp in Sources */,
 				078C36D2192195E700354453 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -953,6 +941,11 @@
 			isa = PBXTargetDependency;
 			target = 078C3583192175C900354453 /* app */;
 			targetProxy = 078C3595192175CA00354453 /* PBXContainerItemProxy */;
+		};
+		07EDC5C81B4FEB8200AF8928 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = core_ios;
+			targetProxy = 07EDC5C71B4FEB8200AF8928 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
