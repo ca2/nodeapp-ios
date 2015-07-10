@@ -83,7 +83,7 @@
       location = "container:../../../app/appseed/core/core.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../appseed/draw2d_quartz2d/draw2d_quartz2d.xcodeproj">
+      location = "container:../../../app/appseed/draw2d_quartz2d/draw2d_quartz2d.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app/appseed/math/math.xcodeproj">
