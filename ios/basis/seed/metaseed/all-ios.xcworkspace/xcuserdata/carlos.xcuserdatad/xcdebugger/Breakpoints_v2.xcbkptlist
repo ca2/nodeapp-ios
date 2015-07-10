@@ -4,28 +4,18 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            scope = "0"
-            stopOnStyle = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "/ios/app/appseed/axis/../axis/axis/axis/axis_application.cpp"
-            timestampString = "458225129.708308"
+            filePath = "../../../app/appseed/base/base/node/ios/ios_window_draw.cpp"
+            timestampString = "458253540.471608"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "4328"
-            endingLineNumber = "4328"
-            landmarkName = "application::draw2d_factory_exchange()"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "window_draw::_synch_redraw()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
