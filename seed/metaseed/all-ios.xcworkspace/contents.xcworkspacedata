@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../../app-core/appseed/flag/ios_app_core_flag.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:../../../app-core/appseed/hellomultiverse/ios_app_core_hellomultiverse.xcodeproj">
    </FileRef>
    <FileRef
@@ -63,6 +66,9 @@
    </FileRef>
    <FileRef
       location = "container:../../../app/axis/idn/axisidn.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:../../../app/axis/jpeg/axisjpeg.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app/axis/openssl/axisopenssl.xcodeproj">
