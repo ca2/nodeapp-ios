@@ -2,10 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../../app-core/appseed/flag/ios_app_core_flag.xcodeproj">
+      location = "container:../../../app-core/appseed/flag/ios_app_core_flag.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app-core/appseed/hellomultiverse/ios_app_core_hellomultiverse.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:../../../app-core/appseed/projection/ios_app_core_projection.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../appseed/app/app.xcodeproj">
@@ -90,6 +93,12 @@
    </FileRef>
    <FileRef
       location = "container:../../../app/appseed/draw2d_quartz2d/draw2d_quartz2d.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../app/appseed/html/html.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../app/axis/html_lite/html_lite.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app/appseed/math/math.xcodeproj">
