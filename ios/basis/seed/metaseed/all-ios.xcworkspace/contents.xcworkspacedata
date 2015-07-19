@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "container:../../../app-cidadedecuritiba/appseed/alphaclock/ios_app_cidadedecuritiba_alphaclock.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:../../../app-core/appseed/flag/ios_app_core_flag.xcodeproj">
    </FileRef>
    <FileRef
