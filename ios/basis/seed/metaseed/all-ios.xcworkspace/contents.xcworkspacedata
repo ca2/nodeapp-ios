@@ -14,6 +14,9 @@
       location = "container:../../../app-core/appseed/projection/ios_app_core_projection.xcodeproj">
    </FileRef>
    <FileRef
+      location = "container:../../../game/appseed/tictactoe/ios_game_tictactoe.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:../../appseed/app/app.xcodeproj">
    </FileRef>
    <FileRef
@@ -96,6 +99,9 @@
    </FileRef>
    <FileRef
       location = "container:../../../app/appseed/draw2d_quartz2d/draw2d_quartz2d.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:../../../game/appseed/tictactoe/game_tictactoe.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../../../app/appseed/html/html.xcodeproj">
