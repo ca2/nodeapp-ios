@@ -463,3 +463,7 @@ typedef void * PVOID;
  #error "Only for test!! Good error!! _POSIX_C_SOURCE still 200809L"
  #endf
  */
+
+
+typedef unsigned short unichar;
+typedef wchar_t unichar32;
