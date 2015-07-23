@@ -14,7 +14,7 @@
       location = "container:../../../app-core/appseed/projection/ios_app_core_projection.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app-core/appseed/rdpclient/ios_app_core_rdpclient.xcodeproj">
+      location = "container:../../../app-core/appseed/rdpclient/ios_app_core_rdpclient.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../game/appseed/tictactoe/ios_game_tictactoe.xcodeproj">
@@ -71,7 +71,7 @@
       location = "container:../../../app/axis/bzip2/axisbzip2.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app/axis/clientchannels/axisclientchannels.xcodeproj">
+      location = "container:../../../app/axis/clientchannels/axisclientchannels.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app/axis/crypto/axiscrypto.xcodeproj">
@@ -80,7 +80,7 @@
       location = "container:../../../app/axis/freeimage/axisfreeimage.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app/axis/freerdp/axisfreerdp.xcodeproj">
+      location = "container:../../../app/axis/freerdp/axisfreerdp.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app/axis/freetype/axisfreetype.xcodeproj">
@@ -98,10 +98,10 @@
       location = "container:../../../app/axis/png/axispng.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app/axis/rdpclient/axisrdpclient.xcodeproj">
+      location = "container:../../../app/axis/rdpclient/axisrdpclient.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app/axis/winpr/axiswinpr.xcodeproj">
+      location = "container:../../../app/axis/winpr/axiswinpr.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app/axis/zlib/axiszlib.xcodeproj">
