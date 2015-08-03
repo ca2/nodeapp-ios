@@ -4,92 +4,82 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            scope = "0"
-            stopOnStyle = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../app/appseed/aura/aura/aura/aura_session.cpp"
-            timestampString = "460328280.847246"
+            filePath = "../../../app-core/appseed/hellomultiverse/hellomultiverse_view.cpp"
+            timestampString = "460336636.245457"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "990"
-            endingLineNumber = "990"
-            landmarkName = "get_new_app(sp(::aura::application) pappNewApplicationParent,const char * pszType,const char * pszAppId)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../app/appseed/aura/aura/aura/aura_application.cpp"
-            timestampString = "460328389.643976"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
-            landmarkName = "application::_001OnApplicationRequest(signal_details * pobj)"
+            startingLineNumber = "316"
+            endingLineNumber = "316"
+            landmarkName = "view::view(::aura::application * papp)"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "hellomultiverse::view::view(aura::application*)"
+                  moduleName = "libapp_core_hellomultiverse.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///ios/app-core/appseed/hellomultiverse/hellomultiverse_view.cpp"
+                  timestampString = "460337057.444777"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "316"
+                  endingLineNumber = "316"
+                  offsetFromSymbolStart = "970">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "hellomultiverse::view::view(aura::application*)"
+                  moduleName = "libapp_core_hellomultiverse.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///ios/app-core/appseed/hellomultiverse/hellomultiverse_view.cpp"
+                  timestampString = "460337057.445001"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "316"
+                  endingLineNumber = "316"
+                  offsetFromSymbolStart = "1378">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../app/appseed/aura/aura/os/ansios/ansios_multithreading.cpp"
-            timestampString = "460328981.984256"
+            filePath = "../../../app/axis/freeimage/Source/FreeImage/Plugin.cpp"
+            timestampString = "460336812.386295"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1177"
-            endingLineNumber = "1177"
-            landmarkName = "get_mq(HTHREAD hthread)"
+            startingLineNumber = "355"
+            endingLineNumber = "355"
+            landmarkName = "FreeImage_Initialise(WINBOOL load_local_plugins_only)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../app/appseed/aura/aura/os/ansios/ansios_multithreading.cpp"
-            timestampString = "460328997.207908"
+            filePath = "../../../app/axis/freeimage/Source/FreeImage/Plugin.cpp"
+            timestampString = "460336830.978335"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1168"
-            endingLineNumber = "1168"
-            landmarkName = "get_mq(HTHREAD hthread)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../app/appseed/aura/aura/os/ansios/ansios_multithreading.cpp"
-            timestampString = "460329030.377295"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1379"
-            endingLineNumber = "1379"
-            landmarkName = "PostThreadMessageW(IDTHREAD iThreadId,UINT Msg,WPARAM wParam,LPARAM lParam)"
+            startingLineNumber = "338"
+            endingLineNumber = "338"
+            landmarkName = "FreeImage_Initialise(WINBOOL load_local_plugins_only)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
