@@ -125,7 +125,7 @@
       location = "group:../../../app/appseed/html/html.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app/axis/html_lite/html_lite.xcodeproj">
+      location = "container:../../../app/axis/html_lite/html_lite.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app/appseed/math/math.xcodeproj">
