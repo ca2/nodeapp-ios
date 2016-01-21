@@ -54,9 +54,26 @@
 #define CLASS_DECL_EXPORT
 #define CLASS_DECL_THREAD __thread
 
+#ifndef OSBIT
+#include "nodeapp/operational_system/bit.h"
+#endif
+
+
+
 
 
 #define static_inline inline
+
+
+#define AXIS_FREEIMAGE
+
+
+#define FONT_SANS "sans-serif"
+#define FONT_SERIF "serif"
+#define FONT_SANS_EX "sans-serif"
+#define FONT_SERIF_EX "serif"
+#define FONT_SANS_FX "sans-serif"
+#define FONT_SERIF_FX "serif"
 
 
 
