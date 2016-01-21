@@ -611,7 +611,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = ca2;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Camilo Sasuke Tsumanuma";
 			};
 			buildConfigurationList = 9A5752AC16AAE1D2000CC4EF /* Build configuration list for PBXProject "app" */;
@@ -1017,6 +1017,7 @@
 				);
 				INFOPLIST_FILE = "appTests/appTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca2.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1040,6 +1041,7 @@
 				GCC_PREFIX_HEADER = "app/app-Prefix.pch";
 				INFOPLIST_FILE = "appTests/appTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca2.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1063,6 +1065,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;

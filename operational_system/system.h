@@ -8,6 +8,9 @@
 #pragma once
 
 
+#define index os_index
+
+
 #define __ASSERT_MACROS_DEFINE_VERSIONS_WITHOUT_UNDERSCORES 0
 
 
@@ -15,14 +18,18 @@
 #define _POSIX_SOURCE 200809L
 #define _POSIX_C_SOURCE 200809L
 
-#include <inttypes.h>
-#include <string.h>
+//#include <inttypes.h>
+//#include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdarg.h>
 #include <stddef.h>
 #include <errno.h>
 #include <sys/time.h>
+
+#include "_stdint.h"
+
+
 
 
 /*
@@ -467,3 +474,7 @@ typedef void * PVOID;
 
 typedef unsigned short unichar;
 typedef wchar_t unichar32;
+
+
+#undef index
+
