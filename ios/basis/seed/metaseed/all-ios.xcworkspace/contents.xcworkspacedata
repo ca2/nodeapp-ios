@@ -149,6 +149,18 @@
       location = "container:../../../app-veriwell/appseed/multimedia/veriwell_multimedia.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:../../../app/axis/openh264/codec/build/iOS/common/welscommon.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../app/axis/openh264/codec/build/iOS/dec/welsdec/welsdec.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../app/axis/openh264/codec/build/iOS/enc/welsenc/welsenc.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../app/axis/openh264/codec/build/iOS/processing/welsprocessing.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:../../../app-core/appseed/wndfrm_core/wndfrm_core.xcodeproj">
    </FileRef>
 </Workspace>
