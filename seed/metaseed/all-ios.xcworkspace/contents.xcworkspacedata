@@ -2,13 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:../../../app-cidadedecuritiba/appseed/alphaclock/ios_app_cidadedecuritiba_alphaclock.xcodeproj">
+      location = "container:../../../app-core/appseed/hellomultiverse/ios_app_core_hellomultiverse.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app-core/appseed/flag/ios_app_core_flag.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../app-core/appseed/hellomultiverse/ios_app_core_hellomultiverse.xcodeproj">
+      location = "container:../../../app-cidadedecuritiba/appseed/alphaclock/ios_app_cidadedecuritiba_alphaclock.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app-core/appseed/projection/ios_app_core_projection.xcodeproj">
@@ -18,6 +18,9 @@
    </FileRef>
    <FileRef
       location = "container:../../../game/appseed/tictactoe/ios_game_tictactoe.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../app/appseed/ace/ace.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../appseed/app/app.xcodeproj">
@@ -125,19 +128,16 @@
       location = "container:../../../game/appseed/tictactoe/game_tictactoe.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app/appseed/html/html.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../app/axis/html_lite/html_lite.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../app/appseed/math/math.xcodeproj">
+      location = "group:../../../app-core/appseed/gcom/gcom.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app-core/appseed/multimedia/multimedia.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../appseed/music_midi_core_audio/music_midi_core_audio.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../app/appseed/pcre/pcre.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app/appseed/sphere/sphere.xcodeproj">
