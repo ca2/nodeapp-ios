@@ -92,7 +92,7 @@
       location = "container:../../../app/axis/freetype/axisfreetype.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../app/axis/idn/axisidn.xcodeproj">
+      location = "group:../../../app/axis/idn/axisidn.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../../../app/axis/image_jpeg/axis_image_jpeg.xcodeproj">
