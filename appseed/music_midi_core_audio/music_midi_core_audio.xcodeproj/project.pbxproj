@@ -26,9 +26,6 @@
 		9A1B496716A4A10100875A94 /* framework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B496616A4A10100875A94 /* framework.cpp */; };
 		9A8997BD177D0E7F00C7761E /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8997BC177D0E7D00C7761E /* Carbon.framework */; };
 		9A8CCB0117EA063800F87A02 /* libbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8CCAF917EA063800F87A02 /* libbase.dylib */; };
-		9A8CCB0217EA063800F87A02 /* libbasefreeimage.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8CCAFA17EA063800F87A02 /* libbasefreeimage.dylib */; };
-		9A8CCB0317EA063800F87A02 /* libbasefreetype.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8CCAFB17EA063800F87A02 /* libbasefreetype.dylib */; };
-		9A8CCB0417EA063800F87A02 /* libbasemysql.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8CCAFC17EA063800F87A02 /* libbasemysql.dylib */; };
 		9A8CCB0817EA063800F87A02 /* libcore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8CCB0017EA063800F87A02 /* libcore.dylib */; };
 		9A8EAF7B17C5640300C458D1 /* music_midi_core_audio_exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF6C17C5640300C458D1 /* music_midi_core_audio_exception.cpp */; };
 		9A8EAF7C17C5640300C458D1 /* music_midi_core_audio_exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8EAF6D17C5640300C458D1 /* music_midi_core_audio_exception.h */; };
@@ -44,6 +41,20 @@
 		9A8EAF8617C5640300C458D1 /* music_midi_core_audio_translation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8EAF7717C5640300C458D1 /* music_midi_core_audio_translation.h */; };
 		9A8EAF8717C5640300C458D1 /* music_midi_core_audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF7817C5640300C458D1 /* music_midi_core_audio.cpp */; };
 		9A8EAF8817C5640300C458D1 /* music_midi_core_audio.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8EAF7A17C5640300C458D1 /* music_midi_core_audio.h */; };
+		9A986D7A1D226CCB001F4C04 /* music_midi_core_audio_player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D6C9AA18986C6E00CB8AA8 /* music_midi_core_audio_player.cpp */; };
+		9A986D7B1D226CCB001F4C04 /* music_midi_core_audio_player_callback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D6C9AC18986C6E00CB8AA8 /* music_midi_core_audio_player_callback.cpp */; };
+		9A986D7C1D226CCB001F4C04 /* music_midi_core_audio_player_interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D6C9AE18986C6E00CB8AA8 /* music_midi_core_audio_player_interface.cpp */; };
+		9A986D7D1D226CCB001F4C04 /* music_midi_core_audio_exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF6C17C5640300C458D1 /* music_midi_core_audio_exception.cpp */; };
+		9A986D7E1D226CCB001F4C04 /* music_midi_core_audio_factory_exchange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF6E17C5640300C458D1 /* music_midi_core_audio_factory_exchange.cpp */; };
+		9A986D7F1D226CCB001F4C04 /* music_midi_core_audio_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF7017C5640300C458D1 /* music_midi_core_audio_file.cpp */; };
+		9A986D801D226CCB001F4C04 /* music_midi_core_audio_midi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07884EB7189866D300DC6CEB /* music_midi_core_audio_midi.cpp */; };
+		9A986D811D226CCB001F4C04 /* music_midi_core_audio_sequence_thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF7217C5640300C458D1 /* music_midi_core_audio_sequence_thread.cpp */; };
+		9A986D821D226CCB001F4C04 /* music_midi_core_audio_sequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF7417C5640300C458D1 /* music_midi_core_audio_sequence.cpp */; };
+		9A986D831D226CCB001F4C04 /* music_midi_core_audio_translation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF7617C5640300C458D1 /* music_midi_core_audio_translation.cpp */; };
+		9A986D841D226CCB001F4C04 /* music_midi_core_audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF7817C5640300C458D1 /* music_midi_core_audio.cpp */; };
+		9A986D851D226CCB001F4C04 /* framework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B496616A4A10100875A94 /* framework.cpp */; };
+		9A986D871D226CFC001F4C04 /* libios_base.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A986D861D226CFC001F4C04 /* libios_base.dylib */; };
+		9A986D891D226D07001F4C04 /* libios_core.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A986D881D226D07001F4C04 /* libios_core.dylib */; };
 		9AA1B44A176361950019E812 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA1B449176361950019E812 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +119,8 @@
 		9A8EAF7717C5640300C458D1 /* music_midi_core_audio_translation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = music_midi_core_audio_translation.h; sourceTree = "<group>"; };
 		9A8EAF7817C5640300C458D1 /* music_midi_core_audio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = music_midi_core_audio.cpp; sourceTree = "<group>"; };
 		9A8EAF7A17C5640300C458D1 /* music_midi_core_audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = music_midi_core_audio.h; sourceTree = "<group>"; };
+		9A986D861D226CFC001F4C04 /* libios_base.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libios_base.dylib; path = "../../../app/appseed/base/build/Debug-iphoneos/libios_base.dylib"; sourceTree = "<group>"; };
+		9A986D881D226D07001F4C04 /* libios_core.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libios_core.dylib; path = "../../../../macos/app/appseed/core/build/Debug-iphoneos/libios_core.dylib"; sourceTree = "<group>"; };
 		9AA1B449176361950019E812 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A1CFD778154F5EAA007447E2 /* libmusic_midi_core_audio.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libmusic_midi_core_audio.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -117,6 +130,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A986D891D226D07001F4C04 /* libios_core.dylib in Frameworks */,
+				9A986D871D226CFC001F4C04 /* libios_base.dylib in Frameworks */,
 				07B657BB190F3CBF002DAADE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +152,6 @@
 				9AA1B44A176361950019E812 /* Cocoa.framework in Frameworks */,
 				9A8997BD177D0E7F00C7761E /* Carbon.framework in Frameworks */,
 				9A8CCB0117EA063800F87A02 /* libbase.dylib in Frameworks */,
-				9A8CCB0217EA063800F87A02 /* libbasefreeimage.dylib in Frameworks */,
-				9A8CCB0317EA063800F87A02 /* libbasefreetype.dylib in Frameworks */,
-				9A8CCB0417EA063800F87A02 /* libbasemysql.dylib in Frameworks */,
 				9A8CCB0817EA063800F87A02 /* libcore.dylib in Frameworks */,
 				07D6C9BD18987A7200CB8AA8 /* libmultimedia.dylib in Frameworks */,
 				07D6C9BB18987A5E00CB8AA8 /* libveriwell_multimedia.dylib in Frameworks */,
@@ -152,6 +164,8 @@
 		07B657B9190F3CBF002DAADE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A986D881D226D07001F4C04 /* libios_core.dylib */,
+				9A986D861D226CFC001F4C04 /* libios_base.dylib */,
 				07B657BA190F3CBF002DAADE /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -369,6 +383,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A986D7A1D226CCB001F4C04 /* music_midi_core_audio_player.cpp in Sources */,
+				9A986D7B1D226CCB001F4C04 /* music_midi_core_audio_player_callback.cpp in Sources */,
+				9A986D7C1D226CCB001F4C04 /* music_midi_core_audio_player_interface.cpp in Sources */,
+				9A986D7D1D226CCB001F4C04 /* music_midi_core_audio_exception.cpp in Sources */,
+				9A986D7E1D226CCB001F4C04 /* music_midi_core_audio_factory_exchange.cpp in Sources */,
+				9A986D7F1D226CCB001F4C04 /* music_midi_core_audio_file.cpp in Sources */,
+				9A986D801D226CCB001F4C04 /* music_midi_core_audio_midi.cpp in Sources */,
+				9A986D811D226CCB001F4C04 /* music_midi_core_audio_sequence_thread.cpp in Sources */,
+				9A986D821D226CCB001F4C04 /* music_midi_core_audio_sequence.cpp in Sources */,
+				9A986D831D226CCB001F4C04 /* music_midi_core_audio_translation.cpp in Sources */,
+				9A986D841D226CCB001F4C04 /* music_midi_core_audio.cpp in Sources */,
+				9A986D851D226CCB001F4C04 /* framework.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
