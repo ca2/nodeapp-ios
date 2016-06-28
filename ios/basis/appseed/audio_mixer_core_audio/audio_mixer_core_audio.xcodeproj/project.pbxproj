@@ -42,6 +42,18 @@
 		9A8EAF6917C563D300C458D1 /* audio_mixer_core_audio_window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF5117C563D300C458D1 /* audio_mixer_core_audio_window.cpp */; };
 		9A8EAF6A17C563D300C458D1 /* audio_mixer_core_audio_window.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8EAF5217C563D300C458D1 /* audio_mixer_core_audio_window.h */; };
 		9A8EAF6B17C563D300C458D1 /* audio_mixer_core_audio.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8EAF5417C563D300C458D1 /* audio_mixer_core_audio.h */; };
+		9A986DA91D226F93001F4C04 /* audio_mixer_core_audio_callback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF3D17C563D300C458D1 /* audio_mixer_core_audio_callback.cpp */; };
+		9A986DAA1D226F93001F4C04 /* audio_mixer_core_audio_control.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF3F17C563D300C458D1 /* audio_mixer_core_audio_control.cpp */; };
+		9A986DAB1D226F93001F4C04 /* audio_mixer_core_audio_destination.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF4117C563D300C458D1 /* audio_mixer_core_audio_destination.cpp */; };
+		9A986DAC1D226F93001F4C04 /* audio_mixer_core_audio_device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF4317C563D300C458D1 /* audio_mixer_core_audio_device.cpp */; };
+		9A986DAD1D226F93001F4C04 /* audio_mixer_core_audio_factory_exchange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF4517C563D300C458D1 /* audio_mixer_core_audio_factory_exchange.cpp */; };
+		9A986DAE1D226F93001F4C04 /* audio_mixer_core_audio_line_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF4717C563D300C458D1 /* audio_mixer_core_audio_line_info.cpp */; };
+		9A986DAF1D226F93001F4C04 /* audio_mixer_core_audio_mixer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF4917C563D300C458D1 /* audio_mixer_core_audio_mixer.cpp */; };
+		9A986DB01D226F93001F4C04 /* audio_mixer_core_audio_section.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF4B17C563D300C458D1 /* audio_mixer_core_audio_section.cpp */; };
+		9A986DB11D226F93001F4C04 /* audio_mixer_core_audio_source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF4D17C563D300C458D1 /* audio_mixer_core_audio_source.cpp */; };
+		9A986DB21D226F93001F4C04 /* audio_mixer_core_audio_thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF4F17C563D300C458D1 /* audio_mixer_core_audio_thread.cpp */; };
+		9A986DB31D226F93001F4C04 /* audio_mixer_core_audio_window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A8EAF5117C563D300C458D1 /* audio_mixer_core_audio_window.cpp */; };
+		9A986DB41D226F93001F4C04 /* framework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B496616A4A10100875A94 /* framework.cpp */; };
 		9AA1B44A176361950019E812 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA1B449176361950019E812 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -355,6 +367,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A986DA91D226F93001F4C04 /* audio_mixer_core_audio_callback.cpp in Sources */,
+				9A986DAA1D226F93001F4C04 /* audio_mixer_core_audio_control.cpp in Sources */,
+				9A986DAB1D226F93001F4C04 /* audio_mixer_core_audio_destination.cpp in Sources */,
+				9A986DAC1D226F93001F4C04 /* audio_mixer_core_audio_device.cpp in Sources */,
+				9A986DAD1D226F93001F4C04 /* audio_mixer_core_audio_factory_exchange.cpp in Sources */,
+				9A986DAE1D226F93001F4C04 /* audio_mixer_core_audio_line_info.cpp in Sources */,
+				9A986DAF1D226F93001F4C04 /* audio_mixer_core_audio_mixer.cpp in Sources */,
+				9A986DB01D226F93001F4C04 /* audio_mixer_core_audio_section.cpp in Sources */,
+				9A986DB11D226F93001F4C04 /* audio_mixer_core_audio_source.cpp in Sources */,
+				9A986DB21D226F93001F4C04 /* audio_mixer_core_audio_thread.cpp in Sources */,
+				9A986DB31D226F93001F4C04 /* audio_mixer_core_audio_window.cpp in Sources */,
+				9A986DB41D226F93001F4C04 /* framework.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
