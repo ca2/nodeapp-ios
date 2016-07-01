@@ -26,7 +26,7 @@ namespace multimedia
 //         aligned_pointer < AudioQueueRef >                   m_Queue;
          AudioStreamBasicDescription                           m_dataformat;
          AudioQueueRef                                         m_Queue;
-         comparable_raw_array < AudioQueueBufferRef >::type    m_Buffers;
+         comparable_raw_array < AudioQueueBufferRef >    m_Buffers;
          SInt64                                                m_CurrentPacket;
          CFRunLoopRef                                          m_runloop;
          CFStringRef                                           m_runmode;
@@ -37,7 +37,7 @@ namespace multimedia
          virtual ~toolbox();
          
 
-         virtual void * wave_allocate_buffer_data(::primitive::memory_size len);
+         virtual void * wave_allocate_buffer_data(memory_size len);
          virtual void wave_free_buffer_data(void * pdata);
          
          
