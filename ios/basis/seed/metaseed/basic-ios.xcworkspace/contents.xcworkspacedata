@@ -11,7 +11,7 @@
       location = "container:../../../app-cidadedecuritiba/appseed/alphaclock/ios_app_cidadedecuritiba_alphaclock.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/ios/app-core/appseed/clockverse/ios_app_core_clockverse.xcodeproj">
+      location = "group:../../../app-core/appseed/clockverse/ios_app_core_clockverse.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app-core/appseed/projection/ios_app_core_projection.xcodeproj">
@@ -62,7 +62,7 @@
       location = "container:../../../app/atom/iconv/atomiconv.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../appseed/audio_core_audio/audio_core_audio.xcodeproj">
+      location = "group:../../../app/appseed/audio_core_audio/audio_core_audio.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app-veriwell/appseed/audio_decode_libmpg123/audio_decode_libmpg123.xcodeproj">
@@ -132,6 +132,9 @@
    </FileRef>
    <FileRef
       location = "container:../../../app/appseed/base/base.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../app-core/appseed/id3lib/baseid3lib.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app-veriwell/appseed/libmpg123/basempg123.xcodeproj">
