@@ -2,28 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:../../../app-core/appseed/hellomultiverse/ios_app_core_hellomultiverse.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../app-core/appseed/flag/ios_app_core_flag.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../app-cidadedecuritiba/appseed/alphaclock/ios_app_cidadedecuritiba_alphaclock.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../app-core/appseed/clockverse/ios_app_core_clockverse.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../app-core/appseed/projection/ios_app_core_projection.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../app-core/appseed/rdpclient/ios_app_core_rdpclient.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../game/appseed/tictactoe/ios_game_tictactoe.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../app-veriwell/appseed/waven/ios_app_veriwell_waven.xcodeproj">
+      location = "group:../../../app-veriwell/appseed/verisimplevideo/ios_app_veriwell_verisimplevideo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../../../app/appseed/ace/ace.xcodeproj">
@@ -57,6 +36,9 @@
    </FileRef>
    <FileRef
       location = "group:../../../app-veriwell/appseed/waven/app_veriwell_waven.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../app-veriwell/appseed/verisimplevideo/app_veriwell_verisimplevideo.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app/atom/iconv/atomiconv.xcodeproj">
@@ -159,6 +141,9 @@
    </FileRef>
    <FileRef
       location = "container:../../../app-veriwell/appseed/multimedia/veriwell_multimedia.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../app-veriwell/appseed/video_decode_ffmpeg/video_decode_ffmpeg.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../../../app/axis/openh264/codec/build/iOS/common/welscommon.xcodeproj">
