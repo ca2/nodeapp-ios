@@ -5,6 +5,15 @@
       location = "group:../../../game/appseed/tictactoe/ios_game_tictactoe.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:../../../game/appseed/tetris/ios_game_tetris.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../game/appseed/sokoban/ios_game_sokoban.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../game/appseed/pacman/ios_game_pacman.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:../../../app-core/appseed/hellomultiverse/ios_app_core_hellomultiverse.xcodeproj">
    </FileRef>
    <FileRef
@@ -141,6 +150,15 @@
    </FileRef>
    <FileRef
       location = "container:../../../game/appseed/tictactoe/game_tictactoe.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../game/appseed/tetris/game_tetris.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../game/appseed/sokoban/game_sokoban.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../game/appseed/pacman/game_pacman.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../../../app-core/appseed/gcom/gcom.xcodeproj">
