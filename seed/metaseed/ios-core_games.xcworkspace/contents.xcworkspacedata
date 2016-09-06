@@ -65,7 +65,7 @@
       location = "group:../../../app-veriwell/appseed/waven/app_veriwell_waven.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../app/atom/iconv/atomiconv.xcodeproj">
+      location = "group:../../../third/appseed/iconv/atomiconv.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../../../app/appseed/audio_core_audio/audio_core_audio.xcodeproj">
@@ -80,52 +80,52 @@
       location = "container:../../../app/appseed/aura/aura.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../app/aura/charguess/auracharguess.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../app/aura/pcre/aurapcre.xcodeproj">
+      location = "group:../../../third/appseed/pcre/aurapcre.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app/appseed/axis/axis.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../app/axis/clientchannels/axisclientchannels.xcodeproj">
+      location = "group:../../../third/appseed/clientchannels/axisclientchannels.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../app/axis/crypto/axiscrypto.xcodeproj">
+      location = "group:../../../third/appseed/crypto/axiscrypto.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../app/axis/freeimage/axisfreeimage.xcodeproj">
+      location = "group:../../../app/appseed/freeimage/axisfreeimage.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../app/axis/freerdp/axisfreerdp.xcodeproj">
+      location = "group:../../../third/appseed/freerdp/axisfreerdp.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../app/axis/freetype/axisfreetype.xcodeproj">
+      location = "group:../../../third/appseed/freetype/axisfreetype.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app/axis/idn/axisidn.xcodeproj">
+      location = "group:../../../third/appseed/idn/axisidn.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app/axis/image_jpeg/axis_image_jpeg.xcodeproj">
+      location = "group:../../../app/appseed/image_jpeg/image_decode_jpeg.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app/axis/image_png/axis_image_png.xcodeproj">
+      location = "group:../../../app/appseed/image_png/image_decode_png.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app/axis/jpeg/axisjpeg.xcodeproj">
+      location = "group:../../../third/appseed/jpeg/axisjpeg.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../app/axis/openssl/axisopenssl.xcodeproj">
+      location = "group:../../../third/appseed/openssl/axisopenssl.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app/axis/png/axispng.xcodeproj">
+      location = "group:../../../third/appseed/png/axispng.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../app/axis/rdpclient/axisrdpclient.xcodeproj">
+      location = "group:../../../app/appseed/rdpclient/axisrdpclient.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../app/axis/winpr/axiswinpr.xcodeproj">
+      location = "group:../../../third/appseed/winpr/axiswinpr.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../macos/third/appseed/winpr/axiswinpr.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app/appseed/base/base.xcodeproj">
@@ -161,9 +161,6 @@
       location = "container:../../appseed/music_midi_core_audio/music_midi_core_audio.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app/appseed/pcre/pcre.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "container:../../../app/appseed/sphere/sphere.xcodeproj">
    </FileRef>
    <FileRef
@@ -173,16 +170,16 @@
       location = "container:../../../app-veriwell/appseed/multimedia/veriwell_multimedia.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app/axis/openh264/codec/build/iOS/common/welscommon.xcodeproj">
+      location = "group:../../../third/appseed/openh264/codec/build/iOS/common/welscommon.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app/axis/openh264/codec/build/iOS/dec/welsdec/welsdec.xcodeproj">
+      location = "group:../../../third/appseed/openh264/codec/build/iOS/dec/welsdec/welsdec.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app/axis/openh264/codec/build/iOS/enc/welsenc/welsenc.xcodeproj">
+      location = "group:../../../third/appseed/openh264/codec/build/iOS/enc/welsenc/welsenc.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app/axis/openh264/codec/build/iOS/processing/welsprocessing.xcodeproj">
+      location = "group:../../../third/appseed/openh264/codec/build/iOS/processing/welsprocessing.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app-core/appseed/wndfrm_core/wndfrm_core.xcodeproj">
