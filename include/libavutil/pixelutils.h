@@ -20,7 +20,7 @@
 #define AVUTIL_PIXELUTILS_H
 
 #include <stddef.h>
-#include "_stdint.h"
+#include <stdint.h>
 #include "common.h"
 
 /**
