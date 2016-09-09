@@ -21,7 +21,7 @@
 #ifndef AVUTIL_MATHEMATICS_H
 #define AVUTIL_MATHEMATICS_H
 
-#include "_stdint.h"
+#include <stdint.h>
 #include <math.h>
 #include "attributes.h"
 #include "rational.h"
@@ -77,9 +77,10 @@ enum AVRounding {
 };
 
 /**
- * Return the greatest common divisor of a and b.
- * If both a and b are 0 or either or both are <0 then behavior is
- * undefined.
+ * Compute the greatest common divisor of a and b.
+ *
+ * @return gcd of a and b up to sign; if a >= 0 and b >= 0, return value is >= 0;
+ * if a == 0 and b == 0, returns 0.
  */
 int64_t av_const av_gcd(int64_t a, int64_t b);
 
