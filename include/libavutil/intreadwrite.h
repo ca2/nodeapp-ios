@@ -19,7 +19,7 @@
 #ifndef AVUTIL_INTREADWRITE_H
 #define AVUTIL_INTREADWRITE_H
 
-#include "_stdint.h"
+#include <stdint.h>
 #include "libavutil/avconfig.h"
 #include "attributes.h"
 #include "bswap.h"

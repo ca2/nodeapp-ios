@@ -21,7 +21,7 @@
 #ifndef AVUTIL_SHA_H
 #define AVUTIL_SHA_H
 
-#include "_stdint.h"
+#include <stdint.h>
 
 #include "attributes.h"
 #include "version.h"

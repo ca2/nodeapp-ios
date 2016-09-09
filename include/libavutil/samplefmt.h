@@ -19,7 +19,7 @@
 #ifndef AVUTIL_SAMPLEFMT_H
 #define AVUTIL_SAMPLEFMT_H
 
-#include "_stdint.h"
+#include <stdint.h>
 
 #include "avutil.h"
 #include "attributes.h"
@@ -32,7 +32,6 @@
  *
  * Audio sample format enumeration and related convenience functions.
  * @{
- *
  */
 
 /**

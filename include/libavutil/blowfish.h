@@ -22,7 +22,7 @@
 #ifndef AVUTIL_BLOWFISH_H
 #define AVUTIL_BLOWFISH_H
 
-#include "_stdint.h"
+#include <stdint.h>
 
 /**
  * @defgroup lavu_blowfish Blowfish
@@ -36,6 +36,11 @@ typedef struct AVBlowfish {
     uint32_t p[AV_BF_ROUNDS + 2];
     uint32_t s[4][256];
 } AVBlowfish;
+
+/**
+ * Allocate an AVBlowfish context.
+ */
+AVBlowfish *av_blowfish_alloc(void);
 
 /**
  * Initialize an AVBlowfish context.

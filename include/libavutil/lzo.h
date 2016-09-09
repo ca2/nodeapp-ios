@@ -29,7 +29,7 @@
  * @{
  */
 
-#include "_stdint.h"
+#include <stdint.h>
 
 /** @name Error flags returned by av_lzo1x_decode
  * @{ */

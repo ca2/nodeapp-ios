@@ -21,7 +21,7 @@
 #ifndef AVUTIL_HASH_H
 #define AVUTIL_HASH_H
 
-#include "_stdint.h"
+#include <stdint.h>
 
 struct AVHashContext;
 

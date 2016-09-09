@@ -21,7 +21,7 @@
 #ifndef AVUTIL_TIME_H
 #define AVUTIL_TIME_H
 
-#include "_stdint.h"
+#include <stdint.h>
 
 /**
  * Get the current time in microseconds.

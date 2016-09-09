@@ -24,7 +24,7 @@
 #ifndef AVUTIL_FIFO_H
 #define AVUTIL_FIFO_H
 
-#include "_stdint.h"
+#include <stdint.h>
 #include "avutil.h"
 #include "attributes.h"
 
@@ -82,6 +82,27 @@ int av_fifo_size(const AVFifoBuffer *f);
  * @return size
  */
 int av_fifo_space(const AVFifoBuffer *f);
+
+/**
+ * Feed data at specific position from an AVFifoBuffer to a user-supplied callback.
+ * Similar as av_fifo_gereric_read but without discarding data.
+ * @param f AVFifoBuffer to read from
+ * @param offset offset from current read position
+ * @param buf_size number of bytes to read
+ * @param func generic read function
+ * @param dest data destination
+ */
+int av_fifo_generic_peek_at(AVFifoBuffer *f, void *dest, int offset, int buf_size, void (*func)(void*, void*, int));
+
+/**
+ * Feed data from an AVFifoBuffer to a user-supplied callback.
+ * Similar as av_fifo_gereric_read but without discarding data.
+ * @param f AVFifoBuffer to read from
+ * @param buf_size number of bytes to read
+ * @param func generic read function
+ * @param dest data destination
+ */
+int av_fifo_generic_peek(AVFifoBuffer *f, void *dest, int buf_size, void (*func)(void*, void*, int));
 
 /**
  * Feed data from an AVFifoBuffer to a user-supplied callback.

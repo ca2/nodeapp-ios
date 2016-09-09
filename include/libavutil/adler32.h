@@ -21,7 +21,7 @@
 #ifndef AVUTIL_ADLER32_H
 #define AVUTIL_ADLER32_H
 
-#include "_stdint.h"
+#include <stdint.h>
 #include "attributes.h"
 
 /**

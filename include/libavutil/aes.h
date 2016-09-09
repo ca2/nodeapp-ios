@@ -21,7 +21,7 @@
 #ifndef AVUTIL_AES_H
 #define AVUTIL_AES_H
 
-#include "_stdint.h"
+#include <stdint.h>
 
 #include "attributes.h"
 #include "version.h"

@@ -22,7 +22,7 @@
 #ifndef AVUTIL_SHA512_H
 #define AVUTIL_SHA512_H
 
-#include "_stdint.h"
+#include <stdint.h>
 
 #include "attributes.h"
 #include "version.h"

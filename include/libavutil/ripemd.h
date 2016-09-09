@@ -22,7 +22,7 @@
 #ifndef AVUTIL_RIPEMD_H
 #define AVUTIL_RIPEMD_H
 
-#include "_stdint.h"
+#include <stdint.h>
 
 #include "attributes.h"
 #include "version.h"

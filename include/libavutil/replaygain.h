@@ -1,5 +1,4 @@
 /*
- *
  * This file is part of FFmpeg.
  *
  * FFmpeg is free software; you can redistribute it and/or
@@ -20,7 +19,7 @@
 #ifndef AVUTIL_REPLAYGAIN_H
 #define AVUTIL_REPLAYGAIN_H
 
-#include "_stdint.h"
+#include <stdint.h>
 
 /**
  * ReplayGain information (see

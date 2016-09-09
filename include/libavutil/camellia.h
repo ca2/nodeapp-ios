@@ -22,7 +22,7 @@
 #ifndef AVUTIL_CAMELLIA_H
 #define AVUTIL_CAMELLIA_H
 
-#include "_stdint.h"
+#include <stdint.h>
 
 
 /**
