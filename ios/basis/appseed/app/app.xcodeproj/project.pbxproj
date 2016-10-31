@@ -372,7 +372,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "";
 				EXECUTABLE_EXTENSION = dylib;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -391,7 +390,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				EXECUTABLE_EXTENSION = dylib;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -494,7 +492,8 @@
 					"$(WorkspaceDir)/../../../nodeapp/thirdparty/include",
 				);
 				INSTALL_PATH = "@executable_path";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(TARGET_BUILD_DIR)\"",
@@ -548,7 +547,8 @@
 					"$(WorkspaceDir)/../../../nodeapp/thirdparty/include",
 				);
 				INSTALL_PATH = "@executable_path";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(TARGET_BUILD_DIR)\"",
