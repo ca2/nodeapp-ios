@@ -32,9 +32,6 @@
       location = "container:../../../app-cidadedecuritiba/appseed/alphaclock/app_cidadedecuritiba_alphaclock.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../app-core/appseed/deepfish/app_core_deepfish.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:../../../app-core/appseed/clockverse/app_core_clockverse.xcodeproj">
    </FileRef>
    <FileRef
@@ -80,9 +77,6 @@
       location = "group:../../../third/appseed/clientchannels/axisclientchannels.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../third/appseed/crypto/axiscrypto.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:../../../app/appseed/freeimage/axisfreeimage.xcodeproj">
    </FileRef>
    <FileRef
@@ -102,9 +96,6 @@
    </FileRef>
    <FileRef
       location = "group:../../../third/appseed/jpeg/axisjpeg.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../third/appseed/openssl/axisopenssl.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../../../third/appseed/png/axispng.xcodeproj">
