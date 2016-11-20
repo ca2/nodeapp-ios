@@ -8,7 +8,7 @@
       location = "group:../../../app-veriwell/appseed/verisimplevideo/ios_app_veriwell_verisimplevideo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/a/ios/app-veriwell/appseed/mplite/ios_app_veriwell_mplite.xcodeproj">
+      location = "group:../../../app-veriwell/appseed/mplite/ios_app_veriwell_mplite.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../../../app/appseed/ace/ace.xcodeproj">
@@ -74,9 +74,6 @@
       location = "group:../../../third/appseed/clientchannels/axisclientchannels.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../third/appseed/crypto/axiscrypto.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:../../../app/appseed/freeimage/axisfreeimage.xcodeproj">
    </FileRef>
    <FileRef
@@ -96,9 +93,6 @@
    </FileRef>
    <FileRef
       location = "group:../../../third/appseed/jpeg/axisjpeg.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../third/appseed/openssl/axisopenssl.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../../../third/appseed/png/axispng.xcodeproj">
