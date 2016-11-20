@@ -21,13 +21,14 @@
 #endif
 
 
-#define STORE_LAST_BLOCK 1
-#define MEMDFREE 1
-#define MEMDLEAK 1
+#define STORE_LAST_BLOCK 0
+#define MEMDFREE 0
+#define MEMDLEAK 0
 
 
 #define BSD_STYLE_SOCKETS
 #define HAVE_OPENSSL
+#define OPENSSL_MIN_API 0x00908000L
 #define VARIADIC_TEMPLATE_FORMAT2
 
 

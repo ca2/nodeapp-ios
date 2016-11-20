@@ -1,0 +1,14 @@
+prefix=/ffmpeg_ios/thin/armv7
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavdevice
+Description: FFmpeg device handling library
+Version: 57.0.101
+Requires: libavfilter >= 6.46.102, libswscale >= 4.1.100, libavformat >= 57.40.101, libavcodec >= 57.48.101, libswresample >= 2.1.100, libavutil >= 55.27.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavdevice -framework QuartzCore -framework CoreVideo -framework Foundation -framework AVFoundation -framework CoreMedia -framework CoreFoundation -framework VideoToolbox -framework CoreMedia -framework CoreVideo -framework CoreFoundation -framework AudioToolbox -framework CoreMedia -liconv -lm -lbz2 -lz -pthread
+Libs.private: 
+Cflags: -I${includedir}
