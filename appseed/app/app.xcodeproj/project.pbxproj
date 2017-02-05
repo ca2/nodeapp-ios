@@ -506,7 +506,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/../../../include $(WorkspaceDir)/../../../app/include framework . .. $(WorkspaceDir)/../../.. $(WorkspaceDir)/../../../app $(WorkspaceDir)/../../../app/appseed $(WorkspaceDir)/../../../app/appseed/core $(WorkspaceDir)/../../../app/appseed/base $(WorkspaceDir)/../../../app/appseed/axis $(WorkspaceDir)/../../../app/appseed/aura $(WorkspaceDir)/../../../app/axis $(WorkspaceDir)/../.. $(WorkspaceDir)/../../base/include $(WorkspaceDir)/../../../app/base/include $(WorkspaceDir)/../../appseed $(WorkspaceDir)/../../../app/base";
+				USER_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/../../../include $(WorkspaceDir)/../../../nodeapp/iPhoneSimulator10.1-x86_64.sdk/include $(WorkspaceDir)/../../../app/include framework . .. $(WorkspaceDir)/../../.. $(WorkspaceDir)/../../../app $(WorkspaceDir)/../../../app/appseed $(WorkspaceDir)/../../../app/appseed/core $(WorkspaceDir)/../../../app/appseed/base $(WorkspaceDir)/../../../app/appseed/axis $(WorkspaceDir)/../../../app/appseed/aura $(WorkspaceDir)/../../../app/axis $(WorkspaceDir)/../.. $(WorkspaceDir)/../../base/include $(WorkspaceDir)/../../../app/base/include $(WorkspaceDir)/../../appseed $(WorkspaceDir)/../../../app/base";
 				WorkspaceDir = "$(SRCROOT)/../../../nodeapp/seed/metaseed";
 			};
 			name = Debug;
@@ -560,7 +560,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/../../../include $(WorkspaceDir)/../../../app/include framework . .. $(WorkspaceDir)/../../.. $(WorkspaceDir)/../../../app $(WorkspaceDir)/../../../app/appseed $(WorkspaceDir)/../../../app/appseed/core $(WorkspaceDir)/../../../app/appseed/base $(WorkspaceDir)/../../../app/appseed/axis $(WorkspaceDir)/../../../app/appseed/aura $(WorkspaceDir)/../../../app/axis $(WorkspaceDir)/../.. $(WorkspaceDir)/../../base/include $(WorkspaceDir)/../../../app/base/include $(WorkspaceDir)/../../appseed $(WorkspaceDir)/../../../app/base";
+				USER_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/../../../include $(WorkspaceDir)/../../../nodeapp/iPhoneSimulator10.1-x86_64.sdk/include $(WorkspaceDir)/../../../app/include framework . .. $(WorkspaceDir)/../../.. $(WorkspaceDir)/../../../app $(WorkspaceDir)/../../../app/appseed $(WorkspaceDir)/../../../app/appseed/core $(WorkspaceDir)/../../../app/appseed/base $(WorkspaceDir)/../../../app/appseed/axis $(WorkspaceDir)/../../../app/appseed/aura $(WorkspaceDir)/../../../app/axis $(WorkspaceDir)/../.. $(WorkspaceDir)/../../base/include $(WorkspaceDir)/../../../app/base/include $(WorkspaceDir)/../../appseed $(WorkspaceDir)/../../../app/base";
 				VALIDATE_PRODUCT = YES;
 				WorkspaceDir = "$(SRCROOT)/../../../nodeapp/seed/metaseed";
 			};
