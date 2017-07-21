@@ -14,7 +14,7 @@
 //
 #pragma once
 
-
+#define CUBE // 21 de Julho de 2017, ThomasBS-LiveEdu.TV
 
 #if defined(_DEBUG) && !defined(DEBUG)
 #define DEBUG 1

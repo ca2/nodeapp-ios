@@ -10,17 +10,11 @@
 		078C3592192175CA00354453 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24EDA1904E95E001AEFFB /* XCTest.framework */; };
 		078C3593192175CA00354453 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24EC11904E95E001AEFFB /* Foundation.framework */; };
 		078C3594192175CA00354453 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24EC51904E95E001AEFFB /* UIKit.framework */; };
-		078C3597192175CA00354453 /* libapp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 078C3584192175C900354453 /* libapp.dylib */; };
+		078C3597192175CA00354453 /* libapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 078C3584192175C900354453 /* libapp.a */; };
 		078C359D192175CA00354453 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 078C359B192175CA00354453 /* InfoPlist.strings */; };
 		078C359F192175CA00354453 /* appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 078C359E192175CA00354453 /* appTests.m */; };
-		078C35CE1921772000354453 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078C35CD1921772000354453 /* UIKit.framework */; };
 		078C36D1192195E700354453 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 078C36CC192195E700354453 /* main.cpp */; };
 		078C36D2192195E700354453 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 078C36CC192195E700354453 /* main.cpp */; };
-		07D742CE1B50369D00821238 /* libios_core.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EDC3C51B4ED5DA00AF8928 /* libios_core.dylib */; };
-		9A34300F1D5B97F000D00D4A /* libios_ace.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A34300B1D5B97F000D00D4A /* libios_ace.dylib */; };
-		9A3430101D5B97F000D00D4A /* libios_aura.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A34300C1D5B97F000D00D4A /* libios_aura.dylib */; };
-		9A3430141D5B983C00D00D4A /* libios_axis.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3430131D5B983C00D00D4A /* libios_axis.dylib */; };
-		9A3430161D5B985000D00D4A /* libios_base.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3430151D5B985000D00D4A /* libios_base.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +68,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		078C3584192175C900354453 /* libapp.dylib */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libapp.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		078C3584192175C900354453 /* libapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libapp.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		078C3591192175CA00354453 /* appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		078C359A192175CA00354453 /* appTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "appTests-Info.plist"; sourceTree = "<group>"; };
 		078C359C192175CA00354453 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -103,12 +97,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A3430161D5B985000D00D4A /* libios_base.dylib in Frameworks */,
-				9A3430141D5B983C00D00D4A /* libios_axis.dylib in Frameworks */,
-				9A34300F1D5B97F000D00D4A /* libios_ace.dylib in Frameworks */,
-				9A3430101D5B97F000D00D4A /* libios_aura.dylib in Frameworks */,
-				078C35CE1921772000354453 /* UIKit.framework in Frameworks */,
-				07D742CE1B50369D00821238 /* libios_core.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +107,7 @@
 				078C3592192175CA00354453 /* XCTest.framework in Frameworks */,
 				078C3594192175CA00354453 /* UIKit.framework in Frameworks */,
 				078C3593192175CA00354453 /* Foundation.framework in Frameworks */,
-				078C3597192175CA00354453 /* libapp.dylib in Frameworks */,
+				078C3597192175CA00354453 /* libapp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +165,7 @@
 		9A5752B316AAE1D2000CC4EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				078C3584192175C900354453 /* libapp.dylib */,
+				078C3584192175C900354453 /* libapp.a */,
 				078C3591192175CA00354453 /* appTests.xctest */,
 			);
 			name = Products;
@@ -230,7 +218,7 @@
 			);
 			name = app;
 			productName = app;
-			productReference = 078C3584192175C900354453 /* libapp.dylib */;
+			productReference = 078C3584192175C900354453 /* libapp.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		078C3590192175CA00354453 /* appTests */ = {
@@ -369,16 +357,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				EXECUTABLE_EXTENSION = dylib;
+				EXECUTABLE_EXTENSION = a;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -387,13 +375,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				ENABLE_NS_ASSERTIONS = NO;
-				EXECUTABLE_EXTENSION = dylib;
+				EXECUTABLE_EXTENSION = a;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				MACH_O_TYPE = staticlib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -455,7 +443,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_DEADCODE_DEADSTORES = NO;
 				CLANG_ANALYZER_MEMORY_MANAGEMENT = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -517,7 +505,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_DEADCODE_DEADSTORES = NO;
 				CLANG_ANALYZER_MEMORY_MANAGEMENT = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
