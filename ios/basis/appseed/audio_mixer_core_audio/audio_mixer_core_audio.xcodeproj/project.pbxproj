@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		077A01761B4D562C001C85FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077A01751B4D562C001C85FF /* UIKit.framework */; };
 		079DBF481886ABF100EFFEFB /* libbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 079DBF461886ABF100EFFEFB /* libbase.dylib */; };
 		079DBF491886ABF100EFFEFB /* libcore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 079DBF471886ABF100EFFEFB /* libcore.dylib */; };
 		07B6574B190F3C8B002DAADE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6574A190F3C8B002DAADE /* XCTest.framework */; };
 		07B6574C190F3C8B002DAADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6573C190F3C8B002DAADE /* Foundation.framework */; };
 		07B6574E190F3C8B002DAADE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6574D190F3C8B002DAADE /* UIKit.framework */; };
-		07B65751190F3C8B002DAADE /* libaudio_mixer_core_audio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6573A190F3C8B002DAADE /* libaudio_mixer_core_audio.dylib */; };
+		07B65751190F3C8B002DAADE /* libaudio_mixer_core_audio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6573A190F3C8B002DAADE /* libaudio_mixer_core_audio.a */; };
 		07B65757190F3C8B002DAADE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07B65755190F3C8B002DAADE /* InfoPlist.strings */; };
 		07B65759190F3C8B002DAADE /* audio_mixer_core_audio_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B65758190F3C8B002DAADE /* audio_mixer_core_audio_iosTests.m */; };
 		9A1B496416A494A600875A94 /* framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A1B496316A494A600875A94 /* framework.h */; };
@@ -83,7 +82,7 @@
 		077A01751B4D562C001C85FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		079DBF461886ABF100EFFEFB /* libbase.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbase.dylib; path = ../../../app/appseed/base/build/Release/libbase.dylib; sourceTree = "<group>"; };
 		079DBF471886ABF100EFFEFB /* libcore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcore.dylib; path = ../../../app/appseed/core/build/Release/libcore.dylib; sourceTree = "<group>"; };
-		07B6573A190F3C8B002DAADE /* libaudio_mixer_core_audio.dylib */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libaudio_mixer_core_audio.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B6573A190F3C8B002DAADE /* libaudio_mixer_core_audio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libaudio_mixer_core_audio.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		07B6573C190F3C8B002DAADE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07B65749190F3C8B002DAADE /* audio_mixer_core_audio_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = audio_mixer_core_audio_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07B6574A190F3C8B002DAADE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -126,7 +125,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				077A01761B4D562C001C85FF /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07B6574B190F3C8B002DAADE /* XCTest.framework in Frameworks */,
-				07B65751190F3C8B002DAADE /* libaudio_mixer_core_audio.dylib in Frameworks */,
+				07B65751190F3C8B002DAADE /* libaudio_mixer_core_audio.a in Frameworks */,
 				07B6574E190F3C8B002DAADE /* UIKit.framework in Frameworks */,
 				07B6574C190F3C8B002DAADE /* Foundation.framework in Frameworks */,
 			);
@@ -202,7 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				A1CFD778154F5EAA007447E2 /* libaudio_mixer_core_audio.dylib */,
-				07B6573A190F3C8B002DAADE /* libaudio_mixer_core_audio.dylib */,
+				07B6573A190F3C8B002DAADE /* libaudio_mixer_core_audio.a */,
 				07B65749190F3C8B002DAADE /* audio_mixer_core_audio_iosTests.xctest */,
 			);
 			name = Products;
@@ -280,7 +278,7 @@
 			);
 			name = ios_audio_mixer_core_audio;
 			productName = audio_mixer_core_audio_ios;
-			productReference = 07B6573A190F3C8B002DAADE /* libaudio_mixer_core_audio.dylib */;
+			productReference = 07B6573A190F3C8B002DAADE /* libaudio_mixer_core_audio.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		07B65748190F3C8B002DAADE /* audio_mixer_core_audio_iosTests */ = {
@@ -438,6 +436,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				EXECUTABLE_EXTENSION = a;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "audio_mixer_core_audio_ios/audio_mixer_core_audio_ios-Prefix.pch";
@@ -448,7 +447,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MACH_O_TYPE = mh_dylib;
+				MACH_O_TYPE = staticlib;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -461,13 +460,14 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_EXTENSION = a;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "audio_mixer_core_audio_ios/audio_mixer_core_audio_ios-Prefix.pch";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MACH_O_TYPE = mh_dylib;
+				MACH_O_TYPE = staticlib;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
