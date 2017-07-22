@@ -10,26 +10,7 @@
 #include "app.h"
 
 
-int32_t CLASS_DECL_BASE __ios_main(int32_t argc, char * argv[])
-{
-   
-   if(!defer_core_init())
-      return -1;
-   
-   setlocale(LC_ALL,"");
-   
-   ui_application_main(argc, argv);
-   
-//   CreateThread(NULL, 0, __run_system, NULL, 0, 0);
-   
-   ui_app_run(argc, argv);
-   
-   defer_core_term();
-   
-   return 0;
-   
-   
-}
+
 
 
 
