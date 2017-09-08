@@ -78,7 +78,7 @@ typedef struct gdi_object * HGDIOBJ;
 #define DEBUG 0
 #endif
 
-#if defined(__MM) || defined(__M)
+#if defined(__OBJC__)
 
 #include <Foundation/Foundation.h>
 #include <UIKit/UIKit.h>
