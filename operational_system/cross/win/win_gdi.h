@@ -697,10 +697,10 @@ typedef struct tagLOGRGN  LOGRGN, *PLOGRGN, NEAR *NPLOGRGN, FAR *LPLOGRGN;
 typedef LPLOGRGN HRGN;
 
 
-HBITMAP CreateCompatibleBitmap(HDC hdc, int cx, int cy);
+// HBITMAP CreateCompatibleBitmap(HDC hdc, int cx, int cy);
 
 
-WINBOOL BitBlt(HDC hdcDest, int nXDest, int nYDest, int nWidth, int nHeight, HDC hdcSrc, int nXSrc, int nYSrc, DWORD dwRop);
+// WINBOOL BitBlt(HDC hdcDest, int nXDest, int nYDest, int nWidth, int nHeight, HDC hdcSrc, int nXSrc, int nYSrc, DWORD dwRop);
 
 
 //WINBOOL SetViewportOrgEx(HDC hdc, int X, int Y, LPPOINT lpPoint);
@@ -711,11 +711,11 @@ WINBOOL GetClientRect(oswindow hwnd, LPRECT lprect);
 
 WINBOOL GetWindowRect(oswindow hwnd, LPRECT lprect);
 
-int FillRect(HDC hDC, const RECT *lprc, HBRUSH hbr);
+// int FillRect(HDC hDC, const RECT *lprc, HBRUSH hbr);
 
-WINBOOL ReleaseDC(oswindow hwnd, HDC hdc);
+// WINBOOL ReleaseDC(oswindow hwnd, HDC hdc);
 
-HDC GetWindowDC(oswindow hwnd);
+// HDC GetWindowDC(oswindow hwnd);
 
 
 HBRUSH CreateSolidBrush(COLORREF color);
