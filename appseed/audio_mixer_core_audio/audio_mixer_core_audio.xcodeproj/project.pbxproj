@@ -12,7 +12,7 @@
 		07B6574B190F3C8B002DAADE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6574A190F3C8B002DAADE /* XCTest.framework */; };
 		07B6574C190F3C8B002DAADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6573C190F3C8B002DAADE /* Foundation.framework */; };
 		07B6574E190F3C8B002DAADE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6574D190F3C8B002DAADE /* UIKit.framework */; };
-		07B65751190F3C8B002DAADE /* libaudio_mixer_core_audio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6573A190F3C8B002DAADE /* libaudio_mixer_core_audio.a */; };
+		07B65751190F3C8B002DAADE /* libios_audio_mixer_core_audio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6573A190F3C8B002DAADE /* libios_audio_mixer_core_audio.a */; };
 		07B65757190F3C8B002DAADE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07B65755190F3C8B002DAADE /* InfoPlist.strings */; };
 		07B65759190F3C8B002DAADE /* audio_mixer_core_audio_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B65758190F3C8B002DAADE /* audio_mixer_core_audio_iosTests.m */; };
 		9A1B496416A494A600875A94 /* framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A1B496316A494A600875A94 /* framework.h */; };
@@ -82,7 +82,7 @@
 		077A01751B4D562C001C85FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		079DBF461886ABF100EFFEFB /* libbase.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbase.dylib; path = ../../../app/appseed/base/build/Release/libbase.dylib; sourceTree = "<group>"; };
 		079DBF471886ABF100EFFEFB /* libcore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcore.dylib; path = ../../../app/appseed/core/build/Release/libcore.dylib; sourceTree = "<group>"; };
-		07B6573A190F3C8B002DAADE /* libaudio_mixer_core_audio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libaudio_mixer_core_audio.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B6573A190F3C8B002DAADE /* libios_audio_mixer_core_audio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libios_audio_mixer_core_audio.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		07B6573C190F3C8B002DAADE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07B65749190F3C8B002DAADE /* audio_mixer_core_audio_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = audio_mixer_core_audio_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07B6574A190F3C8B002DAADE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -133,7 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07B6574B190F3C8B002DAADE /* XCTest.framework in Frameworks */,
-				07B65751190F3C8B002DAADE /* libaudio_mixer_core_audio.a in Frameworks */,
+				07B65751190F3C8B002DAADE /* libios_audio_mixer_core_audio.a in Frameworks */,
 				07B6574E190F3C8B002DAADE /* UIKit.framework in Frameworks */,
 				07B6574C190F3C8B002DAADE /* Foundation.framework in Frameworks */,
 			);
@@ -200,7 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				A1CFD778154F5EAA007447E2 /* libaudio_mixer_core_audio.dylib */,
-				07B6573A190F3C8B002DAADE /* libaudio_mixer_core_audio.a */,
+				07B6573A190F3C8B002DAADE /* libios_audio_mixer_core_audio.a */,
 				07B65749190F3C8B002DAADE /* audio_mixer_core_audio_iosTests.xctest */,
 			);
 			name = Products;
@@ -278,7 +278,7 @@
 			);
 			name = ios_audio_mixer_core_audio;
 			productName = audio_mixer_core_audio_ios;
-			productReference = 07B6573A190F3C8B002DAADE /* libaudio_mixer_core_audio.a */;
+			productReference = 07B6573A190F3C8B002DAADE /* libios_audio_mixer_core_audio.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		07B65748190F3C8B002DAADE /* audio_mixer_core_audio_iosTests */ = {
@@ -570,7 +570,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -630,7 +630,7 @@
 					"\"$(TARGET_BUILD_DIR)\"",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/../../../include $(WorkspaceDir)/../../../app/include . .. $(WorkspaceDir)/../../.. $(WorkspaceDir)/../../../app $(WorkspaceDir)/../../../app/appseed $(WorkspaceDir)/../../../app/appseed/core $(WorkspaceDir)/../../../app/appseed/base $(WorkspaceDir)/../.. $(WorkspaceDir)/../../thirdparty/include $(WorkspaceDir)/../../../app/thirdparty/include $(WorkspaceDir)/../../appseed $(WorkspaceDir)/../../../app/thirdparty/appseed";
