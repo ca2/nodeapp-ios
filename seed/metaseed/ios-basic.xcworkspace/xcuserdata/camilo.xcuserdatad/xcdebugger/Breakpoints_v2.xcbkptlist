@@ -9,14 +9,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../app-core/appseed/gcom/backview/backview_user_interaction.cpp"
-            timestampString = "528829103.758584"
+            filePath = "../../../app/appseed/base/base/node/ios/ios_interaction_impl.cpp"
+            timestampString = "528867878.448622"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "334"
-            endingLineNumber = "334"
-            landmarkName = "interaction::show_gcom_background(bool bShow)"
-            landmarkType = "7">
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "process_process_new_text( string &amp; strInsert, int &amp; iInsBeg, int &amp; iInsEnd, int &amp; iSelBeg, int &amp; iSelEnd, string strPrevious, string strNow)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -25,29 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../app/appseed/base/base/node/ios/RoundViewController.mm"
-            timestampString = "528847154.099781"
+            filePath = "../../../app/appseed/base/base/node/ios/ios_interaction_impl.cpp"
+            timestampString = "528867878.448981"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "-textViewDidChange:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../app/appseed/base/base/node/ios/RoundWindowFrameView.mm"
-            timestampString = "528847154.10045"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "291"
-            endingLineNumber = "291"
-            landmarkName = "-on_text:"
+            startingLineNumber = "6190"
+            endingLineNumber = "6190"
+            landmarkName = "interaction_impl::round_window_on_text(const char * pszText)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,12 +42,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app/appseed/base/base/node/ios/ios_interaction_impl.cpp"
-            timestampString = "528847154.100627"
+            timestampString = "528867878.449063"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "6150"
-            endingLineNumber = "6150"
+            startingLineNumber = "6194"
+            endingLineNumber = "6194"
             landmarkName = "interaction_impl::round_window_on_text(const char * pszText)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../app/appseed/core/math/calculator/calculator_plain_edit_view.cpp"
+            timestampString = "528866936.288232"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "305"
+            endingLineNumber = "305"
+            landmarkName = "plain_edit_view::_001OnAfterChangeText(::action::context actioncontext)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
