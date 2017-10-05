@@ -41,6 +41,9 @@
       location = "container:../../../app-veriwell/appseed/audio_decode_libmpg123/audio_decode_libmpg123.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:../../../app-core/appseed/audio_decode_wave/audio_decode_wave.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:../../appseed/audio_mixer_core_audio/audio_mixer_core_audio.xcodeproj">
    </FileRef>
    <FileRef
@@ -126,18 +129,6 @@
    </FileRef>
    <FileRef
       location = "container:../../../app-veriwell/appseed/multimedia/veriwell_multimedia.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../third/appseed/openh264/codec/build/iOS/common/welscommon.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../third/appseed/openh264/codec/build/iOS/dec/welsdec/welsdec.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../third/appseed/openh264/codec/build/iOS/enc/welsenc/welsenc.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../third/appseed/openh264/codec/build/iOS/processing/welsprocessing.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app-core/appseed/wndfrm_core/wndfrm_core.xcodeproj">
