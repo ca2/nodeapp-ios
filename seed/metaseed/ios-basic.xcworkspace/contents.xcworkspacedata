@@ -74,28 +74,13 @@
       location = "container:../../../third/appseed/clientchannels/axisclientchannels.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../third/appseed/crypto/axiscrypto.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../app/appseed/freeimage/axisfreeimage.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "container:../../../third/appseed/freerdp/axisfreerdp.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../third/appseed/freetype/axisfreetype.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../third/appseed/openssl/axisopenssl.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "container:../../../third/appseed/idn/axisidn.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../app/appseed/image_jpeg/image_decode_jpeg.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../app/appseed/image_png/image_decode_png.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../third/appseed/jpeg/axisjpeg.xcodeproj">
