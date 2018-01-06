@@ -14,12 +14,6 @@
 
 
 
-UIWindow * new_round_window(struct plane_system * psystem, CGRect rect);
-
-
-
-
-
 
 
 //int32_t CLASS_DECL_BASE ca2_main(HINSTANCE hInstance, HINSTANCE hPrevInstance, const char * lpCmdLine, int32_t nCmdShow)
