@@ -8,7 +8,7 @@
       location = "group:../../../app-veriwell/appseed/verisimplevideo/ios_app_veriwell_verisimplevideo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app-veriwell/appseed/mplite/ios_app_veriwell_mplite.xcodeproj">
+      location = "group:../../../app-veriwell/appseed/musical_player_lite/ios_app_veriwell_musical_player_lite.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../../../app/appseed/ace/ace.xcodeproj">
@@ -41,7 +41,7 @@
       location = "group:../../../app-veriwell/appseed/asciimedia/app_veriwell_asciimedia.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app-veriwell/appseed/mplite/app_veriwell_mplite.xcodeproj">
+      location = "group:../../../app-veriwell/appseed/musical_player_lite/app_veriwell_musical_player_lite.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../../../app-veriwell/appseed/waven/app_veriwell_waven.xcodeproj">
@@ -72,9 +72,6 @@
    </FileRef>
    <FileRef
       location = "group:../../../third/appseed/clientchannels/axisclientchannels.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../app/appseed/freeimage/axisfreeimage.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../../../third/appseed/freerdp/axisfreerdp.xcodeproj">
@@ -141,18 +138,6 @@
    </FileRef>
    <FileRef
       location = "group:../../../app-veriwell/appseed/video_decode_ffmpeg/video_decode_ffmpeg.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../third/appseed/openh264/codec/build/iOS/common/welscommon.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../third/appseed/openh264/codec/build/iOS/dec/welsdec/welsdec.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../third/appseed/openh264/codec/build/iOS/enc/welsenc/welsenc.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../third/appseed/openh264/codec/build/iOS/processing/welsprocessing.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app-core/appseed/wndfrm_core/wndfrm_core.xcodeproj">

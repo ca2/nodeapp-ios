@@ -1,9 +1,0 @@
-prefix=/git/OpenSSL-for-iPhone/bin/iPhoneOS10.1-arm64.sdk
-exec_prefix=${prefix}
-libdir=${exec_prefix}/lib
-includedir=${prefix}/include
-
-Name: OpenSSL
-Description: Secure Sockets Layer and cryptography libraries and tools
-Version: 1.1.0c
-Requires: libssl libcrypto
