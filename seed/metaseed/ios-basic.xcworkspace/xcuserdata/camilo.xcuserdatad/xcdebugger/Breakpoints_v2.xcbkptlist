@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app/appseed/audio_core_audio/audio_core_audio_wave_out.cpp"
-            timestampString = "537086448.731428"
+            timestampString = "538271963.532758"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "641"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app/appseed/audio_core_audio/audio_core_audio_wave_out.cpp"
-            timestampString = "537086448.731797"
+            timestampString = "538271963.533349"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "653"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app/appseed/audio_core_audio/audio_core_audio_wave_out.cpp"
-            timestampString = "537086448.732021"
+            timestampString = "538271963.5335931"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "655"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app/appseed/audio_core_audio/audio_core_audio_wave_out.cpp"
-            timestampString = "537086448.732215"
+            timestampString = "538271963.53377"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "354"
@@ -206,7 +206,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             scope = "0"
@@ -227,6 +227,98 @@
             endingLineNumber = "399"
             landmarkName = "font_list_data::update()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "visual::font_list_data::update()::$_0::operator()(long long, long long, long long, long long) const"
+                  moduleName = "ios_app_core_projection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///ios/app/appseed/aura/graphics/visual/visual_font_list_data.cpp"
+                  timestampString = "538271964.165686"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "400"
+                  endingLineNumber = "400"
+                  offsetFromSymbolStart = "1220">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "visual::font_list_data::update()::$_0::operator()(long long, long long, long long, long long) const"
+                  moduleName = "ios_app_core_projection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///ios/app/appseed/aura/graphics/visual/visual_font_list_data.cpp"
+                  timestampString = "538271964.16869"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "400"
+                  endingLineNumber = "400"
+                  offsetFromSymbolStart = "1262">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "visual::font_list_data::update()::$_0::operator()(long long, long long, long long, long long) const"
+                  moduleName = "ios_app_core_projection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///ios/app/appseed/aura/graphics/visual/visual_font_list_data.cpp"
+                  timestampString = "538271964.171905"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "400"
+                  endingLineNumber = "400"
+                  offsetFromSymbolStart = "1316">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "visual::font_list_data::update()::$_0::operator()(long long, long long, long long, long long) const"
+                  moduleName = "ios_app_core_projection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///ios/app/appseed/aura/graphics/visual/visual_font_list_data.cpp"
+                  timestampString = "538271964.1747611"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "400"
+                  endingLineNumber = "400"
+                  offsetFromSymbolStart = "2066">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "visual::font_list_data::update()::$_0::operator()(long long, long long, long long, long long) const"
+                  moduleName = "ios_app_core_projection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///ios/app/appseed/aura/graphics/visual/visual_font_list_data.cpp"
+                  timestampString = "538271964.178017"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "400"
+                  endingLineNumber = "400"
+                  offsetFromSymbolStart = "2684">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "visual::font_list_data::update()::$_0::operator()(long long, long long, long long, long long) const"
+                  moduleName = "ios_app_core_projection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///ios/app/appseed/aura/graphics/visual/visual_font_list_data.cpp"
+                  timestampString = "538271964.181304"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "400"
+                  endingLineNumber = "400"
+                  offsetFromSymbolStart = "3777">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -328,7 +420,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app/appseed/core/user/user/user_font_list.cpp"
