@@ -1,0 +1,521 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SPTRequest Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Spotify iOS SDK </a></h1>
+				<a id="developerHome" href="../index.html">Spotify AB</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SPTRequest Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/createRequestForURL:withAccessToken:httpMethod:values:valueBodyIsJSON:sendDataAsQueryString:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ createRequestForURL:withAccessToken:httpMethod:values:valueBodyIsJSON:sendDataAsQueryString:error:</option>
+	
+	<option value="//api/name/setSharedHandler:">&nbsp;&nbsp;&nbsp;&nbsp;+ setSharedHandler:</option>
+	
+	<option value="//api/name/sharedHandler">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedHandler</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Request handler">Request handler</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Request creation helpers">Request creation helpers</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createRequestForURL:withAccessToken:httpMethod:values:valueBodyIsJSON:sendDataAsQueryString:error:">createRequestForURL:withAccessToken:httpMethod:values:valueBodyIsJSON:sendDataAsQueryString:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSharedHandler:">setSharedHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedHandler">sharedHandler</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SPTRequest Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SPTRequest Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SPTRequest.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class provides convenience methods for talking to the Spotify Web API and wraps a customizable handler for requests which are used by those convenience methods.</p>
+
+<p>All the functions for direct access to the api inside this class has been deprecated and moved out to their respective classes, for getting track metadata, look at <a href="../Classes/SPTTrack.html"><code>SPTTrack</code></a>, for getting featured playlists in browse, look at <a href="../Classes/SPTBrowse.html"><code>SPTBrowse</code></a> and so on.</p>
+
+<p>All model classes provide both convenience methods for getting content in the callback fashion, but also provides methods named <code>createRequestFor...</code> for creating <code>NSURLRequests</code> for calling the api directly with the request handler of choice, this allows you to do caching, cancellation and scheduling of calls in your own way. The model classes also provides methods for parsing a API Response back into a usable object, those are called <code>...fromData:withResponse:error</code>, pluralized methods for getting multiple entities at once are also available when appropriate.</p>
+
+<p>Example of using the API request creation / API response parser paradigm:</p>
+
+<pre><code>// Getting the first two pages of a playlists for a user
+NSURLRequest *playlistrequest = [SPTPlaylistList createRequestForGettingPlaylistsForUser:@"possan" withAccessToken:accessToken error:nil];
+[[SPTRequest sharedHandler] performRequest:playlistrequest callback:^(NSError *error, NSURLResponse *response, NSData *data) {
+    if (error != nil) { Handle error }
+    SPTPlaylistList *playlists = [SPTPlaylistList playlistListFromData:data withResponse:response error:nil];
+    NSLog(@"Got possan's playlists, first page: %@", playlists);
+    NSURLRequest *playlistrequest2 = [playlists createRequestForNextPageWithAccessToken:accessToken error:nil];
+    [[SPTRequest sharedHandler] performRequest:playlistrequest2 callback:^(NSError *error2, NSURLResponse *response2, NSData *data2) {
+        if (error2 != nil) { Handle error }
+        SPTPlaylistList *playlists2 = [SPTPlaylistList playlistListFromData:data2 withResponse:response2 error:nil];
+        NSLog(@"Got possan's playlists, second page: %@", playlists2);
+    }];
+}];
+</code></pre>
+
+<p>Example without response body:</p>
+
+<pre><code>// Following a user
+NSURLRequest *req = [SPTFollow createRequestForFollowingUsers:@[@"possan"]] withAccessToken:accessToken error:nil];
+[[SPTRequest sharedHandler] performRequest:req callback:^(NSError *error, NSURLResponse *response, NSData *data) {
+    long statusCode = ((NSHTTPURLResponse*)response).statusCode;
+    switch (statusCode) {
+        case 204:
+            NSLog(@"Successfully followed user.");
+            break;
+        case 401:
+        case 403:
+            NSLog(@"Failed to follow user, are you sure your token is valid and have the correct scopes?");
+            break;
+        default:
+            NSLog(@"Bork bork!");
+            break;
+    }
+}];
+</code></pre>
+
+<p>Example of using convenience methods:</p>
+
+<pre><code>// Getting multiple artists
+[SPTArtist artistsWithURIs:@[
+        [NSURL URLWithString:@"spotify:artist:30Y7JOpiNgAGEhnkYPdI1P"],
+        [NSURL URLWithString:@"spotify:artist:0jO0TlgxW9Il5JphAWzhR4"],
+        [NSURL URLWithString:@"spotify:artist:0AKlaf8M1k8NjJp1uCOlTA"]
+    ]
+    accessToken:accessToken callback:^(NSError *error, id object) {
+        NSLog(@"Got artists: %@", object);
+    }];
+</code></pre>
+
+<p>API Console: <a href="https://developer.spotify.com/web-api/console">https://developer.spotify.com/web-api/console</a></p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Request handler" name="task_Request handler"></a>
+						<h3 class="subsubtitle task-title">Request handler</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedHandler">+&nbsp;sharedHandler</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSharedHandler:">+&nbsp;setSharedHandler:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Request creation helpers" name="task_Request creation helpers"></a>
+						<h3 class="subsubtitle task-title">Request creation helpers</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createRequestForURL:withAccessToken:httpMethod:values:valueBodyIsJSON:sendDataAsQueryString:error:">+&nbsp;createRequestForURL:withAccessToken:httpMethod:values:valueBodyIsJSON:sendDataAsQueryString:error:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/createRequestForURL:withAccessToken:httpMethod:values:valueBodyIsJSON:sendDataAsQueryString:error:" title="createRequestForURL:withAccessToken:httpMethod:values:valueBodyIsJSON:sendDataAsQueryString:error:"></a>
+	<h3 class="subsubtitle method-title">createRequestForURL:withAccessToken:httpMethod:values:valueBodyIsJSON:sendDataAsQueryString:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Helper function for creates an authenticated <code>NSURLRequest</code> for a Spotify API resource.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSURLRequest *)createRequestForURL:(NSURL *)<em>url</em> withAccessToken:(NSString *)<em>accessToken</em> httpMethod:(NSString *)<em>httpMethod</em> values:(id)<em>values</em> valueBodyIsJSON:(BOOL)<em>encodeAsJSON</em> sendDataAsQueryString:(BOOL)<em>dataAsQueryString</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The HTTPS URL to request, this is a Spotify API URL, not a spotify URI.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>A valid access token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>httpMethod</em></dt>
+			<dd><p>The HTTP method to use eg. <code>GET</code> <code>POST</code> etc.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>values</em></dt>
+			<dd><p>The arguments to send to the URL</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>encodeAsJSON</em></dt>
+			<dd><p>Encode arguments as an JSON object in the body of the request instead of QueryString encoding them.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataAsQueryString</em></dt>
+			<dd><p>Send arguments as a part of the query string instead of in the body of the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional <code>NSError</code> that will receive an error if request creation failed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>NSURLRequest</code></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSharedHandler:" title="setSharedHandler:"></a>
+	<h3 class="subsubtitle method-title">setSharedHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Override the default request handler, this is where you&rsquo;d implement your own if you want to, or use AFNetworking or similar</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setSharedHandler:(id&lt;SPTRequestHandlerProtocol&gt;)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>handler</em></dt>
+			<dd><p>New handler for requests</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedHandler" title="sharedHandler"></a>
+	<h3 class="subsubtitle method-title">sharedHandler</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get a request handler</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id&lt;SPTRequestHandlerProtocol&gt;)sharedHandler</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Spotify AB. All rights reserved. (Last updated: 2016-10-28)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

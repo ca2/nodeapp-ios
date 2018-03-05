@@ -1,0 +1,745 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SPTPlaylistList Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Spotify iOS SDK </a></h1>
+				<a id="developerHome" href="../index.html">Spotify AB</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SPTPlaylistList Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/createPlaylistWithName:forUser:publicFlag:accessToken:callback:">&nbsp;&nbsp;&nbsp;&nbsp;+ createPlaylistWithName:forUser:publicFlag:accessToken:callback:</option>
+	
+	<option value="//api/name/createRequestForCreatingPlaylistWithName:forUser:withPublicFlag:accessToken:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ createRequestForCreatingPlaylistWithName:forUser:withPublicFlag:accessToken:error:</option>
+	
+	<option value="//api/name/createRequestForGettingPlaylistsForUser:withAccessToken:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ createRequestForGettingPlaylistsForUser:withAccessToken:error:</option>
+	
+	<option value="//api/name/playlistListFromData:withResponse:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ playlistListFromData:withResponse:error:</option>
+	
+	<option value="//api/name/playlistListFromDecodedJSON:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ playlistListFromDecodedJSON:error:</option>
+	
+	<option value="//api/name/playlistsForUser:withAccessToken:callback:">&nbsp;&nbsp;&nbsp;&nbsp;+ playlistsForUser:withAccessToken:callback:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating playlists">Creating playlists</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Listing a user&apos;s playlists">Listing a user&apos;s playlists</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Playlist listing request creation methods">Playlist listing request creation methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Parsers / Deserializers">Parsers / Deserializers</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createPlaylistWithName:forUser:publicFlag:accessToken:callback:">createPlaylistWithName:forUser:publicFlag:accessToken:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createRequestForCreatingPlaylistWithName:forUser:withPublicFlag:accessToken:error:">createRequestForCreatingPlaylistWithName:forUser:withPublicFlag:accessToken:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createRequestForGettingPlaylistsForUser:withAccessToken:error:">createRequestForGettingPlaylistsForUser:withAccessToken:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playlistListFromData:withResponse:error:">playlistListFromData:withResponse:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playlistListFromDecodedJSON:error:">playlistListFromDecodedJSON:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playlistsForUser:withAccessToken:callback:">playlistsForUser:withAccessToken:callback:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SPTPlaylistList Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SPTPlaylistList Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/SPTListPage.html">SPTListPage</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SPTPlaylistList.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class represents a user&rsquo;s list of playlists, and also contains methods for listing and creating new playlists on behalf of a user.</p>
+
+<p>API Docs: <a href="https://developer.spotify.com/web-api/playlist-endpoints/">https://developer.spotify.com/web-api/playlist-endpoints/</a></p>
+
+<p>API Console: <a href="https://developer.spotify.com/web-api/console/playlists/">https://developer.spotify.com/web-api/console/playlists/</a></p>
+
+<p>Playlist Guide: <a href="https://developer.spotify.com/web-api/working-with-playlists/">https://developer.spotify.com/web-api/working-with-playlists/</a></p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating playlists" name="task_Creating playlists"></a>
+						<h3 class="subsubtitle task-title">Creating playlists</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createPlaylistWithName:forUser:publicFlag:accessToken:callback:">+&nbsp;createPlaylistWithName:forUser:publicFlag:accessToken:callback:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Listing a user&apos;s playlists" name="task_Listing a user&apos;s playlists"></a>
+						<h3 class="subsubtitle task-title">Listing a user&apos;s playlists</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playlistsForUser:withAccessToken:callback:">+&nbsp;playlistsForUser:withAccessToken:callback:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Playlist listing request creation methods" name="task_Playlist listing request creation methods"></a>
+						<h3 class="subsubtitle task-title">Playlist listing request creation methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createRequestForCreatingPlaylistWithName:forUser:withPublicFlag:accessToken:error:">+&nbsp;createRequestForCreatingPlaylistWithName:forUser:withPublicFlag:accessToken:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createRequestForGettingPlaylistsForUser:withAccessToken:error:">+&nbsp;createRequestForGettingPlaylistsForUser:withAccessToken:error:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Parsers / Deserializers" name="task_Parsers / Deserializers"></a>
+						<h3 class="subsubtitle task-title">Parsers / Deserializers</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playlistListFromData:withResponse:error:">+&nbsp;playlistListFromData:withResponse:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playlistListFromDecodedJSON:error:">+&nbsp;playlistListFromDecodedJSON:error:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/createPlaylistWithName:forUser:publicFlag:accessToken:callback:" title="createPlaylistWithName:forUser:publicFlag:accessToken:callback:"></a>
+	<h3 class="subsubtitle method-title">createPlaylistWithName:forUser:publicFlag:accessToken:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a new playlist and add it to the this playlist list.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)createPlaylistWithName:(NSString *)<em>name</em> forUser:(NSString *)<em>username</em> publicFlag:(BOOL)<em>isPublic</em> accessToken:(NSString *)<em>accessToken</em> callback:(SPTPlaylistCreationCallback)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of the newly-created playlist.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>username</em></dt>
+			<dd><p>The user to create the playlist for. (Needs to be the currently authenticated user)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>isPublic</em></dt>
+			<dd><p>Whether the newly-created playlist is public.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>An authenticated access token. Must be valid and authorized with the <code>playlist-modify-public</code> or <code>playlist-modify-private</code> scope as necessary.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The callback block to be fired when playlist creation is completed (or fails).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See: <a href="https://developer.spotify.com/web-api/create-playlist/">https://developer.spotify.com/web-api/create-playlist/</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTPlaylistList.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createRequestForCreatingPlaylistWithName:forUser:withPublicFlag:accessToken:error:" title="createRequestForCreatingPlaylistWithName:forUser:withPublicFlag:accessToken:error:"></a>
+	<h3 class="subsubtitle method-title">createRequestForCreatingPlaylistWithName:forUser:withPublicFlag:accessToken:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a request for creating a new playlist and add it to the current users' playlists.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSURLRequest *)createRequestForCreatingPlaylistWithName:(NSString *)<em>name</em> forUser:(NSString *)<em>username</em> withPublicFlag:(BOOL)<em>isPublic</em> accessToken:(NSString *)<em>accessToken</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of the newly-created playlist.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>username</em></dt>
+			<dd><p>The username of the user to create the playlist for. (Must be the current user)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>isPublic</em></dt>
+			<dd><p>Whether the newly-created playlist is public.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>An authenticated access token. Must be valid and authorized with the <code>playlist-modify-public</code> or <code>playlist-modify-private</code> scope as necessary.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional pointer to an <code>NSError</code> that will receive the error code if operation failed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See: <a href="https://developer.spotify.com/web-api/create-playlist/">https://developer.spotify.com/web-api/create-playlist/</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTPlaylistList.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createRequestForGettingPlaylistsForUser:withAccessToken:error:" title="createRequestForGettingPlaylistsForUser:withAccessToken:error:"></a>
+	<h3 class="subsubtitle method-title">createRequestForGettingPlaylistsForUser:withAccessToken:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the a user&rsquo;s playlist list.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSURLRequest *)createRequestForGettingPlaylistsForUser:(NSString *)<em>username</em> withAccessToken:(NSString *)<em>accessToken</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>username</em></dt>
+			<dd><p>The username of the user to get playlists for.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>An authenticated access token. Must be valid and authorized with the unspecified or <code>playlist-read-private</code> scope as necessary.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional pointer to an <code>NSError</code> that will receive the error code if operation failed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Example:</p>
+
+<pre><code>// Getting the first two pages of a playlists for a user
+NSURLRequest *playlistrequest = [SPTPlaylistList createRequestForGettingPlaylistsForUser:@"possan" withAccessToken:accessToken error:nil];
+[[SPTRequest sharedHandler] performRequest:playlistrequest callback:^(NSError *error, NSURLResponse *response, NSData *data) {
+    if (error != nil) { Handle error }
+    SPTPlaylistList *playlists = [SPTPlaylistList playlistListFromData:data withResponse:response error:nil];
+    NSLog(@"Got possan's playlists, first page: %@", playlists);
+    NSURLRequest *playlistrequest2 = [playlists createRequestForNextPageWithAccessToken:accessToken error:nil];
+    [[SPTRequest sharedHandler] performRequest:playlistrequest2 callback:^(NSError *error2, NSURLResponse *response2, NSData *data2) {
+        if (error2 != nil) { Handle error }
+        SPTPlaylistList *playlists2 = [SPTPlaylistList playlistListFromData:data2 withResponse:response2 error:nil];
+        NSLog(@"Got possan's playlists, second page: %@", playlists2);
+    }];
+}];
+</code></pre>
+
+<p>See: <a href="https://developer.spotify.com/web-api/get-list-users-playlists/">https://developer.spotify.com/web-api/get-list-users-playlists/</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTPlaylistList.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playlistListFromData:withResponse:error:" title="playlistListFromData:withResponse:error:"></a>
+	<h3 class="subsubtitle method-title">playlistListFromData:withResponse:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Parse the response of an API call into an <code>SPTPlaylistList</code> object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)playlistListFromData:(NSData *)<em>data</em> withResponse:(NSURLResponse *)<em>response</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>The API response data</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>response</em></dt>
+			<dd><p>The API response object</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional pointer to an <code>NSError</code> that will receive the error code if operation failed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTPlaylistList.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playlistListFromDecodedJSON:error:" title="playlistListFromDecodedJSON:error:"></a>
+	<h3 class="subsubtitle method-title">playlistListFromDecodedJSON:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Parse a decoded JSON object into an <code>SPTPlaylistList</code> object</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)playlistListFromDecodedJSON:(id)<em>decodedObject</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>decodedObject</em></dt>
+			<dd><p>The decoded JSON object</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional pointer to an <code>NSError</code> that will receive the error code if operation failed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTPlaylistList.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playlistsForUser:withAccessToken:callback:" title="playlistsForUser:withAccessToken:callback:"></a>
+	<h3 class="subsubtitle method-title">playlistsForUser:withAccessToken:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the a user&rsquo;s playlist list.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)playlistsForUser:(NSString *)<em>username</em> withAccessToken:(NSString *)<em>accessToken</em> callback:(SPTRequestCallback)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>username</em></dt>
+			<dd><p>The username of the user to get playlists for.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>An authenticated access token. Must be valid and authorized with the unspecified or <code>playlist-read-private</code> scope as necessary.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to be called when the operation is complete. The block will pass an <code>SPTPlaylistList</code> object on success, otherwise an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See: <a href="https://developer.spotify.com/web-api/get-list-users-playlists/">https://developer.spotify.com/web-api/get-list-users-playlists/</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTPlaylistList.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Spotify AB. All rights reserved. (Last updated: 2016-10-28)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
