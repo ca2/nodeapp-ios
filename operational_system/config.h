@@ -66,7 +66,7 @@
 #define static_inline inline
 
 
-#ifdef cplusplus
+#ifdef __cplusplus
 
 #define LOG_THIS_TAG (typeid(*this).name())
 #define LOG_MEMBER_PREFIX __FUNCTION__

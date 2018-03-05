@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app/appseed/audio_core_audio/audio_core_audio_wave_out.cpp"
-            timestampString = "538271963.532758"
+            timestampString = "541866675.609723"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "641"
             endingLineNumber = "641"
-            landmarkName = "wave_out::wave_out_restart()"
+            landmarkName = "wave_out::wave_out_get_position()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app/appseed/audio_core_audio/audio_core_audio_wave_out.cpp"
-            timestampString = "538271963.533349"
+            timestampString = "541866675.610034"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "653"
             endingLineNumber = "653"
-            landmarkName = "wave_out::wave_out_restart()"
+            landmarkName = "wave_out::wave_out_on_playback_end()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app/appseed/audio_core_audio/audio_core_audio_wave_out.cpp"
-            timestampString = "538271963.5335931"
+            timestampString = "541866675.6102329"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "655"
             endingLineNumber = "655"
-            landmarkName = "wave_out::wave_out_restart()"
+            landmarkName = "wave_out::wave_out_on_playback_end()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app/appseed/audio_core_audio/audio_core_audio_wave_out.cpp"
-            timestampString = "538271963.53377"
+            timestampString = "541866675.610458"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "354"
             endingLineNumber = "354"
-            landmarkName = "wave_out::wave_out_open_ex(thread * pthreadCallback, ::count iBufferCount, ::count iBufferSampleCount, uint32_t uiSamplesPerSec, uint32_t uiChannelCount, uint32_t uiBitsPerSample, ::multimedia::audio::e_purpose epurpose)"
+            landmarkName = "wave_out::wave_out_close()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app-core/appseed/rdpclient/rdpclient_view.cpp"
-            timestampString = "537149617.366629"
+            timestampString = "541884458.7842489"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "763"
-            endingLineNumber = "763"
+            startingLineNumber = "764"
+            endingLineNumber = "764"
             landmarkName = "view::_001OnKeyboard(::message::message * pobj)"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app-core/appseed/rdpclient/rdpclient_view.cpp"
-            timestampString = "537149617.3669749"
+            timestampString = "541884458.784332"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "812"
-            endingLineNumber = "812"
+            startingLineNumber = "813"
+            endingLineNumber = "813"
             landmarkName = "view::_001OnKeyboard(::message::message * pobj)"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app-core/appseed/rdpclient/rdpclient_view.cpp"
-            timestampString = "537149617.367054"
+            timestampString = "541884458.7843831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1003"
-            endingLineNumber = "1003"
+            startingLineNumber = "1004"
+            endingLineNumber = "1004"
             landmarkName = "view::_001OnKeyboard(::message::message * pobj)"
             landmarkType = "7">
          </BreakpointContent>
@@ -220,7 +220,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app/appseed/aura/graphics/visual/visual_font_list_data.cpp"
-            timestampString = "537148651.6862561"
+            timestampString = "541862298.27021"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "399"
@@ -233,10 +233,10 @@
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "visual::font_list_data::update()::$_0::operator()(long long, long long, long long, long long) const"
-                  moduleName = "ios_app_core_projection"
+                  moduleName = "ios_app_veriwell_waven"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///ios/app/appseed/aura/graphics/visual/visual_font_list_data.cpp"
-                  timestampString = "538271964.165686"
+                  timestampString = "541884458.865432"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "400"
@@ -248,10 +248,10 @@
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "visual::font_list_data::update()::$_0::operator()(long long, long long, long long, long long) const"
-                  moduleName = "ios_app_core_projection"
+                  moduleName = "ios_app_veriwell_waven"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///ios/app/appseed/aura/graphics/visual/visual_font_list_data.cpp"
-                  timestampString = "538271964.16869"
+                  timestampString = "541884458.8693399"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "400"
@@ -263,10 +263,10 @@
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "visual::font_list_data::update()::$_0::operator()(long long, long long, long long, long long) const"
-                  moduleName = "ios_app_core_projection"
+                  moduleName = "ios_app_veriwell_waven"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///ios/app/appseed/aura/graphics/visual/visual_font_list_data.cpp"
-                  timestampString = "538271964.171905"
+                  timestampString = "541884458.874665"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "400"
@@ -278,10 +278,10 @@
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "visual::font_list_data::update()::$_0::operator()(long long, long long, long long, long long) const"
-                  moduleName = "ios_app_core_projection"
+                  moduleName = "ios_app_veriwell_waven"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///ios/app/appseed/aura/graphics/visual/visual_font_list_data.cpp"
-                  timestampString = "538271964.1747611"
+                  timestampString = "541884458.8785191"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "400"
@@ -293,10 +293,10 @@
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "visual::font_list_data::update()::$_0::operator()(long long, long long, long long, long long) const"
-                  moduleName = "ios_app_core_projection"
+                  moduleName = "ios_app_veriwell_waven"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///ios/app/appseed/aura/graphics/visual/visual_font_list_data.cpp"
-                  timestampString = "538271964.178017"
+                  timestampString = "541884458.882865"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "400"
@@ -308,10 +308,10 @@
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "visual::font_list_data::update()::$_0::operator()(long long, long long, long long, long long) const"
-                  moduleName = "ios_app_core_projection"
+                  moduleName = "ios_app_veriwell_waven"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///ios/app/appseed/aura/graphics/visual/visual_font_list_data.cpp"
-                  timestampString = "538271964.181304"
+                  timestampString = "541884458.886342"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "400"
@@ -328,7 +328,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app/appseed/aura/graphics/visual/visual_font_list_data.cpp"
-            timestampString = "537148651.686983"
+            timestampString = "541862298.2702971"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "158"
@@ -344,7 +344,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app/appseed/aura/graphics/visual/visual_font_list_data.cpp"
-            timestampString = "537148682.57503"
+            timestampString = "541862298.270353"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "222"
@@ -360,7 +360,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app/appseed/core/user/userex/userex_pane_tab_view.cpp"
-            timestampString = "537149617.368441"
+            timestampString = "541884458.784598"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "425"
@@ -376,11 +376,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app/appseed/core/user/user/user_font_list.cpp"
-            timestampString = "537149565.62099"
+            timestampString = "541884458.784672"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "215"
-            endingLineNumber = "215"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
             landmarkName = "font_list::_001OnDraw(::draw2d::graphics * pgraphics)"
             landmarkType = "7">
          </BreakpointContent>
@@ -392,7 +392,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app/appseed/core/user/userex/userex_pane_tab_view.cpp"
-            timestampString = "537149617.369001"
+            timestampString = "541884458.784744"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "232"
@@ -408,7 +408,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app/appseed/core/user/userex/userex_pane_tab_view.cpp"
-            timestampString = "537149617.3690619"
+            timestampString = "541884458.7848001"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "169"
@@ -424,13 +424,173 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../app/appseed/core/user/user/user_font_list.cpp"
-            timestampString = "537149640.55549"
+            timestampString = "541884458.784843"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "233"
-            endingLineNumber = "233"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
             landmarkName = "font_list::on_layout()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../app/appseed/aura/graphics/visual/visual_font_list_data.cpp"
+            timestampString = "541862298.2712179"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "425"
+            endingLineNumber = "425"
+            landmarkName = "font_list_data::on_layout(SIZE * psize)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../app/appseed/core/user/user/user_font_list.cpp"
+            timestampString = "541884458.78492"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "font_list::_001OnMouseMove(::message::message * pobj)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../app/appseed/core/user/user/user_font_list.cpp"
+            timestampString = "541884458.7849669"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "font_list::_001OnLButtonDown(::message::message * pobj)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../app/appseed/core/user/user/user_font_list.cpp"
+            timestampString = "541884458.785008"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
+            landmarkName = "font_list::attach_font_list_data(::visual::font_list_data * pdata)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../app-core/appseed/multimedia/multimedia/ms_translator_speaker.cpp"
+            timestampString = "541866291.642059"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "312"
+            endingLineNumber = "312"
+            landmarkName = "ms_translator_speaker::speak(const string &amp; strLangParam, const string &amp; strTextParam, bool bSynch)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../app/appseed/audio_core_audio/audio_core_audio_wave_out.cpp"
+            timestampString = "541866675.611261"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "257"
+            endingLineNumber = "257"
+            landmarkName = "wave_out::wave_out_open_ex(thread * pthreadCallback, uint32_t uiSamplesPerSec, uint32_t uiChannelCount, uint32_t uiBitsPerSample, ::multimedia::audio::e_purpose epurpose)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../app/appseed/aura/aura/app/aura.inl"
+            timestampString = "541883686.062144"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "main(Array &lt; String ^ &gt; ^ refstra)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../app/appseed/aura/aura/app/aura.inl"
+            timestampString = "541883686.0625319"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "main(int argc, char * argv[])"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../app/appseed/aura/aura/aura/aura_app_core.cpp"
+            timestampString = "541884458.7851599"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "627"
+            endingLineNumber = "627"
+            landmarkName = "aura_boot(app_core * pappcore)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../app-veriwell/appseed/waven/waven_library.cpp"
+            timestampString = "541884458.7856669"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

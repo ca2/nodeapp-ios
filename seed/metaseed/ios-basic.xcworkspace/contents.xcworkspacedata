@@ -59,6 +59,9 @@
       location = "container:../../../app-veriwell/appseed/audio_decode_libmpg123/audio_decode_libmpg123.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:../../../app-core/appseed/audio_decode_spotify/audio_decode_spotify.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:../../../app-core/appseed/audio_decode_wave/audio_decode_wave.xcodeproj">
    </FileRef>
    <FileRef
@@ -117,6 +120,9 @@
    </FileRef>
    <FileRef
       location = "container:../../../app-core/appseed/multimedia/multimedia.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../app-core/appseed/multimedia_playlist_spotify/multimedia_playlist_spotify.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../appseed/music_midi_core_audio/music_midi_core_audio.xcodeproj">
