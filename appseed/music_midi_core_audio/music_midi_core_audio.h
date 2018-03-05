@@ -3,7 +3,7 @@
 
 #include "app-veriwell/appseed/multimedia/multimedia/multimedia.h"
 #include <CoreMIDI/MIDIServices.h>
-
+#include <AudioToolbox/AudioToolbox.h>
 
 #if defined(_VERIWELL_MULTIMEDIA_MUSIC_MIDI_CORE_MIDI_LIBRARY)
    #define CLASS_DECL_VERIWELL_MULTIMEDIA_MUSIC_MIDI_CORE_MIDI  CLASS_DECL_EXPORT
