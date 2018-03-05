@@ -1,0 +1,1165 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SPTListPage Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Spotify iOS SDK </a></h1>
+				<a id="developerHome" href="../index.html">Spotify AB</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SPTListPage Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/hasNextPage">&nbsp;&nbsp;&nbsp;&nbsp;hasNextPage</option>
+	
+	<option value="//api/name/hasPreviousPage">&nbsp;&nbsp;&nbsp;&nbsp;hasPreviousPage</option>
+	
+	<option value="//api/name/isComplete">&nbsp;&nbsp;&nbsp;&nbsp;isComplete</option>
+	
+	<option value="//api/name/items">&nbsp;&nbsp;&nbsp;&nbsp;items</option>
+	
+	<option value="//api/name/nextPageURL">&nbsp;&nbsp;&nbsp;&nbsp;nextPageURL</option>
+	
+	<option value="//api/name/previousPageURL">&nbsp;&nbsp;&nbsp;&nbsp;previousPageURL</option>
+	
+	<option value="//api/name/range">&nbsp;&nbsp;&nbsp;&nbsp;range</option>
+	
+	<option value="//api/name/totalListLength">&nbsp;&nbsp;&nbsp;&nbsp;totalListLength</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/listPageFromData:withResponse:expectingPartialChildren:rootObjectKey:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ listPageFromData:withResponse:expectingPartialChildren:rootObjectKey:error:</option>
+	
+	<option value="//api/name/listPageFromDecodedJSON:expectingPartialChildren:rootObjectKey:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ listPageFromDecodedJSON:expectingPartialChildren:rootObjectKey:error:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/createRequestForNextPageWithAccessToken:error:">&nbsp;&nbsp;&nbsp;&nbsp;- createRequestForNextPageWithAccessToken:error:</option>
+	
+	<option value="//api/name/createRequestForPreviousPageWithAccessToken:error:">&nbsp;&nbsp;&nbsp;&nbsp;- createRequestForPreviousPageWithAccessToken:error:</option>
+	
+	<option value="//api/name/pageByAppendingPage:">&nbsp;&nbsp;&nbsp;&nbsp;- pageByAppendingPage:</option>
+	
+	<option value="//api/name/requestNextPageWithAccessToken:callback:">&nbsp;&nbsp;&nbsp;&nbsp;- requestNextPageWithAccessToken:callback:</option>
+	
+	<option value="//api/name/requestPreviousPageWithAccessToken:callback:">&nbsp;&nbsp;&nbsp;&nbsp;- requestPreviousPageWithAccessToken:callback:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Properties">Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_API Request Factories">API Request Factories</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_API Response Parsers">API Response Parsers</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Navigation and Manipulation">Navigation and Manipulation</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasNextPage">hasNextPage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasPreviousPage">hasPreviousPage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isComplete">isComplete</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/items">items</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/nextPageURL">nextPageURL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/previousPageURL">previousPageURL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/range">range</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/totalListLength">totalListLength</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/listPageFromData:withResponse:expectingPartialChildren:rootObjectKey:error:">listPageFromData:withResponse:expectingPartialChildren:rootObjectKey:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/listPageFromDecodedJSON:expectingPartialChildren:rootObjectKey:error:">listPageFromDecodedJSON:expectingPartialChildren:rootObjectKey:error:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createRequestForNextPageWithAccessToken:error:">createRequestForNextPageWithAccessToken:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createRequestForPreviousPageWithAccessToken:error:">createRequestForPreviousPageWithAccessToken:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pageByAppendingPage:">pageByAppendingPage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestNextPageWithAccessToken:callback:">requestNextPageWithAccessToken:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestPreviousPageWithAccessToken:callback:">requestPreviousPageWithAccessToken:callback:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SPTListPage Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SPTListPage Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/SPTTrackProvider.html">SPTTrackProvider</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SPTListPage.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class represents a page within a paginated list.</p>
+
+<p>For the sake of conserving resources, lists that have the potential to be very large
+(such as search results, a playlist or album&rsquo;s tracks, etc) are not delivered as a whole
+from the Spotify backend - instead, such lists are paginated. This class allows you
+to work with those pages.</p>
+
+<p>API Model: <a href="https://developer.spotify.com/web-api/object-model/">https://developer.spotify.com/web-api/object-model/</a>#paging-object</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Properties" name="task_Properties"></a>
+						<h3 class="subsubtitle task-title">Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/range">&nbsp;&nbsp;range</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/totalListLength">&nbsp;&nbsp;totalListLength</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasNextPage">&nbsp;&nbsp;hasNextPage</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasPreviousPage">&nbsp;&nbsp;hasPreviousPage</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/nextPageURL">&nbsp;&nbsp;nextPageURL</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/previousPageURL">&nbsp;&nbsp;previousPageURL</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isComplete">&nbsp;&nbsp;isComplete</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/items">&nbsp;&nbsp;items</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="API Request Factories" name="task_API Request Factories"></a>
+						<h3 class="subsubtitle task-title">API Request Factories</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createRequestForNextPageWithAccessToken:error:">&ndash;&nbsp;createRequestForNextPageWithAccessToken:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createRequestForPreviousPageWithAccessToken:error:">&ndash;&nbsp;createRequestForPreviousPageWithAccessToken:error:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="API Response Parsers" name="task_API Response Parsers"></a>
+						<h3 class="subsubtitle task-title">API Response Parsers</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/listPageFromData:withResponse:expectingPartialChildren:rootObjectKey:error:">+&nbsp;listPageFromData:withResponse:expectingPartialChildren:rootObjectKey:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/listPageFromDecodedJSON:expectingPartialChildren:rootObjectKey:error:">+&nbsp;listPageFromDecodedJSON:expectingPartialChildren:rootObjectKey:error:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Navigation and Manipulation" name="task_Navigation and Manipulation"></a>
+						<h3 class="subsubtitle task-title">Navigation and Manipulation</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pageByAppendingPage:">&ndash;&nbsp;pageByAppendingPage:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestNextPageWithAccessToken:callback:">&ndash;&nbsp;requestNextPageWithAccessToken:callback:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestPreviousPageWithAccessToken:callback:">&ndash;&nbsp;requestPreviousPageWithAccessToken:callback:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/hasNextPage" title="hasNextPage"></a>
+	<h3 class="subsubtitle method-title">hasNextPage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns <code>YES</code> if there is at least one page in the source list after the receiver, otherwise <code>NO</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL hasNextPage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTListPage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasPreviousPage" title="hasPreviousPage"></a>
+	<h3 class="subsubtitle method-title">hasPreviousPage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns <code>YES</code> if there is at least one page in the source list before the receiver, otherwise <code>NO</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL hasPreviousPage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTListPage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isComplete" title="isComplete"></a>
+	<h3 class="subsubtitle method-title">isComplete</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns <code>YES</code> if the page contains every single item in the source list, otherwise <code>NO</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isComplete</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTListPage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/items" title="items"></a>
+	<h3 class="subsubtitle method-title">items</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The items contained in the page the receiver represents.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSArray *items</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTListPage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/nextPageURL" title="nextPageURL"></a>
+	<h3 class="subsubtitle method-title">nextPageURL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the API url to the next page of <a href="#//api/name/items">items</a> if it exist, otherwise <code>nil</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSURL *nextPageURL</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTListPage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/previousPageURL" title="previousPageURL"></a>
+	<h3 class="subsubtitle method-title">previousPageURL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the API url to the previous page of <a href="#//api/name/items">items</a> if it exist, otherwise <code>nil</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSURL *previousPageURL</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTListPage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/range" title="range"></a>
+	<h3 class="subsubtitle method-title">range</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The range of the receiver within the source list.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSRange range</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTListPage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/totalListLength" title="totalListLength"></a>
+	<h3 class="subsubtitle method-title">totalListLength</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The length of the source list.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger totalListLength</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTListPage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/listPageFromData:withResponse:expectingPartialChildren:rootObjectKey:error:" title="listPageFromData:withResponse:expectingPartialChildren:rootObjectKey:error:"></a>
+	<h3 class="subsubtitle method-title">listPageFromData:withResponse:expectingPartialChildren:rootObjectKey:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a SPTListPage from a API response</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)listPageFromData:(NSData *)<em>data</em> withResponse:(NSURLResponse *)<em>response</em> expectingPartialChildren:(BOOL)<em>hasPartialChildren</em> rootObjectKey:(NSString *)<em>rootObjectKey</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>The API Response data</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>response</em></dt>
+			<dd><p>The API Response object</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>hasPartialChildren</em></dt>
+			<dd><p>True if api response provides partial entities, not full ones.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rootObjectKey</em></dt>
+			<dd><p>The name of the entity with the actual content, or <code>nil</code> if the same as the root.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional pointer to a <code>NSError</code> object that will be set if an error occured.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>SPTListPage</code>, or nil if an error occured.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTListPage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/listPageFromDecodedJSON:expectingPartialChildren:rootObjectKey:error:" title="listPageFromDecodedJSON:expectingPartialChildren:rootObjectKey:error:"></a>
+	<h3 class="subsubtitle method-title">listPageFromDecodedJSON:expectingPartialChildren:rootObjectKey:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a SPTListPage from a decoded JSON structure</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)listPageFromDecodedJSON:(id)<em>decodedObject</em> expectingPartialChildren:(BOOL)<em>hasPartialChildren</em> rootObjectKey:(NSString *)<em>rootObjectKey</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>decodedObject</em></dt>
+			<dd><p>The JSON root entity</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>hasPartialChildren</em></dt>
+			<dd><p>True if api response provides partial entities, not full ones.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rootObjectKey</em></dt>
+			<dd><p>The name of the entity with the actual content, or <code>nil</code> if the same as the root.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional pointer to a <code>NSError</code> object that will be set if an error occured.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>SPTListPage</code>, or nil if an error occured.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTListPage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/createRequestForNextPageWithAccessToken:error:" title="createRequestForNextPageWithAccessToken:error:"></a>
+	<h3 class="subsubtitle method-title">createRequestForNextPageWithAccessToken:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a request for fetching the next page in the source list.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSURLRequest *)createRequestForNextPageWithAccessToken:(NSString *)<em>accessToken</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>An authenticated access token. Must be valid and authorized.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional <code>NSError</code> that will be set if an error occured.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTListPage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createRequestForPreviousPageWithAccessToken:error:" title="createRequestForPreviousPageWithAccessToken:error:"></a>
+	<h3 class="subsubtitle method-title">createRequestForPreviousPageWithAccessToken:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a request for fetching the previous page in the source list.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSURLRequest *)createRequestForPreviousPageWithAccessToken:(NSString *)<em>accessToken</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>An authenticated access token. Must be valid and authorized.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional <code>NSError</code> that will be set if an error occured.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTListPage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pageByAppendingPage:" title="pageByAppendingPage:"></a>
+	<h3 class="subsubtitle method-title">pageByAppendingPage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a new page by adding a page to the receiver.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (instancetype)pageByAppendingPage:(SPTListPage *)<em>nextPage</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nextPage</em></dt>
+			<dd><p>The page to add to the receiver.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new <code>SPTListPage</code> containing the union of the receiver and nextPage.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> The added page <em>must</em> start immediately after the receiver - that is,
+<code>nextPage.</code>range<code>.location</code> must equal <code>self.</code>range<code>.location + self.</code>range<code>.length</code>.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTListPage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestNextPageWithAccessToken:callback:" title="requestNextPageWithAccessToken:callback:"></a>
+	<h3 class="subsubtitle method-title">requestNextPageWithAccessToken:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Request the next page in the source list.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)requestNextPageWithAccessToken:(NSString *)<em>accessToken</em> callback:(SPTRequestCallback)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>An authenticated access token. Must be valid and authorized.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to be called when the operation is complete. This block will pass an error if the operation
+failed, otherwise the next <code>SPTListPage</code> in the source list.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTListPage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestPreviousPageWithAccessToken:callback:" title="requestPreviousPageWithAccessToken:callback:"></a>
+	<h3 class="subsubtitle method-title">requestPreviousPageWithAccessToken:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Request the previous page in the source list.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)requestPreviousPageWithAccessToken:(NSString *)<em>accessToken</em> callback:(SPTRequestCallback)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>An authenticated access token. Must be valid and authorized.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to be called when the operation is complete. This block will pass an error if the operation
+failed, otherwise the previous <code>SPTListPage</code> in the source list.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTListPage.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Spotify AB. All rights reserved. (Last updated: 2016-10-28)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,1046 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SPTSearch Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Spotify iOS SDK </a></h1>
+				<a id="developerHome" href="../index.html">Spotify AB</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SPTSearch Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/createRequestForSearchWithQuery:queryType:accessToken:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ createRequestForSearchWithQuery:queryType:accessToken:error:</option>
+	
+	<option value="//api/name/createRequestForSearchWithQuery:queryType:accessToken:market:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ createRequestForSearchWithQuery:queryType:accessToken:market:error:</option>
+	
+	<option value="//api/name/createRequestForSearchWithQuery:queryType:offset:accessToken:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ createRequestForSearchWithQuery:queryType:offset:accessToken:error:</option>
+	
+	<option value="//api/name/createRequestForSearchWithQuery:queryType:offset:accessToken:market:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ createRequestForSearchWithQuery:queryType:offset:accessToken:market:error:</option>
+	
+	<option value="//api/name/performSearchWithQuery:queryType:accessToken:callback:">&nbsp;&nbsp;&nbsp;&nbsp;+ performSearchWithQuery:queryType:accessToken:callback:</option>
+	
+	<option value="//api/name/performSearchWithQuery:queryType:accessToken:market:callback:">&nbsp;&nbsp;&nbsp;&nbsp;+ performSearchWithQuery:queryType:accessToken:market:callback:</option>
+	
+	<option value="//api/name/performSearchWithQuery:queryType:offset:accessToken:callback:">&nbsp;&nbsp;&nbsp;&nbsp;+ performSearchWithQuery:queryType:offset:accessToken:callback:</option>
+	
+	<option value="//api/name/performSearchWithQuery:queryType:offset:accessToken:market:callback:">&nbsp;&nbsp;&nbsp;&nbsp;+ performSearchWithQuery:queryType:offset:accessToken:market:callback:</option>
+	
+	<option value="//api/name/searchResultsFromData:withResponse:queryType:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ searchResultsFromData:withResponse:queryType:error:</option>
+	
+	<option value="//api/name/searchResultsFromDecodedJSON:queryType:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ searchResultsFromDecodedJSON:queryType:error:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Search">Search</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Parsers / Deserializers">Parsers / Deserializers</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createRequestForSearchWithQuery:queryType:accessToken:error:">createRequestForSearchWithQuery:queryType:accessToken:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createRequestForSearchWithQuery:queryType:accessToken:market:error:">createRequestForSearchWithQuery:queryType:accessToken:market:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createRequestForSearchWithQuery:queryType:offset:accessToken:error:">createRequestForSearchWithQuery:queryType:offset:accessToken:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createRequestForSearchWithQuery:queryType:offset:accessToken:market:error:">createRequestForSearchWithQuery:queryType:offset:accessToken:market:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSearchWithQuery:queryType:accessToken:callback:">performSearchWithQuery:queryType:accessToken:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSearchWithQuery:queryType:accessToken:market:callback:">performSearchWithQuery:queryType:accessToken:market:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSearchWithQuery:queryType:offset:accessToken:callback:">performSearchWithQuery:queryType:offset:accessToken:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performSearchWithQuery:queryType:offset:accessToken:market:callback:">performSearchWithQuery:queryType:offset:accessToken:market:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchResultsFromData:withResponse:queryType:error:">searchResultsFromData:withResponse:queryType:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchResultsFromDecodedJSON:queryType:error:">searchResultsFromDecodedJSON:queryType:error:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SPTSearch Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SPTSearch Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SPTSearch.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class provides helpers for using the search features in the Spotify API, See: <a href="https://developer.spotify.com/web-api/console/search/">https://developer.spotify.com/web-api/console/search/</a></p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Search" name="task_Search"></a>
+						<h3 class="subsubtitle task-title">Search</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performSearchWithQuery:queryType:offset:accessToken:market:callback:">+&nbsp;performSearchWithQuery:queryType:offset:accessToken:market:callback:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createRequestForSearchWithQuery:queryType:offset:accessToken:market:error:">+&nbsp;createRequestForSearchWithQuery:queryType:offset:accessToken:market:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performSearchWithQuery:queryType:accessToken:market:callback:">+&nbsp;performSearchWithQuery:queryType:accessToken:market:callback:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createRequestForSearchWithQuery:queryType:accessToken:market:error:">+&nbsp;createRequestForSearchWithQuery:queryType:accessToken:market:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performSearchWithQuery:queryType:offset:accessToken:callback:">+&nbsp;performSearchWithQuery:queryType:offset:accessToken:callback:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createRequestForSearchWithQuery:queryType:offset:accessToken:error:">+&nbsp;createRequestForSearchWithQuery:queryType:offset:accessToken:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performSearchWithQuery:queryType:accessToken:callback:">+&nbsp;performSearchWithQuery:queryType:accessToken:callback:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createRequestForSearchWithQuery:queryType:accessToken:error:">+&nbsp;createRequestForSearchWithQuery:queryType:accessToken:error:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Parsers / Deserializers" name="task_Parsers / Deserializers"></a>
+						<h3 class="subsubtitle task-title">Parsers / Deserializers</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchResultsFromData:withResponse:queryType:error:">+&nbsp;searchResultsFromData:withResponse:queryType:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchResultsFromDecodedJSON:queryType:error:">+&nbsp;searchResultsFromDecodedJSON:queryType:error:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/createRequestForSearchWithQuery:queryType:accessToken:error:" title="createRequestForSearchWithQuery:queryType:accessToken:error:"></a>
+	<h3 class="subsubtitle method-title">createRequestForSearchWithQuery:queryType:accessToken:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a request for searching with a given query.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSURLRequest *)createRequestForSearchWithQuery:(NSString *)<em>searchQuery</em> queryType:(SPTSearchQueryType)<em>searchQueryType</em> accessToken:(NSString *)<em>accessToken</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>searchQuery</em></dt>
+			<dd><p>The query to pass to the search.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>searchQueryType</em></dt>
+			<dd><p>The type of search to do.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>A valid access token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional pointer to an <code>NSError</code> that will receive the error code if operation failed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTSearch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createRequestForSearchWithQuery:queryType:accessToken:market:error:" title="createRequestForSearchWithQuery:queryType:accessToken:market:error:"></a>
+	<h3 class="subsubtitle method-title">createRequestForSearchWithQuery:queryType:accessToken:market:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Createa a query for searching with a given query and market filtering</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSURLRequest *)createRequestForSearchWithQuery:(NSString *)<em>searchQuery</em> queryType:(SPTSearchQueryType)<em>searchQueryType</em> accessToken:(NSString *)<em>accessToken</em> market:(NSString *)<em>market</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>searchQuery</em></dt>
+			<dd><p>The query to pass to the search.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>searchQueryType</em></dt>
+			<dd><p>The type of search to do.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>A valid access token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>market</em></dt>
+			<dd><p>Either a ISO 3166-1 country code to filter the results to, or <code>from_token</code> to pick the market from the session (requires the <code>user-read-private</code> scope), or <code>nil</code> for no market filtering.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional pointer to an <code>NSError</code> that will receive the error code if operation failed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTSearch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createRequestForSearchWithQuery:queryType:offset:accessToken:error:" title="createRequestForSearchWithQuery:queryType:offset:accessToken:error:"></a>
+	<h3 class="subsubtitle method-title">createRequestForSearchWithQuery:queryType:offset:accessToken:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a request for searching with a given query and offset</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSURLRequest *)createRequestForSearchWithQuery:(NSString *)<em>searchQuery</em> queryType:(SPTSearchQueryType)<em>searchQueryType</em> offset:(NSInteger)<em>offset</em> accessToken:(NSString *)<em>accessToken</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>searchQuery</em></dt>
+			<dd><p>The query to pass to the search.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>searchQueryType</em></dt>
+			<dd><p>The type of search to do.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>The index at which to start returning results.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>A valid access token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional pointer to an <code>NSError</code> that will receive the error code if operation failed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTSearch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createRequestForSearchWithQuery:queryType:offset:accessToken:market:error:" title="createRequestForSearchWithQuery:queryType:offset:accessToken:market:error:"></a>
+	<h3 class="subsubtitle method-title">createRequestForSearchWithQuery:queryType:offset:accessToken:market:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a request for searching with a given query, offset and market filtering</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSURLRequest *)createRequestForSearchWithQuery:(NSString *)<em>searchQuery</em> queryType:(SPTSearchQueryType)<em>searchQueryType</em> offset:(NSInteger)<em>offset</em> accessToken:(NSString *)<em>accessToken</em> market:(NSString *)<em>market</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>searchQuery</em></dt>
+			<dd><p>The query to pass to the search.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>searchQueryType</em></dt>
+			<dd><p>The type of search to do.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>The index at which to start returning results.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>A valid access token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>market</em></dt>
+			<dd><p>Either a ISO 3166-1 country code to filter the results to, or &ldquo;from_token&rdquo; (<code>SPTMarketFromToken</code>) to pick the market from the session (requires the <code>user-read-private</code> scope), or <code>nil</code> for no market filtering.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional pointer to an <code>NSError</code> that will receive the error code if operation failed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTSearch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performSearchWithQuery:queryType:accessToken:callback:" title="performSearchWithQuery:queryType:accessToken:callback:"></a>
+	<h3 class="subsubtitle method-title">performSearchWithQuery:queryType:accessToken:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Performs a search with a given query.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)performSearchWithQuery:(NSString *)<em>searchQuery</em> queryType:(SPTSearchQueryType)<em>searchQueryType</em> accessToken:(NSString *)<em>accessToken</em> callback:(SPTRequestCallback)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>searchQuery</em></dt>
+			<dd><p>The query to pass to the search.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>searchQueryType</em></dt>
+			<dd><p>The type of search to do.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>A valid access token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to be called when the operation is complete. The block will pass an <a href="../Classes/SPTListPage.html"><code>SPTListPage</code></a> containing results on success, otherwise an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is a convenience method around the createRequest equivalent and the current <a href="../Protocols/SPTRequestHandlerProtocol.html"><code>SPTRequestHandlerProtocol</code></a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTSearch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performSearchWithQuery:queryType:accessToken:market:callback:" title="performSearchWithQuery:queryType:accessToken:market:callback:"></a>
+	<h3 class="subsubtitle method-title">performSearchWithQuery:queryType:accessToken:market:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Performs a search with a given query and market filtering</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)performSearchWithQuery:(NSString *)<em>searchQuery</em> queryType:(SPTSearchQueryType)<em>searchQueryType</em> accessToken:(NSString *)<em>accessToken</em> market:(NSString *)<em>market</em> callback:(SPTRequestCallback)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>searchQuery</em></dt>
+			<dd><p>The query to pass to the search.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>searchQueryType</em></dt>
+			<dd><p>The type of search to do.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>A valid access token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>market</em></dt>
+			<dd><p>Either a ISO 3166-1 country code to filter the results to, or <code>from_token</code> to pick the market from the session (requires the <code>user-read-private</code> scope), or <code>nil</code> for no market filtering.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to be called when the operation is complete. The block will pass an <a href="../Classes/SPTListPage.html"><code>SPTListPage</code></a> containing results on success, otherwise an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is a convenience method around the createRequest equivalent and the current <a href="../Protocols/SPTRequestHandlerProtocol.html"><code>SPTRequestHandlerProtocol</code></a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTSearch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performSearchWithQuery:queryType:offset:accessToken:callback:" title="performSearchWithQuery:queryType:offset:accessToken:callback:"></a>
+	<h3 class="subsubtitle method-title">performSearchWithQuery:queryType:offset:accessToken:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Performs a search with a given query and offset</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)performSearchWithQuery:(NSString *)<em>searchQuery</em> queryType:(SPTSearchQueryType)<em>searchQueryType</em> offset:(NSInteger)<em>offset</em> accessToken:(NSString *)<em>accessToken</em> callback:(SPTRequestCallback)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>searchQuery</em></dt>
+			<dd><p>The query to pass to the search.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>searchQueryType</em></dt>
+			<dd><p>The type of search to do.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>The index at which to start returning results.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>A valid access token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to be called when the operation is complete. The block will pass an <a href="../Classes/SPTListPage.html"><code>SPTListPage</code></a> containing results on success, otherwise an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is a convenience method around the createRequest equivalent and the current <a href="../Protocols/SPTRequestHandlerProtocol.html"><code>SPTRequestHandlerProtocol</code></a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTSearch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performSearchWithQuery:queryType:offset:accessToken:market:callback:" title="performSearchWithQuery:queryType:offset:accessToken:market:callback:"></a>
+	<h3 class="subsubtitle method-title">performSearchWithQuery:queryType:offset:accessToken:market:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Performs a search with a given query, offset and market filtering</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)performSearchWithQuery:(NSString *)<em>searchQuery</em> queryType:(SPTSearchQueryType)<em>searchQueryType</em> offset:(NSInteger)<em>offset</em> accessToken:(NSString *)<em>accessToken</em> market:(NSString *)<em>market</em> callback:(SPTRequestCallback)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>searchQuery</em></dt>
+			<dd><p>The query to pass to the search.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>searchQueryType</em></dt>
+			<dd><p>The type of search to do.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>The index at which to start returning results.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>A valid access token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>market</em></dt>
+			<dd><p>Either a ISO 3166-1 country code to filter the results to, or &ldquo;from_token&rdquo; (<code>SPTMarketFromToken</code>) to pick the market from the session (requires the <code>user-read-private</code> scope), or <code>nil</code> for no market filtering.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to be called when the operation is complete. The block will pass an <a href="../Classes/SPTListPage.html"><code>SPTListPage</code></a> containing results on success, otherwise an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is a convenience method around the createRequest equivalent and the current <a href="../Protocols/SPTRequestHandlerProtocol.html"><code>SPTRequestHandlerProtocol</code></a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTSearch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/searchResultsFromData:withResponse:queryType:error:" title="searchResultsFromData:withResponse:queryType:error:"></a>
+	<h3 class="subsubtitle method-title">searchResultsFromData:withResponse:queryType:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Parse the response from createRequestForSearch into a list of search results</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (SPTListPage *)searchResultsFromData:(NSData *)<em>data</em> withResponse:(NSURLResponse *)<em>response</em> queryType:(SPTSearchQueryType)<em>searchQueryType</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>The API response data</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>response</em></dt>
+			<dd><p>The API response object</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>searchQueryType</em></dt>
+			<dd><p>The type of search to do.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional pointer to an <code>NSError</code> that will receive the error code if operation failed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The list of search results as an <a href="../Classes/SPTListPage.html"><code>SPTListPage</code></a> object</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTSearch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/searchResultsFromDecodedJSON:queryType:error:" title="searchResultsFromDecodedJSON:queryType:error:"></a>
+	<h3 class="subsubtitle method-title">searchResultsFromDecodedJSON:queryType:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Parse the response from createRequestForSearch into a list of search results</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (SPTListPage *)searchResultsFromDecodedJSON:(id)<em>decodedObject</em> queryType:(SPTSearchQueryType)<em>searchQueryType</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>decodedObject</em></dt>
+			<dd><p>The decoded JSON object structure</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>searchQueryType</em></dt>
+			<dd><p>The type of search to do.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional pointer to an <code>NSError</code> that will receive the error code if operation failed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The list of search results as an <a href="../Classes/SPTListPage.html"><code>SPTListPage</code></a> object</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTSearch.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Spotify AB. All rights reserved. (Last updated: 2016-10-28)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

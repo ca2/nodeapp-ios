@@ -1,0 +1,1381 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SPTAuth Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Spotify iOS SDK </a></h1>
+				<a id="developerHome" href="../index.html">Spotify AB</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SPTAuth Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/clientID">&nbsp;&nbsp;&nbsp;&nbsp;clientID</option>
+	
+	<option value="//api/name/hasTokenRefreshService">&nbsp;&nbsp;&nbsp;&nbsp;hasTokenRefreshService</option>
+	
+	<option value="//api/name/hasTokenSwapService">&nbsp;&nbsp;&nbsp;&nbsp;hasTokenSwapService</option>
+	
+	<option value="//api/name/redirectURL">&nbsp;&nbsp;&nbsp;&nbsp;redirectURL</option>
+	
+	<option value="//api/name/requestedScopes">&nbsp;&nbsp;&nbsp;&nbsp;requestedScopes</option>
+	
+	<option value="//api/name/session">&nbsp;&nbsp;&nbsp;&nbsp;session</option>
+	
+	<option value="//api/name/sessionUserDefaultsKey">&nbsp;&nbsp;&nbsp;&nbsp;sessionUserDefaultsKey</option>
+	
+	<option value="//api/name/tokenRefreshURL">&nbsp;&nbsp;&nbsp;&nbsp;tokenRefreshURL</option>
+	
+	<option value="//api/name/tokenSwapURL">&nbsp;&nbsp;&nbsp;&nbsp;tokenSwapURL</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/defaultInstance">&nbsp;&nbsp;&nbsp;&nbsp;+ defaultInstance</option>
+	
+	<option value="//api/name/loginURLForClientId:withRedirectURL:scopes:responseType:">&nbsp;&nbsp;&nbsp;&nbsp;+ loginURLForClientId:withRedirectURL:scopes:responseType:</option>
+	
+	<option value="//api/name/loginURLForClientId:withRedirectURL:scopes:responseType:campaignId:">&nbsp;&nbsp;&nbsp;&nbsp;+ loginURLForClientId:withRedirectURL:scopes:responseType:campaignId:</option>
+	
+	<option value="//api/name/spotifyApplicationIsInstalled">&nbsp;&nbsp;&nbsp;&nbsp;+ spotifyApplicationIsInstalled</option>
+	
+	<option value="//api/name/supportsApplicationAuthentication">&nbsp;&nbsp;&nbsp;&nbsp;+ supportsApplicationAuthentication</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/canHandleURL:">&nbsp;&nbsp;&nbsp;&nbsp;- canHandleURL:</option>
+	
+	<option value="//api/name/handleAuthCallbackWithTriggeredAuthURL:callback:">&nbsp;&nbsp;&nbsp;&nbsp;- handleAuthCallbackWithTriggeredAuthURL:callback:</option>
+	
+	<option value="//api/name/renewSession:callback:">&nbsp;&nbsp;&nbsp;&nbsp;- renewSession:callback:</option>
+	
+	<option value="//api/name/spotifyAppAuthenticationURL">&nbsp;&nbsp;&nbsp;&nbsp;- spotifyAppAuthenticationURL</option>
+	
+	<option value="//api/name/spotifyWebAuthenticationURL">&nbsp;&nbsp;&nbsp;&nbsp;- spotifyWebAuthenticationURL</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Convenience Getters">Convenience Getters</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Environment settings">Environment settings</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Starting Authentication">Starting Authentication</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling Authentication Callback URLs">Handling Authentication Callback URLs</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Renewing Sessions">Renewing Sessions</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clientID">clientID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasTokenRefreshService">hasTokenRefreshService</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasTokenSwapService">hasTokenSwapService</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/redirectURL">redirectURL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestedScopes">requestedScopes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/session">session</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sessionUserDefaultsKey">sessionUserDefaultsKey</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tokenRefreshURL">tokenRefreshURL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tokenSwapURL">tokenSwapURL</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultInstance">defaultInstance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loginURLForClientId:withRedirectURL:scopes:responseType:">loginURLForClientId:withRedirectURL:scopes:responseType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loginURLForClientId:withRedirectURL:scopes:responseType:campaignId:">loginURLForClientId:withRedirectURL:scopes:responseType:campaignId:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spotifyApplicationIsInstalled">spotifyApplicationIsInstalled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/supportsApplicationAuthentication">supportsApplicationAuthentication</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/canHandleURL:">canHandleURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleAuthCallbackWithTriggeredAuthURL:callback:">handleAuthCallbackWithTriggeredAuthURL:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/renewSession:callback:">renewSession:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spotifyAppAuthenticationURL">spotifyAppAuthenticationURL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spotifyWebAuthenticationURL">spotifyWebAuthenticationURL</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SPTAuth Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SPTAuth Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SPTAuth.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class provides helper methods for authenticating users against the Spotify OAuth
+authentication service.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Convenience Getters" name="task_Convenience Getters"></a>
+						<h3 class="subsubtitle task-title">Convenience Getters</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultInstance">+&nbsp;defaultInstance</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Environment settings" name="task_Environment settings"></a>
+						<h3 class="subsubtitle task-title">Environment settings</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clientID">&nbsp;&nbsp;clientID</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/redirectURL">&nbsp;&nbsp;redirectURL</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestedScopes">&nbsp;&nbsp;requestedScopes</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/session">&nbsp;&nbsp;session</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sessionUserDefaultsKey">&nbsp;&nbsp;sessionUserDefaultsKey</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tokenSwapURL">&nbsp;&nbsp;tokenSwapURL</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tokenRefreshURL">&nbsp;&nbsp;tokenRefreshURL</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasTokenSwapService">&nbsp;&nbsp;hasTokenSwapService</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasTokenRefreshService">&nbsp;&nbsp;hasTokenRefreshService</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Starting Authentication" name="task_Starting Authentication"></a>
+						<h3 class="subsubtitle task-title">Starting Authentication</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loginURLForClientId:withRedirectURL:scopes:responseType:">+&nbsp;loginURLForClientId:withRedirectURL:scopes:responseType:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/loginURLForClientId:withRedirectURL:scopes:responseType:campaignId:">+&nbsp;loginURLForClientId:withRedirectURL:scopes:responseType:campaignId:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling Authentication Callback URLs" name="task_Handling Authentication Callback URLs"></a>
+						<h3 class="subsubtitle task-title">Handling Authentication Callback URLs</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/spotifyWebAuthenticationURL">&ndash;&nbsp;spotifyWebAuthenticationURL</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/spotifyAppAuthenticationURL">&ndash;&nbsp;spotifyAppAuthenticationURL</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/canHandleURL:">&ndash;&nbsp;canHandleURL:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleAuthCallbackWithTriggeredAuthURL:callback:">&ndash;&nbsp;handleAuthCallbackWithTriggeredAuthURL:callback:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/supportsApplicationAuthentication">+&nbsp;supportsApplicationAuthentication</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/spotifyApplicationIsInstalled">+&nbsp;spotifyApplicationIsInstalled</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Renewing Sessions" name="task_Renewing Sessions"></a>
+						<h3 class="subsubtitle task-title">Renewing Sessions</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/renewSession:callback:">&ndash;&nbsp;renewSession:callback:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/clientID" title="clientID"></a>
+	<h3 class="subsubtitle method-title">clientID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Your client ID.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, readwrite) NSString *clientID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTAuth.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasTokenRefreshService" title="hasTokenRefreshService"></a>
+	<h3 class="subsubtitle method-title">hasTokenRefreshService</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns true if there&rsquo;s a valid token refresh url specified.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) BOOL hasTokenRefreshService</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTAuth.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasTokenSwapService" title="hasTokenSwapService"></a>
+	<h3 class="subsubtitle method-title">hasTokenSwapService</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns true if there&rsquo;s a valid token swap url specified.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly) BOOL hasTokenSwapService</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTAuth.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/redirectURL" title="redirectURL"></a>
+	<h3 class="subsubtitle method-title">redirectURL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Your redirect URL.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, readwrite) NSURL *redirectURL</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTAuth.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestedScopes" title="requestedScopes"></a>
+	<h3 class="subsubtitle method-title">requestedScopes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Required scopes for the app, used by authentication steps</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, readwrite) NSArray *requestedScopes</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTAuth.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/session" title="session"></a>
+	<h3 class="subsubtitle method-title">session</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current session, Note: setting this will persist it in <code>NSUserDefaults standardUserDefaults</code> if
+a <a href="#//api/name/sessionUserDefaultsKey"><code>sessionUserDefaultsKey</code></a> is set.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, readwrite) SPTSession *session</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTAuth.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sessionUserDefaultsKey" title="sessionUserDefaultsKey"></a>
+	<h3 class="subsubtitle method-title">sessionUserDefaultsKey</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>User defaults key, if you want to automatically save the <a href="#//api/name/session">session</a> from user defaults when it changes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, readwrite) NSString *sessionUserDefaultsKey</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTAuth.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tokenRefreshURL" title="tokenRefreshURL"></a>
+	<h3 class="subsubtitle method-title">tokenRefreshURL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Your token refresh URL, if not specified the refresh token flow will be disabled.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, readwrite) NSURL *tokenRefreshURL</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTAuth.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tokenSwapURL" title="tokenSwapURL"></a>
+	<h3 class="subsubtitle method-title">tokenSwapURL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Your token swap URL, if not specified the authentication flow will be limited to implicit grant flow.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, readwrite) NSURL *tokenSwapURL</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTAuth.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultInstance" title="defaultInstance"></a>
+	<h3 class="subsubtitle method-title">defaultInstance</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a pre-created <code>SPTAuth</code> instance for convenience.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (SPTAuth *)defaultInstance</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A pre-created default <code>SPTAuth</code> instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTAuth.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loginURLForClientId:withRedirectURL:scopes:responseType:" title="loginURLForClientId:withRedirectURL:scopes:responseType:"></a>
+	<h3 class="subsubtitle method-title">loginURLForClientId:withRedirectURL:scopes:responseType:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a URL that, when opened, will begin the Spotify authentication process.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSURL *)loginURLForClientId:(NSString *)<em>clientId</em> withRedirectURL:(NSURL *)<em>redirectURL</em> scopes:(NSArray *)<em>scopes</em> responseType:(NSString *)<em>responseType</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>clientId</em></dt>
+			<dd><p>Your client ID as declared in the Spotify Developer Centre.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>redirectURL</em></dt>
+			<dd><p>Your callback URL as declared in the Spotify Developer Centre.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>scopes</em></dt>
+			<dd><p>The custom scopes to request from the auth API.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>responseType</em></dt>
+			<dd><p>Authentication response code type, defaults to &ldquo;code&rdquo;, use &ldquo;token&rdquo; if you want to bounce directly to the app without refresh tokens.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The URL to pass to <code>UIApplication</code>&rsquo;s <code>-openURL:</code> method.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> You must open this URL with the system handler to have the auth process
+happen in Safari. Displaying this inside your application is against the Spotify ToS.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTAuth.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/loginURLForClientId:withRedirectURL:scopes:responseType:campaignId:" title="loginURLForClientId:withRedirectURL:scopes:responseType:campaignId:"></a>
+	<h3 class="subsubtitle method-title">loginURLForClientId:withRedirectURL:scopes:responseType:campaignId:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a URL that, when opened, will begin the Spotify authentication process.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSURL *)loginURLForClientId:(NSString *)<em>clientId</em> withRedirectURL:(NSURL *)<em>redirectURL</em> scopes:(NSArray *)<em>scopes</em> responseType:(NSString *)<em>responseType</em> campaignId:(NSString *)<em>campaignId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>clientId</em></dt>
+			<dd><p>Your client ID as declared in the Spotify Developer Centre.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>redirectURL</em></dt>
+			<dd><p>Your callback URL as declared in the Spotify Developer Centre.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>scopes</em></dt>
+			<dd><p>The custom scopes to request from the auth API.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>responseType</em></dt>
+			<dd><p>Authentication response code type, defaults to &ldquo;code&rdquo;, use &ldquo;token&rdquo; if you want to bounce directly to the app without refresh tokens.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>campaignId</em></dt>
+			<dd><p>A Spotify-provided campaign token.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The URL to pass to <code>UIApplication</code>&rsquo;s <code>-openURL:</code> method.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> You must open this URL with the system handler to have the auth process
+happen in Safari. Displaying this inside your application is against the Spotify ToS.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTAuth.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/spotifyApplicationIsInstalled" title="spotifyApplicationIsInstalled"></a>
+	<h3 class="subsubtitle method-title">spotifyApplicationIsInstalled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Check if Spotify application is installed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)spotifyApplicationIsInstalled</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if installed, NO otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTAuth.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/supportsApplicationAuthentication" title="supportsApplicationAuthentication"></a>
+	<h3 class="subsubtitle method-title">supportsApplicationAuthentication</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Check if &ldquo;flip-flop&rdquo; application authentication is supported.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)supportsApplicationAuthentication</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if supported, NO otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTAuth.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/canHandleURL:" title="canHandleURL:"></a>
+	<h3 class="subsubtitle method-title">canHandleURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Find out if the given URL appears to be a Spotify authentication URL.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)canHandleURL:(NSURL *)<em>callbackURL</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>callbackURL</em></dt>
+			<dd><p>The complete callback URL as triggered in your application.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns <code>YES</code> if the callback URL appears to be a Spotify auth callback, otherwise <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method is useful if your application handles multiple URL types. You can pass every URL
+you receive through here to filter them.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTAuth.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleAuthCallbackWithTriggeredAuthURL:callback:" title="handleAuthCallbackWithTriggeredAuthURL:callback:"></a>
+	<h3 class="subsubtitle method-title">handleAuthCallbackWithTriggeredAuthURL:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Handle a Spotify authentication callback URL, returning a Spotify username and OAuth credential.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)handleAuthCallbackWithTriggeredAuthURL:(NSURL *)<em>url</em> callback:(SPTAuthCallback)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The complete callback URL as triggered in your application.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The callback block to be triggered when authentication succeeds or fails.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This URL is obtained when your application delegate&rsquo;s <code>application:openURL:sourceApplication:annotation:</code>
+method is triggered. Use <a href="#//api/name/canHandleURL:"><code>[SPTAuth canHandleURL:]</code></a> to easily filter out other URLs that may be
+triggered.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTAuth.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/renewSession:callback:" title="renewSession:callback:"></a>
+	<h3 class="subsubtitle method-title">renewSession:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Request a new access token using an existing <a href="../Classes/SPTSession.html">SPTSession</a> object containing a refresh token.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)renewSession:(SPTSession *)<em>session</em> callback:(SPTAuthCallback)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>session</em></dt>
+			<dd><p>An <a href="../Classes/SPTSession.html">SPTSession</a> object with a valid refresh token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The callback block that will be invoked when the request has been performed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If no token refresh service has been specified the callback will return <code>nil</code> as <a href="#//api/name/session">session</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTAuth.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/spotifyAppAuthenticationURL" title="spotifyAppAuthenticationURL"></a>
+	<h3 class="subsubtitle method-title">spotifyAppAuthenticationURL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a spotify-action:// URL that you can use to retrieve an access token
+if <a href="#//api/name/supportsApplicationAuthentication"><code>[SPTAuth supportsApplicationAuthentication]</code></a> returns YES.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSURL *)spotifyAppAuthenticationURL</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>spotify-action:// URL for initiating a Spotfiy Client SSO attempt.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Pass this URL to <code>[UIApplication openURL:]</code> to launch the Spotify application on the device.</p><div class="note"><p><strong>Note:</strong> This will authenticate and authorise for the user currently logged in to the Spotfiy application. There might be no option to switch user.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTAuth.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/spotifyWebAuthenticationURL" title="spotifyWebAuthenticationURL"></a>
+	<h3 class="subsubtitle method-title">spotifyWebAuthenticationURL</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a https:// URL that you can use to retrieve an access token.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSURL *)spotifyWebAuthenticationURL</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>https:// URL for authenticating and authorising with the Spotify service</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Display this URL within a SFSafariViewController on iOS 9 and up, or UIWebView.</p>
+
+<p>This is the preffered mode of authentication.</p><div class="note"><p><strong>Note:</strong> This will always display an option to switch user.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTAuth.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Spotify AB. All rights reserved. (Last updated: 2016-10-28)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

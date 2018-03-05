@@ -1,0 +1,905 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SPTCoreAudioController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Spotify iOS SDK </a></h1>
+				<a id="developerHome" href="../index.html">Spotify AB</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SPTCoreAudioController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/audioOutputEnabled">&nbsp;&nbsp;&nbsp;&nbsp;audioOutputEnabled</option>
+	
+	<option value="//api/name/availableOutputDevices">&nbsp;&nbsp;&nbsp;&nbsp;availableOutputDevices</option>
+	
+	<option value="//api/name/backgroundPlaybackTask">&nbsp;&nbsp;&nbsp;&nbsp;backgroundPlaybackTask</option>
+	
+	<option value="//api/name/currentOutputDevice">&nbsp;&nbsp;&nbsp;&nbsp;currentOutputDevice</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/volume">&nbsp;&nbsp;&nbsp;&nbsp;volume</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/attemptToDeliverAudioFrames:ofCount:streamDescription:">&nbsp;&nbsp;&nbsp;&nbsp;- attemptToDeliverAudioFrames:ofCount:streamDescription:</option>
+	
+	<option value="//api/name/bytesInAudioBuffer">&nbsp;&nbsp;&nbsp;&nbsp;- bytesInAudioBuffer</option>
+	
+	<option value="//api/name/clearAudioBuffers">&nbsp;&nbsp;&nbsp;&nbsp;- clearAudioBuffers</option>
+	
+	<option value="//api/name/connectOutputBus:ofNode:toInputBus:ofNode:inGraph:error:">&nbsp;&nbsp;&nbsp;&nbsp;- connectOutputBus:ofNode:toInputBus:ofNode:inGraph:error:</option>
+	
+	<option value="//api/name/disposeOfCustomNodesInGraph:">&nbsp;&nbsp;&nbsp;&nbsp;- disposeOfCustomNodesInGraph:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Control">Control</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Customizing the audio pipeline">Customizing the audio pipeline</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Properties">Properties</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/audioOutputEnabled">audioOutputEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/availableOutputDevices">availableOutputDevices</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/backgroundPlaybackTask">backgroundPlaybackTask</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentOutputDevice">currentOutputDevice</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/volume">volume</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attemptToDeliverAudioFrames:ofCount:streamDescription:">attemptToDeliverAudioFrames:ofCount:streamDescription:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bytesInAudioBuffer">bytesInAudioBuffer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clearAudioBuffers">clearAudioBuffers</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectOutputBus:ofNode:toInputBus:ofNode:inGraph:error:">connectOutputBus:ofNode:toInputBus:ofNode:inGraph:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disposeOfCustomNodesInGraph:">disposeOfCustomNodesInGraph:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SPTCoreAudioController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SPTCoreAudioController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SPTCoreAudioController.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Provides an audio pipeline from <a href="../Classes/SPTAudioStreamingController.html">SPTAudioStreamingController</a> to the system&rsquo;s audio output.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Control" name="task_Control"></a>
+						<h3 class="subsubtitle task-title">Control</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clearAudioBuffers">&ndash;&nbsp;clearAudioBuffers</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attemptToDeliverAudioFrames:ofCount:streamDescription:">&ndash;&nbsp;attemptToDeliverAudioFrames:ofCount:streamDescription:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bytesInAudioBuffer">&ndash;&nbsp;bytesInAudioBuffer</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Customizing the audio pipeline" name="task_Customizing the audio pipeline"></a>
+						<h3 class="subsubtitle task-title">Customizing the audio pipeline</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectOutputBus:ofNode:toInputBus:ofNode:inGraph:error:">&ndash;&nbsp;connectOutputBus:ofNode:toInputBus:ofNode:inGraph:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disposeOfCustomNodesInGraph:">&ndash;&nbsp;disposeOfCustomNodesInGraph:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Properties" name="task_Properties"></a>
+						<h3 class="subsubtitle task-title">Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/volume">&nbsp;&nbsp;volume</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/audioOutputEnabled">&nbsp;&nbsp;audioOutputEnabled</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/availableOutputDevices">&nbsp;&nbsp;availableOutputDevices</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentOutputDevice">&nbsp;&nbsp;currentOutputDevice</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/backgroundPlaybackTask">&nbsp;&nbsp;backgroundPlaybackTask</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/audioOutputEnabled" title="audioOutputEnabled"></a>
+	<h3 class="subsubtitle method-title">audioOutputEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether audio output is enabled.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readwrite, nonatomic) BOOL audioOutputEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTCoreAudioController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/availableOutputDevices" title="availableOutputDevices"></a>
+	<h3 class="subsubtitle method-title">availableOutputDevices</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the available audio output devices. Mac only.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, copy) NSArray *availableOutputDevices</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTCoreAudioController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/backgroundPlaybackTask" title="backgroundPlaybackTask"></a>
+	<h3 class="subsubtitle method-title">backgroundPlaybackTask</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Current background playback task reference.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readwrite, nonatomic) UIBackgroundTaskIdentifier backgroundPlaybackTask</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTCoreAudioController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentOutputDevice" title="currentOutputDevice"></a>
+	<h3 class="subsubtitle method-title">currentOutputDevice</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the current output device. Set to <code>nil</code> to use the system default. Mac only.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readwrite, nonatomic, strong) SPTCoreAudioDevice *currentOutputDevice</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTCoreAudioController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the receiver&rsquo;s delegate.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readwrite, nonatomic, weak) id&lt;SPTCoreAudioControllerDelegate&gt; delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTCoreAudioController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/volume" title="volume"></a>
+	<h3 class="subsubtitle method-title">volume</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the volume of audio playback, between <code>0.0</code> and <code>1.0</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readwrite, nonatomic) double volume</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This property only applies to audio played back through this class, not the system audio volume.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTCoreAudioController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/attemptToDeliverAudioFrames:ofCount:streamDescription:" title="attemptToDeliverAudioFrames:ofCount:streamDescription:"></a>
+	<h3 class="subsubtitle method-title">attemptToDeliverAudioFrames:ofCount:streamDescription:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Attempts to deliver the passed audio frames passed to the audio output pipeline.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)attemptToDeliverAudioFrames:(const void *)<em>audioFrames</em> ofCount:(NSInteger)<em>frameCount</em> streamDescription:(AudioStreamBasicDescription)<em>audioDescription</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>audioFrames</em></dt>
+			<dd><p>A buffer containing the audio frames.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>frameCount</em></dt>
+			<dd><p>The number of frames included in the buffer.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>audioDescription</em></dt>
+			<dd><p>A description of the audio contained in <code>audioFrames</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns the number of frames actually delievered to the audio pipeline. If this is less than <code>frameCount</code>,
+  you need to retry delivery again later as the internal buffers are full.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTCoreAudioController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bytesInAudioBuffer" title="bytesInAudioBuffer"></a>
+	<h3 class="subsubtitle method-title">bytesInAudioBuffer</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the number of bytes in the audio buffer.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (uint32_t)bytesInAudioBuffer</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTCoreAudioController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/clearAudioBuffers" title="clearAudioBuffers"></a>
+	<h3 class="subsubtitle method-title">clearAudioBuffers</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Completely empties all audio that&rsquo;s buffered for playback.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)clearAudioBuffers</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This should be called when you need cancel all pending audio in order to,
+for example, play a new track.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTCoreAudioController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectOutputBus:ofNode:toInputBus:ofNode:inGraph:error:" title="connectOutputBus:ofNode:toInputBus:ofNode:inGraph:error:"></a>
+	<h3 class="subsubtitle method-title">connectOutputBus:ofNode:toInputBus:ofNode:inGraph:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Connects the given <code>AUNode</code> instances together to complete the audio pipeline for playback.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)connectOutputBus:(UInt32)<em>sourceOutputBusNumber</em> ofNode:(AUNode)<em>sourceNode</em> toInputBus:(UInt32)<em>destinationInputBusNumber</em> ofNode:(AUNode)<em>destinationNode</em> inGraph:(AUGraph)<em>graph</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sourceOutputBusNumber</em></dt>
+			<dd><p>The bus on which the source node will be providing audio data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sourceNode</em></dt>
+			<dd><p>The <code>AUNode</code> which will provide audio data for the graph.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>destinationInputBusNumber</em></dt>
+			<dd><p>The bus on which the destination node expects to receive audio data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>destinationNode</em></dt>
+			<dd><p>The <code>AUNode</code> which will carry the audio data to the system&rsquo;s audio output.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>graph</em></dt>
+			<dd><p>The <code>AUGraph</code> containing the given nodes.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>A pointer to an NSError instance to be filled with an <code>NSError</code> should a problem occur.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the connection was made successfully, otherwise <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If you wish to customise the audio pipeline, you can do so by overriding this method and inserting your
+own <code>AUNode</code> instances between <code>sourceNode</code> and <code>destinationNode</code>.</p>
+
+<p>This method will be called whenever the audio pipeline needs to be (re)built.</p><div class="warning"><p><strong>Warning:</strong> If you override this method and connect the nodes yourself, do not call the <code>super</code>
+implementation. You can, however, conditionally decide whether to customise the queue and call <code>super</code>
+if you want the default behaviour.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTCoreAudioController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disposeOfCustomNodesInGraph:" title="disposeOfCustomNodesInGraph:"></a>
+	<h3 class="subsubtitle method-title">disposeOfCustomNodesInGraph:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when custom nodes in the pipeline should be disposed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)disposeOfCustomNodesInGraph:(AUGraph)<em>graph</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>graph</em></dt>
+			<dd><p>The <code>AUGraph</code> that is being disposed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If you inserted your own <code>AUNode</code> instances into the audio pipeline, override this method to
+perform any cleanup needed.</p>
+
+<p>This method will be called whenever the audio pipeline is being torn down.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTCoreAudioController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Spotify AB. All rights reserved. (Last updated: 2016-10-28)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

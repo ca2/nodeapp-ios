@@ -1,0 +1,1798 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SPTArtist Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Spotify iOS SDK </a></h1>
+				<a id="developerHome" href="../index.html">Spotify AB</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SPTArtist Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/externalIds">&nbsp;&nbsp;&nbsp;&nbsp;externalIds</option>
+	
+	<option value="//api/name/followerCount">&nbsp;&nbsp;&nbsp;&nbsp;followerCount</option>
+	
+	<option value="//api/name/genres">&nbsp;&nbsp;&nbsp;&nbsp;genres</option>
+	
+	<option value="//api/name/images">&nbsp;&nbsp;&nbsp;&nbsp;images</option>
+	
+	<option value="//api/name/largestImage">&nbsp;&nbsp;&nbsp;&nbsp;largestImage</option>
+	
+	<option value="//api/name/popularity">&nbsp;&nbsp;&nbsp;&nbsp;popularity</option>
+	
+	<option value="//api/name/smallestImage">&nbsp;&nbsp;&nbsp;&nbsp;smallestImage</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/artistFromData:withResponse:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ artistFromData:withResponse:error:</option>
+	
+	<option value="//api/name/artistFromDecodedJSON:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ artistFromDecodedJSON:error:</option>
+	
+	<option value="//api/name/artistWithURI:accessToken:callback:">&nbsp;&nbsp;&nbsp;&nbsp;+ artistWithURI:accessToken:callback:</option>
+	
+	<option value="//api/name/artistsFromData:withResponse:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ artistsFromData:withResponse:error:</option>
+	
+	<option value="//api/name/artistsFromDecodedJSON:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ artistsFromDecodedJSON:error:</option>
+	
+	<option value="//api/name/artistsWithURIs:accessToken:callback:">&nbsp;&nbsp;&nbsp;&nbsp;+ artistsWithURIs:accessToken:callback:</option>
+	
+	<option value="//api/name/createRequestForAlbumsByArtist:ofType:withAccessToken:market:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ createRequestForAlbumsByArtist:ofType:withAccessToken:market:error:</option>
+	
+	<option value="//api/name/createRequestForArtist:withAccessToken:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ createRequestForArtist:withAccessToken:error:</option>
+	
+	<option value="//api/name/createRequestForArtists:withAccessToken:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ createRequestForArtists:withAccessToken:error:</option>
+	
+	<option value="//api/name/createRequestForArtistsRelatedTo:withAccessToken:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ createRequestForArtistsRelatedTo:withAccessToken:error:</option>
+	
+	<option value="//api/name/createRequestForTopTracksForArtist:withAccessToken:market:error:">&nbsp;&nbsp;&nbsp;&nbsp;+ createRequestForTopTracksForArtist:withAccessToken:market:error:</option>
+	
+	<option value="//api/name/identifierFromURI:">&nbsp;&nbsp;&nbsp;&nbsp;+ identifierFromURI:</option>
+	
+	<option value="//api/name/isArtistURI:">&nbsp;&nbsp;&nbsp;&nbsp;+ isArtistURI:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/requestAlbumsOfType:withAccessToken:availableInTerritory:callback:">&nbsp;&nbsp;&nbsp;&nbsp;- requestAlbumsOfType:withAccessToken:availableInTerritory:callback:</option>
+	
+	<option value="//api/name/requestRelatedArtistsWithAccessToken:callback:">&nbsp;&nbsp;&nbsp;&nbsp;- requestRelatedArtistsWithAccessToken:callback:</option>
+	
+	<option value="//api/name/requestTopTracksForTerritory:withAccessToken:callback:">&nbsp;&nbsp;&nbsp;&nbsp;- requestTopTracksForTerritory:withAccessToken:callback:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Properties">Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_API Request Factories">API Request Factories</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_API Response Parsers">API Response Parsers</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Convenience Methods">Convenience Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Miscellaneous">Miscellaneous</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/externalIds">externalIds</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/followerCount">followerCount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/genres">genres</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/images">images</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/largestImage">largestImage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/popularity">popularity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/smallestImage">smallestImage</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/artistFromData:withResponse:error:">artistFromData:withResponse:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/artistFromDecodedJSON:error:">artistFromDecodedJSON:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/artistWithURI:accessToken:callback:">artistWithURI:accessToken:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/artistsFromData:withResponse:error:">artistsFromData:withResponse:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/artistsFromDecodedJSON:error:">artistsFromDecodedJSON:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/artistsWithURIs:accessToken:callback:">artistsWithURIs:accessToken:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createRequestForAlbumsByArtist:ofType:withAccessToken:market:error:">createRequestForAlbumsByArtist:ofType:withAccessToken:market:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createRequestForArtist:withAccessToken:error:">createRequestForArtist:withAccessToken:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createRequestForArtists:withAccessToken:error:">createRequestForArtists:withAccessToken:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createRequestForArtistsRelatedTo:withAccessToken:error:">createRequestForArtistsRelatedTo:withAccessToken:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createRequestForTopTracksForArtist:withAccessToken:market:error:">createRequestForTopTracksForArtist:withAccessToken:market:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/identifierFromURI:">identifierFromURI:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isArtistURI:">isArtistURI:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestAlbumsOfType:withAccessToken:availableInTerritory:callback:">requestAlbumsOfType:withAccessToken:availableInTerritory:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestRelatedArtistsWithAccessToken:callback:">requestRelatedArtistsWithAccessToken:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestTopTracksForTerritory:withAccessToken:callback:">requestTopTracksForTerritory:withAccessToken:callback:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SPTArtist Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SPTArtist Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/SPTPartialArtist.html">SPTPartialArtist</a> : <a href="../Classes/SPTJSONObjectBase.html">SPTJSONObjectBase</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/SPTJSONObject.html">SPTJSONObject</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SPTArtist.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class represents an artist on the Spotify service.</p>
+
+<p>API Docs: <a href="https://developer.spotify.com/web-api/get-artist/">https://developer.spotify.com/web-api/get-artist/</a></p>
+
+<p>API Console: <a href="https://developer.spotify.com/web-api/console/get-artist">https://developer.spotify.com/web-api/console/get-artist</a></p>
+
+<p>API Model: <a href="https://developer.spotify.com/web-api/object-model/">https://developer.spotify.com/web-api/object-model/</a>#artist-object-full</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Properties" name="task_Properties"></a>
+						<h3 class="subsubtitle task-title">Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/externalIds">&nbsp;&nbsp;externalIds</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/genres">&nbsp;&nbsp;genres</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/images">&nbsp;&nbsp;images</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/smallestImage">&nbsp;&nbsp;smallestImage</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/largestImage">&nbsp;&nbsp;largestImage</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/popularity">&nbsp;&nbsp;popularity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/followerCount">&nbsp;&nbsp;followerCount</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="API Request Factories" name="task_API Request Factories"></a>
+						<h3 class="subsubtitle task-title">API Request Factories</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createRequestForArtist:withAccessToken:error:">+&nbsp;createRequestForArtist:withAccessToken:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createRequestForArtists:withAccessToken:error:">+&nbsp;createRequestForArtists:withAccessToken:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createRequestForAlbumsByArtist:ofType:withAccessToken:market:error:">+&nbsp;createRequestForAlbumsByArtist:ofType:withAccessToken:market:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createRequestForTopTracksForArtist:withAccessToken:market:error:">+&nbsp;createRequestForTopTracksForArtist:withAccessToken:market:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createRequestForArtistsRelatedTo:withAccessToken:error:">+&nbsp;createRequestForArtistsRelatedTo:withAccessToken:error:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="API Response Parsers" name="task_API Response Parsers"></a>
+						<h3 class="subsubtitle task-title">API Response Parsers</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/artistFromData:withResponse:error:">+&nbsp;artistFromData:withResponse:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/artistFromDecodedJSON:error:">+&nbsp;artistFromDecodedJSON:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/artistsFromData:withResponse:error:">+&nbsp;artistsFromData:withResponse:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/artistsFromDecodedJSON:error:">+&nbsp;artistsFromDecodedJSON:error:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Convenience Methods" name="task_Convenience Methods"></a>
+						<h3 class="subsubtitle task-title">Convenience Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/artistWithURI:accessToken:callback:">+&nbsp;artistWithURI:accessToken:callback:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/artistsWithURIs:accessToken:callback:">+&nbsp;artistsWithURIs:accessToken:callback:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestAlbumsOfType:withAccessToken:availableInTerritory:callback:">&ndash;&nbsp;requestAlbumsOfType:withAccessToken:availableInTerritory:callback:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestTopTracksForTerritory:withAccessToken:callback:">&ndash;&nbsp;requestTopTracksForTerritory:withAccessToken:callback:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestRelatedArtistsWithAccessToken:callback:">&ndash;&nbsp;requestRelatedArtistsWithAccessToken:callback:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Miscellaneous" name="task_Miscellaneous"></a>
+						<h3 class="subsubtitle task-title">Miscellaneous</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isArtistURI:">+&nbsp;isArtistURI:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/identifierFromURI:">+&nbsp;identifierFromURI:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/externalIds" title="externalIds"></a>
+	<h3 class="subsubtitle method-title">externalIds</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Any external IDs of the track, such as the ISRC code.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSDictionary *externalIds</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/followerCount" title="followerCount"></a>
+	<h3 class="subsubtitle method-title">followerCount</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The number of followers this artist has.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) long followerCount</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/genres" title="genres"></a>
+	<h3 class="subsubtitle method-title">genres</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a list of genre strings for the artist.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSArray *genres</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/images" title="images"></a>
+	<h3 class="subsubtitle method-title">images</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a list of artist images in various sizes, as <a href="../Classes/SPTImage.html"><code>SPTImage</code></a> objects.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSArray *images</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/largestImage" title="largestImage"></a>
+	<h3 class="subsubtitle method-title">largestImage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Convenience method that returns the largest available artist image.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) SPTImage *largestImage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/popularity" title="popularity"></a>
+	<h3 class="subsubtitle method-title">popularity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The popularity of the artist as a value between 0.0 (least popular) to 100.0 (most popular).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) double popularity</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/smallestImage" title="smallestImage"></a>
+	<h3 class="subsubtitle method-title">smallestImage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Convenience method that returns the smallest available artist image.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) SPTImage *smallestImage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/artistFromData:withResponse:error:" title="artistFromData:withResponse:error:"></a>
+	<h3 class="subsubtitle method-title">artistFromData:withResponse:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Parse an API response into an <code>SPTArtist</code> object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)artistFromData:(NSData *)<em>data</em> withResponse:(NSURLResponse *)<em>response</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>The API response data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>response</em></dt>
+			<dd><p>The API response object.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional <code>NSError</code> that will be set if an error occured when parsing the data.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>an <a href="../Classes/SPTAlbum.html"><code>SPTAlbum</code></a> object, or nil if the parsing failed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/artistFromDecodedJSON:error:" title="artistFromDecodedJSON:error:"></a>
+	<h3 class="subsubtitle method-title">artistFromDecodedJSON:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Parse an JSON object structure into an array of <a href="../Classes/SPTAlbum.html"><code>SPTAlbum</code></a> object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)artistFromDecodedJSON:(id)<em>decodedObject</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>decodedObject</em></dt>
+			<dd><p>The decoded JSON structure to parse.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional <code>NSError</code> that will be set if an error occured when parsing the data.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>an <a href="../Classes/SPTAlbum.html"><code>SPTAlbum</code></a> object, or nil if the parsing failed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/artistWithURI:accessToken:callback:" title="artistWithURI:accessToken:callback:"></a>
+	<h3 class="subsubtitle method-title">artistWithURI:accessToken:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Request the artist at the given Spotify URI.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)artistWithURI:(NSURL *)<em>uri</em> accessToken:(NSString *)<em>accessToken</em> callback:(SPTRequestCallback)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>uri</em></dt>
+			<dd><p>The Spotify URI of the artist to request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>An access token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to be called when the operation is complete. The block will pass a Spotify SDK metadata object on success, otherwise an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is a convenience method on top of the <a href="#//api/name/createRequestForArtist:withAccessToken:error:"><code>createRequestForArtist:withAccessToken:error:</code></a> and <code></code>SPTRequest<code> performRequest:callback:</code></p><div class="note"><p><strong>Note:</strong> This method takes Spotify URIs in the form <code>spotify:*</code>, NOT HTTP URLs.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/artistsFromData:withResponse:error:" title="artistsFromData:withResponse:error:"></a>
+	<h3 class="subsubtitle method-title">artistsFromData:withResponse:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Parse an API response into an array of <code>SPTArtist</code> objects.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSArray *)artistsFromData:(NSData *)<em>data</em> withResponse:(NSURLResponse *)<em>response</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>The API response data.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>response</em></dt>
+			<dd><p>The API response object.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional <code>NSError</code> that will be set if an error occured when parsing the data.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>an <a href="../Classes/SPTAlbum.html"><code>SPTAlbum</code></a> object, or nil if the parsing failed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/artistsFromDecodedJSON:error:" title="artistsFromDecodedJSON:error:"></a>
+	<h3 class="subsubtitle method-title">artistsFromDecodedJSON:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Parse an JSON object structure into an array of <a href="../Classes/SPTAlbum.html"><code>SPTAlbum</code></a> object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSArray *)artistsFromDecodedJSON:(id)<em>decodedObject</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>decodedObject</em></dt>
+			<dd><p>The decoded JSON structure to parse.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional <code>NSError</code> that will be set if an error occured when parsing the data.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>an <a href="../Classes/SPTAlbum.html"><code>SPTAlbum</code></a> object, or nil if the parsing failed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/artistsWithURIs:accessToken:callback:" title="artistsWithURIs:accessToken:callback:"></a>
+	<h3 class="subsubtitle method-title">artistsWithURIs:accessToken:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Request multiple artists given an array of Spotify URIs.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)artistsWithURIs:(NSArray *)<em>uris</em> accessToken:(NSString *)<em>accessToken</em> callback:(SPTRequestCallback)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>uris</em></dt>
+			<dd><p>An array of Spotify URIs.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>An access token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to be called when the operation is complete. The block will pass an array of <code>SPTArtist</code> objects on success, otherwise an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is a convenience method on top of the <a href="#//api/name/createRequestForArtists:withAccessToken:error:"><code>createRequestForArtists:withAccessToken:error:</code></a> and <code></code>SPTRequest<code> performRequest:callback:</code></p><div class="note"><p><strong>Note:</strong> This method takes an array Spotify URIs in the form <code>spotify:*</code>, NOT HTTP URLs.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createRequestForAlbumsByArtist:ofType:withAccessToken:market:error:" title="createRequestForAlbumsByArtist:ofType:withAccessToken:market:error:"></a>
+	<h3 class="subsubtitle method-title">createRequestForAlbumsByArtist:ofType:withAccessToken:market:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Request the artist&rsquo;s albums.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSURLRequest *)createRequestForAlbumsByArtist:(NSURL *)<em>artist</em> ofType:(SPTAlbumType)<em>type</em> withAccessToken:(NSString *)<em>accessToken</em> market:(NSString *)<em>market</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>artist</em></dt>
+			<dd><p>The Spotify URI of the artist.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The type of albums to get.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>An access token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>market</em></dt>
+			<dd><p>An ISO 3166 country code of the territory to get albums for, or <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional <code>NSError</code> that will be set if an error occured.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The territory parameter of this method can be <code>nil</code> to specify &ldquo;any country&rdquo;, but expect a lot of
+duplicates as the Spotify catalog often has different albums for each country. Pair this with an
+<a href="../Classes/SPTUser.html"><code>SPTUser</code></a>&rsquo;s <code>territory</code> property for best results.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createRequestForArtist:withAccessToken:error:" title="createRequestForArtist:withAccessToken:error:"></a>
+	<h3 class="subsubtitle method-title">createRequestForArtist:withAccessToken:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a request for fetching an artist</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSURLRequest *)createRequestForArtist:(NSURL *)<em>uri</em> withAccessToken:(NSString *)<em>accessToken</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>uri</em></dt>
+			<dd><p>The Spotify URI of the artist to request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>An access token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional <code>NSError</code> that will be set if an error occured.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A NSURLRequest for requesting the album</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="note"><p><strong>Note:</strong> This method takes Spotify URIs in the form <code>spotify:*</code>, NOT HTTP URLs.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createRequestForArtists:withAccessToken:error:" title="createRequestForArtists:withAccessToken:error:"></a>
+	<h3 class="subsubtitle method-title">createRequestForArtists:withAccessToken:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a request for fetching a multiple artists</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSURLRequest *)createRequestForArtists:(NSArray *)<em>uris</em> withAccessToken:(NSString *)<em>accessToken</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>uris</em></dt>
+			<dd><p>An array of Spotify URIs.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>An access token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional <code>NSError</code> that will be set if an error occured.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A NSURLRequest for requesting the albums</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="note"><p><strong>Note:</strong> This method takes Spotify URIs in the form <code>spotify:*</code>, NOT HTTP URLs.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createRequestForArtistsRelatedTo:withAccessToken:error:" title="createRequestForArtistsRelatedTo:withAccessToken:error:"></a>
+	<h3 class="subsubtitle method-title">createRequestForArtistsRelatedTo:withAccessToken:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Request the artist&rsquo;s related artists.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSURLRequest *)createRequestForArtistsRelatedTo:(NSURL *)<em>artist</em> withAccessToken:(NSString *)<em>accessToken</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>artist</em></dt>
+			<dd><p>The Spotify URI of the artist.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>An access token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional <code>NSError</code> that will be set if an error occured.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createRequestForTopTracksForArtist:withAccessToken:market:error:" title="createRequestForTopTracksForArtist:withAccessToken:market:error:"></a>
+	<h3 class="subsubtitle method-title">createRequestForTopTracksForArtist:withAccessToken:market:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Request the artist&rsquo;s top tracks.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSURLRequest *)createRequestForTopTracksForArtist:(NSURL *)<em>artist</em> withAccessToken:(NSString *)<em>accessToken</em> market:(NSString *)<em>market</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>artist</em></dt>
+			<dd><p>The Spotify URI of the artist.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>An access token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>market</em></dt>
+			<dd><p>An ISO 3166 country code of the territory to get top tracks for.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An optional <code>NSError</code> that will be set if an error occured.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The territory parameter of this method is required. Pair this with an
+<a href="../Classes/SPTUser.html"><code>SPTUser</code></a>&rsquo;s <code>territory</code> property for best results.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/identifierFromURI:" title="identifierFromURI:"></a>
+	<h3 class="subsubtitle method-title">identifierFromURI:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the identifier part of an Spotify Artist URI.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)identifierFromURI:(NSURL *)<em>uri</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>uri</em></dt>
+			<dd><p>The Spotify URI to check.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The identifier part of the artist URI.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="note"><p><strong>Note:</strong> This method takes Spotify URIs in the form <code>spotify:*</code>, NOT HTTP URLs.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isArtistURI:" title="isArtistURI:"></a>
+	<h3 class="subsubtitle method-title">isArtistURI:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Checks if the Spotify URI is a valid Spotify Artist URI.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isArtistURI:(NSURL *)<em>uri</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>uri</em></dt>
+			<dd><p>The Spotify URI to check.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>True if a valid artist URI.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="note"><p><strong>Note:</strong> This method takes Spotify URIs in the form <code>spotify:*</code>, NOT HTTP URLs.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/requestAlbumsOfType:withAccessToken:availableInTerritory:callback:" title="requestAlbumsOfType:withAccessToken:availableInTerritory:callback:"></a>
+	<h3 class="subsubtitle method-title">requestAlbumsOfType:withAccessToken:availableInTerritory:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Request the artist&rsquo;s albums.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)requestAlbumsOfType:(SPTAlbumType)<em>type</em> withAccessToken:(NSString *)<em>accessToken</em> availableInTerritory:(NSString *)<em>territory</em> callback:(SPTRequestCallback)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The type of albums to get.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>An access token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>territory</em></dt>
+			<dd><p>An ISO 3166 country code of the territory to get albums for, or <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to be called when the operation is complete. The block will pass an
+<a href="../Classes/SPTListPage.html"><code>SPTListPage</code></a> object on success, otherwise an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The territory parameter of this method can be <code>nil</code> to specify &ldquo;any country&rdquo;, but expect a lot of
+duplicates as the Spotify catalog often has different albums for each country. Pair this with an
+<a href="../Classes/SPTUser.html"><code>SPTUser</code></a>&rsquo;s <code>territory</code> property for best results.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestRelatedArtistsWithAccessToken:callback:" title="requestRelatedArtistsWithAccessToken:callback:"></a>
+	<h3 class="subsubtitle method-title">requestRelatedArtistsWithAccessToken:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Request the artist&rsquo;s related artists.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)requestRelatedArtistsWithAccessToken:(NSString *)<em>accessToken</em> callback:(SPTRequestCallback)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>An access token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to be called when the operation is complete. The block will pass an
+<code>NSArray</code> object containing <code>SPTArtist</code>s on success, otherwise an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestTopTracksForTerritory:withAccessToken:callback:" title="requestTopTracksForTerritory:withAccessToken:callback:"></a>
+	<h3 class="subsubtitle method-title">requestTopTracksForTerritory:withAccessToken:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Request the artist&rsquo;s top tracks.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)requestTopTracksForTerritory:(NSString *)<em>territory</em> withAccessToken:(NSString *)<em>accessToken</em> callback:(SPTRequestCallback)<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>territory</em></dt>
+			<dd><p>An ISO 3166 country code of the territory to get top tracks for.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessToken</em></dt>
+			<dd><p>An access token.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to be called when the operation is complete. The block will pass an
+<code>NSArray</code> object containing <a href="../Classes/SPTTrack.html"><code>SPTTrack</code></a>s on success, otherwise an error.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The territory parameter of this method is required. Pair this with an
+<a href="../Classes/SPTUser.html"><code>SPTUser</code></a>&rsquo;s <code>territory</code> property for best results.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTArtist.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2016 Spotify AB. All rights reserved. (Last updated: 2016-10-28)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
