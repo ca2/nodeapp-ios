@@ -86,5 +86,5 @@
 
 
 
-
+#define STR_NEWLINE "\r"
 
