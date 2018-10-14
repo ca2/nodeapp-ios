@@ -17,9 +17,6 @@
       location = "container:../../../app-core/appseed/projection/ios_app_core_projection.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../app-core/appseed/rdpclient/ios_app_core_rdpclient.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "container:../../../app-veriwell/appseed/waven/ios_app_veriwell_waven.xcodeproj">
    </FileRef>
    <FileRef
@@ -39,15 +36,6 @@
    </FileRef>
    <FileRef
       location = "container:../../../app-core/appseed/projection/app_core_projection.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../app-core/appseed/rdpclient/app_core_rdpclient.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../app-veriwell/appseed/asciimedia/app_veriwell_asciimedia.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../app-veriwell/appseed/waven/app_veriwell_waven.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../../../third/appseed/iconv/atomiconv.xcodeproj">
@@ -77,15 +65,6 @@
       location = "container:../../../app/appseed/axis/axis.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../third/appseed/clientchannels/axisclientchannels.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../third/appseed/freerdp/axisfreerdp.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../third/appseed/freetype/axisfreetype.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "container:../../../third/appseed/idn/axisidn.xcodeproj">
    </FileRef>
    <FileRef
@@ -93,9 +72,6 @@
    </FileRef>
    <FileRef
       location = "container:../../../third/appseed/png/axispng.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../third/appseed/winpr/axiswinpr.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app/appseed/base/base.xcodeproj">
@@ -125,19 +101,10 @@
       location = "group:../../../app-core/appseed/multimedia_playlist_spotify/multimedia_playlist_spotify.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app/appseed/music_midi_core_audio/music_midi_core_audio.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../app-core/appseed/rdpsnd-client-audio_decode/rdpsnd-client-audio_decode.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "container:../../../app/appseed/sphere/sphere.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app-core/appseed/tesseract/tesseract.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../app-veriwell/appseed/multimedia/veriwell_multimedia.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../../../app/appseed/wndfrm_core/wndfrm_core.xcodeproj">
