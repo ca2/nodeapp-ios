@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../../app-core/appseed/rdpclient/ios_app_core_rdpclient.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:../../../app-veriwell/appseed/waven/ios_app_veriwell_waven.xcodeproj">
    </FileRef>
    <FileRef
