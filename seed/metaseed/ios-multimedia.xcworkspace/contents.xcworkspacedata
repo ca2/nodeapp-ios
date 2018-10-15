@@ -86,18 +86,6 @@
       location = "group:../../../third/appseed/idn/axisidn.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app/appseed/image_jpeg/image_decode_jpeg.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../app/appseed/image_png/image_decode_png.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../third/appseed/jpeg/axisjpeg.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../third/appseed/png/axispng.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:../../../app/appseed/rdpclient/axisrdpclient.xcodeproj">
    </FileRef>
    <FileRef
@@ -119,9 +107,6 @@
       location = "container:../../../app/appseed/draw2d_quartz2d/draw2d_quartz2d.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../game/appseed/tictactoe/game_tictactoe.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:../../../app-core/appseed/gcom/gcom.xcodeproj">
    </FileRef>
    <FileRef
@@ -141,8 +126,5 @@
    </FileRef>
    <FileRef
       location = "group:../../../app-veriwell/appseed/video_decode_ffmpeg/video_decode_ffmpeg.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:../../../app-core/appseed/wndfrm_core/wndfrm_core.xcodeproj">
    </FileRef>
 </Workspace>
