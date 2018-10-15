@@ -1,5 +1,7 @@
 /*
- * Copyright (c) 2009 Baptiste Coudurier <baptiste.coudurier@gmail.com>
+ * AC-3 parser prototypes
+ * Copyright (c) 2003 Fabrice Bellard
+ * Copyright (c) 2003 Michael Niedermayer
  *
  * This file is part of FFmpeg.
  *
@@ -18,26 +20,17 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  */
 
-#ifndef AVUTIL_RANDOM_SEED_H
-#define AVUTIL_RANDOM_SEED_H
+#ifndef AVCODEC_AC3_PARSER_H
+#define AVCODEC_AC3_PARSER_H
 
+#include <stddef.h>
 #include <stdint.h>
-/**
- * @addtogroup lavu_crypto
- * @{
- */
 
 /**
- * Get a seed to use in conjunction with random functions.
- * This function tries to provide a good seed at a best effort bases.
- * Its possible to call this function multiple times if more bits are needed.
- * It can be quite slow, which is why it should only be used as seed for a faster
- * PRNG. The quality of the seed depends on the platform.
+ * Extract the bitstream ID and the frame size from AC-3 data.
  */
-uint32_t av_get_random_seed(void);
+int av_ac3_parse_header(const uint8_t *buf, size_t size,
+                        uint8_t *bitstream_id, uint16_t *frame_size);
 
-/**
- * @}
- */
 
-#endif /* AVUTIL_RANDOM_SEED_H */
+#endif /* AVCODEC_AC3_PARSER_H */

@@ -1,6 +1,4 @@
 /*
- * Copyright (c) 2009 Baptiste Coudurier <baptiste.coudurier@gmail.com>
- *
  * This file is part of FFmpeg.
  *
  * FFmpeg is free software; you can redistribute it and/or
@@ -18,26 +16,22 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  */
 
-#ifndef AVUTIL_RANDOM_SEED_H
-#define AVUTIL_RANDOM_SEED_H
+#ifndef AVCODEC_ADTS_PARSER_H
+#define AVCODEC_ADTS_PARSER_H
 
+#include <stddef.h>
 #include <stdint.h>
-/**
- * @addtogroup lavu_crypto
- * @{
- */
+
+#define AV_AAC_ADTS_HEADER_SIZE 7
 
 /**
- * Get a seed to use in conjunction with random functions.
- * This function tries to provide a good seed at a best effort bases.
- * Its possible to call this function multiple times if more bits are needed.
- * It can be quite slow, which is why it should only be used as seed for a faster
- * PRNG. The quality of the seed depends on the platform.
+ * Extract the number of samples and frames from AAC data.
+ * @param[in]  buf     pointer to AAC data buffer
+ * @param[out] samples Pointer to where number of samples is written
+ * @param[out] frames  Pointer to where number of frames is written
+ * @return Returns 0 on success, error code on failure.
  */
-uint32_t av_get_random_seed(void);
+int av_adts_header_parse(const uint8_t *buf, uint32_t *samples,
+                         uint8_t *frames);
 
-/**
- * @}
- */
-
-#endif /* AVUTIL_RANDOM_SEED_H */
+#endif /* AVCODEC_ADTS_PARSER_H */
