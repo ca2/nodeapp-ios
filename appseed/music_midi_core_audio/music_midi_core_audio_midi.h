@@ -18,9 +18,10 @@ namespace music
          //base_library                 m_library;
          //midi_listener_set             m_listenerptra;
          //uint32_t                      m_uiMidiOutDevice;
+         sp(::music::midi::message_out) m_pmessageout;
 
 
-         midi(sp(::base::application) papp);
+         midi(::aura::application * papp);
          virtual ~midi();
 
 

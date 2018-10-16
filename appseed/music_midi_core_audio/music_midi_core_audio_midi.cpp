@@ -14,12 +14,18 @@ namespace music
    {
 
 
-      midi::midi(sp(::base::application) papp) :
-         element(papp),
-         base_departament(papp),
+      midi::midi(::aura::application * papp) :
+      ::object(papp),
+      ::aura::department(papp),
          ::music::midi::object(papp),
          ::music::midi::midi(papp)
       {
+         
+         m_pmessageout.alloc(allocer());
+         
+         m_pmessageout->init();
+         
+//         m_pmessageout->start();
 
             m_uiMidiOutDevice = 0;
 
@@ -28,6 +34,8 @@ namespace music
 
       midi::~midi()
       {
+         
+         m_pmessageout->term();
 
       }
 
