@@ -116,7 +116,7 @@
       location = "container:../../../app-core/appseed/multimedia/multimedia.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../app/appseed/music_midi_core_audio/music_midi_core_audio.xcodeproj">
+      location = "group:../../appseed/music_midi_core_audio/music_midi_core_audio.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:../../../app/appseed/sphere/sphere.xcodeproj">

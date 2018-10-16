@@ -12,6 +12,10 @@
 #endif
 
 
+CFURLRef resource_sound_font_url(const char * psz, const char *pszExt);
+
+#include "music_midi_core_audio_message_out.h"
+
 #include "music_midi_core_audio_translation.h"
 
 #include "music_midi_core_audio_exception.h"

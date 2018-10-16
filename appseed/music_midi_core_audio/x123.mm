@@ -7,3 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+
+
+CFURLRef  resource_sound_font_url(const char * psz, const char *pszExt)
+{
+   
+   NSString * strName = [[NSString alloc] initWithUTF8String: psz];
+   
+   NSString * strExtension = [[NSString alloc] initWithUTF8String: pszExt];
+   
+   return (CFURLRef) CFBridgingRetain([[NSBundle mainBundle] URLForResource: strName withExtension: strExtension]);
+   
+   
+}
