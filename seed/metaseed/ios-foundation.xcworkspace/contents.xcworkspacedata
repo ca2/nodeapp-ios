@@ -59,9 +59,6 @@
       location = "group:../../../third/appseed/clientchannels/axisclientchannels.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../third/appseed/crypto/axiscrypto.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:../../../third/appseed/freerdp/axisfreerdp.xcodeproj">
    </FileRef>
    <FileRef
@@ -69,21 +66,6 @@
    </FileRef>
    <FileRef
       location = "group:../../../third/appseed/idn/axisidn.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../app/appseed/image_jpeg/image_decode_jpeg.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../app/appseed/image_png/image_decode_png.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../third/appseed/jpeg/axisjpeg.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../third/appseed/openssl/axisopenssl.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../third/appseed/png/axispng.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../../../app/appseed/rdpclient/axisrdpclient.xcodeproj">
@@ -128,6 +110,6 @@
       location = "container:../../../app-veriwell/appseed/multimedia/veriwell_multimedia.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:../../../app-core/appseed/wndfrm_core/wndfrm_core.xcodeproj">
+      location = "group:../../../app/appseed/wndfrm_core/wndfrm_core.xcodeproj">
    </FileRef>
 </Workspace>
